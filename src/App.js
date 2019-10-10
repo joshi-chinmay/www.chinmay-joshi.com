@@ -15,6 +15,8 @@ import Menu from './components/Menu.jsx';
 import "./styles/Styles.scss";
 
 const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
+const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
+const LoadableAbout = Loadable({ loader: () => import('./components/About.jsx'), loading: Loading});
 
 library.add(fab, fas);
 
@@ -42,9 +44,9 @@ class App extends Component {
 
           <Switch>
             <Route exact path={'/'} component={LoadableHome} />
-            <Route path={'/home'} component={LoadableHome} />
-
-            <Route component={LoadableHome} />
+            <Route exact path={'/home'} component={LoadableWork} />
+            <Route exact path={'/work'} component={LoadableWork} />
+            <Route exact path={'/about'} component={LoadableAbout} />
           </Switch>
         </div>
       </div>

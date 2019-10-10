@@ -1,7 +1,7 @@
 body {
   font-family: monospace;
   letter-spacing: 0.098rem;
-  line-height: 1.56;
+  line-height: 1.86;
 }
 body.day-time {
   background-color: #f4f4f4;
@@ -14,7 +14,6 @@ body.night-time {
 ::-webkit-scrollbar {
   display: none;
 }
-
 .main-container-portfolio {
   position: absolute;
   left: 25px;
@@ -26,4 +25,39 @@ body.night-time {
   max-height: 100%;
   overflow: auto;
   border-radius: 12px;
+}
+.img-thumbnail {
+  position: relative;
+  border: none;
+  border-radius: 100%;
+  height: 200px;
+  padding: 0px;
+  background-color: transparent;
+  animation: MoveUpDown 2s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+.social-media-icon {
+  display: inline-block;
+  margin: 8px;
+}
+.social-media-icon svg {
+  font-size: 1.46rem;
+  transition: 120ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 120ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+.social-media-icon svg:hover {
+  fill: #4286f4;
+}
+.lead-lg, .lead, .lead-sm {
+  letter-spacing: 0.28rem;
+  color: #1f1a1a;
 }
