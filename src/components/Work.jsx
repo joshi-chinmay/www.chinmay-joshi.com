@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Work extends Component {
   constructor(props) {
@@ -53,53 +54,49 @@ export default class Work extends Component {
             <h5>Professional</h5>
             <div className="row">
               <div className="col-md-6 mt-4">
-                <div className="card h-100" onClick={() => this.redirectToTarget("/work/sell-do")}>
-                  <div className="card-body">
-                    Sell.Do
+                <a href="https://sell.do" className="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                  <div className="card h-100">
+                    <div className="card-body">
+                      Sell.Do&nbsp;<FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="col-md-6 mt-4">
-                <div className="card h-100" onClick={() => this.redirectToTarget("/work/task-console")}>
-                  <div className="card-body">
-                    Task Console
+                <a href="https://www.supahands.com/task-console" className="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                  <div className="card h-100">
+                    <div className="card-body">
+                      Task Console&nbsp;<FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="col-md-6 mt-4">
-                <div className="card h-100" onClick={() => this.redirectToTarget("/work/image-annotator")}>
-                  <div className="card-body">
-                    Image Annotator
+                <a href="https://www.supahands.com/image-annotation" className="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                  <div className="card h-100">
+                    <div className="card-body">
+                      Image Annotator&nbsp;<FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="col-md-6 mt-4">
-                <div className="card h-100" onClick={() => this.redirectToTarget("/work/projx-uploader")}>
-                  <div className="card-body">
-                    ProjX - Uploader
+                <a href="https://supahands.com" className="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                  <div className="card h-100">
+                    <div className="card-body">
+                      Supahands Website&nbsp;<FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div className="col-md-6 mt-4">
-                <div className="card h-100" onClick={() => this.redirectToTarget("/work/projx-supahighway")}>
-                  <div className="card-body">
-                    ProjX - Supahighway
+                <a href="https://www.supaagents.com/" className="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                  <div className="card h-100">
+                    <div className="card-body">
+                      SupahaAgents Website&nbsp;<FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="col-md-6 mt-4">
-                <div className="card h-100" onClick={() => this.redirectToTarget("/work/supahands-website")}>
-                  <div className="card-body">
-                    Supahands Website
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 mt-4">
-                <div className="card h-100" onClick={() => this.redirectToTarget("/work/supa-agent-website")}>
-                  <div className="card-body">
-                    SupahaAgents Website
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>

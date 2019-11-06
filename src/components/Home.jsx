@@ -9,7 +9,7 @@ export default class Home extends Component {
         <div className="row pt-5 text-center">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h1 className="lead-lg">Chinmay Joshi</h1>
-            <h5>Software Engineer | UI-UX enthusiast</h5>
+            <h5>Frontend Software Engineer | UX Designer</h5>
           </div>
         </div>
 
@@ -66,12 +66,12 @@ export default class Home extends Component {
                   I am a Software Engineer from India 🇮🇳, currently living in philadelphia, USA 🇺🇸. I am pursuing MS in User Experience and Interaction Design 🎓 from Thomas Jefferson University (expected graduation Dec 2020).
                 </p>
                 <p>
-                  I am an introvert 🤓, perfectionist 💯, technology enthusiast 👨‍💻, keen learner 📚, and music enthisiast 🎵. I design products for humankind, which are easy to use, consisting emotion, and helping with everyday tasks.
+                  I am an INFJ 🤓, perfectionist 💯, technology enthusiast 👨‍💻, keen learner 📚, and music enthisiast 🎵. I design products for humankind, which are easy to use, consisting emotion, and helping with everyday tasks.
                 </p>
               </div>
             </div>
 
-            <div className="row mt-5">
+            <div className="row mt-5 mb-5">
               <div className="col-md-12">
                 <h5 className="font-weight-bolder lead">
                   Let's check out my work!

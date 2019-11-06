@@ -19,7 +19,7 @@ export default class Menu extends Component {
   render() {
     return(
       <div>
-        <div className="website-menu-container">
+        <div className="website-menu-toggle">
           <button type="button" className="btn menu-activator" onClick={() => this.toggleMenu()}>
             <FontAwesomeIcon icon={["fas", "bars"]} />
           </button>
@@ -34,9 +34,13 @@ export default class Menu extends Component {
 
           <div className="centered-menu-items">
             <a href="/">Home</a>
+            <br />
             <a href="/work">Work</a>
+            <br />
             <a href="/about">About</a>
+            <br />
             <a href="https://dev.to/joshichinmay">Blog</a>
+            <br />
           </div>
         </div>
       </div>

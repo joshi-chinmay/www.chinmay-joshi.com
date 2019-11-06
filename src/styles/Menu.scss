@@ -1,15 +1,15 @@
-.website-menu-container {
-  position: absolute;
-  z-index: 2;
-  top: 14px;
-  left: 6px;
+.website-menu-toggle {
+  position: fixed;
+  z-index: 6;
+  top: 39px;
+  left: 27px;
 }
 .container-menu {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  position: fixed;
+  left: 25px;
+  right: 25px;
+  top: 25px;
+  bottom: 25px;
   margin: auto;
   height: auto;
   width: auto;
@@ -23,7 +23,7 @@
   border: 1px solid rgba(153,0,255,0.4);
 }
 .night-time {
-  .website-menu-container svg {
+  .website-menu-toggle svg {
     color: #f4f4f4;
   }
   .container-menu {
@@ -47,7 +47,6 @@
 .container-menu {
   .menu-deactivator-container {
     position: absolute;
-    left: 4px;
   }
 
   .centered-menu-items {
@@ -56,6 +55,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 
     a {
       color: rgba(153,0,255,0.7) !important;
@@ -72,5 +72,22 @@
   svg {
     margin-top: 8px;
     height: 32px;
+  }
+}
+
+.floating-menu {
+  position: fixed;
+  width: 16%;
+
+  a.menu-item-link {
+    font-size: 16px;
+  }
+
+  a.menu-item-link:hover, a.menu-item-link.active {
+    text-decoration: line-through;
+  }
+  a.menu-item-link:hover {
+    transition: 0.6s;
+    text-decoration: line-through;
   }
 }

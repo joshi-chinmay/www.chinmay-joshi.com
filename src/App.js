@@ -17,6 +17,10 @@ import "./styles/Styles.scss";
 const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
 const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
 const LoadableAbout = Loadable({ loader: () => import('./components/About.jsx'), loading: Loading});
+const LoadableJeffRun = Loadable({ loader: () => import('./components/work/JeffRun.jsx'), loading: Loading});
+const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite.jsx'), loading: Loading});
+const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker.jsx'), loading: Loading});
+const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt.jsx'), loading: Loading});
 
 library.add(fab, fas);
 
@@ -38,7 +42,7 @@ class App extends Component {
       <div id="grand-parent-container">
         <BgParallax />
 
-        <div className="main-container-portfolio">
+        <div className="container-fluid main-container-portfolio">
           <Menu />
           <DayNightToggle />
 
@@ -47,7 +51,12 @@ class App extends Component {
             <Route exact path={'/home'} component={LoadableWork} />
             <Route exact path={'/work'} component={LoadableWork} />
             <Route exact path={'/about'} component={LoadableAbout} />
+            <Route exact path={"/work/tilt"} component={LoadableTilt} />
+            <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+            <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+            <Route exact path={"/work/jeff-run"} component={LoadableJeffRun} />
           </Switch>
+
         </div>
       </div>
     );
