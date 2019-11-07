@@ -18,7 +18,7 @@ export default class Home extends Component {
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 text-center">
             <div className="row">
               <div className="col-sm-12 col-md-12">
-                <img src={CjNoBg} className="img-thumbnail" alt="profile-picture" />
+                <img src={CjNoBg} className="img-thumbnail" alt="" />
               </div>
 
               <div className="col-sm-12 col-md-12 mt-4">
@@ -63,10 +63,11 @@ export default class Home extends Component {
                 </h5>
 
                 <p>
-                  I am a Software Engineer from India 🇮🇳, currently living in philadelphia, USA 🇺🇸. I am pursuing MS in User Experience and Interaction Design 🎓 from Thomas Jefferson University (expected graduation Dec 2020).
+                  I am a Software Engineer from India <span role="img" aria-label="india">🇮🇳</span>, currently living in philadelphia, USA <span role="img" aria-label="usa-flag">🇺🇸</span>. I am pursuing MS in User Experience and Interaction Design <span role="img" aria-label="degree">🎓</span> from Thomas Jefferson University (expected graduation Dec 2020).
                 </p>
                 <p>
-                  I am an INFJ 🤓, perfectionist 💯, technology enthusiast 👨‍💻, keen learner 📚, and music enthisiast 🎵. I design products for humankind, which are easy to use, consisting emotion, and helping with everyday tasks.
+                  I am an INFJ <span role="img" aria-label="nerd">🤓</span>, perfectionist <span role="img" aria-label="100">💯</span>, technology enthusiast <span role="img" aria-label="comp">👨‍💻</span>,
+                  keen learner <span role="img" aria-label="Snowman">📚</span>, and music enthisiast <span role="img" aria-label="music">🎵</span>. I design products for humankind, which are easy to use, consisting emotion, and helping with everyday tasks.
                 </p>
               </div>
             </div>

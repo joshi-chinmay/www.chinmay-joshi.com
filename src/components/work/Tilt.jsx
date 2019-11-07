@@ -12,13 +12,6 @@ import UserAnalysis5 from "../../images/work/TILT/User Analysis/5.png";
 import UserAnalysis6 from "../../images/work/TILT/User Analysis/6.png";
 import UserAnalysis7 from "../../images/work/TILT/User Analysis/7.png";
 
-import Wireframe1 from "../../images/work/TILT/Wireframes/1.png";
-import Wireframe2 from "../../images/work/TILT/Wireframes/2.png";
-import Wireframe3 from "../../images/work/TILT/Wireframes/3.png";
-import Wireframe4 from "../../images/work/TILT/Wireframes/4.png";
-import Wireframe5 from "../../images/work/TILT/Wireframes/5.png";
-import Wireframe6 from "../../images/work/TILT/Wireframes/6.png";
-
 import colorPalette from "../../images/work/TILT/color-palette.png";
 import RobotoFont from "../../images/work/TILT/Robot.png";
 
@@ -61,25 +54,25 @@ export default class Tilt extends Component {
                     </p>
                     <Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true}>
                       <div>
-                        <img src={UserAnalysis1} />
+                        <img src={UserAnalysis1} alt="" />
                       </div>
                       <div>
-                        <img src={UserAnalysis2} />
+                        <img src={UserAnalysis2} alt="" />
                       </div>
                       <div>
-                        <img src={UserAnalysis3} />
+                        <img src={UserAnalysis3} alt="" />
                       </div>
                       <div>
-                        <img src={UserAnalysis4} />
+                        <img src={UserAnalysis4} alt="" />
                       </div>
                       <div>
-                        <img src={UserAnalysis5} />
+                        <img src={UserAnalysis5} alt="" />
                       </div>
                       <div>
-                        <img src={UserAnalysis6} />
+                        <img src={UserAnalysis6} alt="" />
                       </div>
                       <div>
-                        <img src={UserAnalysis7} />
+                        <img src={UserAnalysis7} alt="" />
                       </div>
                     </Carousel>
                   </div>
@@ -134,7 +127,7 @@ export default class Tilt extends Component {
                         <p>
                           Gray scale for accent color and red color for errors and warnings. Rest of the application will be the shades of blue and white.
                         </p>
-                        <img src={colorPalette} className="img-fluid" />
+                        <img src={colorPalette} className="img-fluid" alt="" />
                       </div>
                     </div>
                   </div>
@@ -155,7 +148,7 @@ export default class Tilt extends Component {
                           Roboto is a mechanical looking font, and largly geometric, which creates a clean and readable pattern on the page.
                         </p>
 
-                        <img src={RobotoFont} className="img-fluid" />
+                        <img src={RobotoFont} className="img-fluid" alt="" />
                       </div>
                     </div>
                   </div>

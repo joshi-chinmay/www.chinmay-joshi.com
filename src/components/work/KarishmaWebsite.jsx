@@ -45,7 +45,7 @@ export default class KarishmaWebsite extends Component {
                     <div className="row">
                       <div className="col-md-12 text-center">
                         <h5>The Consul (ESFJ-A)</h5>
-                        <img src={KarishmaPersonalityMap} className="img-fluid" />
+                        <img src={KarishmaPersonalityMap} className="img-fluid" alt="" />
                       </div>
                     </div>
 

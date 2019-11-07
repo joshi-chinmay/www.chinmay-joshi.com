@@ -12,7 +12,7 @@ export default class Loading extends Component {
           <div className="row mt-5">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
               <h1 className="lead-lg">
-                <a href="http://randomcolorpicker.xyz/" target="_blank">
+                <a href="http://randomcolorpicker.xyz/" target="_blank" rel="noopener noreferrer">
                   Random Color Picker
                 </a>
               </h1>
@@ -28,7 +28,7 @@ export default class Loading extends Component {
                   </div>
                   <div className="card-body">
                     <p>
-                      <a href="http://randomcolorpicker.xyz/" target="_blank">RandomColorPicker</a> is a small project I did years ago to enhance my skills as UI developer, it turned out to be a fun. So I decided set up a website for it.
+                      <a href="http://randomcolorpicker.xyz/" target="_blank" rel="noopener noreferrer">RandomColorPicker</a> is a small project I did years ago to enhance my skills as UI developer, it turned out to be a fun. So I decided set up a website for it.
                     </p>
                     <p>
                       It's so simple and intuitive to use. All a person needs to do is hit 'enter' key. There are '+' and '-' signs on the screen to create darker and lighter shades of the current color. You can click on the color to select a custom color.
@@ -46,7 +46,7 @@ export default class Loading extends Component {
                   <div className="card-body">
                     <div className="row">
                       <div className="col-md-12 text-center">
-                        <img src={RandomColorPickerDemo} className="img-fluid" />
+                        <img src={RandomColorPickerDemo} className="img-fluid" alt="" />
                       </div>
                     </div>
                   </div>
