@@ -5,23 +5,36 @@ export default class DayNightToggle extends Component {
   constructor(props) {
     super(props);
 
-    this.toggleDayNightMode = this.toggleDayNightMode.bind(this);
+    this.setMode = this.setMode.bind(this);
   }
 
-  toggleDayNightMode(activateMode) {
-    if( !document.body.classList.contains(activateMode + "-time") ) {
-      document.body.classList = [activateMode + "-time"];
-    }
+  setMode(activateMode) {
+    // if(this.doesNeedsChange()) {
+      var $elem = document.getElementsByClassName("grand-parent-container")[0];
+      localStorage.setItem("currentWebsiteMode", activateMode);
+
+      if (activateMode === "day-time") {
+        $elem.classList.remove("night-time");
+        $elem.classList.add("day-time");
+      } else if (activateMode === "night-time") {
+        $elem.classList.remove("day-time");
+        $elem.classList.add("night-time");
+      }
+    // }
+  }
+
+  doesNeedsChange(futureMode) {
+    return(localStorage.getItem('currentWebsiteMode') === futureMode)
   }
 
   render() {
     return(
       <div className="day-night-mode-toggle">
         <div className="btn-group" role="group">
-          <button type="button" className="btn btn-warning text-white day-btn" onClick={() => this.toggleDayNightMode("day")}>
+          <button type="button" className="btn btn-warning text-white day-btn" onClick={() => this.setMode("day-time")}>
             <FontAwesomeIcon icon={["fas", "sun"]} />
           </button>
-          <button type="button" className="btn btn-secondary text-white night-btn" onClick={() => this.toggleDayNightMode("night")}>
+          <button type="button" className="btn btn-secondary text-white night-btn" onClick={() => this.setMode("night-time")}>
             <FontAwesomeIcon icon={["fas", "moon"]} />
           </button>
         </div>

@@ -27,29 +27,16 @@ const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt.jsx
 library.add(fab, fas);
 
 class App extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      mode: ""
-    }
-
-    this.applyModeClass = this.applyModeClass.bind(this);
-  }
-
-  componentDidMount() {
-    this.applyModeClass();
-  }
-
-  applyModeClass() {
+  getModeClass() {
     var today = new Date().getHours();
-    var modeName = ((today >= 7 && today <= 18) ? "day" : "night") + "-time";
-    document.body.classList.add(modeName);
+    return(((today >= 7 && today <= 18) ? "day" : "night") + "-time");
   }
 
   render() {
+    var currentMode = localStorage.getItem('currentWebsiteMode') || this.getModeClass();
     return (
-      <div id="grand-parent-container">
+      <div className={"grand-parent-container " + currentMode}>
         <BgParallax />
 
         <div className="container-fluid main-container-portfolio">

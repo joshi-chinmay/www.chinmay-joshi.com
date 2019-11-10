@@ -9,11 +9,17 @@ body {
 ::-moz-selection {
   background: #ffb7b7;
 }
-body.day-time {
+.grand-parent-container {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.grand-parent-container.day-time {
   background-color: #f4f4f4;
   color: #585858;
 }
-body.night-time {
+.grand-parent-container.night-time {
   background-color: #0f0f0f;
   color: #f4f4f4;
 }
@@ -22,9 +28,11 @@ body.night-time {
 }
 a {
   color: rgb(153,0,255);
+  transition: all 0.2s ease-in;
 }
 a:hover {
   color: rgba(153,0,255,0.8);
+  transition: all 0.2s ease-in;
 }
 .fixed-top {
   z-index: 5;
