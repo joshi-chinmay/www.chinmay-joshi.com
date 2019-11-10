@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Loadable from 'react-loadable';
