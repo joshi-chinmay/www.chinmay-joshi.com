@@ -1,8 +1,8 @@
 .day-night-mode-toggle {
   position: fixed;
   z-index: 8;
-  top: 45px;
-  right: 45px;
+  top: 35px;
+  right: 35px;
 }
 .day-time {
   .main-container-portfolio {
@@ -12,11 +12,11 @@
 
 .night-time {
   .lead-sm, .lead, .lead-lg {
-    color: #BFEBFF !important;
+    color: #f4f4f4 !important;
   }
 
   .main-container-portfolio {
-    background-color: rgba(255, 255, 255, 0.09);
+    background-color: rgba(255, 255, 255, 0.04);
   }
 
   .img-thumbnail {

@@ -9,7 +9,7 @@ export default class Home extends Component {
         <div className="row pt-5 text-center">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h1 className="lead-lg">Chinmay Joshi</h1>
-            <h5>Frontend Software Engineer | UX Designer</h5>
+            <h5>UI-UX Designer | Frontend Engineer</h5>
           </div>
         </div>
 
@@ -82,12 +82,15 @@ export default class Home extends Component {
               <div className="col-md-12">
                 <a href="/work" className="h6">
                   Work
-                  </a>&nbsp;|&nbsp;
+                </a>&nbsp;|&nbsp;
                 <a href="/about" className="h6">
                   About
                 </a>&nbsp;|&nbsp;
                 <a href="https://dev.to/joshichinmay" className="h6">
                   Blog
+                </a>&nbsp;|&nbsp;
+                <a href="https://docs.google.com/document/d/1sj6oAKVwcL_vtBLjg49lpiBJGLirYxu7CrfjaN2Ttro/edit?usp=sharing" className="h6">
+                  Resume
                 </a>
               </div>
             </div>

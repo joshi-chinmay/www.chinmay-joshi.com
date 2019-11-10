@@ -9,7 +9,7 @@ export default class About extends Component {
             <h1 className="lead-lg">Chinmay Joshi</h1>
             <h5>Frontend Software Engineer | User Experience Designer</h5>
 
-            <a href="mailto:chinmayj93@gmail.com">chinmayj93@gmail.com</a>
+          <a href="mailto:chinmayj93@gmail.com">chinmayj93@gmail.com</a>
             &nbsp;&nbsp;
             <a href="tel:+14156761018">+1-(415)-676-1018</a>
           </div>

@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -35,6 +30,14 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      mode: ""
+    }
+
+    this.applyModeClass = this.applyModeClass.bind(this);
+  }
+
+  componentDidMount() {
     this.applyModeClass();
   }
 
