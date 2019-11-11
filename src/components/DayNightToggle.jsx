@@ -9,7 +9,7 @@ export default class DayNightToggle extends Component {
   }
 
   setMode(activateMode) {
-    // if(this.doesNeedsChange()) {
+    if(this.doesNeedsChange(activateMode)) {
       var $elem = document.getElementsByClassName("grand-parent-container")[0];
       localStorage.setItem("currentWebsiteMode", activateMode);
 
@@ -20,11 +20,11 @@ export default class DayNightToggle extends Component {
         $elem.classList.remove("day-time");
         $elem.classList.add("night-time");
       }
-    // }
+    }
   }
 
   doesNeedsChange(futureMode) {
-    return(localStorage.getItem('currentWebsiteMode') === futureMode)
+    return( !(localStorage.getItem('currentWebsiteMode') === futureMode) );
   }
 
   render() {
