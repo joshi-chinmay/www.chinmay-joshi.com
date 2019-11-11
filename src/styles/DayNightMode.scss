@@ -1,10 +1,10 @@
 .grand-parent-container.day-time {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   color: #585858;
   transition: all 0.4s linear;
 }
 .grand-parent-container.night-time {
-  background-color: #0f0f0f;
+  background-color: #000000;
   color: #f4f4f4;
   transition: all 0.4s linear;
 }
@@ -17,7 +17,10 @@
   transition: all 0.4s linear;
 }
 .day-time {
-
+  .lead-sm, .lead, .lead-lg {
+    color: #585858 !important;
+    transition: all 0.4s linear;
+  }
 }
 
 .night-time {
