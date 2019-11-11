@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CjNoBg from '../images/CJ-no-bg.png';
+import CjNoBg from '../images/CJ- Avatar.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Home extends Component {

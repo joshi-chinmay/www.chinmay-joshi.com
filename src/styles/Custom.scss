@@ -3,36 +3,22 @@ body {
   letter-spacing: 0.098rem;
   line-height: 2.66;
 }
-::selection {
-  background: #ffb7b7;
-}
-::-moz-selection {
-  background: #ffb7b7;
-}
 .grand-parent-container {
   position: absolute;
   overflow: hidden;
   height: 100%;
   width: 100%;
 }
-.grand-parent-container.day-time {
-  background-color: #f4f4f4;
-  color: #585858;
-}
-.grand-parent-container.night-time {
-  background-color: #0f0f0f;
-  color: #f4f4f4;
-}
 ::-webkit-scrollbar {
   display: none;
 }
 a {
-  color: rgb(153,0,255);
-  transition: all 0.2s ease-in;
+  color: rgb(54,189,182);
+  transition: all 0.2s linear;
 }
 a:hover {
-  color: rgba(153,0,255,0.8);
-  transition: all 0.2s ease-in;
+  color: rgba(54,189,182,0.8);
+  transition: all 0.2s linear;
 }
 .fixed-top {
   z-index: 5;
@@ -83,7 +69,7 @@ a:hover {
   -webkit-transition-timing-function: ease-in-out;
 }
 .social-media-icon svg:hover {
-  fill: #4286f4;
+  fill: rgb(54,189,182);
 }
 .lead-lg, .lead, .lead-sm {
   letter-spacing: 0.28rem;

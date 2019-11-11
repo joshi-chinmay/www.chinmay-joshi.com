@@ -18,9 +18,10 @@
   overflow: auto;
   border-radius: 12px;
   z-index: 10;
-  opacity: 0.95;
+  opacity: 1;
   border-radius: 12px;
-  border: 1px solid rgba(153,0,255,0.4);
+  border: 2px solid rgba(54,189,182, 1);
+  transition: border 0.4s linear;
 }
 .night-time {
   .website-menu-toggle svg {
@@ -36,7 +37,7 @@
 }
 .day-time {
   .container-menu {
-    background-color: #c1c4c8;
+    background-color: #fbfbfb;
 
     svg {
       color: #212529;
@@ -58,14 +59,15 @@
     text-align: center;
 
     a {
-      color: rgba(153,0,255,0.7) !important;
+      color: rgba(54,189,182,0.7) !important;
       font-size: 36px;
       margin: 0px 25px;
-      transition: all 0.2s ease-in;
+      transition: all 0.4s linear;
     }
 
     a:hover {
-      color: #9900FF !important;
+      color: rgb(54,189,182) !important;
+      transition: all 0.4s linear;
     }
   }
 
@@ -87,7 +89,7 @@
     text-decoration: line-through;
   }
   a.menu-item-link:hover {
-    transition: 0.6s;
+    transition: all 0.4s linear;
     text-decoration: line-through;
   }
 }
