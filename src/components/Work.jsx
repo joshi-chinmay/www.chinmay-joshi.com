@@ -42,7 +42,7 @@ export default class Work extends Component {
                     Reward-based app I designed for my university, to help students and college staff take extra steps in a day to achieve a healthy lifestyle.
                   </div>
                   <div className="card-footer">
-                    <a href="/work/jeff-run">View Project</a>
+                    <a href="/work/step-up">View Project</a>
                   </div>
                 </div>
               </div>

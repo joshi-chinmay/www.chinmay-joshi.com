@@ -41,7 +41,6 @@ $transition-time: 0.4s;
   // }
 }
 .card:hover {
-  cursor: pointer;
   border: 2px solid $border-hovered-color;
   box-shadow: 2px 2px 0px 2px $border-hovered-color;
 
