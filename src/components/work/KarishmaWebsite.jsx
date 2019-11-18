@@ -39,7 +39,7 @@ export default class KarishmaWebsite extends Component {
                   </div>
                   <div className="card-body">
                     <p className="text-justify">
-                      In order to begin the websit development, I decided to gather more data about Karishma. I wanted her website to be a reflexition of her personality. So my first step was to analyse her likes and dislikes.
+                      In order to begin the website development, I decided to gather more data about Karishma. I wanted her website to be a reflection of her personality. So my first step was to analyse her likes and dislikes.
                       I asked her to take a small personality test so that I can visualize her likes and dislikes.
                     </p>
                     <div className="row">
@@ -57,9 +57,10 @@ export default class KarishmaWebsite extends Component {
                         <li>Designing</li>
                         <li>Caricature artist</li>
                         <li>Doodling</li>
+                        <li>Imaginative and creative</li>
                         <li>Strong Practical Skills</li>
                         <li>Strong logiacl reasoning</li>
-                        <li>Strong sense of duty</li>
+                        <li>Strong sense of duty and diligence</li>
                         <li>Sensitive and warm at heart</li>
                       </ul>
                     </div>

@@ -37,8 +37,8 @@ export default class StepUp extends Component {
                         </p>
                         <p>
                           While designing this product, build - measure - learn cycle as a development.
-                          The application followes HOOKED framework, widely knows for designing habit-forming products.
-                          Hooked Framwork consist of four phases: Trigger -> Action -> Reward -> Investment.
+                          The application follows HOOKED framework, widely known for designing habit-forming products.
+                          Hooked Framework consist of four phases: Trigger -> Action -> Reward -> Investment.
                         </p>
                       </div>
                     </div>
@@ -58,7 +58,7 @@ export default class StepUp extends Component {
                     <div className="row">
                       <div className="col-md-12">
                         <p>
-                          As I following HOOKED Framwork - the first step is to identify a trigger. So for that, I creted a story how the user would get to know about this app.
+                          As I followed HOOKED Framework - the first step is to identify a trigger. So for that, I created a story about how users would get to know about this app.
                         </p>
                       </div>
                     </div>
@@ -98,7 +98,7 @@ export default class StepUp extends Component {
                     <div className="row">
                       <div className="col-md-12">
                         <p>
-                          Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together. If you don’t plan your page flow, you could run into problems when you start to design.
+                          Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together. If you don’t plan your page flow, you could run into problems when you begin with the design process.
                         </p>
                       </div>
                     </div>

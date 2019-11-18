@@ -55,13 +55,13 @@ export default class About extends Component {
               <div className="card-body">
                 <ul>
                   <li>
-                    At present, I am working a 'Graduate Assistant' in Technology Support Services department in Thomas Jefferson University.
+                    Currently, I am working as a 'Graduate Assistant' in Technology Support Services department at Thomas Jefferson University.
                   </li>
                   <li>
-                    Supahands, Kuala lumpur, Malaysia, as a 'Full Stack Software Engineer - ii', (April 2018 - April 2019).
+                    At Supahands, Kuala Lumpur, Malaysia, as a 'Full Stack Software Engineer - ii', (April 2018 - April 2019).
                   </li>
                   <li>
-                    Amura Marketing Technologies, Pune, India, as a 'Full Stack Software Engineer', (december 2015 - april 2018).
+                    At Amura Marketing Technologies, Pune, India, as a 'Full Stack Software Engineer', (december 2015 - april 2018).
                   </li>
                   <li>
                     And before that, I completed my internship at Amura Marketing Technologies, Pune, India, as a 'Software Engineer - Intern'.

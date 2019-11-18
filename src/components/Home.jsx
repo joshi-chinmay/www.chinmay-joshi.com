@@ -63,11 +63,11 @@ export default class Home extends Component {
                 </h5>
 
                 <p>
-                  I am a Software Engineer from India <span role="img" aria-label="india">🇮🇳</span>, currently living in philadelphia, USA <span role="img" aria-label="usa-flag">🇺🇸</span>. I am pursuing MS in User Experience and Interaction Design <span role="img" aria-label="degree">🎓</span> from Thomas Jefferson University (expected graduation Dec 2020).
+                  I am a UI-UX Designer & a Frontend Engineer from India <span role="img" aria-label="india">🇮🇳</span>, currently living in philadelphia, USA <span role="img" aria-label="usa-flag">🇺🇸</span>. I am pursuing MS in User Experience and Interaction Design <span role="img" aria-label="degree">🎓</span> from Thomas Jefferson University (expected graduation Dec 2020).
                 </p>
                 <p>
                   I am an INFJ <span role="img" aria-label="nerd">🤓</span>, perfectionist <span role="img" aria-label="100">💯</span>, technology enthusiast <span role="img" aria-label="comp">👨‍💻</span>,
-                  keen learner <span role="img" aria-label="Snowman">📚</span>, and music enthisiast <span role="img" aria-label="music">🎵</span>. I design products for humankind, which are easy to use, consisting emotion, and helping with everyday tasks.
+                  keen learner <span role="img" aria-label="Snowman">📚</span>, and music enthisiast <span role="img" aria-label="music">🎵</span>. I design products for humankind, which are easy to use, striking an emotional connection, and integral in everyday tasks.
                 </p>
               </div>
             </div>

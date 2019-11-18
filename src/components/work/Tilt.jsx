@@ -97,13 +97,13 @@ export default class Tilt extends Component {
                         The platform is aimed to provide the functionality of creating songs and personalized playlists (publicly or privately).
                       </li>
                       <li>
-                        That will allow the user to add his/her comments and associated feelings to the piece of music or a playlist.
+                        It will allow the user to add his comments and associated feelings to a piece of music or a playlist.
                       </li>
                       <li>
-                        In addition to that, the user will have control over his/her content. He/she can share the particular song or the whole playlist with another user/s. Or he/she can publish his content publicly.
+                        In addition to that, the user will have control over his content. He can share a particular song or the whole playlist with another user/s. He can publish his content publicly as well.
                       </li>
                       <li>
-                        If the content is posted publicly by the user, then anyone can view or comment on the song/playlist.
+                        If the content is posted publicly by the user, then anyone can view or comment on the song/playlist. This in itself can help in building a community of music enthusiasts and connect people globally.
                       </li>
                     </ul>
                   </div>
@@ -151,11 +151,11 @@ export default class Tilt extends Component {
                     <div className="row">
                       <div className="col-md-12">
                         <p>
-                          After moodboarding and considering different aspects of the application, I decided to follow blue-themed color palette for the application.
-                          I want my application to look refreshing and soothing to the eyes. People should be able to use it for long period of time.
+                          After moodboarding and considering different aspects of the application, I chose a blue-themed color palette for the application. The idea was to make it look refreshing and soothing to the eyes.
+                          People should be able to use it for a long period of time.
                         </p>
                         <p>
-                          Gray scale for accent color and red color for errors and warnings. Rest of the application will be the shades of blue and white.
+                          “Gray” scale for accent color and “red” for errors and warnings. Rest of the application will be in shades of blue and white.
                         </p>
                       </div>
                       <div className="col-md-12 text-center">
@@ -173,11 +173,10 @@ export default class Tilt extends Component {
                     <div className="row">
                       <div className="col-md-12">
                         <p>
-                          My application's vision is clear. It is about people wanting to share their feelings associated with the song or the album.
-                          Hence, I wanted a font family which is commonly used and easily readable to everyone. And to that Google's Roboto is the answer.
+                          The application has a clear vision. It is about people wanting to share their feelings associated with a song or an album. Hence, I wanted a font family which is commonly used and easily readable to everyone. Googles Roboto is the answer to it.
                         </p>
                         <p>
-                          Roboto is a mechanical looking font, and largly geometric, which creates a clean and readable pattern on the page.
+                          Roboto is a mechanical looking geometric font, which creates a clean and readable pattern on the page.
                         </p>
                       </div>
                       <div className="col-md-12 text-center">

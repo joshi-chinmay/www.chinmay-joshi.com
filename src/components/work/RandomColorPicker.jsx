@@ -28,13 +28,13 @@ export default class Loading extends Component {
                   </div>
                   <div className="card-body">
                     <p>
-                      <a href="http://randomcolorpicker.xyz/" target="_blank" rel="noopener noreferrer">RandomColorPicker</a> is a small project I did years ago to enhance my skills as UI developer, it turned out to be a fun. So I decided set up a website for it.
+                      <a href="http://randomcolorpicker.xyz/" target="_blank" rel="noopener noreferrer">RandomColorPicker</a> is a small project I did years ago to enhance my skills as a UI developer, it turned out to be fun. So I decided to set up a website for it.
                     </p>
                     <p>
-                      It's so simple and intuitive to use. All a person needs to do is hit 'enter' key. There are '+' and '-' signs on the screen to create darker and lighter shades of the current color. You can click on the color to select a custom color.
+                      It's so simple and intuitive to use. All a person needs to do is hit the 'enter' key. There are '+' and '-' signs on the screen to create darker and lighter shades of the current color. You can click on the color to select a custom color.
                     </p>
                     <p>
-                      And hit double click to copy the color.
+                      And perform double click to copy the color.
                     </p>
                   </div>
                 </div>
