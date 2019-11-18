@@ -1,12 +1,25 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 import HookedMBL from '../../images/work/StepUp/Hooked-BML.png';
-import pitchPoster from '../../images/work/StepUp/Pitch Poster - Storyboarding.jpg';
 import MoScoW from '../../images/work/StepUp/MoSCoW.jpg';
 import siteflow from '../../images/work/StepUp/Sitefllow.png';
 import RiskAnalysis from '../../images/work/StepUp/Risky Assumptions Metrics.jpg';
-import wireframes from '../../images/work/StepUp/wireframes.png';
+import wireframe1 from '../../images/work/StepUp/wireframes/WF set 1.png';
+import wireframe2 from '../../images/work/StepUp/wireframes/WF set 2.png';
 import DesignLoginPage from '../../images/work/StepUp/DesignLoginPage.png';
+
+import SB1 from '../../images/work/StepUp/storyboarding/SB1.jpg';
+import SB2 from '../../images/work/StepUp/storyboarding/SB2.jpg';
+import SB3 from '../../images/work/StepUp/storyboarding/SB3.jpg';
+import SB4 from '../../images/work/StepUp/storyboarding/SB4.jpg';
+import SB5 from '../../images/work/StepUp/storyboarding/SB5.jpg';
+import SB6 from '../../images/work/StepUp/storyboarding/SB6.jpg';
+import SB7 from '../../images/work/StepUp/storyboarding/SB7.jpg';
+import SB8 from '../../images/work/StepUp/storyboarding/SB8.jpg';
+import SB9 from '../../images/work/StepUp/storyboarding/SB9.jpg';
 
 export default class StepUp extends Component {
   render() {
@@ -62,9 +75,43 @@ export default class StepUp extends Component {
                         </p>
                       </div>
                     </div>
-                    <div className="row text-center">
-                      <div className="col-md-12">
-                        <img src={pitchPoster} className="img-fluid w-50" alt="" />
+
+                    <div className="row">
+                      <div className="col-md-4 mb-3">
+                        <img src={SB1} className="img-fluid" alt="" />
+                        <p>S-1 : The user is walking in the college, and sees a campaign going on.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB2} className="img-fluid" alt="" />
+                        <p>S-2 : He likes the concept and decides to sign up.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB3} className="img-fluid" alt="" />
+                        <p>S-3 : Next morning he wakes up early because he wants to go for a run.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB4} className="img-fluid" alt="" />
+                        <p>S-4 : He opens the app and sets up the route using the smart suggestions.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB5} className="img-fluid" alt="" />
+                        <p>S-5 : He goes for a long run.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB6} className="img-fluid" alt="" />
+                        <p>S-6 : He feels very tired. Phew.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB7} className="img-fluid" alt="" />
+                        <p>S-7 : After his successful run he receives the notification saying he just received a 10% off at the canteen.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB8} className="img-fluid" alt="" />
+                        <p>S-8 : He feels very happy and energetic.</p>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <img src={SB9} className="img-fluid" alt="" />
+                        <p>S-9 : That's not it, he reives another notification at 10 PM, motivating him for another run the very next morning.</p>
                       </div>
                     </div>
                   </div>
@@ -104,7 +151,7 @@ export default class StepUp extends Component {
                     </div>
                     <div className="row text-center">
                       <div className="col-md-12">
-                        <img src={siteflow} className="img-fluid" alt="" />
+                        <img src={siteflow} className="img-fluid w-75" alt="" />
                       </div>
                     </div>
                   </div>
@@ -117,7 +164,7 @@ export default class StepUp extends Component {
                   <div className="card-body">
                     <div className="row text-center">
                       <div className="col-md-12">
-                        <img src={RiskAnalysis} className="img-fluid" alt="" />
+                        <img src={RiskAnalysis} className="img-fluid w-75" alt="" />
                       </div>
                     </div>
                   </div>
@@ -128,10 +175,15 @@ export default class StepUp extends Component {
                     Wireframes
                   </div>
                   <div className="card-body">
-                    <div className="row text-center">
-                      <div className="col-md-12">
-                        <img src={wireframes} className="img-fluid" alt="" />
-                      </div>
+                    <div className="bg-white-images">
+                      <Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true}>
+                        <div>
+                          <img src={wireframe1} alt="" className="w-75" />
+                        </div>
+                        <div>
+                          <img src={wireframe2} alt="" className="w-75" />
+                        </div>
+                      </Carousel>
                     </div>
                   </div>
                 </div>
