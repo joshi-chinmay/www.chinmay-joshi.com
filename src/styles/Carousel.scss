@@ -1,3 +1,9 @@
+.bg-white-images {
+  .slide {
+    background-color: white !important;
+    background: white !important;
+  }
+}
 .carousel {
   .slider-wrapper {
     border-radius: 12px;
@@ -6,8 +12,8 @@
     color: #0f0f0f;
   }
   .slide {
-    background-color: transparent !important;
-    background: transparent !important;
+    background-color: transparent;
+    background: transparent;
 
     .legend:hover {
       opacity: 0.5;

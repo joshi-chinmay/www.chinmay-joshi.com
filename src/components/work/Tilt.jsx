@@ -12,6 +12,13 @@ import UserAnalysis5 from "../../images/work/TILT/User Analysis/5.png";
 import UserAnalysis6 from "../../images/work/TILT/User Analysis/6.png";
 import UserAnalysis7 from "../../images/work/TILT/User Analysis/7.png";
 
+import wireframe1 from "../../images/work/TILT/Wireframes/1.png";
+import wireframe2 from "../../images/work/TILT/Wireframes/2.png";
+import wireframe3 from "../../images/work/TILT/Wireframes/3.png";
+import wireframe4 from "../../images/work/TILT/Wireframes/4.png";
+import wireframe5 from "../../images/work/TILT/Wireframes/5.png";
+import wireframe6 from "../../images/work/TILT/Wireframes/6.png";
+
 import colorPalette from "../../images/work/TILT/color-palette.png";
 import RobotoFont from "../../images/work/TILT/Robot.png";
 
@@ -52,29 +59,31 @@ export default class Tilt extends Component {
                     <p>
                       With the help of Google Forms and actual interviews, I came up with user study. This study is very primary, and user personas were not part of the survey. I was hoping to understand what type of music people listen to, and why.
                     </p>
-                    <Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true}>
-                      <div>
-                        <img src={UserAnalysis1} alt="" />
-                      </div>
-                      <div>
-                        <img src={UserAnalysis2} alt="" />
-                      </div>
-                      <div>
-                        <img src={UserAnalysis3} alt="" />
-                      </div>
-                      <div>
-                        <img src={UserAnalysis4} alt="" />
-                      </div>
-                      <div>
-                        <img src={UserAnalysis5} alt="" />
-                      </div>
-                      <div>
-                        <img src={UserAnalysis6} alt="" />
-                      </div>
-                      <div>
-                        <img src={UserAnalysis7} alt="" />
-                      </div>
-                    </Carousel>
+                    <div className="bg-white-images">
+                      <Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true}>
+                        <div>
+                          <img src={UserAnalysis1} alt="" className="w-75" />
+                        </div>
+                        <div>
+                          <img src={UserAnalysis2} alt="" className="w-75" />
+                        </div>
+                        <div>
+                          <img src={UserAnalysis3} alt="" className="w-75" />
+                        </div>
+                        <div>
+                          <img src={UserAnalysis4} alt="" className="w-75" />
+                        </div>
+                        <div>
+                          <img src={UserAnalysis5} alt="" className="w-75" />
+                        </div>
+                        <div>
+                          <img src={UserAnalysis6} alt="" className="w-75" />
+                        </div>
+                        <div>
+                          <img src={UserAnalysis7} alt="" className="w-75" />
+                        </div>
+                      </Carousel>
+                    </div>
                   </div>
                 </div>
 
@@ -107,7 +116,28 @@ export default class Tilt extends Component {
                   <div className="card-body">
                     <div className="row">
                       <div className="col-md-12">
-                        Add this later
+                        <div className="bg-white-images">
+                          <Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true}>
+                            <div>
+                              <img src={wireframe1} alt="" className="w-75" />
+                            </div>
+                            <div>
+                              <img src={wireframe2} alt="" className="w-75" />
+                            </div>
+                            <div>
+                              <img src={wireframe3} alt="" className="w-25" />
+                            </div>
+                            <div>
+                              <img src={wireframe4} alt="" className="w-25" />
+                            </div>
+                            <div>
+                              <img src={wireframe5} alt="" className="w-25" />
+                            </div>
+                            <div>
+                              <img src={wireframe6} alt="" className="w-75" />
+                            </div>
+                          </Carousel>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -127,7 +157,9 @@ export default class Tilt extends Component {
                         <p>
                           Gray scale for accent color and red color for errors and warnings. Rest of the application will be the shades of blue and white.
                         </p>
-                        <img src={colorPalette} className="img-fluid" alt="" />
+                      </div>
+                      <div className="col-md-12 text-center">
+                        <img src={colorPalette} className="img-fluid w-50" alt="" />
                       </div>
                     </div>
                   </div>
@@ -147,8 +179,9 @@ export default class Tilt extends Component {
                         <p>
                           Roboto is a mechanical looking font, and largly geometric, which creates a clean and readable pattern on the page.
                         </p>
-
-                        <img src={RobotoFont} className="img-fluid" alt="" />
+                      </div>
+                      <div className="col-md-12 text-center">
+                        <img src={RobotoFont} className="img-fluid w-50" alt="" />
                       </div>
                     </div>
                   </div>
