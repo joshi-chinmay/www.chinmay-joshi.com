@@ -21,11 +21,21 @@
     color: #585858 !important;
     transition: all 0.4s linear;
   }
+  .btn-day {
+    color: #212529;
+    background-color: #ffc107;
+    transition: 0.4s;
+  }
 }
 
 .night-time {
   .lead-sm, .lead, .lead-lg {
     color: #f4f4f4 !important;
     transition: all 0.4s linear;
+  }
+  .btn-night {
+    color: #212529;
+    background-color: #ffc107;
+    transition: 0.4s;
   }
 }

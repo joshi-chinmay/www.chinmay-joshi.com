@@ -31,10 +31,10 @@ export default class DayNightToggle extends Component {
     return(
       <div className="day-night-mode-toggle">
         <div className="btn-group" role="group">
-          <button type="button" className="btn btn-warning text-white day-btn" onClick={() => this.setMode("day-time")}>
+          <button type="button" className="btn btn-dark btn-day" onClick={() => this.setMode("day-time")}>
             <FontAwesomeIcon icon={["fas", "sun"]} />
           </button>
-          <button type="button" className="btn btn-secondary text-white night-btn" onClick={() => this.setMode("night-time")}>
+          <button type="button" className="btn btn-dark btn-night" onClick={() => this.setMode("night-time")}>
             <FontAwesomeIcon icon={["fas", "moon"]} />
           </button>
         </div>
