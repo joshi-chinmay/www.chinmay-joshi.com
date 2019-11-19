@@ -111,7 +111,7 @@ export default class StepUp extends Component {
                       </div>
                       <div className="col-md-4 mb-3">
                         <img src={SB9} className="img-fluid" alt="" />
-                        <p>S-9 : That's not it, he reives another notification at 10 PM, motivating him for another run the very next morning.</p>
+                        <p>S-9 : That's not it, he receives another notification at 10 PM, motivating him for another run the very next morning.</p>
                       </div>
                     </div>
                   </div>
