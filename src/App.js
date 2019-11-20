@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-
 import Loadable from 'react-loadable';
 import Loading from './components/Loading.jsx';
 
@@ -43,20 +41,16 @@ class App extends Component {
           <Menu />
           <DayNightToggle />
 
-          <TransitionGroup>
-            <CSSTransition key={Math.random()} classNames="fade" timeout={300}>
-              <Switch>
-                <Route exact path={'/'} component={LoadableHome} />
-                <Route exact path={'/home'} component={LoadableWork} />
-                <Route exact path={'/work'} component={LoadableWork} />
-                <Route exact path={'/about'} component={LoadableAbout} />
-                <Route exact path={"/work/tilt"} component={LoadableTilt} />
-                <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
-                <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
-                <Route exact path={"/work/step-up"} component={LoadableStepUp} />
-              </Switch>
-            </CSSTransition>
-          </TransitionGroup>
+          <Switch>
+            <Route exact path={'/'} component={LoadableHome} />
+            <Route exact path={'/home'} component={LoadableWork} />
+            <Route exact path={'/work'} component={LoadableWork} />
+            <Route exact path={'/about'} component={LoadableAbout} />
+            <Route exact path={"/work/tilt"} component={LoadableTilt} />
+            <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+            <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+            <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+          </Switch>
         </div>
       </div>
     );

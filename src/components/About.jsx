@@ -7,7 +7,7 @@ export default class About extends Component {
         <div className="row mt-2">
           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
             <h1 className="lead-lg">Chinmay Joshi</h1>
-            <h5>UI-UX Designer | Frontend Engineer</h5>
+            <span>UI-UX Designer | Frontend Engineer</span>
 
           <a href="mailto:chinmayj93@gmail.com">chinmayj93@gmail.com</a>
             &nbsp;&nbsp;

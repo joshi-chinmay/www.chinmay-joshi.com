@@ -1,6 +1,6 @@
 $border-default-color: rgba(54,189,182, 0.5);
 $border-hovered-color: rgba(54,189,182, 1);
-$transition-time: 0.4s;
+$transition-time: 0.2s;
 
 .card {
   background-color: transparent;
@@ -8,14 +8,15 @@ $transition-time: 0.4s;
   border-radius: 12px;
   box-shadow: 2px 2px 0px 2px $border-default-color;
   transition: $transition-time linear;
-  padding: 0px 15px;
+  padding: 0px 12px;
 
   .card-header, .card-footer {
     background-color: transparent;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     transition: $transition-time;
     border-radius: 0px;
+    padding: 12px;
   }
   .card-header {
     border-bottom: 2px solid $border-default-color;

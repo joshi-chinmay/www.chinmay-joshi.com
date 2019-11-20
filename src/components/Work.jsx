@@ -28,7 +28,7 @@ export default class Work extends Component {
                     Today I listened to - where users can write about the songs they've been listening to, and share it with their friends.
                   </div>
                   <div className="card-footer">
-                    <a href="/work/tilt" className="small">View Project</a>
+                    <a href="/work/tilt" className="small">View</a>
                   </div>
                 </div>
               </div>
@@ -42,7 +42,7 @@ export default class Work extends Component {
                     A reward-based app I designed for my university, to encourage students and college staff take extra steps in a day to achieve a healthy lifestyle.
                   </div>
                   <div className="card-footer">
-                    <a href="/work/step-up" className="small">View Project</a>
+                    <a href="/work/step-up" className="small">View</a>
                     &nbsp;|&nbsp;
                     <a href="https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/" className="small" target="_blank" rel="noopener noreferrer">
                       Prototype <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
@@ -60,7 +60,7 @@ export default class Work extends Component {
                     A small website which creates random colors on the go. Believe me, it's fun! Why don’t you check it out?
                   </div>
                   <div className="card-footer">
-                    <a href="/work/randomcolorpicker" className="small">View Project</a>
+                    <a href="/work/randomcolorpicker" className="small">View</a>
                     &nbsp;|&nbsp;
                     <a href="http://randomcolorpicker.xyz/" className="small" target="_blank" rel="noopener noreferrer">
                       Live <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
@@ -79,7 +79,7 @@ export default class Work extends Component {
                     Pssst.. this was my first website as a UX designer.
                   </div>
                   <div className="card-footer">
-                    <a href="/work/karishma-joshi-website" className="small">View Project</a>
+                    <a href="/work/karishma-joshi-website" className="small">View</a>
                     &nbsp;|&nbsp;
                     <a href="http://www.karishma-joshi.com/" className="small" target="_blank" rel="noopener noreferrer">
                       Live <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
@@ -103,7 +103,7 @@ export default class Work extends Component {
                   </div>
                   <div className="card-footer">
                     <a href="https://sell.do" className="small" target="_blank" rel="noopener noreferrer">
-                      View Project <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                      view <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
                     </a>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default class Work extends Component {
                   </div>
                   <div className="card-footer">
                     <a href="https://www.supahands.com/task-console" className="small" target="_blank" rel="noopener noreferrer">
-                      View Project <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                      view <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
                     </a>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default class Work extends Component {
                   </div>
                   <div className="card-footer">
                     <a href="https://www.supahands.com/image-annotation" className="small" target="_blank" rel="noopener noreferrer">
-                      View Project <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                      view <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
                     </a>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default class Work extends Component {
                   </div>
                   <div className="card-footer">
                     <a href="https://www.supahands.com/" className="small" target="_blank" rel="noopener noreferrer">
-                      View Project <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                      view <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
                     </a>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ export default class Work extends Component {
                   </div>
                   <div className="card-footer">
                     <a href="https://www.supaagents.com/" className="small" target="_blank" rel="noopener noreferrer">
-                      View Project <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+                      view <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
                     </a>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 body {
-  font-family: monospace;
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
   letter-spacing: 0.098rem;
-  line-height: 2.66;
+  line-height: 1.86;
 }
 .grand-parent-container {
   position: absolute;
@@ -11,6 +11,9 @@ body {
 }
 ::-webkit-scrollbar {
   display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 a {
   color: rgb(54,189,182);

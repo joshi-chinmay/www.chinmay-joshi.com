@@ -10,17 +10,18 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.2.1",
     "i": "^0.3.6",
-    "jquery": "^3.3.1",
-    "node-sass": "^4.11.0",
-    "npm": "^6.5.0",
     "popper.js": "^1.14.6",
     "react": "^16.11.0",
     "react-dom": "^16.7.0",
     "react-loadable": "^5.5.0",
     "react-responsive-carousel": "^3.1.45",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "react-transition-group": "^4.3.0"
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "npm": "^6.5.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
