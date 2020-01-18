@@ -1,80 +1,59 @@
 body {
-  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-  letter-spacing: 0.098rem;
-  line-height: 1.86;
-}
-.grand-parent-container {
-  position: absolute;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-::-webkit-scrollbar {
-  display: none;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.12rem;
+  line-height: 2.16;
+  font-weight: 300;
+  color: #1f1f1f;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-weight: 300;
 }
 a {
-  color: rgb(54,189,182);
   transition: all 0.2s linear;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+  color: #fe9f00;
 }
 a:hover {
-  color: rgba(54,189,182,0.8);
-  transition: all 0.2s linear;
+  color: rgba(255, 198, 102, 0.5);
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
 }
-.fixed-top {
-  z-index: 5;
-}
-.main-container-portfolio {
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  top: 15px;
-  bottom: 15px;
-  width: auto;
-  margin: auto;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: auto;
-  border-radius: 12px;
-  background-color: rgba(128, 128, 128, 0.1);
-}
-.img-thumbnail {
-  position: relative;
-  border: none;
-  border-radius: 100%;
-  height: 200px;
-  padding: 0px;
-  background-color: transparent;
-  animation: MoveUpDown 2s linear infinite;
-}
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
+.bg-primary-grad {
+  background-image: linear-gradient(to right, #77A4EE, #4a86e8);
+
+  a.text-warning:hover {
+    color: #fe9f00 !important;
   }
-  50% {
-    bottom: 10px;
-  }
+}
+.text-primary {
+  color: #4a86e8 !important;
+}
+.text-warning {
+  color: #fe9f00 !important;
+}
+.lead-sm {
+  font-size: 0.9rem;
+}
+.lead-lg {
+  font-size: 4.2rem;
+  font-weight: 900;
+  text-decoration: underline;
 }
 .text-decoration-none {
   text-decoration: none;
 }
-.social-media-icon {
-  display: inline-block;
-  margin: 8px;
+.main-page-container {
+  margin-top: 120px;
 }
-.social-media-icon svg {
-  font-size: 1.56rem;
-  transition: 120ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 120ms;
-  -webkit-transition-timing-function: ease-in-out;
+
+.centered-cj-logo {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin-top: 120px;
 }
-.social-media-icon svg:hover {
-  fill: rgb(54,189,182);
-}
-.lead-lg, .lead, .lead-sm {
-  letter-spacing: 0.28rem;
-  color: #1f1a1a;
+.img-border {
+  border: 8px solid #fe9f00;
 }

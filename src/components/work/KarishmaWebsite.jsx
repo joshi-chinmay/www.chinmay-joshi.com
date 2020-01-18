@@ -22,7 +22,7 @@ export default class KarishmaWebsite extends Component {
             <div className="row">
               <div className="col-sm-12 offset-md-2 offset-lg-2 col-md-8 col-lg-8">
 
-                <div id="vision" className="card">
+                <div id="vision">
                   <div className="card-header">
                     Vision
                   </div>
@@ -33,7 +33,7 @@ export default class KarishmaWebsite extends Component {
                   </div>
                 </div>
 
-                <div id="infoAndMindmapping" className="card mt-5">
+                <div id="infoAndMindmapping">
                   <div className="card-header">
                     Information Gathering & Mindmapping
                   </div>
@@ -67,7 +67,7 @@ export default class KarishmaWebsite extends Component {
                   </div>
                 </div>
 
-                <div id="tech" className="card mt-5 mb-5">
+                <div id="tech">
                   <div className="card-header">
                     Tech
                   </div>

@@ -1,0 +1,37 @@
+.loading-page-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 198, 102, 0.2);
+  z-index: 100000;
+  -webkit-animation: loader 1s;
+  -moz-animation: loader 1s;
+  -ms-animation: loader 1s;
+  -o-animation: loader 1s;
+  animation: loader 1s;
+}
+
+@keyframes loader {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@-moz-keyframes loader {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@-webkit-keyframes loader {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@-ms-keyframes loader {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@-o-keyframes loader {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

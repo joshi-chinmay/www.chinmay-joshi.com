@@ -2,11 +2,13 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 @import 'Custom';
+@import 'LoadingOverlay';
+@import 'LogoContainer';
+@import 'SocialMediaIcons';
+@import 'Home';
 @import 'Responsive';
 @import 'Buttons';
 @import 'Cards';
-@import 'DayNightMode';
-@import 'BgParallax';
 @import 'Menu';
 @import 'Work';
 @import 'Carousel';

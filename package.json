@@ -19,9 +19,9 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
-    "npm": "^6.5.0",
     "jquery": "^3.3.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "npm": "^6.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

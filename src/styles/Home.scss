@@ -1,0 +1,15 @@
+.page-layout {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border: 12px solid #ffc666;
+}
+.layout-50 {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}

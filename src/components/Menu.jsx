@@ -7,9 +7,7 @@ export default class Menu extends Component {
 
     this.state = {
       menu: false
-    };
-
-    this.toggleMenu = this.toggleMenu.bind(this);
+    }
   }
 
   toggleMenu() {
@@ -20,28 +18,18 @@ export default class Menu extends Component {
     return(
       <div>
         <div className="website-menu-toggle">
-          <button type="button" className="btn menu-activator" onClick={() => this.toggleMenu()}>
-            <FontAwesomeIcon icon={["fas", "bars"]} />
+          <button type="button" className="btn text-warning" onClick={this.toggleMenu.bind(this)}>
+            <FontAwesomeIcon icon={["fas", "bars"]} className="h3" />
           </button>
         </div>
 
-        <div className={"container-menu " + (this.state.menu ? "d-block" : "d-none") }>
-          <div className="menu-deactivator-container" onClick={() => this.toggleMenu()}>
-            <button type="button" className="btn menu-deactivator">
-              <FontAwesomeIcon icon={["fas", "times"]} />
-            </button>
-          </div>
-
-          <div className="centered-menu-items">
-            <a href="/">Home</a>
-            <br />
-            <a href="/work">Work</a>
-            <br />
-            <a href="/about">About</a>
-            <br />
-            <a href="https://dev.to/joshichinmay">Blog</a>
-            <br />
-          </div>
+        <div className={"container-menu " + (this.state.menu ? "active" : "")  + " text-center"}>
+          <a href="/">Home</a>
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="https://docs.google.com/document/d/1CErNIzLz8Cms1xqrsQFWmVxmi4WXrT1qEAnngPIcWEM/edit?usp=sharing">Resume</a>
+          <a href="https://dev.to/joshichinmay">Blog</a>
+          <a onClick={this.toggleMenu.bind(this)} href="#" className="text-decoration-none">&times;</a>
         </div>
       </div>
     );

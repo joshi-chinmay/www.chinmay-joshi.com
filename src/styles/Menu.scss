@@ -1,95 +1,41 @@
 .website-menu-toggle {
   position: fixed;
+  right: 60px;
+  top: 60px;
   z-index: 6;
-  top: 29px;
-  left: 17px;
 }
 .container-menu {
   position: fixed;
-  left: 15px;
-  right: 15px;
-  top: 15px;
-  bottom: 15px;
-  margin: auto;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: auto;
-  border-radius: 12px;
+  top: -200px;
+  left: 0;
+  right: 0;
   z-index: 10;
-  opacity: 1;
-  border-radius: 12px;
-  border: 2px solid rgba(54,189,182, 1);
-  transition: border 0.4s linear;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  line-height: 180px;
+  transition-property: all;
+  transition-duration: 0.6s;
 }
-.night-time {
-  .website-menu-toggle svg {
-    color: #f4f4f4;
-  }
-  .container-menu {
-    background-color: #101010;
-
-    svg {
-      color: #f4f4f4;
-    }
-  }
+.container-menu.active {
+  top: 0px;
+  transition-property: all;
+  transition-duration: 0.6s;
 }
-.day-time {
-  .container-menu {
-    background-color: #fbfbfb;
-
-    svg {
-      color: #212529;
-    }
-  }
-}
-
 .container-menu {
-  .menu-deactivator-container {
-    position: absolute;
+  a {
+    color: #fe9f00;
+    font-size: 1.4rem;
+    margin: 0px 25px;
+    transition: all 0.2s linear;
   }
 
-  .centered-menu-items {
-    position: relative;
-    float: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    a {
-      color: rgba(54,189,182,0.7) !important;
-      font-size: 36px;
-      margin: 0px 25px;
-      transition: all 0.4s linear;
-    }
-
-    a:hover {
-      color: rgb(54,189,182) !important;
-      transition: all 0.4s linear;
-    }
+  a:hover {
+    color: rgba(255, 198, 102, 0.5);
+    transition: all 0.2s linear;
   }
 
   svg {
     margin-top: 8px;
     height: 32px;
-  }
-}
-
-.floating-menu {
-  position: fixed;
-  width: 16%;
-
-  a.menu-item-link {
-    font-size: 16px;
-  }
-
-  a.menu-item-link:hover, a.menu-item-link.active {
-    text-decoration: line-through;
-  }
-  a.menu-item-link:hover {
-    transition: all 0.4s linear;
-    text-decoration: line-through;
   }
 }

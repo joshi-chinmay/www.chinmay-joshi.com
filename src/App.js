@@ -8,11 +8,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
-import BgParallax from './components/BgParallax.jsx';
-import DayNightToggle from './components/DayNightToggle.jsx';
 import Menu from './components/Menu.jsx';
 
 import "./styles/Styles.scss";
+
+import NavLogo from './components/util/NavLogo.jsx';
 
 const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
 const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
@@ -26,24 +26,16 @@ library.add(fab, fas);
 
 class App extends Component {
 
-  getModeClass() {
-    var today = new Date().getHours();
-    return(((today >= 7 && today <= 18) ? "day" : "night") + "-time");
-  }
-
   render() {
-    var currentMode = localStorage.getItem('currentWebsiteMode') || this.getModeClass();
     return (
-      <div className={"grand-parent-container " + currentMode}>
-        <BgParallax />
+      <div className="grand-parent-container">
+        <NavLogo />
+        <Menu />
 
         <div className="container-fluid main-container-portfolio">
-          <Menu />
-          <DayNightToggle />
-
           <Switch>
             <Route exact path={'/'} component={LoadableHome} />
-            <Route exact path={'/home'} component={LoadableWork} />
+            <Route exact path={'/home'} component={LoadableHome} />
             <Route exact path={'/work'} component={LoadableWork} />
             <Route exact path={'/about'} component={LoadableAbout} />
             <Route exact path={"/work/tilt"} component={LoadableTilt} />
