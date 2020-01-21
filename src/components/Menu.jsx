@@ -27,7 +27,7 @@ export default class Menu extends Component {
           <a href="/">Home</a>
           <a href="/work">Work</a>
           <a href="/about">About</a>
-          <a href="https://docs.google.com/document/d/1CErNIzLz8Cms1xqrsQFWmVxmi4WXrT1qEAnngPIcWEM/edit?usp=sharing">Resume</a>
+          <a href="/resume">Resume</a>
           <a href="https://dev.to/joshichinmay">Blog</a>
           <a onClick={this.toggleMenu.bind(this)} href="#" className="text-decoration-none">&times;</a>
         </div>
