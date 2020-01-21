@@ -87,3 +87,19 @@ a:hover {
 .display-picture-border {
   border: 8px solid #fe9f00;
 }
+
+
+@media (max-width: 991.98px) {
+  .lead-lg {
+    font-size: 2.6rem;
+  }
+  .lead {
+    font-size: 0.9rem;
+  }
+  span, p {
+    font-size: 0.76rem;
+  }
+  .main-page-container {
+    margin-top: 100px;
+  }
+}

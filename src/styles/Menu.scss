@@ -18,7 +18,7 @@
   top: -200px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 12;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
   line-height: 180px;
@@ -54,4 +54,24 @@
   top: 192px;
   right: 38px;
   text-align: right;
+}
+
+@media (max-width: 991.98px) {
+  .website-menu-toggle {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 11;
+  }
+  .container-menu {
+    top: -410px;
+    padding: 45px 0px;
+    line-height: 52px;
+  }
+  .container-menu a {
+    display: block;
+  }
+  .fixed-page-navigator {
+    display: none;
+  }
 }

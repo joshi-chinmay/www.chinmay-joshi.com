@@ -93,42 +93,42 @@ export default class StepUp extends Component {
                       <br />
                       <small>The user is walking in the college, and sees a campaign going on.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB2} className="img-fluid w-25" alt="" />
                       <br />
                       <small>He likes the concept and decides to sign up.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left border-right p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB3} className="img-fluid w-25" alt="" />
                       <br />
                       <small>Next morning he wakes up early because he wants to go for a run.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB4} className="img-fluid w-25" alt="" />
                       <br />
                       <small>He opens the app and sets up the route using the smart suggestions.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB5} className="img-fluid w-25" alt="" />
                       <br />
                       <small>He goes for a long run.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left border-right p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB6} className="img-fluid w-25" alt="" />
                       <br />
                       <small>He feels very tired. Phew.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left border-bottom p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB7} className="img-fluid w-25" alt="" />
                       <br />
                       <small>After his successful run he receives the notification saying he just received a 10% off at the canteen.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left border-bottom p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB8} className="img-fluid w-25" alt="" />
                       <br />
                       <small>He feels very happy and energetic.</small>
                     </div>
-                    <div className="col-md-4 border-top border-left border-right border-bottom p-2">
+                    <div className="col-md-4 p-2">
                       <img src={SB9} className="img-fluid w-25" alt="" />
                       <br />
                       <small>That's not it, he receives another notification at 10 PM, motivating him for another run the very next morning.</small>

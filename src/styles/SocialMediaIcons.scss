@@ -29,3 +29,17 @@
     color: #fe9f00;
   }
 }
+
+@media (max-width: 991.98px) {
+  .social-media-icons-container {
+    position: relative;
+    margin-top: 57px;
+  }
+
+  .social-media-icon {
+    margin: 0px 10px;
+  }
+  .social-media-icon svg:hover {
+    font-size: 1.80rem;
+  }
+}

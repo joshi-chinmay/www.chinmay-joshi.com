@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Home extends Component {
   render() {
@@ -17,11 +18,11 @@ export default class Home extends Component {
               </h5>
 
               <a href="mailto:chinmayj93@gmail.com" className="text-lowercase text-warning">
-                chinmayj93@gmail.com
+                <FontAwesomeIcon icon={["far", "envelope"]} />  chinmayj93@gmail.com
               </a>
-              &nbsp;&nbsp;
+              <br />
               <a href="tel:+14156761018" className="text-warning">
-                +1-(415)-676-1018
+                <FontAwesomeIcon icon={["fas", "phone-alt"]} />  +1-(415)-676-1018
               </a>
             </div>
           </div>

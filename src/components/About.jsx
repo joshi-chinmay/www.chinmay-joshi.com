@@ -25,10 +25,14 @@ export default class About extends Component {
 
             <div className="row">
               <div className="col-xs-12 col-md-12 mt-2">
-                Creative Stack - Adobe Illustrator, Adobe XD, Figma, inVision, Sketch, Adobe Lightroom, sticky notes & sharpie
+                <span>
+                  <b>Creative Stack</b> - Adobe Illustrator, Adobe XD, Figma, inVision, Sketch, Adobe Lightroom, sticky notes & sharpie
+                </span>
               </div>
               <div className="col-xs-12 col-md-12 mt-2">
-                Technology Stack - HTML, CSS, JavaScript, React.JS, Backbone.JS, Ember.JS, Ruby on Rails, AWS Cloud, Serverless, SQL, MongoDB, Git, Jira, Trello
+                <span>
+                  <b>Technology Stack</b> - HTML, CSS, JavaScript, React.JS, Backbone.JS, Ember.JS, Ruby on Rails, AWS Cloud, Serverless, SQL, MongoDB, Git, Jira, Trello
+                </span>
               </div>
             </div>
 
