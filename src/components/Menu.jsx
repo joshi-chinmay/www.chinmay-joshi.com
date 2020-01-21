@@ -18,7 +18,7 @@ export default class Menu extends Component {
     return(
       <div>
         <div className="website-menu-toggle">
-          <button type="button" className="btn text-warning" onClick={this.toggleMenu.bind(this)}>
+          <button type="button" className="btn text-warning menu-toggle-button" onClick={this.toggleMenu.bind(this)}>
             <FontAwesomeIcon icon={["fas", "bars"]} className="h3" />
           </button>
         </div>

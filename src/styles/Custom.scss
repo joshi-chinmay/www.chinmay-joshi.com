@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Rubik', sans-serif;
   letter-spacing: 0.12rem;
@@ -7,6 +10,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
+  transition: all 5s ease;
 }
 a {
   transition: all 0.2s linear;
@@ -44,7 +48,7 @@ a:hover {
   text-decoration: none;
 }
 .main-page-container {
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
 .centered-cj-logo {
@@ -56,4 +60,38 @@ a:hover {
 }
 .img-border {
   border: 8px solid #fe9f00;
+}
+
+
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.border, .border-top, .border-left, .border-botttom, .border-right {
+  border-color: rgba(255, 198, 102, 0.5) !important;
+}
+.scroll-overlay {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(to bottom, transparent, #f1f1f1);
+  height: 18%;
+  width: 100%;
+  pointer-events: none;
 }

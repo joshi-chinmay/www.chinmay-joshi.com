@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import Loadable from 'react-loadable';
 import Loading from './components/Loading.jsx';
@@ -7,6 +8,7 @@ import Loading from './components/Loading.jsx';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 
 import Menu from './components/Menu.jsx';
 
@@ -22,7 +24,7 @@ const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/wo
 const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker.jsx'), loading: Loading});
 const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt.jsx'), loading: Loading});
 
-library.add(fab, fas);
+library.add(fab, fas, far);
 
 class App extends Component {
 
@@ -32,18 +34,24 @@ class App extends Component {
         <NavLogo />
         <Menu />
 
-        <div className="container-fluid main-container-portfolio">
-          <Switch>
-            <Route exact path={'/'} component={LoadableHome} />
-            <Route exact path={'/home'} component={LoadableHome} />
-            <Route exact path={'/work'} component={LoadableWork} />
-            <Route exact path={'/about'} component={LoadableAbout} />
-            <Route exact path={"/work/tilt"} component={LoadableTilt} />
-            <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
-            <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
-            <Route exact path={"/work/step-up"} component={LoadableStepUp} />
-          </Switch>
-        </div>
+        <Route render={({ location }) => (
+          <TransitionGroup>
+            <CSSTransition key={location.key} classNames="fade" timeout={300}>
+              <div className="container-fluid main-container-portfolio">
+                <Switch location={location}>
+                  <Route exact path={'/'} component={LoadableHome} />
+                  <Route exact path={'/home'} component={LoadableHome} />
+                  <Route exact path={'/work'} component={LoadableWork} />
+                  <Route exact path={'/about'} component={LoadableAbout} />
+                  <Route exact path={"/work/tilt"} component={LoadableTilt} />
+                  <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+                  <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+                  <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+                </Switch>
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
+        )}/>
       </div>
     );
   }

@@ -3,6 +3,15 @@
   right: 60px;
   top: 60px;
   z-index: 6;
+
+  button.menu-toggle-button {
+    box-shadow: none !important;
+    padding: 0px !important;
+  }
+  .menu-toggle-button:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
 }
 .container-menu {
   position: fixed;
@@ -38,4 +47,11 @@
     margin-top: 8px;
     height: 32px;
   }
+}
+
+.fixed-page-navigator {
+  position: fixed;
+  top: 192px;
+  right: 38px;
+  text-align: right;
 }
