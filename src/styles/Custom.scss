@@ -6,11 +6,15 @@ body {
   letter-spacing: 0.12rem;
   line-height: 2.16;
   font-weight: 300;
-  color: #1f1f1f;
+  color: #404040;
+  background-color: #ffffff;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
-  transition: all 5s ease;
+  color: #666666;
+}
+span, p {
+  color: #6a6a6a;
 }
 a {
   transition: all 0.2s linear;
@@ -21,10 +25,11 @@ a {
 a:hover {
   color: rgba(255, 198, 102, 0.5);
   text-decoration: underline;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s linear;
 }
 .bg-primary-grad {
   background-image: linear-gradient(to right, #77A4EE, #4a86e8);
+  transition: all 0.2s ease-in;
 
   a.text-warning:hover {
     color: #fe9f00 !important;
@@ -51,36 +56,19 @@ a:hover {
   margin-top: 140px;
 }
 
-.centered-cj-logo {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  margin-top: 120px;
-}
-.img-border {
-  border: 8px solid #fe9f00;
-}
-
-
-
-.fade-enter {
+.fade-appear, .fade-enter {
   opacity: 0;
-  transform: scale(1.1);
 }
-.fade-enter.fade-enter-active {
+.fade-appear-active, .fade-enter-active {
+  transition: opacity .6s ease-out;
   opacity: 1;
-  transform: scale(1);
-  transition: opacity 300ms, transform 300ms;
 }
 .fade-exit {
+  transition: opacity .2s ease-out;
   opacity: 1;
-  transform: scale(1);
 }
 .fade-exit-active {
   opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
 }
 
 .border, .border-top, .border-left, .border-botttom, .border-right {
@@ -91,7 +79,11 @@ a:hover {
   bottom: 0px;
   left: 0px;
   background: linear-gradient(to bottom, transparent, #f1f1f1);
-  height: 18%;
+  height: 14%;
   width: 100%;
   pointer-events: none;
+}
+
+.display-picture-border {
+  border: 8px solid #fe9f00;
 }

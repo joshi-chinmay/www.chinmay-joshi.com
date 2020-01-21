@@ -9,7 +9,7 @@ export default class About extends Component {
         <div className="row">
           <div className="col-xs-12 col-md-5">
             <div className="mt-5">
-              <img src={PP} className="w-75 mx-auto my-auto d-block img-border" />
+              <img src={PP} className="w-75 mx-auto my-auto d-block display-picture-border display-picture" />
             </div>
           </div>
           <div className="col-xs-12 col-md-6 mt-5">

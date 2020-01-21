@@ -30,7 +30,7 @@ export default class KarishmaWebsite extends Component {
               </div>
               <div className="col-sm-12 col-md-8 pl-5">
                 <span>
-                  <a href="www.karishma-joshi.com" target="_blank" rel="noopener noreferrer" className="text-capitalize">Karishma Joshi</a>, is a dear friend of mine who asked me to design a website for her as she was preparing herself for internship hunt. She wished to showcase her portfolio online and in a handbook. Hence we kickstarted this project by initiating a discussion about basics of web development and the information I'd need from her.
+                  <a href="http://www.karishma-joshi.com" target="_blank" rel="noopener noreferrer" className="text-capitalize">Karishma Joshi</a>, is a dear friend of mine who asked me to design a website for her as she was preparing herself for internship hunt. She wished to showcase her portfolio online and in a handbook. Hence we kickstarted this project by initiating a discussion about basics of web development and the information I'd need from her.
                 </span>
               </div>
             </div>

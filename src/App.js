@@ -30,14 +30,17 @@ library.add(fab, fas, far);
 class App extends Component {
 
   render() {
+    const currentKey = window.location.pathname.split('/')[1] || '/';
+    const timeout = { enter: 400, exit: 300 };
+
     return (
       <div className="grand-parent-container">
         <NavLogo />
         <Menu />
 
         <Route render={({ location }) => (
-          <TransitionGroup>
-            <CSSTransition key={location.key} classNames="fade" timeout={300}>
+          <TransitionGroup component="main" className="page-main">
+            <CSSTransition key={currentKey} classNames="fade" timeout={timeout} appear>
               <div className="container-fluid main-container-portfolio">
                 <Switch location={location}>
                   <Route exact path={'/'} component={LoadableHome} />
