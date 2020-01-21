@@ -3,8 +3,6 @@ import ResumePDF from '../docs/Resume.pdf';
 
 export default class Resume extends Component {
   render() {
-    const { pageNumber, numPages } = this.state;
-
     return(
       <div className="main-page-container">
         <div className="row">
