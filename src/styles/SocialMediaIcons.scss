@@ -1,0 +1,45 @@
+.social-media-icons-container {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+
+  a {
+    color: #f1f1f1;
+  }
+}
+
+.social-media-icon {
+  margin: 0px 18px;
+}
+.social-media-icon svg {
+  font-size: 1.80rem;
+  transition: 120ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 120ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+.social-media-icon svg:hover {
+  font-size: 3.5rem;
+  color: #fe9f00;
+  transition: 220ms;
+}
+
+.about-page {
+  .social-media-icon svg {
+    color: #fe9f00;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .social-media-icons-container {
+    position: relative;
+    margin-top: 57px;
+  }
+
+  .social-media-icon {
+    margin: 0px 10px;
+  }
+  .social-media-icon svg:hover {
+    font-size: 1.80rem;
+  }
+}

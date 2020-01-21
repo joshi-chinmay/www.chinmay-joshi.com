@@ -1,54 +1,35 @@
-$border-default-color: rgba(54,189,182, 0.5);
-$border-hovered-color: rgba(54,189,182, 1);
+$border-default-color: rgba(255, 198, 102, 0.5);
+$border-hovered-color: rgba(255, 198, 102, 1);
 $transition-time: 0.2s;
+
+.card-columns .card {
+  margin-bottom: 1.5rem;
+}
 
 .card {
   background-color: transparent;
-  border: 2px solid $border-default-color;
-  border-radius: 12px;
-  box-shadow: 2px 2px 0px 2px $border-default-color;
+  border: 1px solid $border-default-color;
+  border-radius: 16px;
   transition: $transition-time linear;
-  padding: 0px 12px;
 
   .card-header, .card-footer {
     background-color: transparent;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     transition: $transition-time;
     border-radius: 0px;
-    padding: 12px;
   }
   .card-header {
-    border-bottom: 2px solid $border-default-color;
+    border-bottom: none;
+    font-weight: 400;
   }
   .card-footer {
-    border-top: 2px solid $border-default-color;
+    border-top: none;
   }
-
   .card-body {
-    transition: $transition-time;
+    padding: 0 1.25rem;
+    font-weight: 300;
   }
-
-  img.img-fluid {
-    border: 2px solid $border-default-color;
-    border-radius: 12px;
-  }
-
-  // a {
-  //   color: rgba(64, 224, 208, 0.8);
-  // }
-  // a:hover {
-  //   color: rgba(64, 224, 208, 1);
-  // }
 }
 .card:hover {
-  border: 2px solid $border-hovered-color;
-  box-shadow: 2px 2px 0px 2px $border-hovered-color;
-
-  .card-header {
-    border-bottom: 2px solid $border-hovered-color;
-  }
-  .card-footer {
-    border-top: 2px solid $border-hovered-color;
-  }
+  border: 1px solid $border-hovered-color;
 }

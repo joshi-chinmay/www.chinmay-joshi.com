@@ -1,72 +1,44 @@
 import React, {Component} from 'react';
+import PP from '../images/pp.jpg';
+import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 
 export default class About extends Component {
   render() {
     return(
-      <div className="main-page-container mt-5">
-        <div className="row mt-2">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h1 className="lead-lg">Chinmay Joshi</h1>
-            <p>UI-UX Designer | Frontend Engineer</p>
-            <a href="mailto:chinmayj93@gmail.com">
-              chinmayj93@gmail.com
-            </a>
-            &nbsp;&nbsp;
-            <a href="tel:+14156761018">
-              +1-(415)-676-1018
-            </a>
-          </div>
-
-          <div className="col-md-12 col-lg-6 offset-lg-3 mt-5">
-            <div className="card">
-              <div className="card-header">
-                Tech Stack of my choice
-              </div>
-              <div className="card-body">
-                <ul>
-                  <li>
-                    <b>Creative</b> - Adobe Creative Suite, Pretotyping, Prototyping, wireframing, user stories, and UX flows. Sharpie and sticky notes are my favorite tools as a UX designer!
-                  </li>
-                  <li>
-                    <b>Frontend</b> - HTML, CSS, JavaScript, React.JS, Backbone.JS, Marionette.JS, and Ember.JS.
-                  </li>
-                  <li>
-                    <b>Backend</b> - Ruby, Ruby On Rails, Python, and Node.JS.
-                  </li>
-                  <li>
-                    <b>Databases</b> - MongoDB, MySQL, and DynamoDB.
-                  </li>
-                  <li>
-                    <b>Cloud</b> - Amazon Web Services and Serverless.
-                  </li>
-                  <li>
-                    <b>Project Management Tools</b> - Git, JIRA, Confluence, Trello, CI and CD Tools.
-                  </li>
-                </ul>
-              </div>
+      <div className="main-page-container">
+        <div className="row">
+          <div className="col-xs-12 col-md-5">
+            <div className="mt-5">
+              <img src={PP} className="w-75 mx-auto my-auto d-block display-picture-border display-picture" />
             </div>
           </div>
+          <div className="col-xs-12 col-md-6 mt-5">
+            <h4 className="mt-1">
+              Hi, I am Chinmay...
+            </h4>
+            <p className="mt-4">
+              I design memorable, viable, usable and scalable experience by amalgamating principles of user experience design, cognitive psychology and interaction design. I used to be a full-stack software engineer, but nowadays I am trying to be a UI/UX designer. I love caffeine in general. Tea and coffee depends on the mood. I drink 4-5 cups of coffee/tea in a day. I like to travel to different places.
+              Being an introvert you will not find much social media presence.
+              <br /><br />
+              Let me tell you more about my work stack...
+            </p>
 
-          <div className="col-md-12 col-lg-6 offset-lg-3 mt-5 mb-5">
-            <div className="card">
-              <div className="card-header">
-                Work Experience
+            <div className="row">
+              <div className="col-xs-12 col-md-12 mt-2">
+                <span>
+                  <b>Creative Stack</b> - Adobe Illustrator, Adobe XD, Figma, inVision, Sketch, Adobe Lightroom, sticky notes & sharpie
+                </span>
               </div>
-              <div className="card-body">
-                <ul>
-                  <li>
-                    Currently, I am working as a 'Graduate Assistant' in Technology Support Services department at Thomas Jefferson University.
-                  </li>
-                  <li>
-                    At Supahands, Kuala Lumpur, Malaysia, as a 'Full Stack Software Engineer - ii', (April 2018 - April 2019).
-                  </li>
-                  <li>
-                    At Amura Marketing Technologies, Pune, India, as a 'Full Stack Software Engineer', (december 2015 - april 2018).
-                  </li>
-                  <li>
-                    And before that, I completed my internship at Amura Marketing Technologies, Pune, India, as a 'Software Engineer - Intern'.
-                  </li>
-                </ul>
+              <div className="col-xs-12 col-md-12 mt-2">
+                <span>
+                  <b>Technology Stack</b> - HTML, CSS, JavaScript, React.JS, Backbone.JS, Ember.JS, Ruby on Rails, AWS Cloud, Serverless, SQL, MongoDB, Git, Jira, Trello
+                </span>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="social-media-icons-container about-page text-center col-xs-12 col-md-12">
+                <SocialMediaIcons />
               </div>
             </div>
           </div>

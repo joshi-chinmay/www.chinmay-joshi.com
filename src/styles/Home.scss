@@ -1,0 +1,31 @@
+.page-layout {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border: 9px solid #f4f4f4;
+}
+.layout-50 {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+@media (max-width: 991.98px) {
+  .page-layout {
+    position: relative;
+    margin-top: 120px;
+    border: 0px;
+  }
+  .layout-50 {
+    width: 100%;
+    padding: 15px;
+
+    .px-5 {
+      padding: 1rem !important;
+    }
+  }
+}

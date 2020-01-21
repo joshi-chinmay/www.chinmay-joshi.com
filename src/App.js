@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import Loadable from 'react-loadable';
 import Loading from './components/Loading.jsx';
@@ -7,12 +8,13 @@ import Loading from './components/Loading.jsx';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 
-import BgParallax from './components/BgParallax.jsx';
-import DayNightToggle from './components/DayNightToggle.jsx';
 import Menu from './components/Menu.jsx';
 
 import "./styles/Styles.scss";
+
+import NavLogo from './components/util/NavLogo.jsx';
 
 const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
 const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
@@ -21,37 +23,40 @@ const LoadableStepUp = Loadable({ loader: () => import('./components/work/StepUp
 const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite.jsx'), loading: Loading});
 const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker.jsx'), loading: Loading});
 const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt.jsx'), loading: Loading});
+const LoadableResume = Loadable({ loader: () => import('./components/Resume.jsx'), loading: Loading});
 
-library.add(fab, fas);
+library.add(fab, fas, far);
 
 class App extends Component {
 
-  getModeClass() {
-    var today = new Date().getHours();
-    return(((today >= 7 && today <= 18) ? "day" : "night") + "-time");
-  }
-
   render() {
-    var currentMode = localStorage.getItem('currentWebsiteMode') || this.getModeClass();
+    const currentKey = window.location.pathname.split('/')[1] || '/';
+    const timeout = { enter: 400, exit: 300 };
+
     return (
-      <div className={"grand-parent-container " + currentMode}>
-        <BgParallax />
+      <div className="grand-parent-container">
+        <NavLogo />
+        <Menu />
 
-        <div className="container-fluid main-container-portfolio">
-          <Menu />
-          <DayNightToggle />
-
-          <Switch>
-            <Route exact path={'/'} component={LoadableHome} />
-            <Route exact path={'/home'} component={LoadableWork} />
-            <Route exact path={'/work'} component={LoadableWork} />
-            <Route exact path={'/about'} component={LoadableAbout} />
-            <Route exact path={"/work/tilt"} component={LoadableTilt} />
-            <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
-            <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
-            <Route exact path={"/work/step-up"} component={LoadableStepUp} />
-          </Switch>
-        </div>
+        <Route render={({ location }) => (
+          <TransitionGroup component="main" className="page-main">
+            <CSSTransition key={currentKey} classNames="fade" timeout={timeout} appear>
+              <div className="container-fluid main-container-portfolio">
+                <Switch location={location}>
+                  <Route exact path={'/'} component={LoadableHome} />
+                  <Route exact path={'/home'} component={LoadableHome} />
+                  <Route exact path={'/work'} component={LoadableWork} />
+                  <Route exact path={'/about'} component={LoadableAbout} />
+                  <Route exact path={"/work/tilt"} component={LoadableTilt} />
+                  <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+                  <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+                  <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+                  <Route exact path={"/resume"} component={LoadableResume} />
+                </Switch>
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
+        )}/>
       </div>
     );
   }

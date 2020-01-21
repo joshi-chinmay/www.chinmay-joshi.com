@@ -10,4 +10,46 @@
       border-radius: 12px;
     }
   }
+
+  .work-tab {
+    padding-top: 20px;
+    margin-bottom: 120px;
+  }
+  .work-tab:last-child {
+    margin-bottom: 100px;
+  }
+  .animate-on-hover {
+    .work-title-icon svg {
+      color: #cacaca !important;
+    }
+    .work-title-icon svg, .work-title {
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  .animate-on-hover:hover {
+    .work-title-icon svg, .work-title {
+      color: rgba(255, 198, 102, 1) !important;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .work-tab {
+    padding-top: 0px !important;
+    margin-bottom: 60px !important;
+
+    .pl-5 {
+      padding: 0px !important;
+    }
+    .btn {
+      margin-bottom: 16px;
+    }
+    .border-right {
+      border-right: 0px !important;
+    }
+    .text-right {
+      text-align: center !important;
+    }
+  }
 }
