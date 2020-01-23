@@ -20,22 +20,10 @@ export default class Work extends Component {
             <div className="card-columns">
               <div className="card">
                 <div className="card-header">
-                  TILT
-                </div>
-                <div className="card-body">
-                  Today I listened to - where users can write about the songs they've been listening to, and share it with their friends.
-                </div>
-                <div className="card-footer">
-                  <a href="/work/tilt" className="small">View</a>
-                </div>
-              </div>
-
-              <div className="card">
-                <div className="card-header">
                   StepUp
                 </div>
                 <div className="card-body">
-                  A reward-based app I designed for my university, to encourage students and college staff take extra steps in a day to achieve a healthy lifestyle.
+                  Step up and take your steps to being fit with this reward-based app.
                 </div>
                 <div className="card-footer">
                   <a href="/work/step-up" className="small">View</a>
@@ -48,10 +36,22 @@ export default class Work extends Component {
 
               <div className="card">
                 <div className="card-header">
+                  TILT
+                </div>
+                <div className="card-body">
+                  Today I listened to - Sing, listen, share, connect !!
+                </div>
+                <div className="card-footer">
+                  <a href="/work/tilt" className="small">View</a>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="card-header">
                   Random Color Picker
                 </div>
                 <div className="card-body">
-                  A small website which creates random colors on the go. Believe me, it's fun! Why don’t you check it out?
+                  What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?
                 </div>
                 <div className="card-footer">
                   <a href="/work/randomcolorpicker" className="small">View</a>
@@ -67,7 +67,7 @@ export default class Work extends Component {
                   Karishma's Website
                 </div>
                 <div className="card-body">
-                  Karishma is a Landscape Architect, and a friend of mine. I designed a website to showcase her work and portfolio.
+                  A showcase of work for my Architect friend and more than that my first ever web design! Whoop!!!!
                   <br />
                   Pssst.. this was my first website as a UX designer.
                 </div>
@@ -113,7 +113,7 @@ export default class Work extends Component {
                   Supahands Website
                 </div>
                 <div className="card-body">
-                  Supahands is a company I worked at for a year. I helped them design their website using React.
+                  Supahands is a company I worked at for a year. I designed their website using React.
                 </div>
                 <div className="card-footer">
                   <a href="https://www.supahands.com/" className="small" target="_blank" rel="noopener noreferrer">

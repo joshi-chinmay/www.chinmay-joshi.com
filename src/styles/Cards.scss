@@ -14,9 +14,10 @@ $transition-time: 0.2s;
 
   .card-header, .card-footer {
     background-color: transparent;
-    font-size: 18px;
-    transition: $transition-time;
     border-radius: 0px;
+  }
+  .card-body {
+    font-size: 0.9rem;
   }
   .card-header {
     border-bottom: none;
