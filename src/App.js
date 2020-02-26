@@ -14,8 +14,6 @@ import Menu from './components/Menu.jsx';
 
 import "./styles/Styles.scss";
 
-import NavLogo from './components/util/NavLogo.jsx';
-
 const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
 const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
 const LoadableAbout = Loadable({ loader: () => import('./components/About.jsx'), loading: Loading});
@@ -35,7 +33,6 @@ class App extends Component {
 
     return (
       <div className="grand-parent-container">
-        <NavLogo />
         <Menu />
 
         <Route render={({ location }) => (

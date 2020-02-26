@@ -1,16 +1,15 @@
-$border-default-color: rgba(255, 198, 102, 0.5);
-$border-hovered-color: rgba(255, 198, 102, 1);
-$transition-time: 0.2s;
-
-.card-columns .card {
-  margin-bottom: 1.5rem;
-}
+$card-default-color: rgba(255, 102, 0, 0.5);
+$card-bg-color: rgba(255, 102, 0, 0.04);
+$card-hovered-color: rgba(255, 102, 0, 1);
+$transition-time: 0.4s;
 
 .card {
-  background-color: transparent;
-  border: 1px solid $border-default-color;
+  background-color: $card-bg-color;
+  border: none;
+  box-shadow: 2px 2px 8px rgba(255, 102, 0, 0.2);
   border-radius: 16px;
   transition: $transition-time linear;
+  cursor: default;
 
   .card-header, .card-footer {
     background-color: transparent;
@@ -30,7 +29,27 @@ $transition-time: 0.2s;
     padding: 0 1.25rem;
     font-weight: 300;
   }
+  .card-img-top {
+    height: 240px;
+    padding: 1.25rem;
+    transition: $transition-time linear;
+    filter: grayscale(100%);
+  }
+
+  a {
+    font-weight: bold;
+    color: #6a6a6a;
+  }
 }
+
 .card:hover {
-  border: 1px solid $border-hovered-color;
+  box-shadow: 2px 2px 8px rgba(255, 102, 0, 0.4);
+
+  a {
+    color: $card-hovered-color;
+  }
+  .card-img-top {
+    transition: $transition-time linear;
+    filter: grayscale(10%);
+  }
 }

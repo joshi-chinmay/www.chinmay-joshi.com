@@ -38,7 +38,7 @@ export default class StepUp extends Component {
 
         <div className="work-page-container">
           <div id="vision" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
+            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4">
               <h1 className="work-title-icon">
                 <FontAwesomeIcon icon={["fas", "rocket"]} className="text-muted" />
               </h1>
@@ -71,7 +71,7 @@ export default class StepUp extends Component {
           </div>
 
           <div id="storyboarding" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
+            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4">
               <h1 className="work-title-icon">
                 <FontAwesomeIcon icon={["fas", "comments"]} className="text-muted" />
               </h1>
@@ -88,48 +88,48 @@ export default class StepUp extends Component {
                 </div>
                 <div className="col-md-12 text-center mt-5">
                   <div className="row no-gutters">
-                    <div className="col-md-4 border-top border-left p-2">
-                      <img src={SB1} className="img-fluid w-25" alt="" />
+                    <div className="col-md-4 p-2">
+                      <img src={SB1} className="img-fluid w-50" alt="" />
                       <br />
                       <small>The user is walking in the college, and sees a campaign going on.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB2} className="img-fluid w-25" alt="" />
+                      <img src={SB2} className="img-fluid w-50" alt="" />
                       <br />
                       <small>He likes the concept and decides to sign up.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB3} className="img-fluid w-25" alt="" />
+                      <img src={SB3} className="img-fluid w-50" alt="" />
                       <br />
                       <small>Next morning he wakes up early because he wants to go for a run.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB4} className="img-fluid w-25" alt="" />
+                      <img src={SB4} className="img-fluid w-50" alt="" />
                       <br />
                       <small>He opens the app and sets up the route using the smart suggestions.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB5} className="img-fluid w-25" alt="" />
+                      <img src={SB5} className="img-fluid w-50" alt="" />
                       <br />
                       <small>He goes for a long run.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB6} className="img-fluid w-25" alt="" />
+                      <img src={SB6} className="img-fluid w-50" alt="" />
                       <br />
                       <small>He feels very tired. Phew.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB7} className="img-fluid w-25" alt="" />
+                      <img src={SB7} className="img-fluid w-50" alt="" />
                       <br />
                       <small>After his successful run he receives the notification saying he just received a 10% off at the canteen.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB8} className="img-fluid w-25" alt="" />
+                      <img src={SB8} className="img-fluid w-50" alt="" />
                       <br />
                       <small>He feels very happy and energetic.</small>
                     </div>
                     <div className="col-md-4 p-2">
-                      <img src={SB9} className="img-fluid w-25" alt="" />
+                      <img src={SB9} className="img-fluid w-50" alt="" />
                       <br />
                       <small>That's not it, he receives another notification at 10 PM, motivating him for another run the very next morning.</small>
                     </div>
@@ -140,7 +140,7 @@ export default class StepUp extends Component {
           </div>
 
           <div id="moscowAnalysis" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
+            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4">
               <h1 className="work-title-icon">
                 <FontAwesomeIcon icon={["fas", "chart-bar"]} className="text-muted" />
               </h1>
@@ -163,7 +163,7 @@ export default class StepUp extends Component {
           </div>
 
           <div id="siteflow" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
+            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4">
               <h1 className="work-title-icon">
                 <FontAwesomeIcon icon={["fas", "sitemap"]} className="text-muted" />
               </h1>
@@ -186,7 +186,7 @@ export default class StepUp extends Component {
           </div>
 
           <div id="riskyAssumptions" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
+            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4">
               <h1 className="work-title-icon">
                 <FontAwesomeIcon icon={["fas", "balance-scale-right"]} className="text-muted" />
               </h1>
@@ -204,7 +204,7 @@ export default class StepUp extends Component {
           </div>
 
           <div id="wireframes" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
+            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4">
               <h1 className="work-title-icon">
                 <FontAwesomeIcon icon={["fas", "network-wired"]} className="text-muted" />
               </h1>
@@ -225,7 +225,7 @@ export default class StepUp extends Component {
           </div>
 
           <div id="design" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
+            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4">
               <h1 className="work-title-icon">
                 <FontAwesomeIcon icon={["fas", "mobile-alt"]} className="text-muted" />
               </h1>

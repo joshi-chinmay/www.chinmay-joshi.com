@@ -1,51 +1,10 @@
-.website-menu-toggle {
-  position: fixed;
-  right: 60px;
-  top: 60px;
-  z-index: 6;
-
-  button.menu-toggle-button {
-    box-shadow: none !important;
-    padding: 0px !important;
-  }
-  .menu-toggle-button:hover {
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
-}
 .container-menu {
-  position: fixed;
-  top: -200px;
-  left: 0;
-  right: 0;
-  z-index: 12;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
-  line-height: 180px;
-  transition-property: all;
-  transition-duration: 0.6s;
-}
-.container-menu.active {
-  top: 0px;
-  transition-property: all;
-  transition-duration: 0.6s;
-}
-.container-menu {
-  a {
-    color: #fe9f00;
-    font-size: 1.4rem;
-    margin: 0px 25px;
-    transition: all 0.2s linear;
-  }
+  padding-top: 36px;
 
-  a:hover {
-    color: rgba(255, 198, 102, 0.5);
-    transition: all 0.2s linear;
-  }
-
-  svg {
-    margin-top: 8px;
-    height: 32px;
+  .menu-link {
+    font-weight: bold !important;
+    padding-left: 46px;
+    font-size: 1rem;
   }
 }
 
@@ -57,20 +16,6 @@
 }
 
 @media (max-width: 991.98px) {
-  .website-menu-toggle {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    z-index: 11;
-  }
-  .container-menu {
-    top: -410px;
-    padding: 45px 0px;
-    line-height: 52px;
-  }
-  .container-menu a {
-    display: block;
-  }
   .fixed-page-navigator {
     display: none;
   }
