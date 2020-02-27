@@ -14,10 +14,14 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
   letter-spacing: 0.12rem;
 }
-span, p {
+span {
+  color: #4f4f6d;
+  letter-spacing: 0.04rem;
+  font-size: 0.9rem !important;
+}
+p {
   letter-spacing: 0.09rem;
 }
-
 a {
   letter-spacing: 0.12rem;
   transition: all .2s ease-out;

@@ -21,6 +21,7 @@ import wireframe6 from "../../images/work/TILT/Wireframes/6.png";
 
 import colorPalette from "../../images/work/TILT/color-palette.png";
 import RobotoFont from "../../images/work/TILT/Robot.png";
+import TILTMobilePc from "../../images/gallery/TILT-mobile-pc.png";
 
 import WorkPageNavigator from '../util/WorkPageNavigator.jsx';
 
@@ -28,48 +29,43 @@ export default class Tilt extends Component {
   render() {
     return(
       <div className="main-page-container">
-        <div className="row">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2>
-              TILT - Today I Listened To
-            </h2>
-          </div>
-        </div>
-
         <div className="work-page-container">
-          <div id="vision" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "rocket"]} className="text-muted" />
+
+          <div className="row no-gutters">
+            <div className="col-sm-12">
+              <h1>
+                TILT - Today I Listened To
               </h1>
+            </div>
+            <div className="col-sm-2 heading-separator">
+            </div>
+          </div>
+
+          <div id="vision" className="row work-tab mt-5">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h6 className="work-title">
                 Vision
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5">
+            <div className="col-sm-12 col-md-7">
               <span>
-                The vision behind this idea is to have a platform where a user can create a list of songs he listens to every day.
-                We believe there is an emotion associated with every song. The platform will help the user to add new songs and create playlists,
-                where he can openly or privately talk about his feelings associated with a piece of music.
+                The vision behind this idea is to have a platform where a user can create a list of songs he listens to every day. We believe there is an emotion associated with every song. The platform will help the user to add new songs and create playlists, where he can openly or privately talk about his feelings associated with a piece of music.
               </span>
             </div>
           </div>
 
-          <div id="research" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "users"]} className="text-muted" />
-              </h1>
+          <div id="research" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h6 className="work-title">
                 User Research
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5">
+            <div className="col-sm-12 col-md-7">
               <span>
                 With the help of Google Forms and actual interviews, I came up with user study. This study is very primary, and user personas were not part of the survey. I was hoping to understand what type of music people listen to, and why.
               </span>
               <div className="bg-white-images mt-5">
-                <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
+                <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={5000} infiniteLoop>
                   <div>
                     <img src={UserAnalysis1} alt="" className="w-75" />
                   </div>
@@ -96,16 +92,13 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="wireframes" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "network-wired"]} className="text-muted" />
-              </h1>
+          <div id="wireframes" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h6 className="work-title">
                 Wireframes
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5">
+            <div className="col-sm-12 col-md-7">
               <div className="bg-white-images">
                 <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                   <div>
@@ -131,59 +124,58 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="colorPalette" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "palette"]} className="text-muted" />
-              </h1>
+          <div id="colorPalette" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h6 className="work-title">
                 Color Palette
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5">
-              <div className="row">
-                <div className="col-md-12">
-                  <span>
-                    After moodboarding and considering different aspects of the application, I chose a blue-themed color palette for the application. The idea was to make it look refreshing and soothing to the eyes.
-                    People should be able to use it for a long period of time.
-                    <br />
-                    “Gray” scale for accent color and “red” for errors and warnings. Rest of the application will be in shades of blue and white.
-                  </span>
-                </div>
-                <div className="col-md-12 text-center mt-5">
-                  <img src={colorPalette} className="img-fluid img-thumbnail w-50 text-center" alt="" />
-                </div>
+            <div className="col-sm-12 col-md-7">
+              <span>
+                After moodboarding and considering different aspects of the application, I chose a blue-themed color palette for the application. The idea was to make it look refreshing and soothing to the eyes.
+                People should be able to use it for a long period of time.
+                <br />
+                “Gray” scale for accent color and “red” for errors and warnings. Rest of the application will be in shades of blue and white.
+              </span>
+
+              <div className="mt-5">
+                <img src={colorPalette} className="img-fluid img-thumbnail w-75" alt="" />
               </div>
             </div>
           </div>
 
-          <div id="fontFamily" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "font"]} className="text-muted" />
-              </h1>
+          <div id="fontFamily" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h6 className="work-title">
                 Font Family
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5">
-              <div className="row">
-                <div className="col-md-12">
-                  <span>
-                    The application has a clear vision. It is about people wanting to share their feelings associated with a song or an album. Hence, I wanted a font family which is commonly used and easily readable to everyone. Googles Roboto is the answer to it.
-                    <br />
-                    Roboto is a mechanical looking geometric font, which creates a clean and readable pattern on the page.
-                  </span>
-                </div>
-                <div className="col-md-12 text-center mt-5">
-                  <img src={RobotoFont} className="img-fluid img-thumbnail w-50 text-center" alt="" />
-                </div>
+            <div className="col-sm-12 col-md-7">
+              <span>
+                The application has a clear vision. It is about people wanting to share their feelings associated with a song or an album. Hence, I wanted a font family which is commonly used and easily readable to everyone. Googles Roboto is the answer to it.
+                <br />
+                Roboto is a mechanical looking geometric font, which creates a clean and readable pattern on the page.
+              </span>
+
+              <div className="mt-5">
+                <img src={RobotoFont} className="img-fluid img-thumbnail text-center w-50" alt="" />
               </div>
             </div>
           </div>
 
+          <div id="concept" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h6 className="work-title">
+                Concept Design
+              </h6>
+            </div>
+            <div className="col-sm-12 col-md-8 mx-auto">
+              <img src={TILTMobilePc} className="img-fluid w-75" alt="" />
+            </div>
+          </div>
+
           <div className="row work-tab">
-            <div className="col-sm-12 offset-md-2 col-md-8 pl-5">
+            <div className="col-sm-12 offset-md-2 col-md-7">
               <div className="row text-center mb-5">
                 <div className="col-md-6">
                   <a href="/work/karishma-joshi-website" type="button" className="btn btn-warning d-block">
@@ -198,13 +190,13 @@ export default class Tilt extends Component {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="d-md-none d-lg-block">
-          <WorkPageNavigator linkNames={["vision", "research", "wireframes", "colorPalette", "fontFamily"]} />
-        </div>
+          <div className="d-md-none d-lg-block">
+            <WorkPageNavigator linkNames={["vision", "research", "wireframes", "colorPalette", "fontFamily", "concept"]} />
+          </div>
 
-        <div className="scroll-overlay">
+          <div className="scroll-overlay">
+          </div>
         </div>
       </div>
     );

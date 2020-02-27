@@ -32,23 +32,25 @@ class App extends Component {
     const timeout = { enter: 400, exit: 300 };
 
     return (
-      <div className="container-fluid">
+      <div className="grand-parent-container">
         <Menu />
 
         <Route render={({ location }) => (
           <TransitionGroup component="main" className="page-main">
             <CSSTransition key={currentKey} classNames="fade" timeout={timeout} appear>
-              <Switch location={location}>
-                <Route exact path={'/'} component={LoadableHome} />
-                <Route exact path={'/home'} component={LoadableHome} />
-                <Route exact path={'/work'} component={LoadableWork} />
-                <Route exact path={'/about'} component={LoadableAbout} />
-                <Route exact path={"/work/tilt"} component={LoadableTilt} />
-                <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
-                <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
-                <Route exact path={"/work/step-up"} component={LoadableStepUp} />
-                <Route exact path={"/resume"} component={LoadableResume} />
-              </Switch>
+              <div className="container-fluid main-container-portfolio">
+                <Switch location={location}>
+                  <Route exact path={'/'} component={LoadableHome} />
+                  <Route exact path={'/home'} component={LoadableHome} />
+                  <Route exact path={'/work'} component={LoadableWork} />
+                  <Route exact path={'/about'} component={LoadableAbout} />
+                  <Route exact path={"/work/tilt"} component={LoadableTilt} />
+                  <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+                  <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+                  <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+                  <Route exact path={"/resume"} component={LoadableResume} />
+                </Switch>
+              </div>
             </CSSTransition>
           </TransitionGroup>
         )}/>

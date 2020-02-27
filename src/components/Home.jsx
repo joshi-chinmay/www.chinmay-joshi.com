@@ -6,7 +6,6 @@ import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 import FeelingAwesome from '../images/illustrations/feeling-awesome.svg';
 import StepUPMockup from '../images/gallery/stepup-iphone.png';
 import TILTMobilePc from '../images/gallery/TILT-mobile-pc.png';
-import WireframePic from '../images/illustrations/wireframe.svg';
 
 export default class Home extends Component {
   render() {
@@ -102,7 +101,6 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
-
       </div>
     );
   }
