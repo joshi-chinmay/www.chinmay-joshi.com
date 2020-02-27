@@ -14,3 +14,34 @@
     }
   }
 }
+
+.home-page-projects-container {
+  .bg-primary-grad {
+    background-image: linear-gradient(to right, #4f4f6d, #8f8fad);
+  }
+
+  .bg-tilt-primary-grad {
+    background-image: linear-gradient(to right, #ffd4bb, #ffc4a2);
+  }
+
+  .inner-container {
+    padding: 90px;
+
+    h5 {
+      line-height: 38px !important;
+    }
+  }
+}
+
+.home-page-footer-container {
+  .bg-primary-grad {
+    background-image: linear-gradient(to right, #65658b, #8080a3);
+  }
+  .inner-container {
+    padding: 90px;
+
+    h5 {
+      line-height: 38px !important;
+    }
+  }
+}
