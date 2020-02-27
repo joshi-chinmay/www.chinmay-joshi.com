@@ -78,7 +78,7 @@ export default class Work extends Component {
 
     for (let i = 0; i < cardData.length; i++) {
       cards.push(
-        <div key={i} className="col-sm-12 col-md-6 col-lg-4 mb-5">
+        <div key={i} className="col-sm-12 col-md-6 col-lg-4 p-4">
           <div className="card h-100">
             <img src={cardData[i].imgSource} className="card-img-top" alt="work page image" />
 
@@ -102,7 +102,7 @@ export default class Work extends Component {
       <div className="main-page-container">
         <div className="row">
           <div className="offset-lg-1 col-sm-12 col-lg-10">
-            <div className="row">
+            <div className="row mb-5 px-2">
               {cards}
             </div>
           </div>

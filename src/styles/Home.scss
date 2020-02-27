@@ -1,12 +1,16 @@
-.align-right {
-  padding-top: 10%;
-  text-align: right;
-  padding-right: 30px;
+.home-page-blob-container {
+  padding-top: 112px;
+  padding-left: 150px;
 }
-.home-page-blob {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  bottom: 0;
-  left: 0;
+
+.home-page-what-i-do-container {
+  margin-top: 200px;
+
+  .inner-container {
+    padding: 90px;
+
+    h5 {
+      line-height: 38px !important;
+    }
+  }
 }

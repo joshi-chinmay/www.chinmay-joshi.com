@@ -3,21 +3,23 @@ html {
 }
 body {
   font-family: 'Rubik', sans-serif;
-  letter-spacing: 0.12rem;
   line-height: 2.16;
   font-weight: 300;
   background-color: #ffffff;
-  color: #6a6a6a;
+  color: #2f2f41;;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-  color: #6a6a6a;
+  font-weight: bold;
+  color: #4f4f6d;
+  word-wrap: break-word;
+  letter-spacing: 0.12rem;
 }
 span, p {
-  color: #6a6a6a;
+  letter-spacing: 0.09rem;
 }
 
 a {
+  letter-spacing: 0.12rem;
   transition: all .2s ease-out;
   text-decoration: none;
   position: relative;
@@ -32,7 +34,7 @@ a:hover {
 }
 
 .bg-primary-grad {
-  background-image: linear-gradient(to right, #77A4EE, #4a86e8);
+  background-image: linear-gradient(to right, #fff0e7, #ffe0ce);
   transition: all 0.2s ease-in;
 
   a.text-warning:hover {
@@ -40,7 +42,7 @@ a:hover {
   }
 }
 .text-primary {
-  color: #4a86e8 !important;
+  color: #2f2f41 !important;
 }
 .text-warning {
   color: #FF6600 !important;
@@ -57,10 +59,6 @@ a:hover {
 .text-decoration-none {
   text-decoration: none;
 }
-.main-page-container {
-  margin-top: 40px;
-}
-
 .fade-appear, .fade-enter {
   opacity: 0;
 }
@@ -93,7 +91,6 @@ a:hover {
   border: 8px solid #FF6600;
 }
 
-
 @media (max-width: 991.98px) {
   .lead-lg {
     font-size: 2.6rem;
@@ -103,8 +100,5 @@ a:hover {
   }
   span, p {
     font-size: 0.76rem;
-  }
-  .main-page-container {
-    margin-top: 100px;
   }
 }
