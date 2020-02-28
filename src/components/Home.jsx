@@ -40,7 +40,7 @@ export default class Home extends Component {
 
         <section className="home-page-what-i-do-container">
           <div className="row bg-primary-grad inner-container">
-            <div className="col-lg-5 text-right">
+            <div className="col-sm-12 col-lg-5 text-right">
               <img src={FeelingAwesome} className="img-fluid w-50" />
             </div>
             <div className="offset-lg-1 col-lg-5 text-center my-auto">

@@ -58,7 +58,7 @@ export default class StepUp extends Component {
 
           <div id="vision" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Vision
               </h6>
             </div>
@@ -84,7 +84,7 @@ export default class StepUp extends Component {
 
           <div id="interviews" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 User Interviews
               </h6>
             </div>
@@ -153,7 +153,7 @@ export default class StepUp extends Component {
 
           <div id="storyboarding" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Storyboard
               </h6>
             </div>
@@ -206,7 +206,7 @@ export default class StepUp extends Component {
 
           <div id="moscowAnalysis" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 MoSCoW Analysis
               </h6>
             </div>
@@ -222,7 +222,7 @@ export default class StepUp extends Component {
 
           <div id="siteflow" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Siteflow
               </h6>
             </div>
@@ -238,7 +238,7 @@ export default class StepUp extends Component {
 
           <div id="riskyAssumptions" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Riskiest Assumptions Metrics
               </h6>
             </div>
@@ -265,7 +265,7 @@ export default class StepUp extends Component {
 
           <div id="pretotyping" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Pretotyping
               </h6>
             </div>
@@ -298,7 +298,7 @@ export default class StepUp extends Component {
 
           <div id="wireframes" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Wireframes
               </h6>
             </div>
@@ -317,7 +317,7 @@ export default class StepUp extends Component {
 
           <div id="design" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Low Fidelity Design
               </h6>
             </div>

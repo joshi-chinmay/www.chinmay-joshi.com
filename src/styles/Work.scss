@@ -26,3 +26,17 @@
     margin-bottom: 100px;
   }
 }
+
+@media (max-width: 991.98px) {
+  .work-page-container {
+    padding: 10px;
+
+    .work-tab {
+      margin-bottom: 0px;
+
+      .col-sm-12.col-md-7 {
+        padding-top: 15px;
+      }
+    }
+  }
+}

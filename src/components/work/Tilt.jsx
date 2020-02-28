@@ -43,7 +43,7 @@ export default class Tilt extends Component {
 
           <div id="vision" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Vision
               </h6>
             </div>
@@ -56,7 +56,7 @@ export default class Tilt extends Component {
 
           <div id="research" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 User Research
               </h6>
             </div>
@@ -94,7 +94,7 @@ export default class Tilt extends Component {
 
           <div id="wireframes" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Wireframes
               </h6>
             </div>
@@ -126,7 +126,7 @@ export default class Tilt extends Component {
 
           <div id="colorPalette" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Color Palette
               </h6>
             </div>
@@ -146,7 +146,7 @@ export default class Tilt extends Component {
 
           <div id="fontFamily" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Font Family
               </h6>
             </div>
@@ -165,7 +165,7 @@ export default class Tilt extends Component {
 
           <div id="concept" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Concept Design
               </h6>
             </div>

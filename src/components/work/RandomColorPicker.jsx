@@ -22,7 +22,7 @@ export default class Loading extends Component {
 
           <div id="vision" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Vision
               </h6>
             </div>
@@ -38,7 +38,7 @@ export default class Loading extends Component {
 
           <div id="glimpse" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Glimpse
               </h6>
             </div>
@@ -49,7 +49,7 @@ export default class Loading extends Component {
 
           <div id="tech" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6 className="work-title">
+              <h6>
                 Technology
               </h6>
             </div>
