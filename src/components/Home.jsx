@@ -89,7 +89,7 @@ export default class Home extends Component {
 
         <section className="home-page-footer-container">
           <div className="row bg-primary-grad inner-container">
-            <div className="offset-lg-3 col-lg-6 text-center">
+            <div className="offset-lg-4 col-lg-4 text-center">
               <h5 className="font-italic text-secondary">
                 Get to know more about my UX designing processes and work experience.
               </h5>
