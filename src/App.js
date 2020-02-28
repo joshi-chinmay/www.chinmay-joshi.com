@@ -14,8 +14,6 @@ import Menu from './components/Menu.jsx';
 
 import "./styles/Styles.scss";
 
-import NavLogo from './components/util/NavLogo.jsx';
-
 const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
 const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
 const LoadableAbout = Loadable({ loader: () => import('./components/About.jsx'), loading: Loading});
@@ -23,7 +21,6 @@ const LoadableStepUp = Loadable({ loader: () => import('./components/work/StepUp
 const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite.jsx'), loading: Loading});
 const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker.jsx'), loading: Loading});
 const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt.jsx'), loading: Loading});
-const LoadableResume = Loadable({ loader: () => import('./components/Resume.jsx'), loading: Loading});
 
 library.add(fab, fas, far);
 
@@ -35,7 +32,6 @@ class App extends Component {
 
     return (
       <div className="grand-parent-container">
-        <NavLogo />
         <Menu />
 
         <Route render={({ location }) => (
@@ -51,7 +47,6 @@ class App extends Component {
                   <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
                   <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
                   <Route exact path={"/work/step-up"} component={LoadableStepUp} />
-                  <Route exact path={"/resume"} component={LoadableResume} />
                 </Switch>
               </div>
             </CSSTransition>

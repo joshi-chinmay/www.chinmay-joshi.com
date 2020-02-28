@@ -3,59 +3,72 @@ html {
 }
 body {
   font-family: 'Rubik', sans-serif;
-  letter-spacing: 0.12rem;
   line-height: 2.16;
   font-weight: 300;
-  color: #404040;
   background-color: #ffffff;
+  color: #2f2f41;;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-  color: #666666;
+  font-weight: bold;
+  color: #4f4f6d;
+  word-wrap: break-word;
+  letter-spacing: 0.12rem;
 }
-span, p {
-  color: #6a6a6a;
+span {
+  color: #4f4f6d;
+  letter-spacing: 0.04rem;
+  font-size: 0.9rem !important;
+}
+p {
+  letter-spacing: 0.09rem;
 }
 a {
-  transition: all 0.2s linear;
+  letter-spacing: 0.12rem;
+  transition: all .2s ease-out;
+  text-decoration: none;
+  position: relative;
   text-transform: uppercase;
-  font-weight: 300 !important;
-  color: #fe9f00;
+  color: #FF6600;
 }
 a:hover {
-  color: rgba(255, 198, 102, 0.5);
-  text-decoration: underline;
-  transition: all 0.2s linear;
+  color: #FF6600;
+  opacity: 0.4;
+  transition: all .2s ease-out;
+  text-decoration: none;
 }
+
 .bg-primary-grad {
-  background-image: linear-gradient(to right, #77A4EE, #4a86e8);
+  background-image: linear-gradient(to right, #fff0e7, #ffe0ce);
   transition: all 0.2s ease-in;
 
   a.text-warning:hover {
-    color: #fe9f00 !important;
+    color: #FF6600 !important;
   }
 }
+.w-40 {
+  width: 40%;
+}
 .text-primary {
-  color: #4a86e8 !important;
+  color: #2f2f41 !important;
+}
+.text-secondary {
+  color: #fff0e7 !important;
 }
 .text-warning {
-  color: #fe9f00 !important;
+  color: #FF6600 !important;
 }
 .lead-sm {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .lead-lg {
-  font-size: 4.2rem;
-  font-weight: 900;
-  text-decoration: underline;
+  font-size: 1.4rem;
+}
+.lead-slg {
+  font-size: 6.4rem;
 }
 .text-decoration-none {
   text-decoration: none;
 }
-.main-page-container {
-  margin-top: 140px;
-}
-
 .fade-appear, .fade-enter {
   opacity: 0;
 }
@@ -72,7 +85,7 @@ a:hover {
 }
 
 .border, .border-top, .border-left, .border-botttom, .border-right {
-  border-color: rgba(255, 198, 102, 0.5) !important;
+  border-color: rgba(255,102,0, 0.8) !important;
 }
 .scroll-overlay {
   position: fixed;
@@ -85,21 +98,20 @@ a:hover {
 }
 
 .display-picture-border {
-  border: 8px solid #fe9f00;
+  border: 6px solid #FF6600;
 }
 
-
 @media (max-width: 991.98px) {
-  .lead-lg {
+  .lead-slg {
     font-size: 2.6rem;
+  }
+  .lead-lg {
+    font-size: 1.8rem;
   }
   .lead {
     font-size: 0.9rem;
   }
   span, p {
     font-size: 0.76rem;
-  }
-  .main-page-container {
-    margin-top: 100px;
   }
 }

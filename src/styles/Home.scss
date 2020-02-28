@@ -1,31 +1,56 @@
-.page-layout {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  border: 9px solid #f4f4f4;
+.home-page-blob-container {
+  padding-top: 112px;
+  padding-left: 150px;
 }
-.layout-50 {
-  float: left;
-  position: relative;
-  width: 50%;
-  height: 100%;
-  margin: auto;
+
+.home-page-what-i-do-container {
+  margin-top: 200px;
+
+  .inner-container {
+    padding: 90px;
+
+    h5 {
+      line-height: 38px !important;
+    }
+  }
+}
+
+.home-page-projects-container {
+  .bg-primary-grad {
+    background-image: linear-gradient(to right, #4f4f6d, #8f8fad);
+  }
+
+  .bg-tilt-primary-grad {
+    background-image: linear-gradient(to right, #ffd4bb, #ffc4a2);
+  }
+
+  .inner-container {
+    padding: 90px;
+
+    h5 {
+      line-height: 38px !important;
+    }
+  }
+}
+
+.home-page-footer-container {
+  .bg-primary-grad {
+    background-image: linear-gradient(to right, #65658b, #8080a3);
+  }
+  .inner-container {
+    padding: 90px;
+
+    h5 {
+      line-height: 38px !important;
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
-  .page-layout {
-    position: relative;
-    margin-top: 120px;
-    border: 0px;
+  .home-page-blob-container {
+    padding: 0px;
   }
-  .layout-50 {
-    width: 100%;
-    padding: 15px;
-
-    .px-5 {
-      padding: 1rem !important;
-    }
+  .inner-container {
+    padding: 30px 15px !important;
   }
 }

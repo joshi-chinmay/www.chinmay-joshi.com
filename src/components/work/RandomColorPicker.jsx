@@ -8,61 +8,52 @@ export default class Loading extends Component {
   render() {
     return(
       <div className="main-page-container">
-        <div className="row">
-          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2>
-              Random Color Picker
-            </h2>
-          </div>
-        </div>
+        <div className="work-page-container">
 
-        <div className="work-page-container mb-5">
-          <div id="vision" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "rocket"]} className="text-muted" />
+          <div className="row no-gutters">
+            <div className="col-sm-12">
+              <h1>
+                Random Color Picker
               </h1>
-              <h6 className="work-title">
+            </div>
+            <div className="col-sm-2 heading-separator">
+            </div>
+          </div>
+
+          <div id="vision" className="row work-tab mt-5">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h6>
                 Vision
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5">
-              <p>
+            <div className="col-sm-12 col-md-7">
+              <span>
                 <a href="http://randomcolorpicker.xyz/" target="_blank" rel="noopener noreferrer" className="text-capitalize">Random Color Picker</a> is a small project I did years ago to enhance my skills as a UI developer, it turned out to be fun. So I decided to set up a website for it.
-              </p>
-              <p>
-                It's so simple and intuitive to use. All a person needs to do is hit the 'enter' key. There are '+' and '-' signs on the screen to create darker and lighter shades of the current color. You can click on the color to select a custom color.
-              </p>
-              <p>
-                And perform double click to copy the color.
-              </p>
+              </span>
+              <span>
+                It's so simple and intuitive to use. All a person needs to do is hit the 'enter' key. There are '+' and '-' signs on the screen to create darker and lighter shades of the current color. You can click on the color to select a custom color. And perform double click to copy the color.
+              </span>
             </div>
           </div>
 
-          <div id="glimpse" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "eye"]} className="text-muted" />
-              </h1>
-              <h6 className="work-title">
+          <div id="glimpse" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h6>
                 Glimpse
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5 text-center">
-              <img src={RandomColorPickerDemo} className="img-fluid w-50" alt="" />
+            <div className="col-sm-12 col-md-7 text-center">
+              <img src={RandomColorPickerDemo} className="img-fluid w-75" alt="gif of random color picker" />
             </div>
           </div>
 
-          <div id="tech" className="row work-tab animate-on-hover">
-            <div className="col-sm-12 col-md-3 col-lg-2 text-right pr-4 border-right">
-              <h1 className="work-title-icon">
-                <FontAwesomeIcon icon={["fas", "code"]} className="text-muted" />
-              </h1>
-              <h6 className="work-title">
-                Tech
+          <div id="tech" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h6>
+                Technology
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 pl-5 text-center">
+            <div className="col-sm-12 col-md-7 text-center">
               <h1>
                 <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "html5"]} />
                 <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "js-square"]} />
@@ -73,7 +64,7 @@ export default class Loading extends Component {
           </div>
 
           <div className="row work-tab">
-            <div className="col-sm-12 offset-md-2 col-md-8 pl-5">
+            <div className="col-sm-12 offset-md-2 col-md-7">
               <div className="row text-center mb-5">
                 <div className="col-md-6">
                   <a href="/work/step-up" type="button" className="btn btn-warning d-block">

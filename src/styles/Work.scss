@@ -1,6 +1,13 @@
 .work-page-container {
-  margin-top: 50px;
-  padding: 0px 24px;
+  margin-top: 38px;
+  padding: 0px 20px 0px 100px;
+
+  .heading-separator {
+    height: 10px;
+    width: 100%;
+    border-radius: 1px;
+    background-color: rgba(255, 102, 0, 1);
+  }
 
   .with-image {
     padding: 0px;
@@ -12,44 +19,24 @@
   }
 
   .work-tab {
-    padding-top: 20px;
-    margin-bottom: 120px;
+    padding-top: 16px;
+    margin-bottom: 90px;
   }
   .work-tab:last-child {
     margin-bottom: 100px;
   }
-  .animate-on-hover {
-    .work-title-icon svg {
-      color: #cacaca !important;
-    }
-    .work-title-icon svg, .work-title {
-      transition: all 0.4s ease-in-out;
-    }
-  }
-  .animate-on-hover:hover {
-    .work-title-icon svg, .work-title {
-      color: rgba(255, 198, 102, 1) !important;
-      transition: all 0.4s ease-in-out;
-    }
-  }
 }
 
 @media (max-width: 991.98px) {
-  .work-tab {
-    padding-top: 0px !important;
-    margin-bottom: 60px !important;
+  .work-page-container {
+    padding: 10px;
 
-    .pl-5 {
-      padding: 0px !important;
-    }
-    .btn {
-      margin-bottom: 16px;
-    }
-    .border-right {
-      border-right: 0px !important;
-    }
-    .text-right {
-      text-align: center !important;
+    .work-tab {
+      margin-bottom: 0px;
+
+      .col-sm-12.col-md-7 {
+        padding-top: 15px;
+      }
     }
   }
 }
