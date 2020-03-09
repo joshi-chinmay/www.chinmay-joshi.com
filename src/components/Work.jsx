@@ -33,7 +33,7 @@ export default class Work extends Component {
         projectName: "Random Color Picker", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "View", linkUrl: "/work/randomcolorpicker"}, {linkName: "live", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
       },
       {
-        projectName: "Karishma's Website", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "View", linkUrl: "karishma-joshi-website"}, {linkName: "live", linkUrl: "http://karishma-joshi.com/", external: true}],
+        projectName: "Website of a Landscape Architect", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "View", linkUrl: "/work/karishma-joshi-website"}, {linkName: "live", linkUrl: "http://karishma-joshi.com/", external: true}],
       },
       {
         projectName: "Task Console", imgSource: TaskConsoleImg, description: "Task Console helps to Build and run microtasking projects with security, quality and efficiency automation features.", links: [{linkName: "live", linkUrl: "https://www.supahands.com/task-console", external: true}],
@@ -80,7 +80,7 @@ export default class Work extends Component {
       cards.push(
         <div key={i} className="col-sm-12 col-md-6 col-lg-4 p-4">
           <div className="card h-100">
-            <img src={cardData[i].imgSource} className="card-img-top" alt="work page image" />
+            <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
 
             <div className="card-header">
               {cardData[i].projectName}

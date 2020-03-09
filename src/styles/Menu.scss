@@ -6,9 +6,13 @@
     font-weight: bold !important;
     margin-left: 46px !important;
     font-size: 1.2rem;
-    color: #FF6600 !important;
+    color: #FF6600;
   }
 
+  .nav-link:hover {
+    color: #4f4f6d;
+    opacity: 1;
+  }
   .navbar-toggler {
     background-color: #FF6600;
     color: #4f4f6d;
@@ -21,16 +25,12 @@
   top: 192px;
   right: 38px;
   text-align: right;
-
-  a {
-    font-weight: bold;
-  }
 }
 
 @media (max-width: 991.98px) {
   .navbar {
     text-align: center;
-    
+
     .nav-link {
       margin-left: 0px !important;
     }
