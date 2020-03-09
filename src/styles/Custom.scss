@@ -26,12 +26,11 @@ a {
   letter-spacing: 0.12rem;
   transition: all .2s ease-out;
   text-decoration: none;
-  position: relative;
   text-transform: uppercase;
   color: #FF6600;
 }
 a:hover {
-  color: #FF6600;
+  color: #4f4f6d;
   opacity: 0.4;
   transition: all .2s ease-out;
   text-decoration: none;
@@ -40,10 +39,6 @@ a:hover {
 .bg-primary-grad {
   background-image: linear-gradient(to right, #fff0e7, #ffe0ce);
   transition: all 0.2s ease-in;
-
-  a.text-warning:hover {
-    color: #FF6600 !important;
-  }
 }
 .w-40 {
   width: 40%;

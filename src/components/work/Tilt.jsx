@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import UserAnalysis1 from "../../images/work/TILT/UserAnalysis/1.png";
 import UserAnalysis2 from "../../images/work/TILT/UserAnalysis/2.png";

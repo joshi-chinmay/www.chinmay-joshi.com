@@ -228,7 +228,8 @@ export default class StepUp extends Component {
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
-                Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together. If you don’t plan your page flow, you could run into problems when you begin with the design process.
+                Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together.
+                Creating a site flow helped me understand amount of interfaces my application would have. It also helped me prioritize pages.
               </span>
               <div className="mt-5">
                 <img src={siteflow} className="img-fluid" alt="" />

@@ -1,14 +1,75 @@
 import React, {Component} from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
+import StepUpImg from '../images/illustrations/stepup.svg';
+import TiltImg from '../images/illustrations/music.svg';
+import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
 
-import FeelingAwesome from '../images/illustrations/feeling-awesome.svg';
-import StepUPMockup from '../images/gallery/stepup-iphone.png';
-import TILTMobilePc from '../images/gallery/TILT-mobile-pc.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Home extends Component {
+  workPageMetaData() {
+    return([
+      {
+        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "View", linkUrl: "/work/step-up"},{linkName: "Prototpye", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
+      },
+      {
+        projectName: "TILT", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "View", linkUrl: "/work/tilt"}],
+      },
+      {
+        projectName: "Website of a Landscape Architect", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "View", linkUrl: "/work/karishma-joshi-website"}, {linkName: "live", linkUrl: "http://karishma-joshi.com/", external: true}],
+      }
+    ]);
+  }
+
+  getLinks(metaData) {
+    let links = [];
+
+    for (let i = 0; i < metaData.length; i++) {
+      if(metaData[i].external) {
+        links.push(
+          <a href={metaData[i].linkUrl} className="small mr-4" target="_blank" rel="noopener noreferrer">
+            {metaData[i].linkName} <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
+          </a>
+        )
+      } else {
+        links.push(
+          <a href={metaData[i].linkUrl} className="small mr-4">
+            {metaData[i].linkName}
+          </a>
+        )
+      }
+    }
+
+    return(links);
+  }
+
   render() {
+    let workCards = [];
+    const cardData = this.workPageMetaData();
+
+    for (let i = 0; i < cardData.length; i++) {
+      workCards.push(
+        <div key={i} className="col-sm-12 col-md-6 col-lg-4 p-4">
+          <div className="card h-100">
+            <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
+
+            <div className="card-header">
+              {cardData[i].projectName}
+            </div>
+
+            <div className="card-body">
+              {cardData[i].description}
+            </div>
+
+            <div className="card-footer">
+              {this.getLinks(cardData[i].links)}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     return(
       <div className="page-container">
         <section className="home-page-blob-container">
@@ -20,16 +81,9 @@ export default class Home extends Component {
               <h5 className="lead-lg pt-2 pr-2">
                 UX Designer & Frontend Engineer
               </h5>
-
-              <div className="mt-3">
-                <a href="mailto:chinmayj93@gmail.com" className="lead text-lowercase text-warning pr-2">
-                  <FontAwesomeIcon icon={["far", "envelope"]} />  chinmayj93@gmail.com
-                </a>
-                <br />
-                <a href="tel:+14156761018" className="lead text-warning pr-2">
-                  <FontAwesomeIcon icon={["fas", "phone-alt"]} />  +1-(415)-676-1018
-                </a>
-              </div>
+              <p className="mt-2">
+                I design memorable, viable, usable and scalable experience by amalgamating <br />principles of user experience design, cognitive psychology and interaction design.
+              </p>
 
               <div className="mt-5">
                 <SocialMediaIcons />
@@ -38,66 +92,20 @@ export default class Home extends Component {
           </div>
         </section>
 
-        <section className="home-page-what-i-do-container">
-          <div className="row bg-primary-grad inner-container">
-            <div className="col-sm-12 col-lg-5 text-right">
-              <img src={FeelingAwesome} className="img-fluid w-50" />
-            </div>
-            <div className="offset-lg-1 col-lg-5 text-center my-auto">
-              <h5 className="font-italic">
-                I design memorable, viable, usable and scalable experience by amalgamating principles of user experience design, cognitive psychology and interaction design.
-              </h5>
-            </div>
-          </div>
-        </section>
-
-        <section className="home-page-projects-container">
-          <div className="row bg-primary-grad inner-container">
-            <div className="offset-lg-1 col-lg-5 text-center my-auto">
-              <h5 className="font-italic text-secondary">
-                StepUp is a mobile application, focused on Jefferson University students and staff to help them maintain a healthy lifestyle by taking extra steps in a day.
-              </h5>
-
-              <div className="mt-5">
-                <a href="/work/step-up" className="font-weight-bold font-italic">
-                  VIEW PROJECT
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-5 text-center">
-              <img src={StepUPMockup} className="img-fluid w-40" />
-            </div>
-          </div>
-
-          <div className="row bg-tilt-primary-grad inner-container">
-            <div className="col-lg-6 text-right">
-              <img src={TILTMobilePc} className="img-fluid" />
-            </div>
-            <div className="offset-lg-1 col-lg-4 text-center my-auto">
-              <h5 className="font-italic text-primary">
-                The vision behind this idea is to have a platform where a user can create a list of songs and share his associated emotions.
-              </h5>
-
-              <div className="mt-5">
-                <a href="/work/tilt" className="font-weight-bold font-italic">
-                  VIEW PROJECT
-                </a>
+        <section className="home-work-page-container">
+          <div className="row">
+            <div className="offset-lg-2 col-sm-12 col-lg-8">
+              <div className="row mb-5">
+                {workCards}
               </div>
             </div>
           </div>
-        </section>
 
-        <section className="home-page-footer-container">
-          <div className="row bg-primary-grad inner-container">
-            <div className="offset-lg-4 col-lg-4 text-center">
-              <h5 className="font-italic text-secondary">
-                Get to know more about my UX designing processes and work experience.
-              </h5>
-              <div className="mt-5">
-                <a href="/work/" className="font-weight-bold font-italic">
-                  WORK PAGE
-                </a>
-              </div>
+          <div className="row">
+            <div className="offset-lg-4 col-sm-12 col-lg-4">
+              <a href="/work" type="button" className="btn btn-warning d-block">
+                View My Work
+              </a>
             </div>
           </div>
         </section>

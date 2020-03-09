@@ -1,21 +1,15 @@
-.social-media-icons-container {
-  a {
-    color: #f1f1f1;
-  }
-}
-
 .social-media-icon {
   margin-right: 42px;
 }
 .social-media-icon svg {
   font-size: 2.04rem;
   transition: 120ms;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: linear;
   -webkit-transition: 120ms;
-  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: linear;
+  color: #FF6600;
 }
 .social-media-icon svg:hover {
-  color: #FF6600;
   transition: 220ms;
 }
 

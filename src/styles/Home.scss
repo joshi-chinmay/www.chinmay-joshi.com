@@ -2,55 +2,11 @@
   padding-top: 112px;
   padding-left: 150px;
 }
-
-.home-page-what-i-do-container {
-  margin-top: 200px;
-
-  .inner-container {
-    padding: 90px;
-
-    h5 {
-      line-height: 38px !important;
-    }
-  }
+.home-work-page-container {
+  margin: 146px 0;
 }
-
-.home-page-projects-container {
-  .bg-primary-grad {
-    background-image: linear-gradient(to right, #4f4f6d, #8f8fad);
-  }
-
-  .bg-tilt-primary-grad {
-    background-image: linear-gradient(to right, #ffd4bb, #ffc4a2);
-  }
-
-  .inner-container {
-    padding: 90px;
-
-    h5 {
-      line-height: 38px !important;
-    }
-  }
-}
-
-.home-page-footer-container {
-  .bg-primary-grad {
-    background-image: linear-gradient(to right, #65658b, #8080a3);
-  }
-  .inner-container {
-    padding: 90px;
-
-    h5 {
-      line-height: 38px !important;
-    }
-  }
-}
-
 @media (max-width: 991.98px) {
-  .home-page-blob-container {
-    padding: 0px;
-  }
-  .inner-container {
-    padding: 30px 15px !important;
+  .home-work-page-container {
+    margin-top: 20px;
   }
 }

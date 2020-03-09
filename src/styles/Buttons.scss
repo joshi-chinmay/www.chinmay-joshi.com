@@ -1,23 +1,23 @@
 .btn, .btn-group {
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: none;
-  outline: none !important;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 12px;
-  box-shadow: 2px 2px 2px #4f4f6d;
-}
-.btn-warning {
-  background-color: rgba(255, 102, 0, 0.8);
+  color: #ffffff;
+  background: linear-gradient(10deg, #4f4f6d 0%, #A065AA 100%);
+  transition: all .2s linear;
 }
 .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus,
 .btn:hover {
-  outline: none !important;
-  border: none !important;
-  background-color: rgba(255, 102, 0, 0.7);
-  box-shadow: 3px 3px 3px #4f4f6d !important;
+  opacity: 0.9;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4f4f6d 0%, #A065AA 100%);
+  transition: all .2s linear;
 }
-
 @media (max-width: 991.98px) {
   .btn, .btn-group {
     margin-bottom: 15px;
