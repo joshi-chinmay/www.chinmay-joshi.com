@@ -18,23 +18,28 @@ export default class About extends Component {
               Hi, I am Chinmay...
             </h1>
             <span className="mt-4">
-              I design memorable, viable, usable and scalable experience by amalgamating principles of user experience design, cognitive psychology and interaction design. I used to be a full-stack software engineer, but nowadays I am trying to be a UI/UX designer. I love caffeine in general. Tea and coffee depends on the mood. I drink 4-5 cups of coffee/tea in a day. I like to travel to different places.
-              Being an introvert you will not find much social media.
+              I design memorable, viable, and usable product experiences by amalgamating principles of user experience design, interaction design, research methods, and cognitive psychology. I believe the best solution can be achieved with simplicity and logical decision making. I have been a full-stack software engineer and now transitioning into becoming a UX designer. I love caffeine in general, and my creative solutions are mostly an outcome of a desk full of sticky notes, pens, markers, sketches, and a cup of coffee or tea. I believe learning is about traveling and observing. Hence, in my free time, you would mostly find me traveling and exploring different cultures.
             </span>
 
             <div className="row mt-4">
               <div className="col-xs-12 col-md-12">
                 <span>
-                  Let's talk business.
+                  Let's talk business. Following are the tools I use on a day to day basis in order to make designs become reality.
                 </span>
-                <br />
+              </div>
+              <div className="col-xs-12 col-md-12 mt-3">
                 <span>
-                  <b>Creative Stack</b> - Adobe Illustrator, Adobe XD, Figma, inVision, Sketch, Adobe Lightroom, sticky notes & sharpie
+                  <b>Creative Stack</b> - Adobe Photoshop, Adobe XD, Figma, inVision, Sketch, sticky notes & sharpie.
+                </span>
+              </div>
+              <div className="col-xs-12 col-md-12 mt-3">
+                <span>
+                  <b>Technology Stack</b> - HTML, CSS, JavaScript, React.JS, Backbone.JS, Ember.JS, Ruby on Rails, AWS Cloud, Serverless, SQL, MongoDB, Git, Jira, Trello.
                 </span>
               </div>
               <div className="col-xs-12 col-md-12 mt-2">
                 <span>
-                  <b>Technology Stack</b> - HTML, CSS, JavaScript, React.JS, Backbone.JS, Ember.JS, Ruby on Rails, AWS Cloud, Serverless, SQL, MongoDB, Git, Jira, Trello
+                  I am here to design, build, create and learn consistently. Please feel free to connect.
                 </span>
               </div>
             </div>

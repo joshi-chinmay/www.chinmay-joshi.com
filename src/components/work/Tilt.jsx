@@ -168,8 +168,8 @@ export default class Tilt extends Component {
                 Concept Design
               </h6>
             </div>
-            <div className="col-sm-12 col-md-8 mx-auto">
-              <img src={TILTMobilePc} className="img-fluid w-75" alt="" />
+            <div className="col-sm-12 col-md-8 text-center">
+              <img src={TILTMobilePc} className="img-fluid" alt="" />
             </div>
           </div>
 
@@ -192,9 +192,6 @@ export default class Tilt extends Component {
 
           <div className="d-md-none d-lg-block">
             <WorkPageNavigator linkNames={["vision", "research", "wireframes", "colorPalette", "fontFamily", "concept"]} />
-          </div>
-
-          <div className="scroll-overlay">
           </div>
         </div>
       </div>

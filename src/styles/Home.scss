@@ -3,9 +3,16 @@
   padding-left: 150px;
 }
 .home-work-page-container {
-  margin: 146px 0;
+  margin: 204px 0;
+}
+.footer-attribution-container {
+  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
+  .home-page-blob-container {
+    padding-top: 25px;
+    padding-left: 0px;
+  }
   .home-work-page-container {
     margin-top: 20px;
   }

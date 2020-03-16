@@ -354,9 +354,6 @@ export default class StepUp extends Component {
         <div className="d-md-none d-lg-block">
           <WorkPageNavigator linkNames={["vision", "interviews", "storyboarding", "moscowAnalysis", "siteflow", "riskyAssumptions", "pretotyping", "wireframes", "design"]} />
         </div>
-
-        <div className="scroll-overlay">
-        </div>
       </div>
     );
   }

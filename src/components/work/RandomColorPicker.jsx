@@ -84,9 +84,6 @@ export default class Loading extends Component {
         <div className="d-md-none d-lg-block">
           <WorkPageNavigator linkNames={["vision", "glimpse", "tech"]} />
         </div>
-
-        <div className="scroll-overlay">
-        </div>
       </div>
     );
   }

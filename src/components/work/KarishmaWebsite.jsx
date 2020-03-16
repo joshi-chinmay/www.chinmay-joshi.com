@@ -84,7 +84,7 @@ export default class KarishmaWebsite extends Component {
               </h6>
             </div>
             <div className="col-sm-12 col-md-8 text-center">
-              <img src={KarishmaWebsiteGlimpse} className="img-fluid img-thumbnail w-75" alt="" />
+              <img src={KarishmaWebsiteGlimpse} className="img-fluid" alt="" />
             </div>
           </div>
 
@@ -126,9 +126,6 @@ export default class KarishmaWebsite extends Component {
 
       <div className="d-md-none d-lg-block">
         <WorkPageNavigator linkNames={["vision", "infoAndMindmapping", "personalityTraits", "glimpse", "tech"]} />
-      </div>
-
-      <div className="scroll-overlay">
       </div>
     </div>
     );

@@ -4,6 +4,8 @@ import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 import StepUpImg from '../images/illustrations/stepup.svg';
 import TiltImg from '../images/illustrations/music.svg';
 import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
+import LandinPageImg from '../images/illustrations/landing-page.svg';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -28,13 +30,13 @@ export default class Home extends Component {
     for (let i = 0; i < metaData.length; i++) {
       if(metaData[i].external) {
         links.push(
-          <a href={metaData[i].linkUrl} className="small mr-4" target="_blank" rel="noopener noreferrer">
+          <a key={i} href={metaData[i].linkUrl} className="small mr-4" target="_blank" rel="noopener noreferrer">
             {metaData[i].linkName} <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
           </a>
         )
       } else {
         links.push(
-          <a href={metaData[i].linkUrl} className="small mr-4">
+          <a key={i} href={metaData[i].linkUrl} className="small mr-4">
             {metaData[i].linkName}
           </a>
         )
@@ -74,7 +76,7 @@ export default class Home extends Component {
       <div className="page-container">
         <section className="home-page-blob-container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-sm-12 col-lg-7">
               <h1 className="text-primary lead-slg">
                 Chinmay Joshi
               </h1>
@@ -88,6 +90,9 @@ export default class Home extends Component {
               <div className="mt-5">
                 <SocialMediaIcons />
               </div>
+            </div>
+            <div className="col-sm-12 col-lg-4 my-auto mx-auto">
+              <img src={LandinPageImg} alt="landing page blob" className="img-fluid w-75" />
             </div>
           </div>
         </section>
@@ -108,6 +113,14 @@ export default class Home extends Component {
               </a>
             </div>
           </div>
+        </section>
+
+        <section className="footer-attribution-container text-center">
+          <small>
+            &copy; 2020 · Chinmay Joshi · All rights reserved.
+            |
+            Illustrations · created by <u>Katerina Limpitsouni</u> on <u>undraw.co</u>.
+          </small>
         </section>
       </div>
     );

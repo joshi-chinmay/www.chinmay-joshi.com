@@ -59,7 +59,7 @@ a:hover {
   font-size: 1.4rem;
 }
 .lead-slg {
-  font-size: 6.4rem;
+  font-size: 5.4rem;
 }
 .text-decoration-none {
   text-decoration: none;
@@ -82,18 +82,8 @@ a:hover {
 .border, .border-top, .border-left, .border-botttom, .border-right {
   border-color: rgba(255,102,0, 0.8) !important;
 }
-.scroll-overlay {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  background: linear-gradient(to bottom, transparent, #f1f1f1);
-  height: 14%;
-  width: 100%;
-  pointer-events: none;
-}
-
 .display-picture-border {
-  border: 6px solid #FF6600;
+  border: 2px solid #FF6600;
 }
 
 @media (max-width: 991.98px) {
@@ -101,10 +91,10 @@ a:hover {
     font-size: 2.6rem;
   }
   .lead-lg {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   .lead {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   span, p {
     font-size: 0.76rem;
