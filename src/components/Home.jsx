@@ -4,8 +4,6 @@ import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 import StepUpImg from '../images/illustrations/stepup.svg';
 import TiltImg from '../images/illustrations/music.svg';
 import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
-import LandinPageImg from '../images/illustrations/landing-page.svg';
-
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -76,9 +74,9 @@ export default class Home extends Component {
       <div className="page-container">
         <section className="home-page-blob-container">
           <div className="row">
-            <div className="col-sm-12 col-lg-7">
+            <div className="col-sm-12">
               <h1 className="text-primary lead-slg">
-                Chinmay Joshi
+                Hello 👋. <br />I am Chinmay Joshi.
               </h1>
               <h5 className="lead-lg pt-2 pr-2">
                 UX Designer & Frontend Engineer
@@ -90,9 +88,6 @@ export default class Home extends Component {
               <div className="mt-5">
                 <SocialMediaIcons />
               </div>
-            </div>
-            <div className="col-sm-12 col-lg-4 my-auto mx-auto">
-              <img src={LandinPageImg} alt="landing page blob" className="img-fluid w-75" />
             </div>
           </div>
         </section>

@@ -39,7 +39,7 @@ export default class About extends Component {
               </div>
               <div className="col-xs-12 col-md-12 mt-2">
                 <span>
-                  I am here to design, build, create and learn consistently. Please feel free to connect.
+                  I am here to design, build, create and learn consistently. Please feel free to connect or <a href="https://calendly.com/meet-with-chinmay" className="text-lowercase" target="_blank" rel="noopener noreferrer">Schedule a time to talk</a>.
                 </span>
               </div>
             </div>
