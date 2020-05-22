@@ -21,7 +21,7 @@ export default class Menu extends Component {
               <a className="nav-link" href="/about">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://drive.google.com/file/d/1ZSEJwIykfMd71J1SUz1bU-5uv6GkBbSf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a className="nav-link" href="https://drive.google.com/file/d/1xpDKd1ADDaN0b-a7w3wpztMXWR5S3mR-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>

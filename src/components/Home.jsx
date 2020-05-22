@@ -76,7 +76,7 @@ export default class Home extends Component {
           <div className="row">
             <div className="col-sm-12">
               <h1 className="text-primary lead-slg">
-                Hello 👋. <br />I am Chinmay Joshi.
+                Hello <span className="h1" role="img" aria-label="nerd face">👋</span>. <br />I am Chinmay Joshi.
               </h1>
               <h5 className="lead-lg pt-2 pr-2">
                 UX Designer & Frontend Engineer
