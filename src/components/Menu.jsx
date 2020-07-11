@@ -21,12 +21,12 @@ export default class Menu extends Component {
               <a className="nav-link" href="/about">About</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link" href="/blogs">Blog</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="https://drive.google.com/file/d/1xpDKd1ADDaN0b-a7w3wpztMXWR5S3mR-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="https://dev.to/joshichinmay">Blog</a>
             </li>
           </ul>
         </div>
