@@ -17,6 +17,7 @@ import "./styles/Styles.scss";
 const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
 const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
 const LoadableAbout = Loadable({ loader: () => import('./components/About.jsx'), loading: Loading});
+const LoadableBlog = Loadable({ loader: () => import('./components/Blog.jsx'), loading: Loading});
 const LoadableStepUp = Loadable({ loader: () => import('./components/work/StepUp.jsx'), loading: Loading});
 const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite.jsx'), loading: Loading});
 const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker.jsx'), loading: Loading});
@@ -28,7 +29,7 @@ class App extends Component {
 
   render() {
     const currentKey = window.location.pathname.split('/')[1] || '/';
-    const timeout = { enter: 400, exit: 300 };
+    const timeout = { enter: 600, exit: 600 };
 
     return (
       <div className="grand-parent-container">
@@ -43,6 +44,7 @@ class App extends Component {
                   <Route exact path={'/home'} component={LoadableHome} />
                   <Route exact path={'/work'} component={LoadableWork} />
                   <Route exact path={'/about'} component={LoadableAbout} />
+                  <Route exact path={'/blogs'} component={LoadableBlog} />
                   <Route exact path={"/work/tilt"} component={LoadableTilt} />
                   <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
                   <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />

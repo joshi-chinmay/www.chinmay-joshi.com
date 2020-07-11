@@ -8,6 +8,13 @@ import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Home extends Component {
+  helloWorld() {
+    const hello = ["Hello", "नमस्कार", "Hallo", "Bonjour", "Hola", "Ciao", "Guten Tag", "Hallo, Hi", "Olá", "Kon'nichiwa", "xin chào"];
+    return(
+      hello[ Math.floor(Math.random(10) * hello.length) ]
+    );
+  }
+
   workPageMetaData() {
     return([
       {
@@ -47,6 +54,7 @@ export default class Home extends Component {
   render() {
     let workCards = [];
     const cardData = this.workPageMetaData();
+    const sayHello = this.helloWorld();
 
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
@@ -76,7 +84,7 @@ export default class Home extends Component {
           <div className="row">
             <div className="col-sm-12">
               <h1 className="text-primary lead-slg">
-                Hello <span className="h1" role="img" aria-label="nerd face">👋</span>. <br />I am Chinmay Joshi.
+                {sayHello}! <br />I am Chinmay Joshi.
               </h1>
               <h5 className="lead-lg pt-2 pr-2">
                 UX Designer & Frontend Engineer
