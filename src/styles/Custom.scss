@@ -1,29 +1,38 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 2.16;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
   font-weight: 300;
-  background-color: #ffffff;
+  line-height: 1.96;
   color: #000000;
-  font-size: 13px;
+  background-color: #ffffff;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   word-wrap: break-word;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
   letter-spacing: 0.12rem;
 }
 span {
   color: #010101;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.09rem;
   font-size: 0.9rem;
 }
 p {
   letter-spacing: 0.09rem;
 }
 a {
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.09rem;
+  font-size: 0.8rem;
   transition: all .2s ease-out;
   text-decoration: none;
   text-transform: uppercase;
@@ -36,13 +45,6 @@ a:hover {
   text-decoration: none;
 }
 
-.bg-primary-grad {
-  background-image: linear-gradient(to right, #fff0e7, #ffe0ce);
-  transition: all 0.2s ease-in;
-}
-.w-40 {
-  width: 40%;
-}
 .lead-sm {
   font-size: 0.8rem;
 }

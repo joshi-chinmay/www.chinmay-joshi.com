@@ -86,7 +86,7 @@ export default class Home extends Component {
               <h1 className="lead-slg">
                 {sayHello}! <br />I am Chinmay Joshi.
               </h1>
-              <h5 className="lead-lg pt-2 pr-2">
+              <h5 className="lead pt-2 pr-2 font-weight">
                 UX Designer & Frontend Engineer
               </h5>
               <p className="mt-2">
