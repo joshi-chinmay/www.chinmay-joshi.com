@@ -1,6 +1,11 @@
 $card-bg-color: #ffffff;
 $transition-time: 0.2s;
 
+.card-columns {
+  -webkit-column-gap: 1.25rem;
+  column-gap: 2rem;
+}
+
 .card {
   background-color: $card-bg-color;
   border-radius: 14px;
@@ -23,8 +28,8 @@ $transition-time: 0.2s;
     padding: 0rem 2rem;
   }
   .card-img-top {
-    height: 236px;
-    padding: 0.86rem;
+    height: 216px;
+    padding: 1.86rem;
     transition: $transition-time ease-in;
     filter: grayscale(90%);
   }

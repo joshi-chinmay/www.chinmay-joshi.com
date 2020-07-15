@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import PP from '../images/pp.jpg';
+import PP from '../images/pp-website.jpg';
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 
 export default class About extends Component {
@@ -10,12 +10,12 @@ export default class About extends Component {
         <div className="row px-5 py-2">
           <div className="col-xs-12 col-md-5">
             <div className="mt-5">
-              <img src={PP} className="w-75 mx-auto my-auto d-block display-picture-border display-picture" alt="Chinmay Profile Face" />
+              <img src={PP} className="w-75 mx-auto my-auto d-block" alt="Chinmay Profile Face" />
             </div>
           </div>
           <div className="col-xs-12 col-md-6 mt-5 mb-5">
             <h1 className="mt-1">
-              Hi, I am Chinmay! <span className="h1" role="img" aria-label="nerd face">🤓</span>
+              Hi, I am Chinmay!
             </h1>
             <span className="mt-4">
               I design memorable, viable, and usable product experiences by amalgamating principles of user experience design, cognitive psychology, computer science, and technology. I believe the best solution can be achieved with simplicity and logical decision making.
@@ -41,7 +41,7 @@ export default class About extends Component {
             </div>
 
             <div className="row mt-5">
-              <div className="social-media-icons-container about-page text-center col-xs-12 col-md-12">
+              <div className="social-media-icons-container about-page col-xs-12 col-md-12">
                 <SocialMediaIcons />
               </div>
             </div>
