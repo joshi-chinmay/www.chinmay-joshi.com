@@ -11,6 +11,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 
 import Menu from './components/Menu.jsx';
+import Footer from './components/Footer.jsx';
 
 import "./styles/Styles.scss";
 
@@ -54,6 +55,8 @@ class App extends Component {
             </CSSTransition>
           </TransitionGroup>
         )}/>
+
+      <Footer />
       </div>
     );
   }

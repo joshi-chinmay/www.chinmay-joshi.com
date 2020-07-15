@@ -5,7 +5,7 @@
   .heading-separator {
     height: 10px;
     width: 100%;
-    border-radius: 1px;
+    border-radius: 0px 50px 50px 0px;
     background-color: #ffb347;
   }
 
@@ -14,7 +14,7 @@
     margin-bottom: 30px;
 
     .card-img-top {
-      border-radius: 12px;
+      border-radius: 14px;
     }
   }
 
