@@ -56,13 +56,13 @@ export default class Work extends Component {
     for (let i = 0; i < metaData.length; i++) {
       if(metaData[i].external) {
         links.push(
-          <a href={metaData[i].linkUrl} className="small mr-4" target="_blank" rel="noopener noreferrer">
+          <a href={metaData[i].linkUrl} className="font-weight-bold mr-4" target="_blank" rel="noopener noreferrer">
             {metaData[i].linkName} <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
           </a>
         )
       } else {
         links.push(
-          <a href={metaData[i].linkUrl} className="small mr-4">
+          <a href={metaData[i].linkUrl} className="font-weight-bold mr-4">
             {metaData[i].linkName}
           </a>
         )
@@ -82,7 +82,7 @@ export default class Work extends Component {
           <div className="card h-100">
             <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
 
-            <div className="card-header">
+            <div className="card-header font-weight-bold">
               {cardData[i].projectName}
             </div>
 

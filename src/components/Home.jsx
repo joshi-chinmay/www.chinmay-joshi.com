@@ -35,13 +35,13 @@ export default class Home extends Component {
     for (let i = 0; i < metaData.length; i++) {
       if(metaData[i].external) {
         links.push(
-          <a key={i} href={metaData[i].linkUrl} className="small mr-4" target="_blank" rel="noopener noreferrer">
+          <a key={i} href={metaData[i].linkUrl} className="font-weight-bold mr-4" target="_blank" rel="noopener noreferrer">
             {metaData[i].linkName} <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
           </a>
         )
       } else {
         links.push(
-          <a key={i} href={metaData[i].linkUrl} className="small mr-4">
+          <a key={i} href={metaData[i].linkUrl} className="font-weight-bold mr-4">
             {metaData[i].linkName}
           </a>
         )
@@ -62,7 +62,7 @@ export default class Home extends Component {
           <div className="card h-100">
             <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
 
-            <div className="card-header">
+            <div className="card-header font-weight-bold">
               {cardData[i].projectName}
             </div>
 
@@ -83,7 +83,7 @@ export default class Home extends Component {
         <section className="home-page-blob-container">
           <div className="row">
             <div className="col-sm-12">
-              <h1 className="text-primary lead-slg">
+              <h1 className="lead-slg">
                 {sayHello}! <br />I am Chinmay Joshi.
               </h1>
               <h5 className="lead-lg pt-2 pr-2">

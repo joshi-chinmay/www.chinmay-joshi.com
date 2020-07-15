@@ -1,20 +1,24 @@
 .navbar {
-  padding: 25px 0px;
-  background-color: #ffffff !important;
+  padding: 36px 0px;
+  background-color: #ffffff;
 
+  .nav-item {
+    margin: 0 26px;
+  }
   .nav-link {
     font-weight: bold !important;
-    margin-left: 46px !important;
+    padding: 0px 12px;
     font-size: 1.2rem;
-    color: #4B6A88;
+    color: #c20a75;
   }
 
   .nav-link:hover {
-    color: #ffb347;
-    opacity: 1;
+    color: #c20a75;
+    opacity: 0.6;
+    transform: translateY(-3px);
   }
   .navbar-toggler {
-    background-color: #4B6A88;
+    background-color: #c20a75;
     color: #ffffff;
     margin-left: 15px;
   }
