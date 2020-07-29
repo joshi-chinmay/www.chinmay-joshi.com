@@ -1,11 +1,11 @@
 .work-page-container {
   margin-top: 38px;
-  padding: 0px 20px 0px 100px;
+  padding: 0px 20px 0px 50px;
 
   .heading-separator {
-    height: 10px;
+    height: 6px;
     width: 100%;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 2px;
     background-color: #ffb347;
   }
 
@@ -22,6 +22,7 @@
     padding-top: 16px;
     margin-bottom: 90px;
   }
+
   .work-tab:last-child {
     margin-bottom: 100px;
   }

@@ -52,15 +52,15 @@ export default class StepUp extends Component {
                 StepUp - A Fitness App
               </h1>
             </div>
-            <div className="col-sm-2 heading-separator">
+            <div className="col-sm-2 heading-separator my-2">
             </div>
           </div>
 
           <div id="vision" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Vision
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -84,36 +84,11 @@ export default class StepUp extends Component {
 
           <div id="interviews" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 User Interviews
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
-              <div className="card pt-4 p-2">
-                <div className="card-body">
-                  <h6>There are some interview questionsed listed</h6>
-                  <ol>
-                    <li>How often do you shop at campus store?</li>
-                    <li>What's your commute like?</li>
-                    <li>How much time do you spend on campus?</li>
-                    <li>How do you start your day?</li>
-                    <li>List some of the relaxing and stressful activities you do in a day?</li>
-                    <li>What's your favorite sport?</li>
-                    <li>Do you use any fitness app or wearable? And why do you use it?</li>
-                    <li>What's your average step count?</li>
-                    <li>Do you believe it is healthy to take at least 6000 steps in a day?</li>
-                    <li>How often do you eat at canteen?</li>
-                    <li>What is your preferred drink and meal for lunch?</li>
-                    <li>Do you track your calorie intake?</li>
-                    <li>What motivates to do exercise?</li>
-                    <li>Given a choice as an exercise - running or walking?</li>
-                    <li>Would you run or walk on the same route?</li>
-                    <li>Would it help if Google or Apple maps helps you with recommended routes?</li>
-                    <li>What if maps shows data such as steps involved / calories count?</li>
-                  </ol>
-                </div>
-              </div>
-
               <div className="bg-white-images mt-4">
                 <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                   <div>
@@ -153,9 +128,9 @@ export default class StepUp extends Component {
 
           <div id="storyboarding" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Storyboard
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -206,9 +181,9 @@ export default class StepUp extends Component {
 
           <div id="moscowAnalysis" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 MoSCoW Analysis
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -222,9 +197,9 @@ export default class StepUp extends Component {
 
           <div id="siteflow" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Siteflow
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -239,23 +214,19 @@ export default class StepUp extends Component {
 
           <div id="riskyAssumptions" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Riskiest Assumptions Metrics
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <div className="row">
                 <div className="col-md-12">
-                  <div className="card p-2">
-                    <div className="card-body">
-                      <h6 className="mt-3">Top 3 riskiest assumptions -</h6>
-                      <ol>
-                        <li>Validate if the user will check in-app notifications every night?</li>
-                        <li>Validate if the the user will run on different routes suggested by the app engine?</li>
-                        <li>Validate if the on-campus stores and cafeteria will provide discounts for the purchased goods?</li>
-                      </ol>
-                    </div>
-                  </div>
+                  <h6 className="mt-3">Top 3 riskiest assumptions -</h6>
+                  <ol>
+                    <li>Validate if the user will check in-app notifications every night?</li>
+                    <li>Validate if the the user will run on different routes suggested by the app engine?</li>
+                    <li>Validate if the on-campus stores and cafeteria will provide discounts for the purchased goods?</li>
+                  </ol>
                 </div>
                 <div className="col-md-12 mx-auto text-center mt-4">
                   <img src={RiskAnalysis} className="img-fluid w-50" alt="" />
@@ -266,9 +237,9 @@ export default class StepUp extends Component {
 
           <div id="pretotyping" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Pretotyping
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -299,9 +270,9 @@ export default class StepUp extends Component {
 
           <div id="wireframes" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Wireframes
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
@@ -318,9 +289,9 @@ export default class StepUp extends Component {
 
           <div id="design" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Low Fidelity Design
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7 text-center">
               <a href="https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/" target="_blank" rel="noopener noreferrer">
@@ -337,12 +308,12 @@ export default class StepUp extends Component {
             <div className="col-sm-12 offset-md-2 col-md-7">
               <div className="row text-center mb-5">
                 <div className="col-md-6">
-                  <a href="/work/tilt" type="button" className="btn btn-warning d-block">
+                  <a href="/work/tilt" type="button" className="btn btn-default d-block">
                     Prev: TILT
                   </a>
                 </div>
                 <div className="col-md-6">
-                  <a href="/work/randomcolorpicker" type="button" className="btn btn-warning d-block">
+                  <a href="/work/randomcolorpicker" type="button" className="btn btn-default d-block">
                     Next: Random Color Picker
                   </a>
                 </div>

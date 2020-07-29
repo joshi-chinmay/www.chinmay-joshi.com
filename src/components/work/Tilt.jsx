@@ -36,15 +36,15 @@ export default class Tilt extends Component {
                 TILT - Today I Listened To
               </h1>
             </div>
-            <div className="col-sm-2 heading-separator">
+            <div className="col-sm-2 heading-separator my-2">
             </div>
           </div>
 
           <div id="vision" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Vision
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -55,9 +55,9 @@ export default class Tilt extends Component {
 
           <div id="research" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 User Research
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -93,9 +93,9 @@ export default class Tilt extends Component {
 
           <div id="wireframes" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Wireframes
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <div className="bg-white-images">
@@ -125,9 +125,9 @@ export default class Tilt extends Component {
 
           <div id="colorPalette" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Color Palette
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -145,9 +145,9 @@ export default class Tilt extends Component {
 
           <div id="fontFamily" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Font Family
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -164,9 +164,9 @@ export default class Tilt extends Component {
 
           <div id="concept" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Concept Design
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-8 text-center">
               <img src={TILTMobilePc} className="img-fluid" alt="" />
@@ -177,12 +177,12 @@ export default class Tilt extends Component {
             <div className="col-sm-12 offset-md-2 col-md-7">
               <div className="row text-center mb-5">
                 <div className="col-md-6">
-                  <a href="/work/karishma-joshi-website" type="button" className="btn btn-warning d-block">
+                  <a href="/work/karishma-joshi-website" type="button" className="btn btn-default d-block">
                     Prev: Karishma's Website
                   </a>
                 </div>
                 <div className="col-md-6">
-                  <a href="/work/step-up" type="button" className="btn btn-warning d-block">
+                  <a href="/work/step-up" type="button" className="btn btn-default d-block">
                     Next: StepUp
                   </a>
                 </div>

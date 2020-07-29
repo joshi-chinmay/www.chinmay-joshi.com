@@ -1,17 +1,12 @@
 $card-bg-color: #ffffff;
 $transition-time: 0.2s;
 
-.card-columns {
-  -webkit-column-gap: 1.25rem;
-  column-gap: 2rem;
-}
-
 .card {
   background-color: $card-bg-color;
   border-radius: 14px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.14);
   transition: all .2s ease-in-out;
 
   .card-header, .card-footer {
@@ -19,9 +14,7 @@ $transition-time: 0.2s;
     border-radius: 0px;
   }
   .card-header {
-    letter-spacing: 0.086rem;
     border-bottom: none;
-    font-size: 14px;
     padding: 1rem 2rem;
   }
   .card-body {
@@ -36,6 +29,33 @@ $transition-time: 0.2s;
   .card-footer {
     border-top: none;
     margin-top: 2rem;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      width: 50%;
+      background-color: rgba(251, 249, 253, 1);
+      padding: 12px 0px;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+    a:hover {
+      background-color: rgba(251, 249, 253, 0.1);
+    }
+    a:first-child {
+      border-bottom-left-radius: 14px;
+    }
+    a:last-child {
+      border-bottom-right-radius: 14px;
+    }
+  }
+  .card-footer.single-link {
+    a {
+      display: inline-block;
+      width: 100%;
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+    }
   }
 }
 

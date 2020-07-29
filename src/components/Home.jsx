@@ -18,13 +18,13 @@ export default class Home extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "View", linkUrl: "/work/step-up"},{linkName: "Prototpye", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
+        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "View", linkUrl: "/work/step-up"}],
       },
       {
         projectName: "TILT", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "View", linkUrl: "/work/tilt"}],
       },
       {
-        projectName: "Website of a Landscape Architect", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "View", linkUrl: "/work/karishma-joshi-website"}, {linkName: "live", linkUrl: "http://karishma-joshi.com/", external: true}],
+        projectName: "Website of a Landscape Architect", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "View", linkUrl: "/work/karishma-joshi-website"}],
       }
     ]);
   }
@@ -35,13 +35,13 @@ export default class Home extends Component {
     for (let i = 0; i < metaData.length; i++) {
       if(metaData[i].external) {
         links.push(
-          <a key={i} href={metaData[i].linkUrl} className="font-weight-bold mr-4" target="_blank" rel="noopener noreferrer">
+          <a key={i} href={metaData[i].linkUrl} className="font-weight-bold" target="_blank" rel="noopener noreferrer">
             {metaData[i].linkName} <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
           </a>
         )
       } else {
         links.push(
-          <a key={i} href={metaData[i].linkUrl} className="font-weight-bold mr-4">
+          <a key={i} href={metaData[i].linkUrl} className="font-weight-bold">
             {metaData[i].linkName}
           </a>
         )
@@ -70,7 +70,7 @@ export default class Home extends Component {
               {cardData[i].description}
             </div>
 
-            <div className="card-footer">
+            <div className={"card-footer " + (cardData[i].links.length > 1 ? "multiple-links" : "single-link" )} >
               {this.getLinks(cardData[i].links)}
             </div>
           </div>
@@ -117,8 +117,8 @@ export default class Home extends Component {
 
           <div className="row">
             <div className="offset-lg-4 col-sm-12 col-lg-4">
-              <a href="/work" type="button" className="btn btn-warning d-block">
-                View My Work
+              <a href="/work" type="button" className="btn btn-default d-block">
+                View all of my work
               </a>
             </div>
           </div>

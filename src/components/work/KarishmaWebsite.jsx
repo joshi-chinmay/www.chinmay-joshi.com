@@ -15,31 +15,31 @@ export default class KarishmaWebsite extends Component {
           <div className="row no-gutters">
             <div className="col-sm-12">
               <h1>
-                Karishma Joshi - Website
+                Website of a Landscape Architect
               </h1>
             </div>
-            <div className="col-sm-2 heading-separator">
+            <div className="col-sm-2 heading-separator my-2">
             </div>
           </div>
 
           <div id="vision" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Vision
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
-                <a href="http://www.karishma-joshi.com" target="_blank" rel="noopener noreferrer" className="text-capitalize">Karishma Joshi</a>, is a friend of mine who asked me to design a website for her as she was preparing herself for internship hunt. She wished to showcase her portfolio online and in a handbook. Hence we kickstarted this project by initiating a discussion about basics of web development and the information I'd need from her.
+                <a href="http://www.karishma-joshi.com" target="_blank" rel="noopener noreferrer" className="text-capitalize">Karishma Joshi</a>, is a friend of mine who asked me to design a website for her as she was preparing herself for internship hunt. She wished to showcase her portfolio online and in a handbook. Hence we kickstarted this project by initiating a discussion about basics of web development and the information I would need from her.
               </span>
             </div>
           </div>
 
           <div id="infoAndMindmapping" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Mindmapping
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <div className="row">
@@ -59,29 +59,37 @@ export default class KarishmaWebsite extends Component {
 
           <div id="personalityTraits" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Personality Traits
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <div className="row">
-                <div className="col-md-3 text-center p-2">Designer head</div>
-                <div className="col-md-3 text-center p-2">Caricature artist</div>
-                <div className="col-md-3 text-center p-2">Doodler</div>
-                <div className="col-md-3 text-center p-2">Imaginative and creative</div>
-                <div className="col-md-3 text-center p-2">Strong practical skills</div>
-                <div className="col-md-3 text-center p-2">Sense of duty & diligence</div>
-                <div className="col-md-3 text-center p-2">Logical individual</div>
-                <div className="col-md-3 text-center p-2">Sensitive and warm at heart</div>
+                <div className="col-md-5">
+                  <ul>
+                    <li>Designer Head</li>
+                    <li>Caricature Artist</li>
+                    <li>Doodler</li>
+                    <li>Imaginative and creative</li>
+                  </ul>
+                </div>
+                <div className="col-md-5">
+                  <ul>
+                    <li>Strong practical skills</li>
+                    <li>Sense of duty and diligence</li>
+                    <li>Logical individual</li>
+                    <li>Sensitive and warm at heart</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           <div id="glimpse" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Glimpse
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-8 text-center">
               <img src={KarishmaWebsiteGlimpse} className="img-fluid" alt="" />
@@ -90,18 +98,18 @@ export default class KarishmaWebsite extends Component {
 
           <div id="tech" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Technology
-              </h6>
+              </h5>
             </div>
-            <div className="col-sm-12 col-md-8 text-center">
+            <div className="col-sm-12 col-md-8">
               <h1>
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "html5"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "react"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "js-square"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "css3-alt"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "bootstrap"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "github"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "html5"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "react"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "js-square"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "css3-alt"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "bootstrap"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "github"]} />
               </h1>
             </div>
           </div>
@@ -110,12 +118,12 @@ export default class KarishmaWebsite extends Component {
             <div className="col-sm-12 offset-md-2 col-md-7">
               <div className="row text-center mb-5">
                 <div className="col-md-6">
-                  <a href="/work/randomcolorpicker" type="button" className="btn btn-warning d-block">
+                  <a href="/work/randomcolorpicker" type="button" className="btn d-block">
                     Prev: Random Color Picker
                   </a>
                 </div>
                 <div className="col-md-6">
-                  <a href="/work/tilt" type="button" className="btn btn-warning d-block">
+                  <a href="/work/tilt" type="button" className="btn d-block">
                     Next: TILT
                   </a>
                 </div>
@@ -124,10 +132,10 @@ export default class KarishmaWebsite extends Component {
           </div>
         </div>
 
-      <div className="d-md-none d-lg-block">
-        <WorkPageNavigator linkNames={["vision", "infoAndMindmapping", "personalityTraits", "glimpse", "tech"]} />
+        <div className="d-md-none d-lg-block">
+          <WorkPageNavigator linkNames={["vision", "infoAndMindmapping", "personalityTraits", "glimpse", "tech"]} />
+        </div>
       </div>
-    </div>
     );
   }
 }
