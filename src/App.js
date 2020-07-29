@@ -39,18 +39,20 @@ class App extends Component {
         <Route render={({ location }) => (
           <TransitionGroup component="main" className="page-main">
             <CSSTransition key={currentKey} classNames="fade" timeout={timeout} appear>
-              <div className="container-fluid main-container-portfolio">
-                <Switch location={location}>
-                  <Route exact path={'/'} component={LoadableHome} />
-                  <Route exact path={'/home'} component={LoadableHome} />
-                  <Route exact path={'/work'} component={LoadableWork} />
-                  <Route exact path={'/about'} component={LoadableAbout} />
-                  <Route exact path={'/blogs'} component={LoadableBlog} />
-                  <Route exact path={"/work/tilt"} component={LoadableTilt} />
-                  <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
-                  <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
-                  <Route exact path={"/work/step-up"} component={LoadableStepUp} />
-                </Switch>
+              <div className="container-fluid">
+                <main className="main-container-portfolio">
+                  <Switch location={location}>
+                    <Route exact path={'/'} component={LoadableHome} />
+                    <Route exact path={'/home'} component={LoadableHome} />
+                    <Route exact path={'/work'} component={LoadableWork} />
+                    <Route exact path={'/about'} component={LoadableAbout} />
+                    <Route exact path={'/blogs'} component={LoadableBlog} />
+                    <Route exact path={"/work/tilt"} component={LoadableTilt} />
+                    <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+                    <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+                    <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+                  </Switch>
+                </main>
               </div>
             </CSSTransition>
           </TransitionGroup>

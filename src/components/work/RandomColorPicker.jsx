@@ -16,15 +16,15 @@ export default class Loading extends Component {
                 Random Color Picker
               </h1>
             </div>
-            <div className="col-sm-2 heading-separator">
+            <div className="col-sm-2 heading-separator my-2">
             </div>
           </div>
 
           <div id="vision" className="row work-tab mt-5">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Vision
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7">
               <span>
@@ -38,9 +38,9 @@ export default class Loading extends Component {
 
           <div id="glimpse" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Glimpse
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7 text-center">
               <img src={RandomColorPickerDemo} className="img-fluid w-75" alt="gif of random color picker" />
@@ -49,16 +49,16 @@ export default class Loading extends Component {
 
           <div id="tech" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
-              <h6>
+              <h5 className="font-family-playfair">
                 Technology
-              </h6>
+              </h5>
             </div>
             <div className="col-sm-12 col-md-7 text-center">
               <h1>
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "html5"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "js-square"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "css3-alt"]} />
-                <FontAwesomeIcon className="mx-4 text-muted" icon={["fab", "github"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "html5"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "js-square"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "css3-alt"]} />
+                <FontAwesomeIcon className="mx-4" icon={["fab", "github"]} />
               </h1>
             </div>
           </div>
@@ -67,12 +67,12 @@ export default class Loading extends Component {
             <div className="col-sm-12 offset-md-2 col-md-7">
               <div className="row text-center mb-5">
                 <div className="col-md-6">
-                  <a href="/work/step-up" type="button" className="btn btn-warning d-block">
+                  <a href="/work/step-up" type="button" className="btn btn-default d-block">
                     Prev: StepUp
                   </a>
                 </div>
                 <div className="col-md-6">
-                  <a href="/work/karishma-joshi-website" type="button" className="btn btn-warning d-block">
+                  <a href="/work/karishma-joshi-website" type="button" className="btn btn-default d-block">
                     Next: Karishma's Website
                   </a>
                 </div>

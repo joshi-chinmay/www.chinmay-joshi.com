@@ -5,6 +5,8 @@ export default class Menu extends Component {
   render() {
     return(
       <nav className="navbar navbar-expand-lg">
+        <a className="skip-main" href="#main" tabIndex="0">Skip to main content</a>
+
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <FontAwesomeIcon icon={["fas", "bars"]} />
         </button>
