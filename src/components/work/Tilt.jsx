@@ -40,7 +40,7 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="vision" className="row work-tab mt-5">
+          <div id="vision" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
@@ -66,25 +66,25 @@ export default class Tilt extends Component {
               <div className="bg-white-images mt-5">
                 <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={5000} infiniteLoop>
                   <div>
-                    <img src={UserAnalysis1} alt="" className="w-75" />
+                    <img src={UserAnalysis1} alt="User Analysis statestics" className="w-75" />
                   </div>
                   <div>
-                    <img src={UserAnalysis2} alt="" className="w-50" />
+                    <img src={UserAnalysis2} alt="User Analysis statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={UserAnalysis3} alt="" className="w-50" />
+                    <img src={UserAnalysis3} alt="User Analysis statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={UserAnalysis4} alt="" className="w-50" />
+                    <img src={UserAnalysis4} alt="User Analysis statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={UserAnalysis5} alt="" className="w-75" />
+                    <img src={UserAnalysis5} alt="User Analysis statestics" className="w-75" />
                   </div>
                   <div>
-                    <img src={UserAnalysis6} alt="" className="w-75" />
+                    <img src={UserAnalysis6} alt="User Analysis statestics" className="w-75" />
                   </div>
                   <div>
-                    <img src={UserAnalysis7} alt="" className="w-75" />
+                    <img src={UserAnalysis7} alt="User Analysis statestics" className="w-75" />
                   </div>
                 </Carousel>
               </div>
@@ -101,22 +101,22 @@ export default class Tilt extends Component {
               <div className="bg-white-images">
                 <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                   <div>
-                    <img src={wireframe1} alt="" className="w-50" />
+                    <img src={wireframe1} alt="Carousel slide for wireframe" className="w-50" />
                   </div>
                   <div>
-                    <img src={wireframe2} alt="" className="w-50" />
+                    <img src={wireframe2} alt="Carousel slide for wireframe" className="w-50" />
                   </div>
                   <div>
-                    <img src={wireframe3} alt="" className="w-25" />
+                    <img src={wireframe3} alt="Carousel slide for wireframe" className="w-25" />
                   </div>
                   <div>
-                    <img src={wireframe4} alt="" className="w-25" />
+                    <img src={wireframe4} alt="Carousel slide for wireframe" className="w-25" />
                   </div>
                   <div>
-                    <img src={wireframe5} alt="" className="w-25" />
+                    <img src={wireframe5} alt="Carousel slide for wireframe" className="w-25" />
                   </div>
                   <div>
-                    <img src={wireframe6} alt="" className="w-50" />
+                    <img src={wireframe6} alt="Carousel slide for wireframe" className="w-50" />
                   </div>
                 </Carousel>
               </div>
@@ -138,7 +138,7 @@ export default class Tilt extends Component {
               </span>
 
               <div className="mt-5">
-                <img src={colorPalette} className="img-fluid img-thumbnail w-75" alt="" />
+                <img src={colorPalette} className="img-fluid img-thumbnail w-75" alt="Color Palette" />
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default class Tilt extends Component {
               </span>
 
               <div className="mt-5">
-                <img src={RobotoFont} className="img-fluid img-thumbnail text-center w-50" alt="" />
+                <img src={RobotoFont} className="img-fluid img-thumbnail text-center w-50" alt="Roboto Font Selection" />
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@ export default class Tilt extends Component {
               </h5>
             </div>
             <div className="col-sm-12 col-md-8 text-center">
-              <img src={TILTMobilePc} className="img-fluid" alt="" />
+              <img src={TILTMobilePc} className="img-fluid" alt="TILT applicatio conceptulization" />
             </div>
           </div>
 

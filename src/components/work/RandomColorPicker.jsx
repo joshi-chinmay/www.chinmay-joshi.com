@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import RandomColorPickerDemo from '../../images/work/randomcolorpicker/random-color-picker.gif';
 import WorkPageNavigator from '../util/WorkPageNavigator.jsx';
 
-export default class Loading extends Component {
+export default class RandomColorPicker extends Component {
   render() {
     return(
       <div className="main-page-container">
@@ -20,7 +20,7 @@ export default class Loading extends Component {
             </div>
           </div>
 
-          <div id="vision" className="row work-tab mt-5">
+          <div id="vision" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision

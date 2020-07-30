@@ -8,7 +8,7 @@ export default class WorkPageNavigator extends Component {
     for (let i = 0; i < linkNames.length; i++) {
       links.push(
         <div className="naviation-link" key={i}>
-          <a href={"#" + linkNames[i]} className="text-decoration-none small">
+          <a href={"#" + linkNames[i]} className="text-decoration-none">
             {linkNames[i].replace(/([A-Z])/g, ' $1').trim()} <FontAwesomeIcon icon={["far", "circle"]} />
           </a>
         </div>
@@ -20,7 +20,7 @@ export default class WorkPageNavigator extends Component {
         {links}
 
         <div className="naviation-link mt-4">
-          <a href="/work" className="text-decoration-none small">Go Back</a>
+          <a href="/work" className="text-decoration-none small">← Go Back</a>
         </div>
       </div>
     );

@@ -22,7 +22,7 @@ export default class KarishmaWebsite extends Component {
             </div>
           </div>
 
-          <div id="vision" className="row work-tab mt-5">
+          <div id="vision" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
@@ -50,7 +50,7 @@ export default class KarishmaWebsite extends Component {
                   </span>
                   <div className="col-md-12 mt-4 text-center">
                     <h5>The Consul (ESFJ-A)</h5>
-                    <img src={KarishmaPersonalityMap} className="img-fluid" alt="" />
+                    <img src={KarishmaPersonalityMap} className="img-fluid" alt="personality map" />
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default class KarishmaWebsite extends Component {
               </h5>
             </div>
             <div className="col-sm-12 col-md-8 text-center">
-              <img src={KarishmaWebsiteGlimpse} className="img-fluid" alt="" />
+              <img src={KarishmaWebsiteGlimpse} className="img-fluid" alt="karishma website glimpse" />
             </div>
           </div>
 

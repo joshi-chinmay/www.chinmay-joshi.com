@@ -56,7 +56,7 @@ export default class StepUp extends Component {
             </div>
           </div>
 
-          <div id="vision" className="row work-tab mt-5">
+          <div id="vision" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
@@ -77,12 +77,12 @@ export default class StepUp extends Component {
                 Investment <FontAwesomeIcon icon={["fas", "piggy-bank"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div className="col-md-12 text-center mt-4">
-                <img src={HookedMBL} className="img-fluid w-50" alt="" />
+                <img src={HookedMBL} className="img-fluid w-50" alt="Hooked Model" />
               </div>
             </div>
           </div>
 
-          <div id="interviews" className="row work-tab mt-5">
+          <div id="interviews" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 User Interviews
@@ -92,41 +92,41 @@ export default class StepUp extends Component {
               <div className="bg-white-images mt-4">
                 <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                   <div>
-                    <img src={stat1} alt="" className="w-50" />
+                    <img src={stat1} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat2} alt="" className="w-50" />
+                    <img src={stat2} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat3} alt="" className="w-50" />
+                    <img src={stat3} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat4} alt="" className="w-50" />
+                    <img src={stat4} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat5} alt="" className="w-50" />
+                    <img src={stat5} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat6} alt="" className="w-50" />
+                    <img src={stat6} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat7} alt="" className="w-50" />
+                    <img src={stat7} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat8} alt="" className="w-50" />
+                    <img src={stat8} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat9} alt="" className="w-50" />
+                    <img src={stat9} alt="carousel statestics" className="w-50" />
                   </div>
                   <div>
-                    <img src={stat10} alt="" className="w-50" />
+                    <img src={stat10} alt="carousel statestics" className="w-50" />
                   </div>
                 </Carousel>
               </div>
             </div>
           </div>
 
-          <div id="storyboarding" className="row work-tab mt-5">
+          <div id="storyboarding" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Storyboard
@@ -139,39 +139,39 @@ export default class StepUp extends Component {
               <div className="col-md-12 text-center mt-5">
                 <div className="row">
                   <div className="col-md-4 p-2">
-                    <img src={SB1} className="img-fluid" alt="" />
+                    <img src={SB1} className="img-fluid" alt="storyboard grid" />
                     <small>The user is walking in the college, and sees a campaign going on.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB2} className="img-fluid" alt="" />
+                    <img src={SB2} className="img-fluid" alt="storyboard grid" />
                     <small>He likes the concept and decides to sign up.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB3} className="img-fluid" alt="" />
+                    <img src={SB3} className="img-fluid" alt="storyboard grid" />
                     <small>Next morning he wakes up early because he wants to go for a run.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB4} className="img-fluid" alt="" />
+                    <img src={SB4} className="img-fluid" alt="storyboard grid" />
                     <small>He opens the app and sets up the route using the smart suggestions.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB5} className="img-fluid" alt="" />
+                    <img src={SB5} className="img-fluid" alt="storyboard grid" />
                     <small>He goes for a long run.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB6} className="img-fluid" alt="" />
+                    <img src={SB6} className="img-fluid" alt="storyboard grid" />
                     <small>He feels very tired. Phew.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB7} className="img-fluid" alt="" />
+                    <img src={SB7} className="img-fluid" alt="storyboard grid" />
                     <small>After his successful run he receives the notification saying he just received a 10% off at the canteen.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB8} className="img-fluid" alt="" />
+                    <img src={SB8} className="img-fluid" alt="storyboard grid" />
                     <small>He feels very happy and energetic.</small>
                   </div>
                   <div className="col-md-4 p-2">
-                    <img src={SB9} className="img-fluid" alt="" />
+                    <img src={SB9} className="img-fluid" alt="storyboard grid" />
                     <small>That's not it, he receives another notification at 10 PM, motivating him for another run the very next morning.</small>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ export default class StepUp extends Component {
                 The MoSCoW method is a prioritization technique used in management, business analysis, project management, and software development to reach a common understanding with stakeholders on the importance they place on the delivery of each requirement; it is also known as MoSCoW prioritization or MoSCoW analysis.
               </span>
               <div className="mt-5">
-                <img src={MoScoW} className="img-fluid w-70" alt="" />
+                <img src={MoScoW} className="img-fluid w-70" alt="MoScoW analysis" />
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default class StepUp extends Component {
                 Creating a site flow helped me understand amount of interfaces my application would have. It also helped me prioritize pages.
               </span>
               <div className="mt-5">
-                <img src={siteflow} className="img-fluid" alt="" />
+                <img src={siteflow} className="img-fluid" alt="Siteflow for the app" />
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default class StepUp extends Component {
                   </ol>
                 </div>
                 <div className="col-md-12 mx-auto text-center mt-4">
-                  <img src={RiskAnalysis} className="img-fluid w-50" alt="" />
+                  <img src={RiskAnalysis} className="img-fluid w-50" alt="Risky Assumptions Matrics" />
                 </div>
               </div>
             </div>
@@ -251,13 +251,13 @@ export default class StepUp extends Component {
               </span>
               <div className="row mt-4">
                 <div className="col-md-6">
-                  <img src={preto1} className="img-fluid img-thumbnail" alt="" />
+                  <img src={preto1} className="img-fluid img-thumbnail" alt="Examples of Pretotypes" />
                 </div>
                 <div className="col-md-6">
-                  <img src={preto2} className="img-fluid img-thumbnail" alt="" />
+                  <img src={preto2} className="img-fluid img-thumbnail" alt="Examples of Pretotypes" />
                 </div>
                 <div className="col-md-12 text-center mt-4">
-                  <img src={preto3} className="img-fluid img-thumbnail w-50" alt="" />
+                  <img src={preto3} className="img-fluid img-thumbnail w-50" alt="Examples of Pretotypes" />
                 </div>
               </div>
               <div className="mt-4">
@@ -277,10 +277,10 @@ export default class StepUp extends Component {
             <div className="col-sm-12 col-md-7">
               <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                 <div>
-                  <img src={wireframe1} alt="" className="img-fluid" />
+                  <img src={wireframe1} alt="Carousel slide for wireframes" className="img-fluid" />
                 </div>
                 <div>
-                  <img src={wireframe2} alt="" className="img-fluid" />
+                  <img src={wireframe2} alt="Carousel slide for wireframes" className="img-fluid" />
                 </div>
               </Carousel>
             </div>
@@ -295,10 +295,9 @@ export default class StepUp extends Component {
             </div>
             <div className="col-sm-12 col-md-7 text-center">
               <a href="https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/" target="_blank" rel="noopener noreferrer">
-                <img src={DesignLoginPage} className="img-fluid w-25" alt="" />
-              </a>
-              <br />
-              <a href="https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/" target="_blank" rel="noopener noreferrer">
+                <img src={DesignLoginPage} className="img-fluid w-25" alt="design login page and link to prototype" />
+                <br />
+                <br />
                 Design Link
               </a>
             </div>

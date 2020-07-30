@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-
 import Loadable from 'react-loadable';
+
 import Loading from './components/Loading.jsx';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -24,13 +24,18 @@ const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/wo
 const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker.jsx'), loading: Loading});
 const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt.jsx'), loading: Loading});
 
+const LoadablePathwaysToHousing = Loadable({ loader: () => import('./components/work/PathwaysToHousing.jsx'), loading: Loading});
+const LoadableSodaMachine = Loadable({ loader: () => import('./components/work/SodaMachine.jsx'), loading: Loading});
+const LoadableHabit = Loadable({ loader: () => import('./components/work/Habit.jsx'), loading: Loading});
+const LoadablePublicTransitSafety = Loadable({ loader: () => import('./components/work/PublicTransitSafety.jsx'), loading: Loading});
+
 library.add(fab, fas, far);
 
 class App extends Component {
 
   render() {
     const currentKey = window.location.pathname.split('/')[1] || '/';
-    const timeout = { enter: 600, exit: 600 };
+    const timeout = { enter: 1000, exit: 1000 };
 
     return (
       <div className="grand-parent-container">
@@ -48,6 +53,11 @@ class App extends Component {
                     <Route exact path={'/about'} component={LoadableAbout} />
                     <Route exact path={'/blogs'} component={LoadableBlog} />
                     <Route exact path={"/work/tilt"} component={LoadableTilt} />
+                    <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
+                    <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
+                    <Route exact path={"/work/habit"} component={LoadableHabit} />
+                    <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
+
                     <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
                     <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
                     <Route exact path={"/work/step-up"} component={LoadableStepUp} />

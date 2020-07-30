@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 import StepUpImg from '../images/illustrations/stepup.svg';
-import TiltImg from '../images/illustrations/music.svg';
+import AccessibleSodaMachineImg from '../images/illustrations/accessible-soda-machine.svg';
 import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,13 +18,13 @@ export default class Home extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "View", linkUrl: "/work/step-up"}],
+        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "Case Study", linkUrl: "/work/step-up"}],
       },
       {
-        projectName: "TILT", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "View", linkUrl: "/work/tilt"}],
+        projectName: "Accessible Soda Machine", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine would help blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "Case Study", linkUrl: "/work/accessible-soda-machine"}],
       },
       {
-        projectName: "Website of a Landscape Architect", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "View", linkUrl: "/work/karishma-joshi-website"}],
+        projectName: "Website of a Landscape Architect", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "Case Study", linkUrl: "/work/karishma-joshi-website"}],
       }
     ]);
   }
