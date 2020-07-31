@@ -8,6 +8,10 @@ import KarishmaPersonalityMap from '../../images/work/karishma-website/Karishma-
 import KarishmaWebsiteGlimpse from '../../images/work/karishma-website/glimpse.png';
 
 export default class KarishmaWebsite extends Component {
+  componentDidMount() {
+    document.title = "Website of a Landscape Architect | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">

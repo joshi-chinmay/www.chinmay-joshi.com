@@ -43,6 +43,10 @@ import preto2 from '../../images/work/StepUp/pretotype/preto-2.png';
 import preto3 from '../../images/work/StepUp/pretotype/preto-3.png';
 
 export default class StepUp extends Component {
+  componentDidMount() {
+    document.title = "Step Up - A Fitness App | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">

@@ -15,6 +15,7 @@ export default class Blog extends Component {
 
   componentDidMount() {
     this.populateArticleList();
+    document.title = "Blog | Chinmay Joshi";
   }
 
   getArticles() {

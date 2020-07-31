@@ -11,6 +11,10 @@ import AppGoogleFit from '../../images/work/habit/apps/app4-googlefit.png';
 import HabitMockup from '../../images/work/habit/Habit - Mockup.png';
 
 export default class Habit extends Component {
+  componentDidMount() {
+    document.title = "Habit - A Habit forming app | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">

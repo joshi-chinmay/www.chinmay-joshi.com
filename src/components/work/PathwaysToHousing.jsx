@@ -11,6 +11,10 @@ import newNavigation from '../../images/work/pathways-to-housing/new-navigation.
 import wireframes from '../../images/work/pathways-to-housing/wireframes.png';
 
 export default class PathwaysToHousing extends Component {
+  componentDidMount() {
+    document.title = "Pathways To Housing - Website Redesign | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">

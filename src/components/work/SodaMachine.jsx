@@ -10,6 +10,10 @@ import AccessibilityInspiration from '../../images/work/soda-machine/accessibili
 import FinalPrototype from '../../images/work/soda-machine/Final-Proto.png';
 
 export default class SodaMachine extends Component {
+  componentDidMount() {
+    document.title = "Making of Accessible Soda Machine | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">

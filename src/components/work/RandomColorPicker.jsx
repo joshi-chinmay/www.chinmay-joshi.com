@@ -7,6 +7,10 @@ import NextLink from '../util/NextLink.jsx';
 import RandomColorPickerDemo from '../../images/work/randomcolorpicker/random-color-picker.gif';
 
 export default class RandomColorPicker extends Component {
+  componentDidMount() {
+    document.title = "Random Color Picker | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">

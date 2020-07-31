@@ -4,6 +4,10 @@ import PP from '../images/CJ-bw.png';
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 
 export default class About extends Component {
+  componentDidMount() {
+    document.title = "About | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="main-page-container">

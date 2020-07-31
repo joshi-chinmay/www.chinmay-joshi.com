@@ -16,6 +16,10 @@ import SupahandsWebsiteImg from '../images/illustrations/supahands-website.svg';
 import AgentsWebsiteImg from '../images/illustrations/website-general.svg';
 
 export default class Work extends Component {
+  componentDidMount() {
+    document.title = "Work | Chinmay Joshi";
+  }
+
   workPageMetaData() {
     return([
       {

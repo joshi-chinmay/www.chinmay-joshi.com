@@ -25,6 +25,10 @@ import RobotoFont from "../../images/work/TILT/Robot.png";
 import TILTMobilePc from "../../images/gallery/TILT-mobile-pc.png";
 
 export default class Tilt extends Component {
+  componentDidMount() {
+    document.title = "TILT - Today I Listened To | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">

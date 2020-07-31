@@ -32,6 +32,9 @@ const LoadablePublicTransitSafety = Loadable({ loader: () => import('./component
 library.add(fab, fas, far);
 
 class App extends Component {
+  componentDidMount() {
+    document.title = "Chinmay Joshi | Website";
+  }
 
   render() {
     const currentKey = window.location.pathname.split('/')[1] || '/';

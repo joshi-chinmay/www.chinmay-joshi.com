@@ -14,6 +14,10 @@ import Comp3 from '../../images/work/transit-safety/competitors/comp3.jpeg';
 import Brainmap from '../../images/work/transit-safety/Brainmap - Transit Safety.jpg';
 
 export default class PublicTransitSafety extends Component {
+  componentDidMount() {
+    document.title = "Thesis - Public Transit Safety | Chinmay Joshi";
+  }
+
   render() {
     return(
       <div className="work-page-container">
