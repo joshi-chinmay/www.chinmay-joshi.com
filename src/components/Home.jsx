@@ -26,7 +26,7 @@ export default class Home extends Component {
         projectName: "Habit - A Habit forming app", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}]
       },
       {
-        projectName: "Accessible Soda Machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}]
+        projectName: "Making of Accessible Soda Machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}]
       },
       {
         projectName: "Pathways To Housing - Website Redesign", imgSource: PathwaysToHousing, description: "Pathways To Housing is an NGO helping homeless people to gain basic human rights. We proposed a viable and usable website solution as a case study.", links: [{linkName: "case study", linkUrl: "/work/pathways-to-housing"}]
@@ -63,7 +63,7 @@ export default class Home extends Component {
 
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
-        <div key={i} className="col">
+        <div key={i} className="col-lg-3 col-md-6 col-xs-12 mb-5">
           <div className="card h-100">
             <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
 

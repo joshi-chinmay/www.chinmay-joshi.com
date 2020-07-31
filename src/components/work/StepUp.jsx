@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import WorkPageNavigator from '../util/WorkPageNavigator.jsx';
+import NextLink from '../util/NextLink.jsx';
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -39,291 +42,269 @@ import preto1 from '../../images/work/StepUp/pretotype/preto-1.png';
 import preto2 from '../../images/work/StepUp/pretotype/preto-2.png';
 import preto3 from '../../images/work/StepUp/pretotype/preto-3.png';
 
-import WorkPageNavigator from '../util/WorkPageNavigator.jsx';
-
 export default class StepUp extends Component {
   render() {
     return(
-      <div className="main-page-container">
-        <div className="work-page-container">
-          <div className="row no-gutters">
-            <div className="col-sm-12">
-              <h1>
-                StepUp - A Fitness App
-              </h1>
+      <div className="work-page-container">
+        <div className="row no-gutters">
+          <div className="col-sm-12">
+            <h1>
+              StepUp - A Fitness App
+            </h1>
+          </div>
+          <div className="col-sm-2 heading-separator my-2">
+          </div>
+        </div>
+
+        <div id="vision" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Vision
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-7">
+            <span>
+              StepUp is a mobile application, focused on Jefferson University students and staff to help them maintain a healthy lifestyle by taking extra steps in a day.
+            </span>
+            <br />
+            <span>
+              While designing this product, build - measure - learn cycle as a development. The application follows HOOKED framework, widely known for designing habit-forming products.
+            </span>
+            <div className="col-md-12 text-center h6 mt-3">
+              Trigger <FontAwesomeIcon icon={["fas", "lightbulb"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
+              Action <FontAwesomeIcon icon={["fas", "play"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
+              Reward <FontAwesomeIcon icon={["fas", "gifts"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
+              Investment <FontAwesomeIcon icon={["fas", "piggy-bank"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
-            <div className="col-sm-2 heading-separator my-2">
+            <div className="col-md-12 text-center mt-4">
+              <img src={HookedMBL} className="img-fluid w-50" alt="Hooked Model" />
             </div>
           </div>
+        </div>
 
-          <div id="vision" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                Vision
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <span>
-                StepUp is a mobile application, focused on Jefferson University students and staff to help them maintain a healthy lifestyle by taking extra steps in a day.
-              </span>
-              <br />
-              <span>
-                While designing this product, build - measure - learn cycle as a development. The application follows HOOKED framework, widely known for designing habit-forming products.
-              </span>
-              <div className="col-md-12 text-center h6 mt-3">
-                Trigger <FontAwesomeIcon icon={["fas", "lightbulb"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-                Action <FontAwesomeIcon icon={["fas", "play"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-                Reward <FontAwesomeIcon icon={["fas", "gifts"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-                Investment <FontAwesomeIcon icon={["fas", "piggy-bank"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-              </div>
-              <div className="col-md-12 text-center mt-4">
-                <img src={HookedMBL} className="img-fluid w-50" alt="Hooked Model" />
-              </div>
-            </div>
+        <div id="interviews" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              User Interviews
+            </h5>
           </div>
-
-          <div id="interviews" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                User Interviews
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <div className="bg-white-images mt-4">
-                <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
-                  <div>
-                    <img src={stat1} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat2} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat3} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat4} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat5} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat6} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat7} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat8} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat9} alt="carousel statestics" className="w-50" />
-                  </div>
-                  <div>
-                    <img src={stat10} alt="carousel statestics" className="w-50" />
-                  </div>
-                </Carousel>
-              </div>
-            </div>
-          </div>
-
-          <div id="storyboarding" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                Storyboard
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <span>
-                As I followed HOOKED Framework - the first step is to identify a trigger. So for that, I created a story about how users would get to know about this app.
-              </span>
-              <div className="col-md-12 text-center mt-5">
-                <div className="row">
-                  <div className="col-md-4 p-2">
-                    <img src={SB1} className="img-fluid" alt="storyboard grid" />
-                    <small>The user is walking in the college, and sees a campaign going on.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB2} className="img-fluid" alt="storyboard grid" />
-                    <small>He likes the concept and decides to sign up.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB3} className="img-fluid" alt="storyboard grid" />
-                    <small>Next morning he wakes up early because he wants to go for a run.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB4} className="img-fluid" alt="storyboard grid" />
-                    <small>He opens the app and sets up the route using the smart suggestions.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB5} className="img-fluid" alt="storyboard grid" />
-                    <small>He goes for a long run.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB6} className="img-fluid" alt="storyboard grid" />
-                    <small>He feels very tired. Phew.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB7} className="img-fluid" alt="storyboard grid" />
-                    <small>After his successful run he receives the notification saying he just received a 10% off at the canteen.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB8} className="img-fluid" alt="storyboard grid" />
-                    <small>He feels very happy and energetic.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB9} className="img-fluid" alt="storyboard grid" />
-                    <small>That's not it, he receives another notification at 10 PM, motivating him for another run the very next morning.</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="moscowAnalysis" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                MoSCoW Analysis
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <span>
-                The MoSCoW method is a prioritization technique used in management, business analysis, project management, and software development to reach a common understanding with stakeholders on the importance they place on the delivery of each requirement; it is also known as MoSCoW prioritization or MoSCoW analysis.
-              </span>
-              <div className="mt-5">
-                <img src={MoScoW} className="img-fluid w-70" alt="MoScoW analysis" />
-              </div>
-            </div>
-          </div>
-
-          <div id="siteflow" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                Siteflow
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <span>
-                Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together.
-                Creating a site flow helped me understand amount of interfaces my application would have. It also helped me prioritize pages.
-              </span>
-              <div className="mt-5">
-                <img src={siteflow} className="img-fluid" alt="Siteflow for the app" />
-              </div>
-            </div>
-          </div>
-
-          <div id="riskyAssumptions" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                Riskiest Assumptions Metrics
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <div className="row">
-                <div className="col-md-12">
-                  <h6 className="mt-3">Top 3 riskiest assumptions -</h6>
-                  <ol>
-                    <li>Validate if the user will check in-app notifications every night?</li>
-                    <li>Validate if the the user will run on different routes suggested by the app engine?</li>
-                    <li>Validate if the on-campus stores and cafeteria will provide discounts for the purchased goods?</li>
-                  </ol>
-                </div>
-                <div className="col-md-12 mx-auto text-center mt-4">
-                  <img src={RiskAnalysis} className="img-fluid w-50" alt="Risky Assumptions Matrics" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="pretotyping" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                Pretotyping
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
-              <span>
-                For designing a habit forming product I was following a book `HOOKED` by a former Googler Nir Eyal. He teaches about how to carefully avoid failures validate designs and methods taking place while designing an experience.
-              </span>
-              <br />
-              <span>
-                Based on the the riskiest assumptions analysis, I decided to validate if the user is willing to run on different routes using a pretotype, using re-label method. I modified a Google Map, added couple of health stats, selected dummy routes, and asked audience if they would like to receive such stats from the Maps app they use.
-              </span>
-              <div className="row mt-4">
-                <div className="col-md-6">
-                  <img src={preto1} className="img-fluid img-thumbnail" alt="Examples of Pretotypes" />
-                </div>
-                <div className="col-md-6">
-                  <img src={preto2} className="img-fluid img-thumbnail" alt="Examples of Pretotypes" />
-                </div>
-                <div className="col-md-12 text-center mt-4">
-                  <img src={preto3} className="img-fluid img-thumbnail w-50" alt="Examples of Pretotypes" />
-                </div>
-              </div>
-              <div className="mt-4">
-                <span>
-                  Result was out of 16 people, 15 people agreed and were happy to see such stats in the map. This method helped me validate to invest time in focusing on user's needs, priorities and decision making.
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div id="wireframes" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                Wireframes
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7">
+          <div className="col-sm-12 col-md-7">
+            <div className="bg-white-images mt-4">
               <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                 <div>
-                  <img src={wireframe1} alt="Carousel slide for wireframes" className="img-fluid" />
+                  <img src={stat1} alt="carousel statestics" className="w-50" />
                 </div>
                 <div>
-                  <img src={wireframe2} alt="Carousel slide for wireframes" className="img-fluid" />
+                  <img src={stat2} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat3} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat4} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat5} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat6} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat7} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat8} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat9} alt="carousel statestics" className="w-50" />
+                </div>
+                <div>
+                  <img src={stat10} alt="carousel statestics" className="w-50" />
                 </div>
               </Carousel>
             </div>
           </div>
+        </div>
 
-
-          <div id="design" className="row work-tab">
-            <div className="col-sm-12 col-md-3 col-lg-2">
-              <h5 className="font-family-playfair">
-                Low Fidelity Design
-              </h5>
-            </div>
-            <div className="col-sm-12 col-md-7 text-center">
-              <a href="https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/" target="_blank" rel="noopener noreferrer">
-                <img src={DesignLoginPage} className="img-fluid w-25" alt="design login page and link to prototype" />
-                <br />
-                <br />
-                Design Link
-              </a>
-            </div>
+        <div id="storyboarding" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Storyboard
+            </h5>
           </div>
-
-          <div className="row work-tab">
-            <div className="col-sm-12 offset-md-2 col-md-7">
-              <div className="row text-center mb-5">
-                <div className="col-md-6">
-                  <a href="/work/tilt" type="button" className="btn btn-default d-block">
-                    Prev: TILT
-                  </a>
+          <div className="col-sm-12 col-md-7">
+            <span>
+              As I followed HOOKED Framework - the first step is to identify a trigger. So for that, I created a story about how users would get to know about this app.
+            </span>
+            <div className="col-md-12 text-center mt-5">
+              <div className="row">
+                <div className="col-md-4 p-2">
+                  <img src={SB1} className="img-fluid" alt="storyboard grid" />
+                  <small>The user is walking in the college, and sees a campaign going on.</small>
                 </div>
-                <div className="col-md-6">
-                  <a href="/work/randomcolorpicker" type="button" className="btn btn-default d-block">
-                    Next: Random Color Picker
-                  </a>
+                <div className="col-md-4 p-2">
+                  <img src={SB2} className="img-fluid" alt="storyboard grid" />
+                  <small>He likes the concept and decides to sign up.</small>
+                </div>
+                <div className="col-md-4 p-2">
+                  <img src={SB3} className="img-fluid" alt="storyboard grid" />
+                  <small>Next morning he wakes up early because he wants to go for a run.</small>
+                </div>
+                <div className="col-md-4 p-2">
+                  <img src={SB4} className="img-fluid" alt="storyboard grid" />
+                  <small>He opens the app and sets up the route using the smart suggestions.</small>
+                </div>
+                <div className="col-md-4 p-2">
+                  <img src={SB5} className="img-fluid" alt="storyboard grid" />
+                  <small>He goes for a long run.</small>
+                </div>
+                <div className="col-md-4 p-2">
+                  <img src={SB6} className="img-fluid" alt="storyboard grid" />
+                  <small>He feels very tired. Phew.</small>
+                </div>
+                <div className="col-md-4 p-2">
+                  <img src={SB7} className="img-fluid" alt="storyboard grid" />
+                  <small>After his successful run he receives the notification saying he just received a 10% off at the canteen.</small>
+                </div>
+                <div className="col-md-4 p-2">
+                  <img src={SB8} className="img-fluid" alt="storyboard grid" />
+                  <small>He feels very happy and energetic.</small>
+                </div>
+                <div className="col-md-4 p-2">
+                  <img src={SB9} className="img-fluid" alt="storyboard grid" />
+                  <small>That's not it, he receives another notification at 10 PM, motivating him for another run the very next morning.</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="d-md-none d-lg-block">
-          <WorkPageNavigator linkNames={["vision", "interviews", "storyboarding", "moscowAnalysis", "siteflow", "riskyAssumptions", "pretotyping", "wireframes", "design"]} />
+        <div id="moscowAnalysis" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              MoSCoW Analysis
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-7">
+            <span>
+              The MoSCoW method is a prioritization technique used in management, business analysis, project management, and software development to reach a common understanding with stakeholders on the importance they place on the delivery of each requirement; it is also known as MoSCoW prioritization or MoSCoW analysis.
+            </span>
+            <div className="mt-5">
+              <img src={MoScoW} className="img-fluid w-70" alt="MoScoW analysis" />
+            </div>
+          </div>
         </div>
+
+        <div id="siteflow" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Siteflow
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-7">
+            <span>
+              Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together.
+              Creating a site flow helped me understand amount of interfaces my application would have. It also helped me prioritize pages.
+            </span>
+            <div className="mt-5">
+              <img src={siteflow} className="img-fluid" alt="Siteflow for the app" />
+            </div>
+          </div>
+        </div>
+
+        <div id="riskyAssumptions" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Riskiest Assumptions Metrics
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-7">
+            <div className="row">
+              <div className="col-md-12">
+                <h6 className="mt-3">Top 3 riskiest assumptions -</h6>
+                <ol>
+                  <li>Validate if the user will check in-app notifications every night?</li>
+                  <li>Validate if the the user will run on different routes suggested by the app engine?</li>
+                  <li>Validate if the on-campus stores and cafeteria will provide discounts for the purchased goods?</li>
+                </ol>
+              </div>
+              <div className="col-md-12 mx-auto text-center mt-4">
+                <img src={RiskAnalysis} className="img-fluid w-50" alt="Risky Assumptions Matrics" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="pretotyping" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Pretotyping
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-7">
+            <span>
+              For designing a habit forming product I was following a book `HOOKED` by a former Googler Nir Eyal. He teaches about how to carefully avoid failures validate designs and methods taking place while designing an experience.
+            </span>
+            <br />
+            <span>
+              Based on the the riskiest assumptions analysis, I decided to validate if the user is willing to run on different routes using a pretotype, using re-label method. I modified a Google Map, added couple of health stats, selected dummy routes, and asked audience if they would like to receive such stats from the Maps app they use.
+            </span>
+            <div className="row mt-4">
+              <div className="col-md-6">
+                <img src={preto1} className="img-fluid img-thumbnail" alt="Examples of Pretotypes" />
+              </div>
+              <div className="col-md-6">
+                <img src={preto2} className="img-fluid img-thumbnail" alt="Examples of Pretotypes" />
+              </div>
+              <div className="col-md-12 text-center mt-4">
+                <img src={preto3} className="img-fluid img-thumbnail w-50" alt="Examples of Pretotypes" />
+              </div>
+            </div>
+            <div className="mt-4">
+              <span>
+                Result was out of 16 people, 15 people agreed and were happy to see such stats in the map. This method helped me validate to invest time in focusing on user's needs, priorities and decision making.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div id="wireframes" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Wireframes
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-7">
+            <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
+              <div>
+                <img src={wireframe1} alt="Carousel slide for wireframes" className="img-fluid" />
+              </div>
+              <div>
+                <img src={wireframe2} alt="Carousel slide for wireframes" className="img-fluid" />
+              </div>
+            </Carousel>
+          </div>
+        </div>
+
+
+        <div id="design" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Low Fidelity Design
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-7 text-center">
+            <a href="https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/" target="_blank" rel="noopener noreferrer">
+              <img src={DesignLoginPage} className="img-fluid w-25" alt="design login page and link to prototype" />
+              <br />
+              <br />
+              Design Link
+            </a>
+          </div>
+        </div>
+
+        <NextLink nextLink={{name: "TILT - Today I Listened To", slug: "/tilt"}} />
+        <WorkPageNavigator linkNames={["vision", "interviews", "storyboarding", "moscowAnalysis", "siteflow", "riskyAssumptions", "pretotyping", "wireframes", "design"]} />
       </div>
     );
   }

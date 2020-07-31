@@ -37,16 +37,16 @@ export default class Work extends Component {
         projectName: "Habit - A Habit forming app", projectType: "academic", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/file/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=0%3A1", external: true}],
       },
       {
-        projectName: "Accessible Soda Machine", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom", external: true}],
+        projectName: "Making of Accessible Soda Machine", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom", external: true}],
       },
       {
         projectName: "Pathways To Housing - Website Redesign", projectType: "academic", imgSource: PathwaysToHousing, description: "Pathways To Housing is an NGO helping homeless people to gain basic human rights. We proposed a viable and usable website solution as a case study.", links: [{linkName: "case study", linkUrl: "/work/pathways-to-housing"}],
       },
       {
-        projectName: "Step Up", projectType: "academic", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study", linkUrl: "/work/step-up"}, {linkName: "Design", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
+        projectName: "Step Up - A Fitness App", projectType: "academic", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study", linkUrl: "/work/step-up"}, {linkName: "Design", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
       },
       {
-        projectName: "TILT", projectType: "personal", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "case study", linkUrl: "/work/tilt"}],
+        projectName: "TILT - Today I Listened To", projectType: "personal", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "case study", linkUrl: "/work/tilt"}],
       },
       {
         projectName: "Random Color Picker", projectType: "personal", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
