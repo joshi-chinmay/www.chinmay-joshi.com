@@ -3,8 +3,10 @@
   border-radius: 14px;
   padding: 12px;
   color: #010101;
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(12deg, #dfdfdf -67%, #ffffff 76%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
   transition: all .2s linear;
+  font-weight: 500;
 }
 .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus,
@@ -12,10 +14,11 @@
   opacity: 0.6;
   border: none;
   outline: none !important;
-  box-shadow: none !important;
-  color: #010101;
-  background: linear-gradient(78deg, #5e16b6 -40%, #e4d2f9 76%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: #fefefe;
+  background: linear-gradient(78deg, #5e16b6 -90%, #8636e8 94%);
   transition: all .2s linear;
+  transform: translateY(-2px);
 }
 .btn.btn-default {
   background-color: rgba(251, 249, 253, 1);
@@ -28,9 +31,11 @@
 .btn-nav-link {
   background: none;
   box-shadow: none;
-  border-radius: 3px;
+  border-radius: 4px;
+  padding: 12px 22px;
 }
 .btn-nav-link:hover, .btn-nav-link:active, .btn-nav-link:focus {
   background: none !important;
   transform: translateY(-3px);
+  color: #010101;
 }

@@ -10,17 +10,14 @@
     margin: 0 26px;
   }
   .nav-link {
-    font-weight: 400;
-    font-size: 1.12rem;
-    letter-spacing: .06rem;
-    padding: 0.4rem 1.4rem !important;
-    border-radius: 4px;
-    backface-visibility: hidden;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    padding: 0.4rem 1.2rem !important;
   }
 
   .nav-link:hover {
-    color: #c20a75;
-    opacity: 0.76;
+    opacity: 0.62;
     transform: translateY(-3px);
   }
   .navbar-toggler {
@@ -40,7 +37,7 @@
       font-size: 16px;
     }
     .nav-link.active {
-      border-bottom: 3px solid #c20a75;
+      border-bottom: 2px solid #c20a75;
     }
   }
 }

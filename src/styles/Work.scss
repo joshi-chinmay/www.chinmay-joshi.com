@@ -19,12 +19,32 @@
   }
 
   .work-tab {
-    padding-top: 16px;
-    margin-bottom: 90px;
+    margin-top: 56px;
+    margin-bottom: 112px;
   }
 
   .work-tab:last-child {
     margin-bottom: 100px;
+  }
+
+  .table-competitors {
+    td {
+      width: 33.33%
+    }
+  }
+  .table-user-persona {
+    td {
+      width: 33.33%
+    }
+    ul {
+      width: 99.10%;
+      margin-left: -34px;
+      list-style-type: "-";
+      li {
+        padding-left: 6px;
+        padding-bottom: 12px;
+      }
+    }
   }
 }
 
