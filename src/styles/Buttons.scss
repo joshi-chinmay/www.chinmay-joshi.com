@@ -3,8 +3,10 @@
   border-radius: 14px;
   padding: 12px;
   color: #010101;
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(78deg, #fefefe -40%, #fefefe 76%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: all .2s linear;
+  font-weight: 500;
 }
 .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus,
@@ -12,10 +14,11 @@
   opacity: 0.6;
   border: none;
   outline: none !important;
-  box-shadow: none !important;
-  color: #010101;
-  background: linear-gradient(78deg, #5e16b6 -40%, #e4d2f9 76%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: #fefefe;
+  background: linear-gradient(78deg, #5e16b6 -40%, #5e16b6 76%);
   transition: all .2s linear;
+  transform: translateY(-2px);
 }
 .btn.btn-default {
   background-color: rgba(251, 249, 253, 1);

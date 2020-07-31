@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
-import StepUpImg from '../images/illustrations/stepup.svg';
+
+import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
+import PathwaysToHousing from '../images/illustrations/pathways-to-housing.svg';
 import AccessibleSodaMachineImg from '../images/illustrations/accessible-soda-machine.svg';
 import HabitImg from '../images/illustrations/habit.svg';
 
@@ -18,13 +20,16 @@ export default class Home extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Habit - A Habit forming app", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study ⟶", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/file/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=0%3A1", external: true}],
+        projectName: "Thesis - Public Transit Safety", projectType: "academic", imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?", links: [{linkName: "case study", linkUrl: "/work/public-transit-safety"}]
       },
       {
-        projectName: "Accessible Soda Machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study ⟶", linkUrl: "/work/accessible-soda-machine"}],
+        projectName: "Habit - A Habit forming app", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}]
       },
       {
-        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study ⟶", linkUrl: "/work/step-up"}],
+        projectName: "Accessible Soda Machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}]
+      },
+      {
+        projectName: "Pathways To Housing - Website Redesign", imgSource: PathwaysToHousing, description: "Pathways To Housing is an NGO helping homeless people to gain basic human rights. We proposed a viable and usable website solution as a case study.", links: [{linkName: "case study", linkUrl: "/work/pathways-to-housing"}]
       },
     ]);
   }
@@ -58,7 +63,7 @@ export default class Home extends Component {
 
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
-        <div key={i} className="col-sm-12 col-md-6 col-lg-4 p-4">
+        <div key={i} className="col">
           <div className="card h-100">
             <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
 
@@ -108,14 +113,14 @@ export default class Home extends Component {
 
         <section className="home-work-page-container">
           <div className="row">
-            <div className="offset-lg-2 col-sm-12 col-lg-8">
+            <div className="offset-lg-1 col-sm-12 col-lg-10">
               <div className="row mb-5">
                 {workCards}
               </div>
             </div>
           </div>
 
-          <div className="row">
+          <div className="row mt-4">
             <div className="offset-lg-4 col-sm-12 col-lg-4">
               <a href="/work" type="button" className="btn btn-default d-block">
                 View all of my work
