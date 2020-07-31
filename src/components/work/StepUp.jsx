@@ -64,11 +64,11 @@ export default class StepUp extends Component {
           </div>
           <div className="col-sm-12 col-md-7">
             <span>
-              StepUp is a mobile application, focused on Jefferson University students and staff to help them maintain a healthy lifestyle by taking extra steps in a day.
+              StepUp is a mobile applicationn, focused on Jefferson University students and staff to help them maintain a healthy lifestyle by taking extra steps in a day.
             </span>
             <br />
             <span>
-              While designing this product, build - measure - learn cycle as a development. The application follows HOOKED framework, widely known for designing habit-forming products.
+              While designing this product, build - measure - learn cycle as a development. The applicationn follows HOOKED framework, widely known for designing habit-forming products.
             </span>
             <div className="col-md-12 text-center h6 mt-3">
               Trigger <FontAwesomeIcon icon={["fas", "lightbulb"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
@@ -204,7 +204,7 @@ export default class StepUp extends Component {
           <div className="col-sm-12 col-md-7">
             <span>
               Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together.
-              Creating a site flow helped me understand amount of interfaces my application would have. It also helped me prioritize pages.
+              Creating a site flow helped me understand amount of interfaces my applicationn would have. It also helped me prioritize pages.
             </span>
             <div className="mt-5">
               <img src={siteflow} className="img-fluid" alt="Siteflow for the app" />

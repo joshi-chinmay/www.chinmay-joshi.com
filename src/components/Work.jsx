@@ -22,7 +22,7 @@ export default class Work extends Component {
         projectName: "Thesis - Public Transit Safety", projectType: "academic", imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?", links: [{linkName: "case study", linkUrl: "/work/public-transit-safety"}],
       },
       {
-        projectName: "Habit - A Habit forming app", projectType: "academic", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/file/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=0%3A1", external: true}],
+        projectName: "Habit - A Habit forming app", projectType: "academic", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=42%3A0&scaling=scale-down", external: true}],
       },
       {
         projectName: "Making of Accessible Soda Machine", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom", external: true}],
@@ -49,7 +49,7 @@ export default class Work extends Component {
         projectName: "Task Console", projectType: "professional", imgSource: TaskConsoleImg, description: "Task Console helps to Build and run microtasking projects with security, quality and efficiency automation features.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/task-console", external: true}],
       },
       {
-        projectName: "Image Annotator", projectType: "professional", imgSource: ImgAnnoImg, description: "An application curating images by drawing and labeling bounding boxes, especially used by companies focused on autonomous vehicles.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/image-annotation", external: true}],
+        projectName: "Image Annotator", projectType: "professional", imgSource: ImgAnnoImg, description: "An applicationn curating images by drawing and labeling bounding boxes, especially used by companies focused on autonomous vehicles.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/image-annotation", external: true}],
       },
       {
         projectName: "Supahand's Website", projectType: "professional", imgSource: SupahandsWebsiteImg, description: "Supahands is a company I worked at for a year. I designed their website using React.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/", external: true}],

@@ -129,10 +129,10 @@ export default class Tilt extends Component {
           </div>
           <div className="col-sm-12 col-md-7">
             <span>
-              After moodboarding and considering different aspects of the application, I chose a blue-themed color palette for the application. The idea was to make it look refreshing and soothing to the eyes.
+              After moodboarding and considering different aspects of the applicationn, I chose a blue-themed color palette for the applicationn. The idea was to make it look refreshing and soothing to the eyes.
               People should be able to use it for a long period of time.
               <br />
-              “Gray” scale for accent color and “red” for errors and warnings. Rest of the application will be in shades of blue and white.
+              “Gray” scale for accent color and “red” for errors and warnings. Rest of the applicationn will be in shades of blue and white.
             </span>
 
             <div className="mt-5">
@@ -149,7 +149,7 @@ export default class Tilt extends Component {
           </div>
           <div className="col-sm-12 col-md-7">
             <span>
-              The application has a clear vision. It is about people wanting to share their feelings associated with a song or an album. Hence, I wanted a font family which is commonly used and easily readable to everyone. Googles Roboto is the answer to it.
+              The applicationn has a clear vision. It is about people wanting to share their feelings associated with a song or an album. Hence, I wanted a font family which is commonly used and easily readable to everyone. Googles Roboto is the answer to it.
               <br />
               Roboto is a mechanical looking geometric font, which creates a clean and readable pattern on the page.
             </span>
@@ -167,7 +167,7 @@ export default class Tilt extends Component {
             </h5>
           </div>
           <div className="col-sm-12 col-md-8 text-center">
-            <img src={TILTMobilePc} className="img-fluid" alt="TILT applicatio conceptulization" />
+            <img src={TILTMobilePc} className="img-fluid" alt="TILT application conceptulization" />
           </div>
         </div>
 

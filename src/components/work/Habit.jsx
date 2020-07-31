@@ -8,6 +8,7 @@ import AppForest from '../../images/work/habit/apps/app1-forest.png';
 import AppStreak from '../../images/work/habit/apps/app2-streak.png';
 import AppSmokefree from '../../images/work/habit/apps/app3-smokefree.png';
 import AppGoogleFit from '../../images/work/habit/apps/app4-googlefit.png';
+import HabitMockup from '../../images/work/habit/Habit - Mockup.png';
 
 export default class Habit extends Component {
   render() {
@@ -82,7 +83,7 @@ export default class Habit extends Component {
                     </td>
                   </tr>
                   <tr>
-                    <td><b>Forest</b> application helps with digital-wellbeing of the user. By keeping phone away user grows a forest of his own.</td>
+                    <td><b>Forest</b> applicationn helps with digital-wellbeing of the user. By keeping phone away user grows a forest of his own.</td>
                     <td><b>Streaks</b> is the to-do list that helps you form good habits. Every day you complete a task, your streak is extended.</td>
                     <td><b>Smoke Free</b> is UK's most popular smoking cessation app with unique features and a great user experience.</td>
                     <td><b>Google Fit</b> is a activity tracking app for everyday fitness activities such as workouts, runs, routes, and different counts.</td>
@@ -119,7 +120,7 @@ export default class Habit extends Component {
           </div>
           <div className="col-sm-12 col-md-7">
             <p>
-              This application targets a <b>Broad Spectrum</b> of the market, with a <b>Multi-sided platform</b> for users and mentors on IOS, Android platform, along with web based platform.
+              This applicationn targets a <b>Broad Spectrum</b> of the market, with a <b>Multi-sided platform</b> for users and mentors on IOS, Android platform, along with web based platform.
             </p>
             <ul>
               <li>People who are willing to form habits.</li>
@@ -154,7 +155,7 @@ export default class Habit extends Component {
                   </tr>
                   <tr>
                     <td className="small">
-                      App would track user's activity such as application usage, location, etc. <b>All the data stays on his device in a secured manner, so no shady business.</b> Based on the usage, the application would help him carve out free time and posts reminders via notifications.
+                      App would track user's activity such as applicationn usage, location, etc. <b>All the data stays on his device in a secured manner, so no shady business.</b> Based on the usage, the applicationn would help him carve out free time and posts reminders via notifications.
                     </td>
                     <td className="small">
                       We believe, if anyone wants to form a habit, <b>he needs to do the activity at least 21 days.</b> Hence, we would push our users to do the activity everyday. Consecutive activity creates a streak, and user's can compete against your social media connections.
@@ -174,8 +175,24 @@ export default class Habit extends Component {
           </div>
         </div>
 
+        <div id="design" className="row work-tab">
+          <div className="col-sm-12 col-md-3 col-lg-2">
+            <h5 className="font-family-playfair">
+              Design
+            </h5>
+          </div>
+          <div className="col-sm-12 col-md-8 text-center">
+            <a href="https://www.figma.com/proto/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=42%3A0&scaling=scale-down" target="_blank" rel="noopener noreferrer" className="text-capitalize">
+              <img src={HabitMockup} className="img-fluid w-25" alt="TILT application conceptulization" />
+              <br /><br />
+              Design Link
+            </a>
+          </div>
+        </div>
+
+
         <NextLink nextLink={{name: "Making of Accessible Soda Machine", slug: "/accessible-soda-machine"}} />
-        <WorkPageNavigator linkNames={["vision", "problemSpace", "competitorAnalysis", "customerSegment", "featureList"]} />
+        <WorkPageNavigator linkNames={["vision", "problemSpace", "competitorAnalysis", "customerSegment", "featureList", "design"]} />
       </div>
     );
   }
