@@ -9,6 +9,7 @@ import StepUpImg from '../images/illustrations/stepup.svg';
 import TiltImg from '../images/illustrations/music.svg';
 import ColorPickerImg from '../images/illustrations/colors.svg';
 import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
+import AvisitechImg from '../images/illustrations/avisitech.svg';
 import TaskConsoleImg from '../images/illustrations/console.svg';
 import ImgAnnoImg from '../images/illustrations/image-anno.svg';
 import SupahandsWebsiteImg from '../images/illustrations/supahands-website.svg';
@@ -18,6 +19,7 @@ export default class Work extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      activeWorkTab: "all",
       workItems: this.workPageMetaData()
     }
 
@@ -46,13 +48,16 @@ export default class Work extends Component {
         projectName: "Step Up - A Fitness App", projectType: "academic", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study", linkUrl: "/work/step-up"}, {linkName: "Design", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
       },
       {
-        projectName: "TILT - Today I Listened To", projectType: "personal", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "case study", linkUrl: "/work/tilt"}],
+        projectName: "TILT - Today I Listened To", projectType: "professional", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "case study", linkUrl: "/work/tilt"}],
       },
       {
-        projectName: "Random Color Picker", projectType: "personal", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
+        projectName: "Random Color Picker", projectType: "professional", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
       },
       {
         projectName: "Website of a Landscape Architect", projectType: "professional", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "case study", linkUrl: "/work/karishma-joshi-website"}, {linkName: "Website", linkUrl: "http://karishma-joshi.com/", external: true}],
+      },
+      {
+        projectName: "Avisi Technologies", projectType: "professional", imgSource: AvisitechImg, description: "Avisi Technologies is creating a next generation aqueous shunt to treat glaucoma. I helped them create a website to showcase their product, advisory board, and press release.", links: [{linkName: "Website", linkUrl: "https://www.avisitech.com/", external: true}],
       },
       {
         projectName: "Task Console", projectType: "professional", imgSource: TaskConsoleImg, description: "Task Console helps to Build and run microtasking projects with security, quality and efficiency automation features.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/task-console", external: true}],
@@ -94,6 +99,7 @@ export default class Work extends Component {
   render() {
     let cards = [];
     const cardData = this.workPageMetaData();
+    const activeWorkTab = this.state.activeWorkTab;
 
     for (let i = 0; i < cardData.length; i++) {
       cards.push(
@@ -129,7 +135,7 @@ export default class Work extends Component {
           <div className="col-md-12">
             <ul className="nav secondary-nav justify-content-center">
               <li className="nav-item px-3">
-                <button className="btn btn-nav-link nav-link active">All</button>
+                <button className={"btn btn-nav-link nav-link " + activeWorkTab === "add" ? "active" : "" }>All</button>
               </li>
               <li className="nav-item mx-3">
                 <button className="btn btn-nav-link nav-link">Academic</button>
