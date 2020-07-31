@@ -3,6 +3,14 @@ import React, {Component} from 'react';
 import WorkPageNavigator from '../util/WorkPageNavigator.jsx';
 
 import Storyboard from '../../images/work/transit-safety/Storyboard.png';
+import Persona1 from '../../images/work/transit-safety/user-persona/persona-1.jpg';
+import Persona2 from '../../images/work/transit-safety/user-persona/persona-2.jpg';
+import Persona3 from '../../images/work/transit-safety/user-persona/persona-3.jpg';
+import Comp1 from '../../images/work/transit-safety/competitors/comp1.jpeg';
+import Comp2 from '../../images/work/transit-safety/competitors/comp2.jpeg';
+import Comp3 from '../../images/work/transit-safety/competitors/comp3.jpeg';
+
+import Brainmap from '../../images/work/transit-safety/Brainmap - Transit Safety.jpg';
 
 export default class PublicTransitSafety extends Component {
   render() {
@@ -30,6 +38,10 @@ export default class PublicTransitSafety extends Component {
               <p>
                 According to FBI’s Crime Clock, crime rate in the USA is high. A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes.
                 These stats are stressful for you and even me. A thought struck in my head - as a UX designer, what can I contribute to society in order to make world better and safer place?
+              </p>
+              <p className="text-danger">
+                According to Transit Research Cooperative Program -
+                Forty-five agencies surveyed and recorded just over 37,000 offenses. Of the total, approximately 29,000 (78 percent) were less serious, and 8,000 (22 percent) were serious.
               </p>
             </div>
           </div>
@@ -115,6 +127,144 @@ export default class PublicTransitSafety extends Component {
             </div>
           </div>
 
+          <div id="brainmap" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h5 className="font-family-playfair">
+                Brainmap
+              </h5>
+            </div>
+            <div className="col-sm-12 col-md-7">
+              <img src={Brainmap} className="img-fluid img-thumbnail" alt="brainmap of user interviews" />
+            </div>
+          </div>
+
+          <div id="userPersona" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h5 className="font-family-playfair">
+                User Persona
+              </h5>
+            </div>
+            <div className="col-sm-12 col-md-7">
+              <div className="table-responsive">
+                <table className="table table-borderless table-user-persona">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src={Persona1} className="img-fluid img-thumbnail" alt="user personal profile" />
+                        <small>Photo by KAL VISUALS on Unsplash</small>
+                      </td>
+                      <td>
+                        <img src={Persona2} className="img-fluid img-thumbnail" alt="user personal profile" />
+                        <small>Photo by Evan Dvorkin on Unsplash</small>
+                      </td>
+                      <td>
+                        <img src={Persona3} className="img-fluid img-thumbnail" alt="user personal profile" />
+                        <small>Photo by Christiana Rivers on Unsplash</small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h6>User #1</h6>
+                        Anabel Wallace<br />
+                        <small>Data Analyst at Realtor.com</small>
+                      </td>
+                      <td>
+                        <h6>User #2</h6>
+                        Brook Curtis<br />
+                        <small>Software Engineer at Salesforce</small>
+                      </td>
+                      <td>
+                        <h6>User #3</h6>
+                        Britney Brooks<br />
+                        <small>UX Designer and Freelancer</small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul className="small">
+                          <li>I don’t have accessible public transit near my office. Hence, I take my car with me every day.</li>
+                          <li>Uber is pretty expensive.</li>
+                          <li>When I was in the university, I had to switch 2 trains every day.</li>
+                          <li>At times due to transit delays I have attended my lectures while I was on the public transit.</li>
+                          <li>My safety measures were violated by a homeless/drunk man who was on the same train as me. Since then I decided not to rely much on public transport.</li>
+                          <li>Family constantly worries about my safety as we live miles apart.</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul className="small">
+                          <li>I take the train every day. My office is in the heart of San Francisco. In the morning a lot of office workers board the train. But in the evening you may never know who’d be there.</li>
+                          <li>I have been physically and verbally abused by a drunk man. He pissed all over himself and it was a chaos in the train.</li>
+                          <li>I have seen many homeless people on the train station, they follow and bug people for money and food. They don’t usually harm you but sometimes there’s use of abusive language.</li>
+                          <li>In the evening I have to keep an eye on my belongings because I don’t know if pickpocketer would snatch something from me.</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul className="small">
+                          <li>To me public transport has always been a scary experience. I am afraid of people who board the train and bus.</li>
+                          <li>At times, transit facilities are smelly and it feels unhygienic.</li>
+                          <li>I take public transit if and only if I have company.</li>
+                          <li>My friends have shared many bad stories of public transit which includes verbal abuse and public drunkenness.</li>
+                          <li>I used to visit nearest Starbucks and wait for my train to arrive. Once I see the train I used to leave the premise to board the train.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="secondaryResearch" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h5 className="font-family-playfair">
+                Secondary Research
+              </h5>
+            </div>
+            <div className="col-sm-12 col-md-7">
+              <div className="row">
+                <div className="col-sm-12 col-md-6">
+                  <p>Primary Research Material -</p>
+                  <ul className="small">
+                    <li>
+                      Transit cooperative research program - Improving transit security -
+                      <a href="http://onlinepubs.trb.org/onlinepubs/tcrp/tsyn21.pdf" className="text-lowercase" target="_blank" rel="noopener noreferrer">link</a>
+                    </li>
+                    <li>
+                      APTA (American Public Transportation Association) Who Rides Public Transportation -
+                      <a href="https://www.apta.com/wp-content/uploads/Resources/resources/reportsandpublications/Documents/APTA-Who-Rides-Public-Transportation-2017.pdf" className="text-lowercase" target="_blank" rel="noopener noreferrer">link</a>
+                    </li>
+                    <li>
+                      Performance Measurements Jun 2018.xlsx - BART police -
+                      <a href="https://www.bart.gov/sites/default/files/docs/Performance%20Measurements%20Jun%202018.pdf" className="text-lowercase" target="_blank" rel="noopener noreferrer">link</a>
+                    </li>
+                    <li>
+                      APTA - Public Transit and Social Responsibility: Homelessness -
+                      <a href="https://www.apta.com/wp-content/uploads/Transit_Responses_Homeless/REPORT-2018-Leadership-APTA-Team-4-Public-Transit-and-Social-Responsibility.pdf" className="text-lowercase" target="_blank" rel="noopener noreferrer">link</a>
+                    </li>
+                    <li>
+                      Public Transportation Facts -
+                      <a href="https://www.apta.com/news-publications/public-transportation-facts/" className="text-lowercase" target="_blank" rel="noopener noreferrer">link</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-12 col-md-6">
+                  <p>Current Implementated Strategies to increase transit safety -</p>
+                  <ul className="small">
+                    <li>Deploy uniformed patrol officers.</li>
+                    <li>Cameras on coaches to reduce juvenile disturbances.</li>
+                    <li>Keyless entry to transit systems.</li>
+                    <li>Community Outreach - crime-stopper programs.</li>
+                    <li>Seminars in schools and colleges.</li>
+                    <li>Gang/violence awareness training for operators.</li>
+                    <li>Lightning on the transportation hubs.</li>
+                    <li>Fencing systems to mark the perimeter.</li>
+                    <li>Security alarm - silent alarm and call to nearby authorities.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div id="storyboard" className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
@@ -122,30 +272,80 @@ export default class PublicTransitSafety extends Component {
               </h5>
             </div>
             <div className="col-sm-12 col-md-7">
-              <img src={Storyboard} className="img-fluid img-thumbnail" />
+              <img src={Storyboard} className="img-fluid img-thumbnail" alt="storyboard of a girl who struggles through the issues of public transit safety" />
+            </div>
+          </div>
+
+          <div id="competitorAnalysis" className="row work-tab">
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h5 className="font-family-playfair">
+                Competitor Analysis
+              </h5>
+            </div>
+            <div className="col-sm-12 col-md-7">
+              <div className="table-responsive">
+                <table className="table table-borderless table-competitors">
+                  <tbody>
+                    <tr className="text-center">
+                      <td>
+                        <img src={Comp1} alt="competitor applications" className="img-fluid img-thumbnail" />
+                      </td>
+                      <td>
+                        <img src={Comp2} alt="competitor applications" className="img-fluid img-thumbnail" />
+                      </td>
+                      <td>
+                        <img src={Comp3} alt="competitor applications" className="img-fluid img-thumbnail" />
+                      </td>
+                    </tr>
+                    <tr className="text-center">
+                      <td>Transit App</td>
+                      <td>Citizen</td>
+                      <td>Citymapper</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul className="small">
+                          <li>Real-time updates of your ride.</li>
+                          <li>Plans future trips using AI.</li>
+                          <li>Real time stats - time to leave, fastest route.</li>
+                          <li>Integration with Uber, Bikeshare, Carshare.</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul className="small">
+                          <li>Real-time, lifesaving alerts.</li>
+                          <li>Alerts go out within 90 seconds of a 911 or user report and are verified by trained Citizen agents.</li>
+                          <li>Live videos and streams.</li>
+                        </ul>
+                      </td>
+                      <td>
+                        <ul className="small">
+                          <li>Journey planner includes travel plans and daily routes.</li>
+                          <li>Real-time updates of your ride.</li>
+                          <li>A friend can follow your trip and will know your ETA.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
           <div className="row work-tab">
             <div className="col-sm-12 offset-md-2 col-md-7">
-              <div className="row text-center mb-5">
-                <div className="col-md-6">
-                  <a href="/work/step-up" type="button" className="btn btn-default d-block">
-                    Prev: StepUp
-                  </a>
-                </div>
-                <div className="col-md-6">
-                  <a href="/work/karishma-joshi-website" type="button" className="btn btn-default d-block">
-                    Next: Karishma's Website
-                  </a>
-                </div>
-              </div>
+              <a href="/work/step-up" className="text-capitalize d-inline float-left">
+                Previous: StepUp
+              </a>
+              <a href="/work/karishma-joshi-website" className="text-capitalize d-inline float-right">
+                Next: Karishma's Website
+              </a>
             </div>
           </div>
         </div>
 
         <div className="d-md-none d-lg-block">
-          <WorkPageNavigator linkNames={["initial", "targetAudience", "problemStatement", "howMightWe", "userInterviews", "storyboard"]} />
+          <WorkPageNavigator linkNames={["initial", "targetAudience", "problemStatement", "howMightWe", "userInterviews", "brainmap", "userPersona", "secondaryResearch", "storyboard", "competitorAnalysis"]} />
         </div>
       </div>
     );

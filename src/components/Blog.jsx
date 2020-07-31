@@ -40,13 +40,18 @@ export default class Blog extends Component {
             </div>
 
             <div className="card-body">
-              {article.description}
-              <br />
-              {console.log(article.tag_list)}
+              <p>
+                {article.description}
+              </p>
 
-              <span>
-                {article.readable_publish_date}
-              </span>
+              <div className="w-100">
+                <span className="font-weight-bold">
+                  { article.tag_list.map(function(x) { return("#" + x) }).join(", ") }
+                </span>
+                <span className="d-inline float-right">
+                  {article.readable_publish_date}
+                </span>
+              </div>
             </div>
 
             <div className="card-footer single-link">

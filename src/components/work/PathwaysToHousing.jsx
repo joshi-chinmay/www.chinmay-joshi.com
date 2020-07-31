@@ -207,17 +207,17 @@ export default class PathwaysToHousing extends Component {
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="bg-success font-weight-bold">
+                      <tr className="table-success font-weight-bold">
                         <td>To know more about the organization's vision and services, which place would you go to read more about it?</td>
                         <td>17.58 sec</td>
                         <td>90%</td>
                       </tr>
-                      <tr className="bg-success font-weight-bold">
+                      <tr className="table-success font-weight-bold">
                         <td>Let's say you know a homeless person, who is in tremendous need of help. Which place would you go to reach out to the organization?</td>
                         <td>28.23 sec</td>
                         <td>70%</td>
                       </tr>
-                      <tr className="bg-warning">
+                      <tr className="table-warning">
                         <td>Let's say you are willing to provide help to Pathways To Housing as a VOLUNTEER, where would you find the necessary information about the volunteering?</td>
                         <td>8.54 sec</td>
                         <td>30%</td>
