@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
 import StepUpImg from '../images/illustrations/stepup.svg';
 import AccessibleSodaMachineImg from '../images/illustrations/accessible-soda-machine.svg';
-import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
+import HabitImg from '../images/illustrations/habit.svg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -18,14 +18,14 @@ export default class Home extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "Case Study", linkUrl: "/work/step-up"}],
+        projectName: "Habit - A Habit forming app", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study ⟶", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/file/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=0%3A1", external: true}],
       },
       {
-        projectName: "Accessible Soda Machine", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine would help blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "Case Study", linkUrl: "/work/accessible-soda-machine"}],
+        projectName: "Accessible Soda Machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study ⟶", linkUrl: "/work/accessible-soda-machine"}],
       },
       {
-        projectName: "Website of a Landscape Architect", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "Case Study", linkUrl: "/work/karishma-joshi-website"}],
-      }
+        projectName: "Step Up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study ⟶", linkUrl: "/work/step-up"}],
+      },
     ]);
   }
 

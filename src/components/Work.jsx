@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import StepUpImg from '../images/illustrations/stepup.svg';
 import AccessibleSodaMachineImg from '../images/illustrations/accessible-soda-machine.svg';
+import HabitImg from '../images/illustrations/habit.svg';
 import TiltImg from '../images/illustrations/music.svg';
 import ColorPickerImg from '../images/illustrations/colors.svg';
 import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
@@ -28,19 +29,25 @@ export default class Work extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Step Up", projectType: "academic", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "Case Study", linkUrl: "/work/step-up"}, {linkName: "Design", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
+        projectName: "Habit - A Habit forming app", projectType: "academic", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study ⟶", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/file/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=0%3A1", external: true}],
       },
       {
-        projectName: "Accessible Soda Machine", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine would help blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "Case Study", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom", external: true}],
+        projectName: "Accessible Soda Machine", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study ⟶", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom", external: true}],
       },
       {
-        projectName: "TILT", projectType: "personal", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "Case Study", linkUrl: "/work/tilt"}],
+        projectName: "Step Up", projectType: "academic", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study ⟶", linkUrl: "/work/step-up"}, {linkName: "Design", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
       },
       {
-        projectName: "Random Color Picker", projectType: "personal", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "Case Study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
+        projectName: "", projectType: "academic", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine would help blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study ⟶", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom", external: true}],
       },
       {
-        projectName: "Website of a Landscape Architect", projectType: "professional", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "Case Study", linkUrl: "/work/karishma-joshi-website"}, {linkName: "Website", linkUrl: "http://karishma-joshi.com/", external: true}],
+        projectName: "TILT", projectType: "personal", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "case study ⟶", linkUrl: "/work/tilt"}],
+      },
+      {
+        projectName: "Random Color Picker", projectType: "personal", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study ⟶", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
+      },
+      {
+        projectName: "Website of a Landscape Architect", projectType: "professional", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "case study ⟶", linkUrl: "/work/karishma-joshi-website"}, {linkName: "Website", linkUrl: "http://karishma-joshi.com/", external: true}],
       },
       {
         projectName: "Task Console", projectType: "professional", imgSource: TaskConsoleImg, description: "Task Console helps to Build and run microtasking projects with security, quality and efficiency automation features.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/task-console", external: true}],
