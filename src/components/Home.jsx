@@ -10,8 +10,16 @@ import HabitImg from '../images/illustrations/habit.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      helloWord: this.helloWorld(),
+    }
+  }
+
   helloWorld() {
-    const hello = ["Hello", "नमस्कार", "Hallo", "Bonjour", "Hola", "Ciao", "Guten Tag", "Hallo, Hi", "Olá", "Kon'nichiwa", "xin chào"];
+    const hello = ["Hello", "नमस्कार", "Hallo", "Bonjour", "Hola", "Ciao", "Guten Tag", "Hallo, Hi", "Olá", "Kon'nichiwa", "xin chào"]
     return(
       hello[ Math.floor(Math.random(10) * hello.length) ]
     );
@@ -59,7 +67,6 @@ export default class Home extends Component {
   render() {
     let workCards = [];
     const cardData = this.workPageMetaData();
-    const sayHello = this.helloWorld();
 
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
@@ -85,7 +92,7 @@ export default class Home extends Component {
 
     return(
       <TransitionGroup component="main">
-        <CSSTransition key={window.location.pathname.split('/')[1] || '/'} classNames="fade" timeout={{ enter: 10000, exit: 10000 }} appear>
+        <CSSTransition classNames="fade" timeout={{ enter: 10000, exit: 10000 }} appear>
           <div className="page-container">
             <div className="blob">
               <svg xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
@@ -93,13 +100,13 @@ export default class Home extends Component {
               </svg>
             </div>
 
-            <section className="home-page-blob-container">
+            <section className="home-page-welcome-note-container">
               <div className="row">
                 <div className="col-sm-12">
                   <h1 className="lead-slg">
-                    {sayHello}! <br />I am Chinmay Joshi.
+                    {this.state.helloWord}! <br />I am Chinmay Joshi.
                   </h1>
-                  <p className="lead pt-5 pr-2">
+                  <p className="lead pt-4 pr-2">
                     Software Engineer turned <b className="font-weight-bold">Product Designer</b>.
                     <br />Currently designing memorable, scalable experiences at <a href="https://www.listacross.com" className="text-capitalize" target="_blank" rel="noopener noreferrer">ListAcross</a>.
                   </p>
