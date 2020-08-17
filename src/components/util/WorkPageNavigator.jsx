@@ -16,15 +16,13 @@ export default class WorkPageNavigator extends Component {
     }
 
     return(
-      <div className="d-md-none d-lg-block">
-        <div className="fixed-page-navigator">
-          {links}
+      <div className="d-md-none d-lg-block fixed-page-navigator">
+        {links}
 
-          <div className="naviation-link mt-4">
-            <a href="/work" className="text-decoration-none small">
-              ← Go Back
-            </a>
-          </div>
+        <div className="naviation-link mt-4">
+          <a href="/work" className="text-decoration-none small">
+            ← Go Back
+          </a>
         </div>
       </div>
     );

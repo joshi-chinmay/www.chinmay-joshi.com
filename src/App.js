@@ -41,25 +41,23 @@ class App extends Component {
         <Menu />
 
         <Route render={({ location }) => (
-          <div className="container-fluid">
-            <main className="main-container-portfolio">
-              <Switch location={location}>
-                <Route exact path={'/'} component={LoadableHome} />
-                <Route exact path={'/home'} component={LoadableHome} />
-                <Route exact path={'/work'} component={LoadableWork} />
-                <Route exact path={'/about'} component={LoadableAbout} />
-                <Route exact path={'/blogs'} component={LoadableBlog} />
-                <Route exact path={"/work/tilt"} component={LoadableTilt} />
-                <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
-                <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
-                <Route exact path={"/work/habit"} component={LoadableHabit} />
-                <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
-                <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
-                <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
-                <Route exact path={"/work/step-up"} component={LoadableStepUp} />
-              </Switch>
-            </main>
-          </div>
+          <main className="container-fluid">
+            <Switch location={location}>
+              <Route exact path={'/'} component={LoadableHome} />
+              <Route exact path={'/home'} component={LoadableHome} />
+              <Route exact path={'/work'} component={LoadableWork} />
+              <Route exact path={'/about'} component={LoadableAbout} />
+              <Route exact path={'/blogs'} component={LoadableBlog} />
+              <Route exact path={"/work/tilt"} component={LoadableTilt} />
+              <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
+              <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
+              <Route exact path={"/work/habit"} component={LoadableHabit} />
+              <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
+              <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+              <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+              <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+            </Switch>
+          </main>
         )}/>
 
       <Footer />

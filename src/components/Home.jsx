@@ -103,7 +103,7 @@ export default class Home extends Component {
             <section className="home-page-welcome-note-container">
               <div className="row">
                 <div className="col-sm-12">
-                  <h1 className="lead-slg">
+                  <h1 className="lead-xlg">
                     {this.state.helloWord}! <br />I am Chinmay Joshi.
                   </h1>
                   <p className="lead pt-4 pr-2">

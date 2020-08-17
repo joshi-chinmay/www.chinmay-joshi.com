@@ -20,7 +20,7 @@ export default class PublicTransitSafety extends Component {
 
   render() {
     return(
-      <div className="work-page-container">
+      <div className="work-page-presnetation">
 
         <div className="row no-gutters">
           <div className="col-sm-12">

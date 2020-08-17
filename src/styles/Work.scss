@@ -1,63 +1,69 @@
 .work-page-container {
-  margin-top: 38px;
-  padding: 0px 20px 0px 50px;
+  .work-landing-page {
+    background: #f5f1fb;
 
-  .heading-separator {
-    height: 6px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: #ffb347;
-  }
-
-  .with-image {
-    padding: 0px;
-    margin-bottom: 30px;
-
-    .card-img-top {
-      border-radius: 14px;
+    .work-tab-landing-page-title {
+      position: absolute;
+      left: 16%;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
   }
+  .work-page-presnetation {
+    padding: 0px 0px 0px 20px;
 
-  .work-tab {
-    margin-top: 56px;
-    margin-bottom: 112px;
-  }
-
-  .work-tab:last-child {
-    margin-bottom: 100px;
-  }
-
-  .table-competitors {
-    td {
-      width: 33.33%
+    .heading-separator {
+      height: 6px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: #ffb347;
     }
-  }
-  .table-user-persona {
-    td {
-      width: 33.33%
-    }
-    ul {
-      width: 99.10%;
-      margin-left: -34px;
-      list-style-type: "-";
-      li {
-        padding-left: 6px;
-        padding-bottom: 12px;
-      }
-    }
-  }
-}
-
-@media (max-width: 991.98px) {
-  .work-page-container {
-    padding: 10px;
 
     .work-tab {
-      margin-bottom: 0px;
+      margin-top: 56px;
+      margin-bottom: 112px;
+    }
 
-      .col-sm-12.col-md-7 {
-        padding-top: 15px;
+    .work-tab:last-child {
+      margin-bottom: 100px;
+    }
+
+    .table-competitors {
+      td {
+        width: 33.33%
+      }
+    }
+    .table-user-persona {
+      td {
+        width: 33.33%
+      }
+      ul {
+        width: 99.10%;
+        margin-left: -34px;
+        list-style-type: "-";
+        li {
+          padding-left: 6px;
+          padding-bottom: 12px;
+        }
       }
     }
   }
+
+  @media (max-width: 991.98px) {
+    .work-page-container {
+      .work-page-presnetation {
+        padding: 10px;
+
+        .work-tab {
+          margin-bottom: 0px;
+
+          .col-sm-12.col-md-7 {
+            padding-top: 15px;
+          }
+        }
+      }
+    }
+  }
+
 }

@@ -17,7 +17,7 @@ export default class Habit extends Component {
 
   render() {
     return(
-      <div className="work-page-container">
+      <div className="work-page-container-">
 
         <div className="row no-gutters">
           <div className="col-sm-12">
