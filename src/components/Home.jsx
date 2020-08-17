@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
-
 import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
 import PathwaysToHousing from '../images/illustrations/pathways-to-housing.svg';
 import AccessibleSodaMachineImg from '../images/illustrations/accessible-soda-machine.svg';
@@ -20,16 +20,16 @@ export default class Home extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Thesis - Public Transit Safety", projectType: "academic", imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?", links: [{linkName: "case study", linkUrl: "/work/public-transit-safety"}]
+        projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", projectType: "academic", imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?", links: [{linkName: "case study", linkUrl: "/work/public-transit-safety"}]
       },
       {
-        projectName: "Habit - A Habit forming app", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}]
+        projectName: "Habit - A Habit forming app", slug: "/habit", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}]
       },
       {
-        projectName: "Making of Accessible Soda Machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}]
+        projectName: "Making of Accessible Soda Machine", slug: "/accessible-soda-machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}]
       },
       {
-        projectName: "Pathways To Housing - Website Redesign", imgSource: PathwaysToHousing, description: "Pathways To Housing is an NGO helping homeless people to gain basic human rights. We proposed a viable and usable website solution as a case study.", links: [{linkName: "case study", linkUrl: "/work/pathways-to-housing"}]
+        projectName: "Pathways To Housing - Website Redesign", slug: "/pathways-to-housing", imgSource: PathwaysToHousing, description: "Pathways To Housing is an NGO helping homeless people to gain basic human rights. We proposed a viable and usable website solution as a case study.", links: [{linkName: "case study", linkUrl: "/work/pathways-to-housing"}]
       },
     ]);
   }
@@ -64,7 +64,7 @@ export default class Home extends Component {
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
         <div key={i} className="col-lg-3 col-md-6 col-xs-12 mb-5">
-          <div className="card h-100">
+          <div className="card h-100" onClick={() => this.props.history.push("/work" + cardData[i].slug) } >
             <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
 
             <div className="card-header font-weight-bold">
@@ -84,51 +84,53 @@ export default class Home extends Component {
     }
 
     return(
-      <div className="page-container">
-        <div className="blob">
-          <svg xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
-            <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
-          </svg>
-        </div>
+      <TransitionGroup component="main">
+        <CSSTransition key={window.location.pathname.split('/')[1] || '/'} classNames="fade" timeout={{ enter: 10000, exit: 10000 }} appear>
+          <div className="page-container">
+            <div className="blob">
+              <svg xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+                <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+              </svg>
+            </div>
 
-        <section className="home-page-blob-container">
-          <div className="row">
-            <div className="col-sm-12">
-              <h1 className="lead-slg">
-                {sayHello}! <br />I am Chinmay Joshi.
-              </h1>
-              <h5 className="lead pt-2 pr-2 font-weight">
-                UX Designer & Frontend Engineer
-              </h5>
-              <p className="mt-2">
-                I design memorable, viable, usable and scalable experience by amalgamating <br />principles of user experience design, cognitive psychology and interaction design.
-              </p>
+            <section className="home-page-blob-container">
+              <div className="row">
+                <div className="col-sm-12">
+                  <h1 className="lead-slg">
+                    {sayHello}! <br />I am Chinmay Joshi.
+                  </h1>
+                  <p className="lead pt-5 pr-2">
+                    Software Engineer turned <b className="font-weight-bold">Product Designer</b>.
+                    <br />Currently designing memorable, scalable experiences at <a href="https://www.listacross.com" className="text-capitalize" target="_blank" rel="noopener noreferrer">ListAcross</a>.
+                  </p>
 
-              <div className="mt-5">
-                <SocialMediaIcons />
+                  <div className="mt-5">
+                    <SocialMediaIcons />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
-        <section className="home-work-page-container">
-          <div className="row">
-            <div className="offset-lg-1 col-sm-12 col-lg-10">
-              <div className="row mb-5">
-                {workCards}
+            <section className="home-work-page-container">
+              <div className="row">
+                <div className="offset-lg-1 col-sm-12 col-lg-10">
+                  <div className="row mb-5">
+                    {workCards}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div className="row mt-4">
-            <div className="offset-lg-4 col-sm-12 col-lg-4">
-              <a href="/work" type="button" className="btn btn-default d-block">
-                View all of my work
-              </a>
-            </div>
+              <div className="row mt-4">
+                <div className="offset-lg-4 col-sm-12 col-lg-4">
+                  <a href="/work" type="button" className="btn btn-default d-block">
+                    View all of my work
+                  </a>
+                </div>
+              </div>
+            </section>
           </div>
-        </section>
-      </div>
+        </CSSTransition>
+      </TransitionGroup>
     );
   }
 }
