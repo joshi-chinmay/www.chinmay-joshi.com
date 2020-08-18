@@ -5,10 +5,6 @@
 .home-work-page-container {
   margin: 160px 0;
 }
-.footer-attribution-container {
-  margin-top: 220px;
-  margin-bottom: 20px;
-}
 @media (max-width: 991.98px) {
   .home-page-welcome-note-container {
     padding-top: 25px;
@@ -24,7 +20,7 @@
   fill: #f5f1fb;
   top: 20%;
   left: 0%;
-  width: 68%;
+  width: 62%;
   z-index: -1;
 
   animation: fadeIn 1s;
@@ -46,7 +42,7 @@
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0.5;
     top: 26%;
     left: 0%;
   }
@@ -59,7 +55,7 @@
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0.5;
     top: 26%;
     left: 0%;
   }

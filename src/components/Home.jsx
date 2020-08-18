@@ -71,7 +71,7 @@ export default class Home extends Component {
 
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
-        <div key={i} className="col-lg-3 col-md-6 col-xs-12 mb-5">
+        <div key={i} className="col-lg-3 col-md-6 col-xs-12 mb-5 animate-on-load">
           <div className="card h-100" onClick={() => this.props.history.push("/work" + cardData[i].slug) } >
             <img src={cardData[i].imgSource} className="card-img-top" alt="work page showcase" />
 
