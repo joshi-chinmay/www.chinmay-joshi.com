@@ -46,7 +46,7 @@ export default class Tilt extends Component {
             </div>
           </div>
           <div className="col-sm-12 col-md-7">
-            <img src={TILTMobilePc} className="img-fluid" />
+            <img src={TILTMobilePc} className="img-fluid" alt="Today I listened to blob" />
           </div>
         </div>
 

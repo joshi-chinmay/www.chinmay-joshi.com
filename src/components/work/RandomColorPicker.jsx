@@ -29,7 +29,7 @@ export default class RandomColorPicker extends Component {
             </div>
           </div>
           <div className="col-sm-12 col-md-7 text-center">
-            <img src={Artboard} className="img-fluid w-75" />
+            <img src={Artboard} className="img-fluid w-75" alt="Random color picker blob" />
           </div>
         </div>
 

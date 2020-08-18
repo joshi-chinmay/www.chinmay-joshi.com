@@ -64,7 +64,7 @@ export default class StepUp extends Component {
             </div>
           </div>
           <div className="col-sm-12 col-md-7">
-            <img src={StepUpMockUP} className="img-fluid" />
+            <img src={StepUpMockUP} className="img-fluid" alt="Step Up application blob" />
           </div>
         </div>
 

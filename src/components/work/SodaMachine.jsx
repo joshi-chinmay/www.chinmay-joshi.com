@@ -33,7 +33,7 @@ export default class SodaMachine extends Component {
             </div>
           </div>
           <div className="col-sm-12 col-md-7 text-center">
-            <img src={FinalPrototype1} className="img-fluid w-75" />
+            <img src={FinalPrototype1} className="img-fluid w-75" alt="Accessible soda machine blob" />
           </div>
         </div>
 

@@ -33,7 +33,7 @@ export default class Habit extends Component {
             </div>
           </div>
           <div className="col-sm-12 col-md-7">
-            <img src={HabitMockup} className="img-fluid" />
+            <img src={HabitMockup} className="img-fluid" alt="Habit Mock Up" />
           </div>
         </div>
 

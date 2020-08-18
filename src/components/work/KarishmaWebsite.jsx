@@ -28,7 +28,7 @@ export default class KarishmaWebsite extends Component {
             </div>
           </div>
           <div className="col-sm-12 col-md-7">
-            <img src={KarishmaWebsiteGlimpse} className="img-fluid" />
+            <img src={KarishmaWebsiteGlimpse} className="img-fluid" alt="Karishma Joshi Website" />
           </div>
         </div>
 

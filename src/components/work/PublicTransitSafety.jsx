@@ -37,7 +37,7 @@ export default class PublicTransitSafety extends Component {
           </div>
 
           <div className="col-sm-12 col-md-7 text-center">
-            <img src={TransitSafety} className="img-fluid w-85" />
+            <img src={TransitSafety} className="img-fluid w-85" alt="Public transit safety blob" />
           </div>
         </div>
 

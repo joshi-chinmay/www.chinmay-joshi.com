@@ -32,7 +32,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
           <div className="col-sm-12 col-md-7">
-            <img src={Artboard} className="img-fluid" />
+            <img src={Artboard} className="img-fluid" alt="Pathways to housing website block" />
           </div>
         </div>
 
