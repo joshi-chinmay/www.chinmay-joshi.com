@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import SocialMediaIcons from './util/SocialMediaIcons.jsx';
+
 import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
-import PathwaysToHousing from '../images/illustrations/pathways-to-housing.svg';
+import StepUpImg from '../images/illustrations/stepup.svg';
 import AccessibleSodaMachineImg from '../images/illustrations/accessible-soda-machine.svg';
 import HabitImg from '../images/illustrations/habit.svg';
 
@@ -31,14 +32,14 @@ export default class Home extends Component {
         projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", projectType: "academic", imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?", links: [{linkName: "case study", linkUrl: "/work/public-transit-safety"}]
       },
       {
-        projectName: "Habit - A Habit forming app", slug: "/habit", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}]
+        projectName: "Step Up - A Fitness App", slug: "/step-up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study", linkUrl: "/work/step-up"}],
       },
       {
         projectName: "Making of Accessible Soda Machine", slug: "/accessible-soda-machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}]
       },
       {
-        projectName: "Pathways To Housing - Website Redesign", slug: "/pathways-to-housing", imgSource: PathwaysToHousing, description: "Pathways To Housing is an NGO helping homeless people to gain basic human rights. We proposed a viable and usable website solution as a case study.", links: [{linkName: "case study", linkUrl: "/work/pathways-to-housing"}]
-      },
+        projectName: "Habit - A Habit forming app", slug: "/habit", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}]
+      }
     ]);
   }
 

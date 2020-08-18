@@ -8,6 +8,7 @@ import AccessibleSodaMachineImg from '../images/illustrations/accessible-soda-ma
 import PathwaysToHousing from '../images/illustrations/pathways-to-housing.svg';
 import StepUpImg from '../images/illustrations/stepup.svg';
 import TiltImg from '../images/illustrations/music.svg';
+import ListAcrossImg from '../images/illustrations/listacross.svg';
 import ColorPickerImg from '../images/illustrations/colors.svg';
 import KarishmaWebsiteImg from '../images/illustrations/karishma-website.svg';
 import AvisitechImg from '../images/illustrations/avisitech.svg';
@@ -40,6 +41,9 @@ export default class Work extends Component {
         projectName: "TILT - Today I Listened To", slug: "/tilt", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "case study", linkUrl: "/work/tilt"}],
       },
       {
+        projectName: "ListAcross Web App", slug: "/", imgSource: ListAcrossImg, description: "ListAcross is on a mission to integrate online marketplaces (Facebook, LetGo, Craigslist, etc.) into one platform.", links: [{linkName: "Website", linkUrl: "https://www.listacross.com/", external: true}],
+      },
+      {
         projectName: "Avisi Technologies", slug: "/", imgSource: AvisitechImg, description: "Avisi Technologies is creating a next generation aqueous shunt to treat glaucoma. I helped them create a website to showcase their product, advisory board, and press release.", links: [{linkName: "Website", linkUrl: "https://www.avisitech.com/", external: true}],
       },
       {
@@ -49,10 +53,10 @@ export default class Work extends Component {
         projectName: "Supaagents Website", slug: "/", imgSource: AgentsWebsiteImg, description: "The workforce behind Supahands. Supaagents is a community of remote workers or freelancers across the globe.", links: [{linkName: "Website", linkUrl: "https://www.supaagents.com/", external: true}],
       },
       {
-        projectName: "Random Color Picker", slug: "/randomcolorpicker", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
+        projectName: "Website of a Landscape Designer", slug: "/karishma-joshi-website", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "case study", linkUrl: "/work/karishma-joshi-website"}, {linkName: "Website", linkUrl: "http://karishma-joshi.com/", external: true}],
       },
       {
-        projectName: "Website of a Landscape Architect", slug: "/karishma-joshi-website", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "case study", linkUrl: "/work/karishma-joshi-website"}, {linkName: "Website", linkUrl: "http://karishma-joshi.com/", external: true}],
+        projectName: "Random Color Picker", slug: "/randomcolorpicker", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
       }
     ]);
   }

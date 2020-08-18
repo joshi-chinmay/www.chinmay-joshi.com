@@ -2,6 +2,13 @@
   .work-landing-page {
     background: #f5f1fb;
 
+    img {
+      padding: 56px;
+    }
+    &.full-bleed img {
+      padding: 0px;
+    }
+
     .work-tab-landing-page-title {
       position: absolute;
       left: 16%;
@@ -11,14 +18,7 @@
     }
   }
   .work-page-presnetation {
-    padding: 0px 0px 0px 20px;
-
-    .heading-separator {
-      height: 6px;
-      width: 100%;
-      border-radius: 2px;
-      background-color: #ffb347;
-    }
+    margin-top: 50px;
 
     .work-tab {
       margin-top: 56px;

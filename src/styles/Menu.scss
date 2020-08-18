@@ -1,5 +1,5 @@
 .navbar {
-  padding: 1rem 0px;
+  padding: 2rem 0px;
   background: #ffffff;
   width: 100%;
   z-index: 100;
@@ -40,14 +40,6 @@
   }
 }
 
-.fixed-page-navigator {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 160px;
-  right: 38px;
-  text-align: right;
-}
-
 @media (max-width: 991.98px) {
   .navbar {
     text-align: center;
@@ -55,9 +47,5 @@
     .nav-link {
       margin-left: 0px !important;
     }
-  }
-
-  .fixed-page-navigator {
-    display: none;
   }
 }

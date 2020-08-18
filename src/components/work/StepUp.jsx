@@ -49,7 +49,7 @@ export default class StepUp extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page">
+        <div className="row work-landing-page full-bleed">
           <div className="col-sm-12 col-md-5">
             <div className="work-tab-landing-page-title">
               <h1 className="mb-2">StepUp - A Fitness App</h1>
@@ -70,10 +70,12 @@ export default class StepUp extends Component {
 
         <div className="container work-page-presnetation">
           <div id="vision" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
               </h5>
+            </div>
+            <div className="col-sm-12 col-md-10">
               <span>
                 StepUp is a mobile applicationn, focused on Jefferson University students and staff to help them maintain a healthy lifestyle by taking extra steps in a day.
                 <br /><br />
@@ -92,11 +94,13 @@ export default class StepUp extends Component {
           </div>
 
           <div id="interviews" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 User Interviews
               </h5>
-              <div className="bg-white-images mt-4">
+            </div>
+            <div className="col-sm-12 col-md-10">
+              <div className="bg-white-images">
                 <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                   <div>
                     <img src={stat1} alt="carousel statestics" className="w-50" />
@@ -134,11 +138,12 @@ export default class StepUp extends Component {
           </div>
 
           <div id="storyboarding" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Storyboard
               </h5>
-
+            </div>
+            <div className="col-sm-12 col-md-10">
               <span>
                 As I followed HOOKED Framework - the first step is to identify a trigger. So for that, I created a story about how users would get to know about this app.
               </span>
@@ -186,10 +191,12 @@ export default class StepUp extends Component {
           </div>
 
           <div id="moscowAnalysis" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 MoSCoW Analysis
               </h5>
+            </div>
+            <div className="col-sm-12 col-md-10">
               <span>
                 The MoSCoW method is a prioritization technique used in management, business analysis, project management, and software development to reach a common understanding with stakeholders on the importance they place on the delivery of each requirement; it is also known as MoSCoW prioritization or MoSCoW analysis.
               </span>
@@ -200,10 +207,12 @@ export default class StepUp extends Component {
           </div>
 
           <div id="siteflow" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Siteflow
               </h5>
+            </div>
+            <div className="col-sm-12 col-md-10">
               <span>
                 Designing the user experience of a website involves more than figuring out what goes on each page. It’s also about figuring out how those pages flow together.
                 Creating a site flow helped me understand amount of interfaces my applicationn would have. It also helped me prioritize pages.
@@ -215,10 +224,12 @@ export default class StepUp extends Component {
           </div>
 
           <div id="riskyAssumptions" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Riskiest Assumptions Metrics
               </h5>
+            </div>
+            <div className="col-sm-12 col-md-10">
               <div className="row">
                 <div className="col-md-12">
                   <h6 className="mt-3">Top 3 riskiest assumptions -</h6>
@@ -236,10 +247,12 @@ export default class StepUp extends Component {
           </div>
 
           <div id="pretotyping" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Pretotyping
               </h5>
+            </div>
+            <div className="col-sm-12 col-md-10">
               <span>
                 For designing a habit forming product I was following a book `HOOKED` by a former Googler Nir Eyal. He teaches about how to carefully avoid failures validate designs and methods taking place while designing an experience.
               </span>
@@ -267,11 +280,12 @@ export default class StepUp extends Component {
           </div>
 
           <div id="wireframes" className="row work-tab">
-            <div className="col-sm-12 col-md-12">
+            <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Wireframes
               </h5>
-
+            </div>
+            <div className="col-sm-12 col-md-10">
               <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
                 <div>
                   <img src={wireframe1} alt="Carousel slide for wireframes" className="img-fluid" />
@@ -283,13 +297,14 @@ export default class StepUp extends Component {
             </div>
           </div>
 
-
           <div id="design" className="row work-tab">
-            <div className="col-sm-12 col-md-12 text-center">
-              <a href="https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/" target="_blank" rel="noopener noreferrer">
-                <h5 className="font-family-playfair">
-                  Introducing - Prototype on Figma
-                </h5>
+            <div className="col-sm-12 col-md-3 col-lg-2">
+              <h5 className="font-family-playfair">
+                Introducing - Prototype on Sketch
+              </h5>
+            </div>
+            <div className="col-sm-12 col-md-10">
+              <a href="https://www.sketch.com/s/2c3e6810-3e4c-44a4-9772-b54379e1a594/a/mAykqV/play" target="_blank" rel="noopener noreferrer">
                 <img src={StepUpMockUP} className="img-fluid" alt="design login page and link to prototype" />
               </a>
             </div>
