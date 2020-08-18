@@ -11,7 +11,7 @@ import StepUpMockUP from '../../images/work/StepUp/Artboard.png';
 import HookedMBL from '../../images/work/StepUp/Hooked-BML.png';
 import MoScoW from '../../images/work/StepUp/MoSCoW.jpg';
 import siteflow from '../../images/work/StepUp/Sitefllow.png';
-import RiskAnalysis from '../../images/work/StepUp/Risky Assumptions Metrics.jpg';
+import RiskAnalysis from '../../images/work/StepUp/RiskyAssumptions.jpg';
 
 import wireframe1 from '../../images/work/StepUp/wireframes/WF set 1.png';
 import wireframe2 from '../../images/work/StepUp/wireframes/WF set 2.png';
@@ -201,7 +201,7 @@ export default class StepUp extends Component {
                 The MoSCoW method is a prioritization technique used in management, business analysis, project management, and software development to reach a common understanding with stakeholders on the importance they place on the delivery of each requirement; it is also known as MoSCoW prioritization or MoSCoW analysis.
               </span>
               <div className="mt-5">
-                <img src={MoScoW} className="img-fluid w-70" alt="MoScoW analysis" />
+                <img src={MoScoW} className="img-fluid" alt="MoScoW analysis" />
               </div>
             </div>
           </div>
@@ -240,7 +240,7 @@ export default class StepUp extends Component {
                   </ol>
                 </div>
                 <div className="col-md-12 mx-auto text-center mt-4">
-                  <img src={RiskAnalysis} className="img-fluid w-50" alt="Risky Assumptions Matrics" />
+                  <img src={RiskAnalysis} className="img-fluid" alt="Risky Assumptions Matrics" />
                 </div>
               </div>
             </div>
