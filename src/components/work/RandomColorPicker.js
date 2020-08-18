@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import Artboard from '../../images/illustrations/colors.svg';
 import RandomColorPickerDemo from '../../images/work/randomcolorpicker/random-color-picker.gif';

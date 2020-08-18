@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';

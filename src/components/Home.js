@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import SocialMediaIcons from './util/SocialMediaIcons.jsx';
+import SocialMediaIcons from './util/SocialMediaIcons';
 
 import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
 import StepUpImg from '../images/illustrations/stepup.svg';

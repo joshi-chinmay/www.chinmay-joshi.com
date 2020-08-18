@@ -2,31 +2,31 @@ import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
 import Loadable from 'react-loadable';
 
-import Loading from './components/Loading.jsx';
+import Loading from './components/Loading';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 
-import Menu from './components/Menu.jsx';
-import Footer from './components/Footer.jsx';
+import Menu from './components/Menu';
+import Footer from './components/Footer';
 
 import "./styles/Styles.scss";
 
-const LoadableHome = Loadable({ loader: () => import('./components/Home.jsx'), loading: Loading});
-const LoadableWork = Loadable({ loader: () => import('./components/Work.jsx'), loading: Loading});
-const LoadableAbout = Loadable({ loader: () => import('./components/About.jsx'), loading: Loading});
-const LoadableBlog = Loadable({ loader: () => import('./components/Blog.jsx'), loading: Loading});
-const LoadableStepUp = Loadable({ loader: () => import('./components/work/StepUp.jsx'), loading: Loading});
-const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite.jsx'), loading: Loading});
-const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker.jsx'), loading: Loading});
-const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt.jsx'), loading: Loading});
+const LoadableHome = Loadable({ loader: () => import('./components/Home'), loading: Loading});
+const LoadableWork = Loadable({ loader: () => import('./components/Work'), loading: Loading});
+const LoadableAbout = Loadable({ loader: () => import('./components/About'), loading: Loading});
+const LoadableBlog = Loadable({ loader: () => import('./components/Blog'), loading: Loading});
+const LoadableStepUp = Loadable({ loader: () => import('./components/work/StepUp'), loading: Loading});
+const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite'), loading: Loading});
+const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker'), loading: Loading});
+const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt'), loading: Loading});
 
-const LoadablePathwaysToHousing = Loadable({ loader: () => import('./components/work/PathwaysToHousing.jsx'), loading: Loading});
-const LoadableSodaMachine = Loadable({ loader: () => import('./components/work/SodaMachine.jsx'), loading: Loading});
-const LoadableHabit = Loadable({ loader: () => import('./components/work/Habit.jsx'), loading: Loading});
-const LoadablePublicTransitSafety = Loadable({ loader: () => import('./components/work/PublicTransitSafety.jsx'), loading: Loading});
+const LoadablePathwaysToHousing = Loadable({ loader: () => import('./components/work/PathwaysToHousing'), loading: Loading});
+const LoadableSodaMachine = Loadable({ loader: () => import('./components/work/SodaMachine'), loading: Loading});
+const LoadableHabit = Loadable({ loader: () => import('./components/work/Habit'), loading: Loading});
+const LoadablePublicTransitSafety = Loadable({ loader: () => import('./components/work/PublicTransitSafety'), loading: Loading});
 
 library.add(fab, fas, far);
 

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import HabitMockup from '../../images/work/habit/Artboard.png';
 import AppForest from '../../images/work/habit/apps/app1-forest.png';

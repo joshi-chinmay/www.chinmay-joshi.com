@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import Storyboard from '../../images/work/soda-machine/storyboard.png';
 import SodaMachineCompetitors from '../../images/work/soda-machine/soda-machine-collage.png';

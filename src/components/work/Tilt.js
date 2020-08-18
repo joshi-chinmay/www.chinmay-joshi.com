@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import TILTMobilePc from "../../images/gallery/TILT-mobile-pc.png";
 import UserAnalysis1 from "../../images/work/TILT/UserAnalysis/1.png";

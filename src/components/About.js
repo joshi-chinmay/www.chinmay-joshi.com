@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import PP from '../images/CJ-bw.png';
-import SocialMediaIcons from './util/SocialMediaIcons.jsx';
+import SocialMediaIcons from './util/SocialMediaIcons';
 
 export default class About extends Component {
   componentDidMount() {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import KarishmaPersonalityMap from '../../images/work/karishma-website/Karishma-Personality.png';
 import KarishmaWebsiteGlimpse from '../../images/work/karishma-website/glimpse.png';

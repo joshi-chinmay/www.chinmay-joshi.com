@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import Artboard from '../../images/illustrations/pathways-to-housing.svg';
 import SupportingOrgs from '../../images/work/pathways-to-housing/supporting-orgs.png';

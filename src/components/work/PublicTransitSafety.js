@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import NextLink from '../util/NextLink.jsx';
+import NextLink from '../util/NextLink';
 
 import TransitSafety from '../../images/illustrations/transit-safety.svg';
 import Storyboard from '../../images/work/transit-safety/Storyboard.png';
