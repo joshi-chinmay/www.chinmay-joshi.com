@@ -6,7 +6,7 @@ export default class NextLink extends Component {
 
     return(
       <div className="row">
-        <div className="col-sm-12 offset-md-2 col-md-7 text-right">
+        <div className="col-sm-12 col-md-12 text-right">
           <a href={"/work" + nextLink.slug } className="text-capitalize d-inline text-decoration-underline font-weight-bolder lead">
             Next: {nextLink.name} →
           </a>

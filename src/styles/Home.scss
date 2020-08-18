@@ -1,7 +1,4 @@
-main.main-container-portfolio {
-  padding-top: 112px;
-}
-.home-page-blob-container {
+.home-page-welcome-note-container {
   padding-top: 96px;
   padding-left: 150px;
 }
@@ -13,7 +10,7 @@ main.main-container-portfolio {
   margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
-  .home-page-blob-container {
+  .home-page-welcome-note-container {
     padding-top: 25px;
     padding-left: 0px;
   }
@@ -24,9 +21,51 @@ main.main-container-portfolio {
 
 .blob {
   position: fixed;
-  top: 26%;
-  left: 0%;
   fill: #f5f1fb;
+  top: 20%;
+  left: 0%;
   width: 68%;
   z-index: -1;
+
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+    top: 26%;
+  }
+  100% {
+    top: 20%;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 26%;
+    left: 0%;
+  }
+  100% {
+    top: 20%;
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 26%;
+    left: 0%;
+  }
+  100% {
+    top: 20%;
+    left: 0%;
+    opacity: 1;
+  }
 }
