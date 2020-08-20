@@ -10,6 +10,7 @@ import StepUpMockUP from '../../images/work/StepUp/Artboard.png';
 
 import HookedMBL from '../../images/work/StepUp/Hooked-BML.png';
 import MoScoW from '../../images/work/StepUp/MoSCoW.jpg';
+import Storyboard from '../../images/work/StepUp/Storyboard.jpg';
 import siteflow from '../../images/work/StepUp/Sitefllow.png';
 import RiskAnalysis from '../../images/work/StepUp/RiskyAssumptions.jpg';
 
@@ -26,16 +27,6 @@ import stat7 from '../../images/work/StepUp/interviews/stat7.png';
 import stat8 from '../../images/work/StepUp/interviews/stat8.png';
 import stat9 from '../../images/work/StepUp/interviews/stat9.png';
 import stat10 from '../../images/work/StepUp/interviews/stat10.png';
-
-import SB1 from '../../images/work/StepUp/storyboarding/SB1.jpg';
-import SB2 from '../../images/work/StepUp/storyboarding/SB2.jpg';
-import SB3 from '../../images/work/StepUp/storyboarding/SB3.jpg';
-import SB4 from '../../images/work/StepUp/storyboarding/SB4.jpg';
-import SB5 from '../../images/work/StepUp/storyboarding/SB5.jpg';
-import SB6 from '../../images/work/StepUp/storyboarding/SB6.jpg';
-import SB7 from '../../images/work/StepUp/storyboarding/SB7.jpg';
-import SB8 from '../../images/work/StepUp/storyboarding/SB8.jpg';
-import SB9 from '../../images/work/StepUp/storyboarding/SB9.jpg';
 
 import preto1 from '../../images/work/StepUp/pretotype/preto-1.png';
 import preto2 from '../../images/work/StepUp/pretotype/preto-2.png';
@@ -147,45 +138,8 @@ export default class StepUp extends Component {
               <span>
                 As I followed HOOKED Framework - the first step is to identify a trigger. So for that, I created a story about how users would get to know about this app.
               </span>
-              <div className="col-md-12 text-center mt-5">
-                <div className="row">
-                  <div className="col-md-4 p-2">
-                    <img src={SB1} className="img-fluid" alt="storyboard grid" />
-                    <small>The user is walking in the college, and sees a campaign going on.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB2} className="img-fluid" alt="storyboard grid" />
-                    <small>He likes the concept and decides to sign up.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB3} className="img-fluid" alt="storyboard grid" />
-                    <small>Next morning he wakes up early because he wants to go for a run.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB4} className="img-fluid" alt="storyboard grid" />
-                    <small>He opens the app and sets up the route using the smart suggestions.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB5} className="img-fluid" alt="storyboard grid" />
-                    <small>He goes for a long run.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB6} className="img-fluid" alt="storyboard grid" />
-                    <small>He feels very tired. Phew.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB7} className="img-fluid" alt="storyboard grid" />
-                    <small>After his successful run he receives the notification saying he just received a 10% off at the canteen.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB8} className="img-fluid" alt="storyboard grid" />
-                    <small>He feels very happy and energetic.</small>
-                  </div>
-                  <div className="col-md-4 p-2">
-                    <img src={SB9} className="img-fluid" alt="storyboard grid" />
-                    <small>That's not it, he receives another notification at 10 PM, motivating him for another run the very next morning.</small>
-                  </div>
-                </div>
+              <div className="mt-5">
+                <img src={Storyboard} className="img-fluid " alt="MoScoW analysis" />
               </div>
             </div>
           </div>
