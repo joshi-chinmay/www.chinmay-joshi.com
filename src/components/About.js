@@ -29,7 +29,7 @@ export default class About extends Component {
                   Hi, I am Chinmay!
                 </h1>
 
-                <h3 className="font-weight-normal mt-3 text-gradient text-gradient-default">
+                <h3 className="font-weight-normal mt-3">
                   Software Engineer turned Product Designer.
                 </h3>
 

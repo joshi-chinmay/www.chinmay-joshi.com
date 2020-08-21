@@ -11,6 +11,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 
 import Menu from './components/Menu';
 import Footer from './components/Footer';
+import PageNotFound from './components/PageNotFound';
 
 import "./styles/Styles.scss";
 
@@ -56,6 +57,7 @@ class App extends Component {
               <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
               <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
               <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+              <Route path="*" component={PageNotFound} />
             </Switch>
           </main>
         )}/>

@@ -16,7 +16,6 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  white-space: pre-wrap;
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
@@ -24,10 +23,10 @@ h1, h2, h3 {
   letter-spacing: 0.034rem;
 }
 .text-gradient-default {
-  background: linear-gradient(to right, #1f2c5f, #c20a75, #1f2c5f, #f6f4e6);
+  background: linear-gradient(to right, #1f2c5f, #c20a75, #1f2c5f);
 }
 .text-gradient-secondary {
-  background: linear-gradient(to right, #1f2c5f, #c20a75, #1f2c5f, #f6f4e6, #ffc160);
+  background: linear-gradient(to right, #1f2c5f, #c20a75, #1f2c5f, #ffc160);
 }
 .text-gradient {
   -webkit-background-clip: text;
@@ -80,6 +79,9 @@ footer.footer-attribution-container {
 
 .bg-pastel-off-white {
   background-color: #f6f4e6 !important;
+}
+.bg-pastel-green {
+  background-color: #b4ecb4 !important;
 }
 .bg-pastel-baby-pink {
   background-color: #f5f1fb !important;
@@ -150,4 +152,35 @@ a.skip-main:focus, a.skip-main:active {
 
 .img-circular {
   border-radius: 50%;
+}
+.clip-image-to-text{
+  font-size: 240px;
+  line-height: 1;
+  color: white;
+  background: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab") no-repeat;
+  background-size: 150% 150%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bg-img-animate 20s infinite;
+  background-position: bottom left;
+}
+@keyframes bg-img-animate {
+  20% {
+    background-position: top right;
+  }
+  40% {
+    background-position: top;
+  }
+  60% {
+    background-position: top left;
+  }
+  60% {
+    background-position: right;
+  }
+  80% {
+    background-position: bottom right;
+  }
+  100% {
+    background-position: bottom;
+  }
 }

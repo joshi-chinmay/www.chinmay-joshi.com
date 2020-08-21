@@ -8,6 +8,7 @@ import StepUpImg from '../images/work/StepUp/Artboard.png';
 import AccessibleSodaMachineImg from '../images/work/soda-machine/Final-Proto.png';
 import HabitImg from '../images/work/habit/Artboard.png';
 import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
+import CodeBG from '../images/CodeBG.png';
 
 export default class Home extends Component {
   constructor(props) {
@@ -90,7 +91,7 @@ export default class Home extends Component {
                   </h1>
                   <p className="lead pt-4 pr-2 text-gradient text-gradient-secondary">
                     Software Engineer turned <b className="font-weight-bold">Product Designer</b>.
-                    <br />Currently designing memorable, scalable experiences at <a href="https://www.listacross.com" className="text-capitalize" target="_blank" rel="noopener noreferrer">ListAcross</a>.
+                    <br />Currently designing memorable, scalable experiences at ListAcross.
                   </p>
 
                   <div className="mt-5">
@@ -102,16 +103,44 @@ export default class Home extends Component {
 
             <section className="home-work-page-container">
               <div className="row">
-                <div className="offset-lg-1 col-lg-10 col-sm-12">
+                <div className="offset-lg-1 col-lg-10 col-sm-12 order-last">
                   <div className="row mb-5">
                     {workCards}
+
+                    <div className="col-lg-12 col-md-12 col-xs-12 mb-4">
+                      <div className="row h-100 home-page-work-cards padded-image-source bg-pastel-green">
+                        <div className="col-xs-12 col-md-6 p-0 image-source order-last">
+                          <img src={CodeBG} className="img-fluid rounded" alt="work page showcase" />
+                        </div>
+
+                        <div className="col-xs-12 project-source col-md-6">
+                          <h1 className="mt-5">
+                            Find this website on GitHub
+                          </h1>
+                          <p className="mt-4">
+                            Once a coder always a coder.
+                            <br />
+                            This website's code base is open sourced on Github. The website is hosted on Netlify.
+                            Drop me an email if you need building a website/portfolio.
+                          </p>
+
+                          <div className="mt-5">
+                            <Tags tags={["Coding", "React.JS", "forever-coder", "website-design"]} />
+                          </div>
+
+                          <a href="https://github.com/joshi-chinmay/www.chinmay-joshi.com" className="font-weight-bold d-block mt-5" target="_blank" rel="noopener noreferrer">
+                            Go To Codebase ⟶
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div className="row mt-4">
                 <div className="offset-lg-4 col-sm-12 col-lg-4">
-                  <a href="/work" type="button" className="h3 font-weight-bold font-family-playfair text-capitalize d-block text-center">
+                  <a href="/work" type="button" className="lead font-weight-bold font-family-playfair text-capitalize d-block text-center text-decoration-underline">
                     View all of my work
                   </a>
                 </div>
