@@ -1,9 +1,20 @@
 .home-page-welcome-note-container {
   padding-top: 96px;
-  padding-left: 150px;
+  padding-left: 126px;
 }
 .home-work-page-container {
   margin: 160px 0;
+
+  .home-page-work-cards {
+    .project-source {
+      padding: 60px 80px;
+    }
+    &.padded-image-source {
+      .image-source {
+        padding: 50px !important;
+      }
+    }
+  }
 }
 @media (max-width: 991.98px) {
   .home-page-welcome-note-container {

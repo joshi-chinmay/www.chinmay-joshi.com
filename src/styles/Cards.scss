@@ -21,10 +21,10 @@ $transition-time: 0.2s;
     padding: 0rem 2rem;
   }
   .card-img-top {
-    height: 216px;
+    height: 182px;
     padding: 1.86rem;
     transition: $transition-time ease-in;
-    filter: grayscale(90%);
+    filter: grayscale(70%);
   }
   .card-footer {
     border-top: none;

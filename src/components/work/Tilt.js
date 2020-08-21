@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import NextLink from '../util/NextLink';
 
-import TILTMobilePc from "../../images/gallery/TILT-mobile-pc.png";
+import TILTMobilePc from "../../images/work/TILT/TILT-mobile-pc.png";
 import UserAnalysis1 from "../../images/work/TILT/UserAnalysis/1.png";
 import UserAnalysis2 from "../../images/work/TILT/UserAnalysis/2.png";
 import UserAnalysis3 from "../../images/work/TILT/UserAnalysis/3.png";

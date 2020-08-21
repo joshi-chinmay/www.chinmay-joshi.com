@@ -18,7 +18,7 @@ export default class Habit extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page full-bleed">
+        <div className="row work-landing-page bg-pastel-sky-blue full-bleed">
           <div className="col-sm-12 col-md-5">
             <div className="work-tab-landing-page-title">
               <h1 className="mb-2">Habit - A Habit Forming App</h1>
