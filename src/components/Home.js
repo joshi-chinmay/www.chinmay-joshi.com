@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import SocialMediaIcons from './util/SocialMediaIcons';
+import Tags from './util/Tags';
 
 import StepUpImg from '../images/work/StepUp/Artboard.png';
 import AccessibleSodaMachineImg from '../images/work/soda-machine/Final-Proto.png';
@@ -27,16 +28,16 @@ export default class Home extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Step Up - A Fitness App", slug: "/step-up", klass: "bg-pastel-baby-pink", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app. Solution tailored for Jefferson University's students."
+        projectName: "Step Up - A Fitness App", slug: "/step-up", klass: "bg-pastel-baby-pink", tags: ["Research", "UX Design", "Visual Design", "Prototyping"], imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app. Solution tailored for Jefferson University's students."
       },
       {
-        projectName: "Accessible Soda Machine", slug: "/accessible-soda-machine", klass: "bg-pastel-yellow", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help."
+        projectName: "Accessible Soda Machine", slug: "/accessible-soda-machine", klass: "bg-pastel-yellow", tags: ["Accessible Design", "User Research", "UX Design", "Product Design"], imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help."
       },
       {
-        projectName: "Habit - A Habit forming app", slug: "/habit", imgSource: HabitImg, klass: "bg-pastel-sky-blue", description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits."
+        projectName: "Habit - A Habit forming app", slug: "/habit", tags: ["User Research", "Product Design", "Visual Design", "Rapid Prototyping"], imgSource: HabitImg, klass: "bg-pastel-sky-blue", description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits."
       },
       {
-        projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", klass: "bg-pastel-off-white padded-image-source", projectType: "academic", imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?"
+        projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", klass: "bg-pastel-off-white padded-image-source", tags: ["UX Research", "Quantitative Research", "User Interviews"], imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?"
       }
     ]);
   }
@@ -47,7 +48,7 @@ export default class Home extends Component {
 
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
-        <div key={i} className="col-lg-12 col-md-12 col-xs-12">
+        <div key={i} className="col-lg-12 col-md-12 col-xs-12 mb-4">
           <div className={"row h-100 home-page-work-cards " + cardData[i].klass }>
             <div className={"col-xs-12 col-md-6 p-0 image-source " + (i % 2 !== 0 ? "" : "order-last" ) }>
               <img src={cardData[i].imgSource} className="img-fluid" alt="work page showcase" />
@@ -60,11 +61,13 @@ export default class Home extends Component {
               <p className="mt-4">
                 {cardData[i].description}
               </p>
-              <span className="d-block mt-2">
-                Research | UX Design | Visual Design | Rapid Prototyping
-              </span>
+
+              <div className="mt-5">
+                <Tags tags={cardData[i].tags} />
+              </div>
+
               <a href={"/work" + cardData[i].slug} className="project-link font-weight-bold d-block mt-5">
-                View Case Study
+                Read Case Study ⟶
               </a>
             </div>
           </div>

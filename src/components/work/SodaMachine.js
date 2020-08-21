@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
 import Storyboard from '../../images/work/soda-machine/storyboard.png';
 import SodaMachineCompetitors from '../../images/work/soda-machine/soda-machine-collage.png';
 import EarlyPrototypes from '../../images/work/soda-machine/early-prototype.png';
 import AccessibilityInspiration from '../../images/work/soda-machine/accessibility-inspirations.png';
-import FinalPrototype1 from '../../images/illustrations/accessible-soda-machine.svg';
 import FinalPrototype from '../../images/work/soda-machine/Final-Proto.png';
 
 export default class SodaMachine extends Component {
@@ -17,25 +17,13 @@ export default class SodaMachine extends Component {
   render() {
     return(
       <div className="work-page-container">
-
-        <div className="row work-landing-page">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">Making of an Accessible Soda Machine</h1>
-              <p className="mt-5">
-                A perfect soda machine doesn't exist, yet! Legally blind people cannot access a soda machine.
-                <br />It was an effort to understand needs of the audience and making an accessible soda machine for everyone.
-              </p>
-
-              <span className="d-block mt-2">
-                Accessible Design | User Research | UX Design | Product Design
-              </span>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-7 text-center">
-            <img src={FinalPrototype1} className="img-fluid w-75" alt="Accessible soda machine blob" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="Making of an Accessible Soda Machine"
+          classList="bg-pastel-yellow full-bleed"
+          pageDescription="A perfect soda machine doesn't exist, yet! Legally blind people cannot access a soda machine. It was an effort to understand needs of the audience and making an accessible soda machine for everyone."
+          landingPageImage={FinalPrototype}
+          tags={["Accessible Design", "User Research", "UX Design", "Product Design"]}
+        />
 
         <div className="container work-page-presnetation">
           <div id="background" className="row work-tab">

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
 import Artboard from '../../images/illustrations/pathways-to-housing.svg';
@@ -18,23 +19,12 @@ export default class PathwaysToHousing extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">Pathways To Housing</h1>
-              <p className="mt-5">
-                Empowering people with disabilities to improve their housing stability, achieve better health, and reclaim their lives.
-              </p>
-
-              <span className="d-block mt-2">
-                Website Redesign | Audience Research | Information Architecture
-              </span>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-7">
-            <img src={Artboard} className="img-fluid" alt="Pathways to housing website block" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="Pathways To Housing"
+          pageDescription="Empowering people with disabilities to improve their housing stability, achieve better health, and reclaim their lives."
+          landingPageImage={Artboard}
+          tags={["Website Redesign", "Information Architecture", "UX Design"]}
+        />
 
         <div className="container work-page-presnetation">
           <div id="preface" className="row work-tab">

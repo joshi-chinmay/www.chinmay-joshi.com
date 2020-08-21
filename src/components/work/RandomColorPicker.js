@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
 import Artboard from '../../images/illustrations/colors.svg';
@@ -14,24 +15,13 @@ export default class RandomColorPicker extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">Random Color Picker</h1>
-              <p className="mt-5">
-                What if you could create random colors on the go.
-                <br />Believe me, it's fun! Why don’t you <a href="http://randomcolorpicker.xyz/" target="_blank" rel="noopener noreferrer" className="text-lowercase">check it out?</a>.
-              </p>
-
-              <span className="d-block mt-2">
-                Research | UX Design | Visual Design | Rapid Prototyping
-              </span>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-7 text-center">
-            <img src={Artboard} className="img-fluid w-75" alt="Random color picker blob" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="Random Color Picker"
+          pageDescription="What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?"
+          landingPageImage={Artboard}
+          landingPageImageWidth="w-75"
+          tags={["Visual Design", "Website Design"]}
+        />
 
         <div className="container work-page-presnetation">
           <div id="vision" className="row work-tab">

@@ -25,16 +25,16 @@ export default class About extends Component {
                 <img src={PP} className="w-100" alt="I look great. just sayin." />
               </div>
               <div className="col-xs-12 col-md-6 mt-5 mb-5">
-                <h1 className="mt-1">
+                <h1 className="mt-1 text-gradient text-gradient-secondary">
                   Hi, I am Chinmay!
                 </h1>
 
-                <h3 className="font-weight-normal mt-3">
+                <h3 className="font-weight-normal mt-3 text-gradient text-gradient-default">
                   Software Engineer turned Product Designer.
                 </h3>
 
                 <div className="row mt-4">
-                  <div className="col-xs-12 col-md-12 mt-3">
+                  <div className="col-xs-12 col-md-12 mt-3 font-weight-bolder">
                     <p>
                       I love caffeine in general, and my creative solutions are mostly an outcome of a desk full of sticky notes, pens, markers, sketches, and a cup of coffee or tea. I believe learning is about traveling and observing. Hence, in my free time, you would mostly find me traveling and exploring different cultures.
                     </p>
@@ -59,7 +59,7 @@ export default class About extends Component {
             </div>
           </div>
         </CSSTransition>
-      </TransitionGroup>        
+      </TransitionGroup>
     );
   }
 }

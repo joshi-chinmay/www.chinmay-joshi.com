@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
 import TransitSafety from '../../images/illustrations/transit-safety.svg';
@@ -21,25 +22,13 @@ export default class PublicTransitSafety extends Component {
   render() {
     return(
       <div className="work-page-container">
-
-        <div className="row work-landing-page">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">Thesis - Public Transit Safety</h1>
-              <p className="mt-5">
-                UX research directed toward a optimum solution to create a safe transit experience for everyday commuters.
-              </p>
-
-              <span className="d-block mt-2">
-                UX Research | Quantitative Research | User Interviews
-              </span>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-7 text-center">
-            <img src={TransitSafety} className="img-fluid w-85" alt="Public transit safety blob" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="Thesis - Public Transit Safety"
+          pageDescription="UX research directed toward a optimum solution to create a safe transit experience for everyday commuters."
+          landingPageImage={TransitSafety}
+          landingPageImageWidth="w-85"
+          tags={["UX Research", "Quantitative Research", "User Interviews"]}
+        />
 
         <div className="container work-page-presnetation">
           <div id="initial" className="row work-tab">

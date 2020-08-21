@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -40,24 +40,13 @@ export default class StepUp extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page full-bleed">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">StepUp - A Fitness App</h1>
-              <p className="mt-5">
-                Gamified experience to walk extra steps every day.
-                <br />Solution tailored for Jefferson University's students.
-              </p>
-
-              <span className="d-block mt-2">
-                Research | UX Design | Visual Design | Rapid Prototyping
-              </span>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-7">
-            <img src={StepUpMockUP} className="img-fluid" alt="Step Up application blob" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="StepUp - A Fitness App"
+          classList={"bg-pastel-baby-pink full-bleed"}
+          pageDescription="Gamified experience to walk extra steps every day. Solution tailored for Jefferson University's students."
+          tags={["User Research", "UX Design", "Visual Design", "Rapid Prototyping"]}
+          landingPageImage={StepUpMockUP}
+        />
 
         <div className="container work-page-presnetation">
           <div id="vision" className="row work-tab">
@@ -72,12 +61,6 @@ export default class StepUp extends Component {
                 <br /><br />
                 While designing this product, build - measure - learn cycle as a development. The applicationn follows HOOKED framework, widely known for designing habit-forming products.
               </span>
-              <div className="col-md-12 text-center h6 mt-4">
-                Trigger <FontAwesomeIcon icon={["fas", "lightbulb"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-                Action <FontAwesomeIcon icon={["fas", "play"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-                Reward <FontAwesomeIcon icon={["fas", "gifts"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-                Investment <FontAwesomeIcon icon={["fas", "piggy-bank"]} className="text-muted text-warning" />&nbsp;&nbsp;&nbsp;&nbsp;
-              </div>
               <div className="col-md-12 text-center mt-4">
                 <img src={HookedMBL} className="img-fluid w-50" alt="Hooked Model" />
               </div>

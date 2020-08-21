@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
 import HabitImg from '../images/illustrations/habit.svg';
@@ -26,37 +25,37 @@ export default class Work extends Component {
         projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?", links: [{linkName: "case study", linkUrl: "/work/public-transit-safety"}],
       },
       {
-        projectName: "Habit - A Habit forming app", slug: "/habit", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=42%3A0&scaling=scale-down", external: true}],
+        projectName: "Habit - A Habit forming app", slug: "/habit", imgSource: HabitImg, description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits.", links: [{linkName: "case study", linkUrl: "/work/habit"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/xTFa6T5Txczw2Hy9AytN3z/Habit?node-id=42%3A0&scaling=scale-down"}],
       },
       {
-        projectName: "Making of Accessible Soda Machine", slug: "/accessible-soda-machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom", external: true}],
+        projectName: "Making of Accessible Soda Machine", slug: "/accessible-soda-machine", imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help.", links: [{linkName: "case study", linkUrl: "/work/accessible-soda-machine"}, {linkName: "Design", linkUrl: "https://www.figma.com/proto/l12E4OBN026f0Ce1pjnzUW/Soda-Machine-Interface?node-id=1%3A2&scaling=min-zoom"}],
       },
       {
         projectName: "Pathways To Housing - Website Redesign", slug: "/pathways-to-housing", imgSource: PathwaysToHousing, description: "Pathways To Housing is an NGO helping homeless people to gain basic human rights. We proposed a viable and usable website solution as a case study.", links: [{linkName: "case study", linkUrl: "/work/pathways-to-housing"}],
       },
       {
-        projectName: "Step Up - A Fitness App", slug: "/step-up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study", linkUrl: "/work/step-up"}, {linkName: "Design", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/", external: true}],
+        projectName: "Step Up - A Fitness App", slug: "/step-up", imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app.", links: [{linkName: "case study", linkUrl: "/work/step-up"}, {linkName: "Design", linkUrl: "https://xd.adobe.com/view/6f6a4222-3c55-432f-4b7e-31dbc42c7541-195b/"}],
       },
       {
         projectName: "TILT - Today I Listened To", slug: "/tilt", imgSource: TiltImg, description: "Today I listened to - Sing, listen, share, connect!", links: [{linkName: "case study", linkUrl: "/work/tilt"}],
       },
       {
-        projectName: "ListAcross Web App", slug: "/", imgSource: ListAcrossImg, description: "ListAcross is on a mission to integrate online marketplaces (Facebook, LetGo, Craigslist, etc.) into one platform.", links: [{linkName: "Website", linkUrl: "https://www.listacross.com/", external: true}],
+        projectName: "ListAcross Web App", slug: "/", imgSource: ListAcrossImg, description: "ListAcross is on a mission to integrate online marketplaces (Facebook, LetGo, Craigslist, etc.) into one platform.", links: [{linkName: "Website", linkUrl: "https://www.listacross.com/"}],
       },
       {
-        projectName: "Avisi Technologies", slug: "/", imgSource: AvisitechImg, description: "Avisi Technologies is creating a next generation aqueous shunt to treat glaucoma. I helped them create a website to showcase their product, advisory board, and press release.", links: [{linkName: "Website", linkUrl: "https://www.avisitech.com/", external: true}],
+        projectName: "Avisi Technologies", slug: "/", imgSource: AvisitechImg, description: "Avisi Technologies is creating a next generation aqueous shunt to treat glaucoma. I helped them create a website to showcase their product, advisory board, and press release.", links: [{linkName: "Website", linkUrl: "https://www.avisitech.com/"}],
       },
       {
-        projectName: "Supahand's Website", slug: "/", imgSource: SupahandsWebsiteImg, description: "Supahands is a company I worked at for a year. I designed their website using React.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/", external: true}],
+        projectName: "Supahand's Website", slug: "/", imgSource: SupahandsWebsiteImg, description: "Supahands is a company I worked at for a year. I designed their website using React.", links: [{linkName: "Website", linkUrl: "https://www.supahands.com/"}],
       },
       {
-        projectName: "Supaagents Website", slug: "/", imgSource: AgentsWebsiteImg, description: "The workforce behind Supahands. Supaagents is a community of remote workers or freelancers across the globe.", links: [{linkName: "Website", linkUrl: "https://www.supaagents.com/", external: true}],
+        projectName: "Supaagents Website", slug: "/", imgSource: AgentsWebsiteImg, description: "The workforce behind Supahands. Supaagents is a community of remote workers or freelancers across the globe.", links: [{linkName: "Website", linkUrl: "https://www.supaagents.com/"}],
       },
       {
-        projectName: "Website of a Landscape Designer", slug: "/karishma-joshi-website", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "case study", linkUrl: "/work/karishma-joshi-website"}, {linkName: "Website", linkUrl: "http://karishma-joshi.com/", external: true}],
+        projectName: "Website of a Landscape Designer", slug: "/karishma-joshi-website", imgSource: KarishmaWebsiteImg, description: "A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer! Whoop!!", links: [{linkName: "case study", linkUrl: "/work/karishma-joshi-website"}, {linkName: "Website", linkUrl: "http://karishma-joshi.com/"}],
       },
       {
-        projectName: "Random Color Picker", slug: "/randomcolorpicker", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/", external: true}],
+        projectName: "Random Color Picker", slug: "/randomcolorpicker", imgSource: ColorPickerImg, description: "What if you could create random colors on the go. Believe me, it's fun! Why don’t you check it out?", links: [{linkName: "case study", linkUrl: "/work/randomcolorpicker"}, {linkName: "Website", linkUrl: "http://randomcolorpicker.xyz/"}],
       }
     ]);
   }
@@ -65,19 +64,11 @@ export default class Work extends Component {
     let links = [];
 
     for (let i = 0; i < metaData.length; i++) {
-      if(metaData[i].external) {
-        links.push(
-          <a key={Math.random()} href={metaData[i].linkUrl} className="footer-button font-weight-bold" target="_blank" rel="noopener noreferrer">
-            {metaData[i].linkName} <FontAwesomeIcon icon={["fas", "external-link-alt"]} />
-          </a>
-        )
-      } else {
-        links.push(
-          <a key={Math.random()} href={metaData[i].linkUrl} className="footer-button font-weight-bold">
-            {metaData[i].linkName}
-          </a>
-        )
-      }
+      links.push(
+        <a key={Math.random()} href={metaData[i].linkUrl} className="footer-button font-weight-bold">
+          {metaData[i].linkName}
+        </a>
+      )
     }
 
     return(links);

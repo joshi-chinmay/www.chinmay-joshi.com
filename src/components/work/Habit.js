@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo.js';
 import NextLink from '../util/NextLink';
 
 import HabitMockup from '../../images/work/habit/Artboard.png';
@@ -18,24 +19,13 @@ export default class Habit extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page bg-pastel-sky-blue full-bleed">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">Habit - A Habit Forming App</h1>
-              <p className="mt-5">
-                A playful experience and a community oriented app that helps you form long-lasting habits.
-                <br />Solution tailored for Jefferson University's students.
-              </p>
-
-              <span className="d-block mt-2">
-                Research | Product Design | Visual Design | Rapid Prototyping
-              </span>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-7">
-            <img src={HabitMockup} className="img-fluid" alt="Habit Mock Up" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="Habit - A Habit Forming App"
+          classList="bg-pastel-sky-blue full-bleed"
+          pageDescription="A playful experience and a community oriented app that helps you form long-lasting habits. Solution tailored for Jefferson University's students."
+          landingPageImage={HabitMockup}
+          tags={["User Research", "Product Design", "Visual Design", "Rapid Prototyping"]}
+        />
 
         <div className="container work-page-presnetation">
 

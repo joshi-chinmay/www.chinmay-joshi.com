@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
 import KarishmaPersonalityMap from '../../images/work/karishma-website/Karishma-Personality.png';
@@ -14,23 +15,12 @@ export default class KarishmaWebsite extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">Website of a Landscape Designer</h1>
-              <p className="mt-5">
-                <a href="http://www.karishma-joshi.com" target="_blank" rel="noopener noreferrer" className="text-capitalize">A showcase</a> of work for my Architect friend and more than that my first ever web design as a UX Designer!
-              </p>
-
-              <span className="d-block mt-2">
-                User Inerview | Affinity Mapping | Visual Design | Website Design
-              </span>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-7">
-            <img src={KarishmaWebsiteGlimpse} className="img-fluid" alt="Karishma Joshi Website" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="Website of a Landscape Designer"
+          pageDescription="A showcase of work for my Architect friend and more than that my first ever web design as a UX Designer!"
+          landingPageImage={KarishmaWebsiteGlimpse}
+          tags={["Affinity Mapping", "Visual Design", "Website Design"]}
+        />
 
         <div className="container work-page-presnetation">
 

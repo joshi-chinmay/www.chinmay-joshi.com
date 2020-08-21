@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+
+import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
 import TILTMobilePc from "../../images/work/TILT/TILT-mobile-pc.png";
@@ -31,24 +33,14 @@ export default class Tilt extends Component {
   render() {
     return(
       <div className="work-page-container">
-        <div className="row work-landing-page">
-          <div className="col-sm-12 col-md-5">
-            <div className="work-tab-landing-page-title">
-              <h1 className="mb-2">TILT - Today I Listened To</h1>
-              <p className="mt-5">
-                A music platform for evertyone to share music.
-                <br />Solution tailored for Jefferson University's students.
-              </p>
-
-              <span className="d-block mt-2">
-                Mobile & Web App | Prototyping | Product Testing
-              </span>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-7">
-            <img src={TILTMobilePc} className="img-fluid" alt="Today I listened to blob" />
-          </div>
-        </div>
+        <WorkTabLandingInfo
+          pageHeading="TILT - Today I Listened To"
+          classList={"bg-pastel-off-white full-bleed"}
+          pageDescription="A music platform for evertyone to share music. Solution tailored for Jefferson University's students."
+          tags={["Mobile & Web App", "Prototyping", "Product Testing"]}
+          landingPageImage={TILTMobilePc}
+          landingPageImageWidth="w-85"
+        />
 
         <div className="container work-page-presnetation">
           <div id="vision" className="row work-tab">
