@@ -29,16 +29,16 @@ export default class Home extends Component {
   workPageMetaData() {
     return([
       {
-        projectName: "Step Up - A Fitness App", slug: "/step-up", klass: "bg-pastel-baby-pink", tags: ["Research", "UX Design", "Visual Design", "Prototyping"], imgSource: StepUpImg, description: "Step up and take your steps to being fit with this reward-based app. Solution tailored for Jefferson University's students."
+        projectName: "Step Up - A Fitness App", slug: "/step-up", klass: "bg-pastel-baby-pink", tags: ["Research", "UX Design", "Visual Design", "Prototyping"], imgSource: StepUpImg, description: "Step up is a reward-based app that helps you take extra steps per day. Solution is tailored for Jefferson University's students."
       },
       {
-        projectName: "Accessible Soda Machine", slug: "/accessible-soda-machine", klass: "bg-pastel-yellow", tags: ["Accessible Design", "User Research", "UX Design", "Product Design"], imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps blind person to vend soda without hesitation and anyone's help."
+        projectName: "Accessible Soda Machine", slug: "/accessible-soda-machine", klass: "bg-pastel-yellow", tags: ["Accessible Design", "User Research", "UX Design", "Product Design"], imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps a blind person to vend soda without hesitation and anyone's help."
       },
       {
-        projectName: "Habit - A Habit forming app", slug: "/habit", tags: ["User Research", "Product Design", "Visual Design", "Rapid Prototyping"], imgSource: HabitImg, klass: "bg-pastel-sky-blue", description: "The Habit app helps anyone form long-lasting habits. App's AI follows routine of the person and recommends times to form habits."
+        projectName: "Habit - A Habit forming app", slug: "/habit", tags: ["User Research", "Product Design", "Visual Design", "Rapid Prototyping"], imgSource: HabitImg, klass: "bg-pastel-sky-blue", description: "Habit app helps anyone in forming long-lasting habits. App's AI follows routine of the person and recommends times to form habits."
       },
       {
-        projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", klass: "bg-pastel-off-white padded-image-source", tags: ["UX Research", "Quantitative Research", "User Interviews"], imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce crime rate?"
+        projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", klass: "bg-pastel-off-white padded-image-source", tags: ["UX Research", "Quantitative Research", "User Interviews"], imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce a pubic transit crime rate?"
       }
     ]);
   }
