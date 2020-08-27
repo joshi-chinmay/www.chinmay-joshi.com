@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
-import NextLink from '../util/NextLink';
 
 import Artboard from '../../images/illustrations/colors.svg';
 import RandomColorPickerDemo from '../../images/work/randomcolorpicker/random-color-picker.gif';
@@ -24,7 +23,7 @@ export default class RandomColorPicker extends Component {
         />
 
         <div className="container work-page-presnetation">
-          <div id="vision" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
@@ -40,7 +39,7 @@ export default class RandomColorPicker extends Component {
             </div>
           </div>
 
-          <div id="glimpse" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Glimpse
@@ -51,7 +50,7 @@ export default class RandomColorPicker extends Component {
             </div>
           </div>
 
-          <div id="tech" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Technology Stack
@@ -66,8 +65,6 @@ export default class RandomColorPicker extends Component {
               </h1>
             </div>
           </div>
-
-          <NextLink nextLink={{name: "Thesis - Public Transit Safety", slug: "/public-transit-safety"}} />
         </div>
       </div>
     );

@@ -13,14 +13,15 @@ body {
   color: #1f2c5f;
   background: #ffffff;
   background-color: #ffffff;
+  text-align: left;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-weight: 900;
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  font-weight: 900;
   letter-spacing: 0.034rem;
+  line-height: 1.2;
 }
 .text-gradient-default {
   background: linear-gradient(to right, #1f2c5f, #c20a75, #1f2c5f);
@@ -33,9 +34,9 @@ h1, h2, h3 {
   -webkit-text-fill-color: transparent;
 }
 a {
+  font-weight: 400;
   transition: all .2s ease-out;
   text-decoration: none;
-  text-transform: uppercase;
   color: #c20a75;
 }
 a:hover {
@@ -44,14 +45,14 @@ a:hover {
   transition: all .2s ease-out;
   text-decoration: none;
 }
-.w-85 {
-  width: 85%;
-}
 .text-decoration-underline {
   text-decoration: underline;
 }
+.w-85 {
+  width: 85%;
+}
 b, strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 footer.footer-attribution-container {
   margin-top: 240px;
@@ -59,16 +60,16 @@ footer.footer-attribution-container {
 }
 
 .lead-sm {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
 }
 .lead {
-  font-size: 1.2rem;
+  font-size: 1.12rem;
 }
 .lead-lg {
-  font-size: 2.4rem;
+  font-size: 2.24rem;
 }
 .lead-xlg {
-  font-size: 4.8rem;
+  font-size: 4.48rem;
 }
 .text-decoration-none {
   text-decoration: none;
@@ -182,5 +183,12 @@ a.skip-main:focus, a.skip-main:active {
   }
   100% {
     background-position: bottom;
+  }
+}
+
+// check Bootstrap reset file
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1600px) and (min-device-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1600px) and (min-device-width: 1200px) and (min-resolution: 192dpi) {
+  body {
+    text-align: left !important;
   }
 }

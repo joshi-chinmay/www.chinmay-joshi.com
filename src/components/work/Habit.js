@@ -29,7 +29,7 @@ export default class Habit extends Component {
 
         <div className="container work-page-presnetation">
 
-          <div id="vision" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
@@ -42,7 +42,7 @@ export default class Habit extends Component {
             </div>
           </div>
 
-          <div id="problemSpace" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Problem Space
@@ -62,7 +62,7 @@ export default class Habit extends Component {
             </div>
           </div>
 
-          <div id="competitorAnalysis" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Competitor Analysis
@@ -116,7 +116,7 @@ export default class Habit extends Component {
             </div>
           </div>
 
-          <div id="customerSegment" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Customer Segment
@@ -135,7 +135,7 @@ export default class Habit extends Component {
             </div>
           </div>
 
-          <div id="featureList" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Feature List
@@ -179,7 +179,7 @@ export default class Habit extends Component {
             </div>
           </div>
 
-          <div id="design" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Design link to Figma
@@ -193,7 +193,7 @@ export default class Habit extends Component {
           </div>
 
 
-          <NextLink nextLink={{name: "Making of Accessible Soda Machine", slug: "/accessible-soda-machine"}} />
+          <NextLink nextLink={{name: "Thesis - Public Transit Safety", slug: "/public-transit-safety"}} />
         </div>
       </div>
     );

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
-import NextLink from '../util/NextLink';
 
 import KarishmaPersonalityMap from '../../images/work/karishma-website/Karishma-Personality.png';
 import KarishmaWebsiteGlimpse from '../../images/work/karishma-website/glimpse.png';
@@ -24,7 +23,7 @@ export default class KarishmaWebsite extends Component {
 
         <div className="container work-page-presnetation">
 
-          <div id="vision" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
@@ -37,7 +36,7 @@ export default class KarishmaWebsite extends Component {
             </div>
           </div>
 
-          <div id="infoAndMindmapping" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Mindmapping
@@ -59,7 +58,7 @@ export default class KarishmaWebsite extends Component {
             </div>
           </div>
 
-          <div id="personalityTraits" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Personality Traits
@@ -87,7 +86,7 @@ export default class KarishmaWebsite extends Component {
             </div>
           </div>
 
-          <div id="glimpse" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Glimpse
@@ -98,7 +97,7 @@ export default class KarishmaWebsite extends Component {
             </div>
           </div>
 
-          <div id="tech" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Technology
@@ -115,8 +114,6 @@ export default class KarishmaWebsite extends Component {
               </h1>
             </div>
           </div>
-
-          <NextLink nextLink={{name: "Random Color Picker", slug: "/randomcolorpicker"}} />
         </div>
       </div>
     );

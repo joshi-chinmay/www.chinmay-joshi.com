@@ -89,9 +89,9 @@ export default class Home extends Component {
                   <h1 className="lead-xlg text-gradient text-gradient-default">
                     I am Chinmay Joshi.
                   </h1>
-                  <p className="lead pt-4 pr-2 text-gradient text-gradient-secondary">
-                    Software Engineer turned <b className="font-weight-bold">Product Designer</b>.
-                    <br />Currently designing memorable, scalable experiences at ListAcross.
+                  <p className="lead pt-4 pr-2">
+                    Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.listacross.com" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">ListAcross</a>.
+                    <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">AmuraTech</a>.
                   </p>
 
                   <div className="mt-5">

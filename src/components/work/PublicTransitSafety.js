@@ -335,7 +335,7 @@ export default class PublicTransitSafety extends Component {
             </div>
           </div>
 
-          <NextLink nextLink={{name: "Habit: A habit forming app", slug: "/habit"}} />
+          <NextLink nextLink={{name: "Step Up - A Fitness App", slug: "/step-up"}} />
         </div>
       </div>
     );

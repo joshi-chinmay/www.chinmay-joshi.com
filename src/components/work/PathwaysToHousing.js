@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
-import NextLink from '../util/NextLink';
 
 import Artboard from '../../images/illustrations/pathways-to-housing.svg';
 import SupportingOrgs from '../../images/work/pathways-to-housing/supporting-orgs.png';
@@ -27,7 +26,7 @@ export default class PathwaysToHousing extends Component {
         />
 
         <div className="container work-page-presnetation">
-          <div id="preface" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Preface
@@ -41,7 +40,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="background" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Background
@@ -57,7 +56,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="partners" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Partners
@@ -68,7 +67,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="targetAudience" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Target Audience
@@ -91,7 +90,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="contentAudit" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Content Audit
@@ -103,7 +102,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="issues" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Issues
@@ -138,7 +137,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="userJourneyMap" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 User Journey Map
@@ -150,7 +149,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="usabilityTesting" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Usability Testing
@@ -232,7 +231,7 @@ export default class PathwaysToHousing extends Component {
             </div>
           </div>
 
-          <div id="wireframes" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Wireframes
@@ -246,8 +245,6 @@ export default class PathwaysToHousing extends Component {
               </a>
             </div>
           </div>
-
-          <NextLink nextLink={{name: "Step Up - A Fitness App", slug: "/step-up"}} />
         </div>
       </div>
     );

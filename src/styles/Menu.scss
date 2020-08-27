@@ -1,15 +1,15 @@
 .navbar {
-  padding: 2rem 0px;
+  padding: 1.8rem 0px;
   background: #ffffff;
   width: 100%;
   z-index: 100;
 
   .nav-item {
-    margin: 0 26px;
+    margin: 0 18px;
   }
   .nav-link {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 900;
+    font-size: 0.84rem;
     letter-spacing: 0.02rem;
     padding: 0.4rem 1.2rem !important;
   }
@@ -31,7 +31,7 @@
   .nav-item {
     .nav-link {
       text-transform: capitalize;
-      font-weight: 600;
+      font-weight: 900;
       font-size: 16px;
     }
     .nav-link.active {

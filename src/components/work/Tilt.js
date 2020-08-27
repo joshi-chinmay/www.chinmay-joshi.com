@@ -4,7 +4,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
-import NextLink from '../util/NextLink';
 
 import TILTMobilePc from "../../images/work/TILT/TILT-mobile-pc.png";
 import UserAnalysis1 from "../../images/work/TILT/UserAnalysis/1.png";
@@ -43,7 +42,7 @@ export default class Tilt extends Component {
         />
 
         <div className="container work-page-presnetation">
-          <div id="vision" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Vision
@@ -56,7 +55,7 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="research" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 User Research
@@ -94,7 +93,7 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="wireframes" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Wireframes
@@ -126,7 +125,7 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="colorPalette" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Color Palette
@@ -146,7 +145,7 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="fontFamily" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Font Family
@@ -165,7 +164,7 @@ export default class Tilt extends Component {
             </div>
           </div>
 
-          <div id="concept" className="row work-tab">
+          <div className="row work-tab">
             <div className="col-sm-12 col-md-3 col-lg-2">
               <h5 className="font-family-playfair">
                 Concept Design
@@ -175,8 +174,6 @@ export default class Tilt extends Component {
               <img src={TILTMobilePc} className="img-fluid" alt="TILT application conceptulization" />
             </div>
           </div>
-
-          <NextLink nextLink={{name: "Website of a Landscape Designer", slug: "/karishma-joshi-website"}} />
         </div>
       </div>
     );

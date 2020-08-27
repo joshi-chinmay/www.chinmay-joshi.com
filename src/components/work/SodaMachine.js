@@ -203,7 +203,7 @@ export default class SodaMachine extends Component {
             </div>
           </div>
 
-          <NextLink nextLink={{name: "Pathways To Housing", slug: "/pathways-to-housing"}} />
+          <NextLink nextLink={{name: "Habit - A Habit Forming App", slug: "/habit"}} />
         </div>
       </div>
     );
