@@ -6,6 +6,9 @@
   margin: 160px 0;
 
   .home-page-work-cards {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+
     .project-source {
       padding: 60px 80px;
     }

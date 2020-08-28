@@ -45,11 +45,13 @@ export default class StepUp extends Component {
               </h5>
             </div>
             <div className="col-sm-12 col-md-10">
-              <span>
+              <p>
                 StepUp is a mobile applicationn, <b>focused on Jefferson University students and staff to help them maintain a healthy lifestyle by taking extra steps in a day.</b>
                 <br /><br />
                 While designing this product, I used <b>build - measure - learn's</b> iterative cycle. The applicationn follows <b>HOOKED framework, widely known for designing habit-forming products.</b>
-              </span>
+                <br /><br />
+                In the background I was <b>reading a widely popular book <a href="https://www.google.com/books/edition/Hooked/dsz5AwAAQBAJ?hl=en&gbpv=0" className="text-decoration-underline" target="_blank" rel="noopener noreferrer">'Hooked - by Nir Eyal.'</a></b>
+              </p>
               <div className="col-md-12 text-center mt-4">
                 <img src={HookedMBL} className="img-fluid w-50" alt="Hooked Model" />
               </div>
@@ -88,7 +90,6 @@ export default class StepUp extends Component {
             <div className="col-sm-12 col-md-10">
               <p>
                 <b>My goal was set. I was designing a mobile application experience that'd help students form a habit to successfully take extra steps per day.</b>
-                In the background I was <b>reading a widely popular book <a href="https://www.google.com/books/edition/Hooked/dsz5AwAAQBAJ?hl=en&gbpv=0" className="text-decoration-underline" target="_blank" rel="noopener noreferrer">'Hooked - by Nir Eyal.'</a></b>
                 <br /><br />
                 The book inspired me to create a habit forming product by defining triggers and actions based on user's activity. Below is a story of a college student who joins the university and gets introduced to a new app StepUp.
               </p>
@@ -162,7 +163,7 @@ export default class StepUp extends Component {
             <div className="col-sm-12 col-md-10">
               <p>
                 Based on the the riskiest assumptions analysis, I decided to validate if the user is willing to run on different routes using a pretotype, using re-label method. I modified a Google Map, added couple of health stats, selected dummy routes, and asked audience if they would like to receive such stats from the Maps app they use.
-                <br />
+                <br /><br />
                 <b>This step especially helps when the product is in the early stagees. I could simply validate my assumption and change direction of the product.</b>
               </p>
               <div className="row mt-4 mb-5">

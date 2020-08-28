@@ -50,6 +50,11 @@
     }
   }
 
+  .work-tab {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+  }
+
   @media (max-width: 991.98px) {
     .work-page-container {
       .work-page-presnetation {
