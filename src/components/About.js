@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import PP from '../images/CJ-bw.png';
 import SocialMediaIcons from './util/SocialMediaIcons';
 
 export default class About extends Component {
@@ -22,7 +21,7 @@ export default class About extends Component {
 
             <div className="row px-5">
               <div className="col-xs-12 col-md-5">
-                <img src={PP} className="w-100" alt="I look great. just sayin." />
+                <img src="https://s3.amazonaws.com/www.chinmay-joshi.com/CJ-bw.png" className="w-100" alt="I look great. just sayin." />
               </div>
               <div className="col-xs-12 col-md-6 mt-5 mb-5">
                 <h1 className="mt-1 text-gradient text-gradient-secondary">

@@ -8,6 +8,8 @@
   .home-page-work-cards {
     content-visibility: auto;
     contain-intrinsic-size: 1000px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px inherit;
 
     .project-source {
       padding: 60px 80px;

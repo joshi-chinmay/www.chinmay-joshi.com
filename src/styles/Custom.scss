@@ -159,22 +159,22 @@ a.skip-main:focus, a.skip-main:active {
   font-size: 240px;
   line-height: 1;
   color: white;
-  background: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab") no-repeat;
-  background-size: 150% 150%;
+  background: url("https://images.unsplash.com/photo-1563089145-599997674d42") no-repeat;
+  background-size: 120% 120%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: bg-img-animate 20s infinite;
-  background-position: bottom left;
+  animation: bg-img-animate 56s infinite;
+  background-position: top right;
 }
 @keyframes bg-img-animate {
   20% {
-    background-position: top right;
+    background-position: top left;
   }
   40% {
     background-position: top;
   }
   60% {
-    background-position: top left;
+    background-position: top right;
   }
   60% {
     background-position: right;
@@ -183,7 +183,7 @@ a.skip-main:focus, a.skip-main:active {
     background-position: bottom right;
   }
   100% {
-    background-position: bottom;
+    background-position: bottom left;
   }
 }
 

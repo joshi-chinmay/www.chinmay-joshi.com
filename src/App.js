@@ -16,13 +16,12 @@ import PageNotFound from './components/PageNotFound';
 import "./styles/Styles.scss";
 
 const LoadableHome = Loadable({ loader: () => import('./components/Home'), loading: Loading});
-const LoadableWork = Loadable({ loader: () => import('./components/Work'), loading: Loading});
 const LoadableAbout = Loadable({ loader: () => import('./components/About'), loading: Loading});
 const LoadableBlog = Loadable({ loader: () => import('./components/Blog'), loading: Loading});
 const LoadableStepUp = Loadable({ loader: () => import('./components/work/StepUp'), loading: Loading});
-const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite'), loading: Loading});
-const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker'), loading: Loading});
-const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt'), loading: Loading});
+// const LoadableKarishmaWebsite = Loadable({ loader: () => import('./components/work/KarishmaWebsite'), loading: Loading});
+// const LoadableRandomColorPicker = Loadable({ loader: () => import('./components/work/RandomColorPicker'), loading: Loading});
+// const LoadableTilt = Loadable({ loader: () => import('./components/work/Tilt'), loading: Loading});
 
 const LoadablePathwaysToHousing = Loadable({ loader: () => import('./components/work/PathwaysToHousing'), loading: Loading});
 const LoadableSodaMachine = Loadable({ loader: () => import('./components/work/SodaMachine'), loading: Loading});
@@ -46,17 +45,20 @@ class App extends Component {
             <Switch location={location}>
               <Route exact path={'/'} component={LoadableHome} />
               <Route exact path={'/home'} component={LoadableHome} />
-              <Route exact path={'/work'} component={LoadableWork} />
               <Route exact path={'/about'} component={LoadableAbout} />
               <Route exact path={'/blogs'} component={LoadableBlog} />
-              <Route exact path={"/work/tilt"} component={LoadableTilt} />
               <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
               <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
               <Route exact path={"/work/habit"} component={LoadableHabit} />
               <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
-              <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
-              <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
               <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+
+              {/* @TODO remove these files as well
+                <Route exact path={"/work/tilt"} component={LoadableTilt} />
+                <Route exact path={"/work/randomcolorpicker"} component={LoadableRandomColorPicker} />
+                <Route exact path={"/work/karishma-joshi-website"} component={LoadableKarishmaWebsite} />
+              */}
+
               <Route path="*" component={PageNotFound} />
             </Switch>
           </main>
