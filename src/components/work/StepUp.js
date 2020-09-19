@@ -3,9 +3,6 @@ import React, {Component} from 'react';
 import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-
 import StepUpMockUP from '../../images/work/StepUp/Artboard.png';
 
 import HookedMBL from '../../images/work/StepUp/Hooked-BML.png';
@@ -192,14 +189,8 @@ export default class StepUp extends Component {
               </h5>
             </div>
             <div className="col-sm-12 col-md-10">
-              <Carousel showStatus={false} showIndicators={false} useKeyboardArrows={true} autoPlay interval={3000} infiniteLoop>
-                <div>
-                  <img src={wireframe1} alt="Carousel slide for wireframes" className="img-fluid" />
-                </div>
-                <div>
-                  <img src={wireframe2} alt="Carousel slide for wireframes" className="img-fluid" />
-                </div>
-              </Carousel>
+              <img src={wireframe1} alt="wireframes for step up" className="img-fluid" />
+              <img src={wireframe2} alt="wireframes for step up" className="img-fluid" />
             </div>
           </div>
 
