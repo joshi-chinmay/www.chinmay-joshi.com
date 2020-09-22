@@ -39,7 +39,7 @@ export default class StepUp extends Component {
           <div className="container work-page-presnetation">
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Approach
                 </h5>
               </div>
@@ -49,7 +49,7 @@ export default class StepUp extends Component {
                   <br /><br />
                   While designing this product, I used <b>build - measure - learn's</b> iterative cycle. The applicationn follows <b>HOOKED framework, widely known for designing habit-forming products.</b>
                   <br /><br />
-                  In the background I was <b>reading a widely popular book <a href="https://www.google.com/books/edition/Hooked/dsz5AwAAQBAJ?hl=en&gbpv=0" className="text-decoration-underline" target="_blank" rel="noopener noreferrer">'Hooked - by Nir Eyal.'</a></b>
+                  In the background I was <b>reading a widely popular book <a href="https://www.google.com/books/edition/Hooked/dsz5AwAAQBAJ?hl=en&gbpv=0" target="_blank" rel="noopener noreferrer">'Hooked - by Nir Eyal.'</a></b>
                 </p>
                 <div className="col-md-12 text-center mt-4">
                   <img src={HookedMBL} className="img-fluid w-50" alt="Hooked Model" />
@@ -59,7 +59,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Contextual Enquiry
                 </h5>
               </div>
@@ -82,7 +82,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Storyboard
                 </h5>
               </div>
@@ -105,7 +105,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   MoSCoW Analysis
                 </h5>
               </div>
@@ -122,7 +122,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Siteflow
                 </h5>
               </div>
@@ -138,7 +138,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Riskiest Assumptions Metrics
                 </h5>
               </div>
@@ -155,7 +155,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Pretotyping
                 </h5>
               </div>
@@ -186,7 +186,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Wireframes
                 </h5>
               </div>
@@ -198,7 +198,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Introducing - Prototype on Sketch
                 </h5>
               </div>

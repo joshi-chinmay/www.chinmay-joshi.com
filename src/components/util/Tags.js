@@ -16,7 +16,7 @@ export default class Tags extends Component {
 
     for (let i = 0; i < tags.length; i++) {
       allTags.push(
-        <motion.span key={i} className="badge badge-pill badge-primary mr-2" variants={item}>
+        <motion.span variants={item} key={i} className="badge badge-pill badge-primary mr-2">
           {tags[i]}
         </motion.span>
       )

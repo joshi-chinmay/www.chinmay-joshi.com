@@ -33,7 +33,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Vision
                 </h5>
               </div>
@@ -46,7 +46,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Problem Space
                 </h5>
               </div>
@@ -66,7 +66,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Competitor Analysis
                 </h5>
               </div>
@@ -120,7 +120,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Customer Segment
                 </h5>
               </div>
@@ -139,7 +139,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Feature List
                 </h5>
               </div>
@@ -183,7 +183,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Design link to Figma
                 </h5>
               </div>

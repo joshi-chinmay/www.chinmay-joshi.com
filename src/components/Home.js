@@ -89,13 +89,17 @@ export default class Home extends Component {
               <h1 className="lead-xlg text-default-gradient">
                 {this.state.helloWord}!
               </h1>
-              <h1 className="lead-xlg text-gradient text-gradient-default">
+              <h1 className="lead-xlg">
                 I am Chinmay Joshi.
               </h1>
               <p className="lead pt-4 pr-2">
-                Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.levelops.io" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">LevelOps</a>.
-                <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">AmuraTech</a>.
+                Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.levelops.io" className="text-capitalize" target="_blank" rel="noopener noreferrer">LevelOps</a>.
+                <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize" target="_blank" rel="noopener noreferrer">AmuraTech</a>.
               </p>
+
+              <small className="text-monospace">
+                This website is made with &#9829;, React.JS & Framer Motion.
+              </small>
 
               <div className="mt-5">
                 <SocialMediaIcons />
@@ -104,53 +108,45 @@ export default class Home extends Component {
           </div>
         </section>
 
-        <SlideIn>
           <section className="home-work-page-container">
             <div className="row">
               <div className="offset-lg-1 col-lg-10 col-sm-12 order-last">
-                <div className="row mb-5">
-                  {workCards}
+                <SlideIn>
+                  <div className="row mb-5">
+                    {workCards}
 
-                  <div className="col-lg-12 col-md-12 col-xs-12 mb-4">
-                    <div className="row h-100 home-page-work-cards padded-image-source bg-pastel-green">
-                      <div className="col-xs-12 col-md-6 p-0 image-source order-last">
-                        <img src={CodeBG} className="img-fluid rounded" alt="work page showcase" />
-                      </div>
-
-                      <div className="col-xs-12 project-source col-md-6">
-                        <h1 className="mt-5">
-                          Find this website on GitHub
-                        </h1>
-                        <p className="mt-4">
-                          Once a coder always a coder.
-                          <br />
-                          This website's code base is open sourced on Github. The website is hosted on Netlify.
-                          Drop me an email if you need building a website/portfolio.
-                        </p>
-
-                        <div className="mt-5">
-                          <Tags tags={["Coding", "React.JS", "forever-coder", "website-design"]} />
+                    <div className="col-lg-12 col-md-12 col-xs-12 mb-4">
+                      <div className="row h-100 home-page-work-cards padded-image-source bg-pastel-green">
+                        <div className="col-xs-12 col-md-6 p-0 image-source order-last">
+                          <img src={CodeBG} className="img-fluid rounded" alt="work page showcase" />
                         </div>
 
-                        <a href="https://github.com/joshi-chinmay/www.chinmay-joshi.com" className="font-weight-bold d-block mt-5" target="_blank" rel="noopener noreferrer">
-                          Go To Codebase ⟶
-                        </a>
+                        <div className="col-xs-12 project-source col-md-6">
+                          <h1 className="mt-5">
+                            Find this website on GitHub
+                          </h1>
+                          <p className="mt-4">
+                            Once a coder always a coder.
+                            <br />
+                            This website's code base is open sourced on Github. The website is hosted on Netlify.
+                            Drop me an email if you need building a website/portfolio.
+                          </p>
+
+                          <div className="mt-5">
+                            <Tags tags={["Coding", "React.JS", "forever-coder", "website-design"]} />
+                          </div>
+
+                          <a href="https://github.com/joshi-chinmay/www.chinmay-joshi.com" className="font-weight-bold d-block mt-5" target="_blank" rel="noopener noreferrer">
+                            Go To Codebase ⟶
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="row mt-4">
-              <div className="offset-lg-4 col-sm-12 col-lg-4">
-                <a href="/work" type="button" className="lead font-weight-bold font-family-playfair text-capitalize d-block text-center text-decoration-underline">
-                  View all of my work
-                </a>
+                </SlideIn>
               </div>
             </div>
           </section>
-        </SlideIn>
       </div>
     );
   }

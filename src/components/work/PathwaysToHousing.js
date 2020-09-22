@@ -30,7 +30,7 @@ export default class PathwaysToHousing extends Component {
           <div className="container work-page-presnetation">
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Preface
                 </h5>
               </div>
@@ -44,7 +44,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Background
                 </h5>
               </div>
@@ -60,7 +60,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Partners
                 </h5>
               </div>
@@ -71,7 +71,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Target Audience
                 </h5>
               </div>
@@ -94,7 +94,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Content Audit
                 </h5>
               </div>
@@ -106,7 +106,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Issues
                 </h5>
               </div>
@@ -141,7 +141,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   User Journey Map
                 </h5>
               </div>
@@ -153,7 +153,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Usability Testing
                 </h5>
               </div>
@@ -235,7 +235,7 @@ export default class PathwaysToHousing extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Wireframes
                 </h5>
               </div>

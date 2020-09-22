@@ -1,21 +1,22 @@
 .navbar {
-  padding: 1.8rem 0px;
+  padding: 1.2rem 0px;
+  padding-left: 126px;
   background: #ffffff;
   width: 100%;
-  z-index: 100;
 
   .nav-item {
-    margin: 0 18px;
+    margin-right: 32px;
   }
   .nav-link {
+    text-decoration: none;
     font-weight: 900;
-    font-size: 0.84rem;
+    font-size: 0.92rem;
     letter-spacing: 0.02rem;
     padding: 0.4rem 1.2rem !important;
   }
 
   .nav-link:hover {
-    opacity: 0.62;
+    opacity: 0.76;
     transform: translateY(-3px);
   }
   .navbar-toggler {
@@ -25,24 +26,10 @@
   }
 }
 
-.nav.secondary-nav {
-  padding-bottom: 16px;
-
-  .nav-item {
-    .nav-link {
-      text-transform: capitalize;
-      font-weight: 900;
-      font-size: 16px;
-    }
-    .nav-link.active {
-      border-bottom: 2px solid #c20a75;
-    }
-  }
-}
-
 @media (max-width: 991.98px) {
   .navbar {
     text-align: center;
+    padding-left: 0;
 
     .nav-link {
       margin-left: 0px !important;

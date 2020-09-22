@@ -11,9 +11,8 @@
 .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus,
 .btn:hover {
+  outline: #5e16b6;
   opacity: 0.6;
-  border: none;
-  outline: none !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   color: #fefefe;
   background: linear-gradient(78deg, #5e16b6 -90%, #8636e8 94%);

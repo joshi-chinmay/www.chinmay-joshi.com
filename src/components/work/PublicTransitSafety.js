@@ -35,7 +35,7 @@ export default class PublicTransitSafety extends Component {
           <div className="container work-page-presnetation">
             <div id="initial" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Initials
                 </h5>
               </div>
@@ -53,7 +53,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="targetAudience" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Target Audience
                 </h5>
               </div>
@@ -81,7 +81,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="problemStatement" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Problem Statement
                 </h5>
               </div>
@@ -99,7 +99,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="howMightWe" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   How Might We?
                 </h5>
               </div>
@@ -112,7 +112,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="userInterviews" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   User Interviews
                 </h5>
               </div>
@@ -134,7 +134,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="brainmap" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Brainmap
                 </h5>
               </div>
@@ -145,7 +145,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="userPersona" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   User Persona
                 </h5>
               </div>
@@ -221,7 +221,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="secondaryResearch" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Secondary Research
                 </h5>
               </div>
@@ -272,7 +272,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="storyboard" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Storyboard
                 </h5>
               </div>
@@ -283,7 +283,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="competitorAnalysis" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-playfair">
+                <h5 className="font-family-merri">
                   Competitor Analysis
                 </h5>
               </div>

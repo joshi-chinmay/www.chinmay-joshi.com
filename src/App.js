@@ -37,7 +37,7 @@ class App extends Component {
         <Menu />
 
         <Route render={({ location }) => (
-          <main className="container-fluid">
+          <main id="main" className="container-fluid">
             <Suspense fallback={<div></div>}>
 
               <AnimatePresence key={Math.random()}>
