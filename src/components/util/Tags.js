@@ -1,14 +1,24 @@
 import React, {Component} from 'react';
 
+import { motion } from "framer-motion";
+
 export default class Tags extends Component {
   tagsHTML(tags) {
     let allTags = [];
 
+    const item = {
+      hidden: { y: 20, opacity: 0 },
+      visible: {
+        y: 0,
+        opacity: 1
+      }
+    };
+
     for (let i = 0; i < tags.length; i++) {
       allTags.push(
-        <span key={i} className="badge badge-pill badge-primary mr-2">
+        <motion.span key={i} className="badge badge-pill badge-primary mr-2" variants={item}>
           {tags[i]}
-        </span>
+        </motion.span>
       )
     }
 
@@ -16,10 +26,23 @@ export default class Tags extends Component {
   }
 
   render() {
+    const container = {
+      hidden: { opacity: 1, scale: 0 },
+      visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          delay: 0.2,
+          when: "beforeChildren",
+          staggerChildren: 0.1
+        }
+      }
+    };
+
     return(
-      <div className="tags-container">
+      <motion.div className="tags-container" variants={container} initial="hidden" animate="visible">
         { this.tagsHTML(this.props.tags) }
-      </div>
+      </motion.div>
     );
   }
 }

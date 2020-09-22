@@ -8,8 +8,6 @@ export default class Footer extends Component {
           <div className="col-sm-12">
             <small>
               &copy; 2020 · Chinmay Joshi · All rights reserved.
-              |
-              Illustrations · created by <u>Katerina Limpitsouni</u> on <u>undraw.co</u>.
             </small>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import SlideIn from '../layouts/slide-in';
+
 export default class Blog extends Component {
 
   constructor(props) {
@@ -79,11 +81,13 @@ export default class Blog extends Component {
 
   render() {
     return(
-      <div className="blogs-container">
-        <div className="row">
-          {this.getArticles()}
+      <SlideIn>
+        <div className="blogs-container">
+          <div className="row">
+            {this.getArticles()}
+          </div>
         </div>
-      </div>
+      </SlideIn>
     );
   }
 }

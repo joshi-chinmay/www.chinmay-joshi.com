@@ -1,7 +1,7 @@
 import React, { Component, Suspense, lazy } from 'react';
 import { Switch, Route } from "react-router-dom";
 
-import Loading from './components/Loading';
+import { AnimatePresence } from 'framer-motion';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -38,27 +38,29 @@ class App extends Component {
 
         <Route render={({ location }) => (
           <main className="container-fluid">
-            <Suspense fallback={Loading}>
+            <Suspense fallback={<div></div>}>
 
-              <Switch location={location}>
-                <Route exact path={'/'} component={LoadableHome} />
-                <Route exact path={'/home'} component={LoadableHome} />
-                <Route exact path={'/about'} component={LoadableAbout} />
-                <Route exact path={'/blogs'} component={LoadableBlog} />
-                <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
-                <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
-                <Route exact path={"/work/habit"} component={LoadableHabit} />
-                <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
-                <Route exact path={"/work/step-up"} component={LoadableStepUp} />
+              <AnimatePresence key={Math.random()}>
+                <Switch location={location} key={location.pathname}>
+                  <Route exact path={'/'} component={LoadableHome} />
+                  <Route exact path={'/home'} component={LoadableHome} />
+                  <Route exact path={'/about'} component={LoadableAbout} />
+                  <Route exact path={'/blogs'} component={LoadableBlog} />
+                  <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
+                  <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
+                  <Route exact path={"/work/habit"} component={LoadableHabit} />
+                  <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
+                  <Route exact path={"/work/step-up"} component={LoadableStepUp} />
 
-                <Route path="*" component={PageNotFound} />
-              </Switch>
+                  <Route path="*" component={PageNotFound} />
+                </Switch>
+              </AnimatePresence>
 
             </Suspense>
           </main>
         )}/>
 
-      <Footer />
+        <Footer />
       </div>
     );
   }

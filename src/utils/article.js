@@ -40,7 +40,7 @@ const getArticle = async () => {
     e.addEventListener('click', ({target}) => {
       if (!target.href && !target.parentElement.href){
         window.open(e.dataset.url, '_blank')
-        
+
       }
     })
   });

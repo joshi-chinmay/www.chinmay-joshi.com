@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 
+import SlideIn from '../layouts/slide-in';
+
 import SocialMediaIcons from './util/SocialMediaIcons';
 import Tags from './util/Tags';
 
 import StepUpImg from '../images/work/StepUp/Artboard.png';
 import AccessibleSodaMachineImg from '../images/work/soda-machine/Final-Proto.png';
 import HabitImg from '../images/work/habit/Artboard.png';
-import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
+import TransitSafetyImg from '../images/work/transit-safety/transit-safety.svg';
+import PathwaysToHousingImg from '../images/work/pathways-to-housing/pathways-to-housing.svg';
 import CodeBG from '../images/CodeBG.png';
 
 export default class Home extends Component {
@@ -38,6 +41,9 @@ export default class Home extends Component {
       },
       {
         projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", klass: "bg-pastel-off-white padded-image-source", tags: ["UX Research", "Quantitative Research", "User Interviews"], imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce a pubic transit crime rate?"
+      },
+      {
+        projectName: "Pathways To Housing - A website Redesign", slug: "/pathways-to-housing", klass: "bg-pastel-cream padded-image-source", tags: ["Website Redesign", "Information Architecture", "UX Design"], imgSource: PathwaysToHousingImg, description: "This project is part of academic group study. This case study is done to improve information architecture of the existing website."
       }
     ]);
   }
@@ -76,7 +82,7 @@ export default class Home extends Component {
     }
 
     return(
-      <div className="page-container">
+      <div>
         <section className="home-page-welcome-note-container">
           <div className="row">
             <div className="col-sm-12">
@@ -98,51 +104,53 @@ export default class Home extends Component {
           </div>
         </section>
 
-        <section className="home-work-page-container">
-          <div className="row">
-            <div className="offset-lg-1 col-lg-10 col-sm-12 order-last">
-              <div className="row mb-5">
-                {workCards}
+        <SlideIn>
+          <section className="home-work-page-container">
+            <div className="row">
+              <div className="offset-lg-1 col-lg-10 col-sm-12 order-last">
+                <div className="row mb-5">
+                  {workCards}
 
-                <div className="col-lg-12 col-md-12 col-xs-12 mb-4">
-                  <div className="row h-100 home-page-work-cards padded-image-source bg-pastel-green">
-                    <div className="col-xs-12 col-md-6 p-0 image-source order-last">
-                      <img src={CodeBG} className="img-fluid rounded" alt="work page showcase" />
-                    </div>
-
-                    <div className="col-xs-12 project-source col-md-6">
-                      <h1 className="mt-5">
-                        Find this website on GitHub
-                      </h1>
-                      <p className="mt-4">
-                        Once a coder always a coder.
-                        <br />
-                        This website's code base is open sourced on Github. The website is hosted on Netlify.
-                        Drop me an email if you need building a website/portfolio.
-                      </p>
-
-                      <div className="mt-5">
-                        <Tags tags={["Coding", "React.JS", "forever-coder", "website-design"]} />
+                  <div className="col-lg-12 col-md-12 col-xs-12 mb-4">
+                    <div className="row h-100 home-page-work-cards padded-image-source bg-pastel-green">
+                      <div className="col-xs-12 col-md-6 p-0 image-source order-last">
+                        <img src={CodeBG} className="img-fluid rounded" alt="work page showcase" />
                       </div>
 
-                      <a href="https://github.com/joshi-chinmay/www.chinmay-joshi.com" className="font-weight-bold d-block mt-5" target="_blank" rel="noopener noreferrer">
-                        Go To Codebase ⟶
-                      </a>
+                      <div className="col-xs-12 project-source col-md-6">
+                        <h1 className="mt-5">
+                          Find this website on GitHub
+                        </h1>
+                        <p className="mt-4">
+                          Once a coder always a coder.
+                          <br />
+                          This website's code base is open sourced on Github. The website is hosted on Netlify.
+                          Drop me an email if you need building a website/portfolio.
+                        </p>
+
+                        <div className="mt-5">
+                          <Tags tags={["Coding", "React.JS", "forever-coder", "website-design"]} />
+                        </div>
+
+                        <a href="https://github.com/joshi-chinmay/www.chinmay-joshi.com" className="font-weight-bold d-block mt-5" target="_blank" rel="noopener noreferrer">
+                          Go To Codebase ⟶
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="row mt-4">
-            <div className="offset-lg-4 col-sm-12 col-lg-4">
-              <a href="/work" type="button" className="lead font-weight-bold font-family-playfair text-capitalize d-block text-center text-decoration-underline">
-                View all of my work
-              </a>
+            <div className="row mt-4">
+              <div className="offset-lg-4 col-sm-12 col-lg-4">
+                <a href="/work" type="button" className="lead font-weight-bold font-family-playfair text-capitalize d-block text-center text-decoration-underline">
+                  View all of my work
+                </a>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </SlideIn>
       </div>
     );
   }
