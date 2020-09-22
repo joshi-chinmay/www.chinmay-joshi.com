@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
+import { motion } from 'framer-motion';
+import SlideIn from '../layouts/slide-in';
 
 import SocialMediaIcons from './util/SocialMediaIcons';
 import Tags from './util/Tags';
@@ -7,25 +9,11 @@ import Tags from './util/Tags';
 import StepUpImg from '../images/work/StepUp/Artboard.png';
 import AccessibleSodaMachineImg from '../images/work/soda-machine/Final-Proto.png';
 import HabitImg from '../images/work/habit/Artboard.png';
-import TransitSafetyImg from '../images/illustrations/transit-safety.svg';
+import TransitSafetyImg from '../images/work/transit-safety/transit-safety.svg';
+import PathwaysToHousingImg from '../images/work/pathways-to-housing/pathways-to-housing.svg';
 import CodeBG from '../images/CodeBG.png';
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      helloWord: this.helloWorld(),
-    }
-  }
-
-  helloWorld() {
-    const hello = ["Hello", "नमस्कार", "Hallo", "Bonjour", "Hola", "Ciao", "Guten Tag", "Hallo, Hi", "Olá", "Kon'nichiwa", "xin chào"]
-    return(
-      hello[ Math.floor(Math.random(10) * hello.length) ]
-    );
-  }
-
   workPageMetaData() {
     return([
       {
@@ -39,6 +27,9 @@ export default class Home extends Component {
       },
       {
         projectName: "Thesis - Public Transit Safety", slug: "/public-transit-safety", klass: "bg-pastel-off-white padded-image-source", tags: ["UX Research", "Quantitative Research", "User Interviews"], imgSource: TransitSafetyImg, description: "A murder happens every 30 minutes. A rape happens every 4 minutes. A robbery happens every 1.7 minutes. This is stressful. What can a UX designer do to reduce a pubic transit crime rate?"
+      },
+      {
+        projectName: "Pathways To Housing - A website Redesign", slug: "/pathways-to-housing", klass: "bg-pastel-cream padded-image-source", tags: ["Website Redesign", "Information Architecture", "UX Design"], imgSource: PathwaysToHousingImg, description: "This project is part of academic group study. This case study is done to improve information architecture of the existing website."
       }
     ]);
   }
@@ -77,33 +68,44 @@ export default class Home extends Component {
     }
 
     return(
-      <TransitionGroup component="main">
-        <CSSTransition classNames="fade" timeout={{ enter: 10000, exit: 10000 }} appear>
-          <div className="page-container">
-            <section className="home-page-welcome-note-container">
-              <div className="row">
-                <div className="col-sm-12">
-                  <h1 className="lead-xlg text-default-gradient">
-                    {this.state.helloWord}!
-                  </h1>
-                  <h1 className="lead-xlg text-gradient text-gradient-default">
-                    I am Chinmay Joshi.
-                  </h1>
-                  <p className="lead pt-4 pr-2">
-                    Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.levelops.io" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">LevelOps</a>.
-                    <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize text-decoration-underline" target="_blank" rel="noopener noreferrer">AmuraTech</a>.
-                  </p>
+      <div>
+        <section className="home-page-welcome-note-container">
+          <div className="row">
+            <div className="col-sm-12">
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+                <h1 className="lead-xlg text-default-gradient">
+                  Hello!
+                </h1>
+              </motion.div>
 
-                  <div className="mt-5">
-                    <SocialMediaIcons />
-                  </div>
-                </div>
+              <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+                <h1 className="lead-xlg">
+                  I am Chinmay Joshi.
+                </h1>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+                <p className="lead pt-4 pr-2">
+                  Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.levelops.io" className="text-capitalize" target="_blank" rel="noopener noreferrer">LevelOps</a>.
+                  <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize" target="_blank" rel="noopener noreferrer">AmuraTech</a>.
+                </p>
+
+                <small className="text-monospace">
+                  This website is made with &#9829;, <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.JS</a> & <a href="https://www.framer.com/api/motion/" target="_blank" rel="noopener noreferrer">Framer Motion</a>.
+                </small>
+              </motion.div>
+
+              <div className="mt-5">
+                <SocialMediaIcons />
               </div>
-            </section>
+            </div>
+          </div>
+        </section>
 
-            <section className="home-work-page-container">
-              <div className="row">
-                <div className="offset-lg-1 col-lg-10 col-sm-12 order-last">
+          <section className="home-work-page-container">
+            <div className="row">
+              <div className="offset-lg-1 col-lg-10 col-sm-12 order-last">
+                <SlideIn>
                   <div className="row mb-5">
                     {workCards}
 
@@ -135,20 +137,11 @@ export default class Home extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
+                </SlideIn>
               </div>
-
-              <div className="row mt-4">
-                <div className="offset-lg-4 col-sm-12 col-lg-4">
-                  <a href="/work" type="button" className="lead font-weight-bold font-family-playfair text-capitalize d-block text-center text-decoration-underline">
-                    View all of my work
-                  </a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </CSSTransition>
-      </TransitionGroup>
+            </div>
+          </section>
+      </div>
     );
   }
 }

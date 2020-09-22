@@ -17,9 +17,7 @@ export default class Tags extends Component {
 
   render() {
     return(
-      <div className="tags-container">
-        { this.tagsHTML(this.props.tags) }
-      </div>
+      this.tagsHTML(this.props.tags)
     );
   }
 }
