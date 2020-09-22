@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import { motion } from 'framer-motion';
 import SlideIn from '../layouts/slide-in';
 
 import SocialMediaIcons from './util/SocialMediaIcons';
@@ -13,21 +14,6 @@ import PathwaysToHousingImg from '../images/work/pathways-to-housing/pathways-to
 import CodeBG from '../images/CodeBG.png';
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      helloWord: this.helloWorld(),
-    }
-  }
-
-  helloWorld() {
-    const hello = ["Hello", "नमस्कार", "Hallo", "Bonjour", "Hola", "Ciao", "Guten Tag", "Hallo, Hi", "Olá", "Kon'nichiwa", "xin chào"]
-    return(
-      hello[ Math.floor(Math.random(10) * hello.length) ]
-    );
-  }
-
   workPageMetaData() {
     return([
       {
@@ -86,20 +72,28 @@ export default class Home extends Component {
         <section className="home-page-welcome-note-container">
           <div className="row">
             <div className="col-sm-12">
-              <h1 className="lead-xlg text-default-gradient">
-                {this.state.helloWord}!
-              </h1>
-              <h1 className="lead-xlg">
-                I am Chinmay Joshi.
-              </h1>
-              <p className="lead pt-4 pr-2">
-                Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.levelops.io" className="text-capitalize" target="_blank" rel="noopener noreferrer">LevelOps</a>.
-                <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize" target="_blank" rel="noopener noreferrer">AmuraTech</a>.
-              </p>
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+                <h1 className="lead-xlg text-default-gradient">
+                  Hello!
+                </h1>
+              </motion.div>
 
-              <small className="text-monospace">
-                This website is made with &#9829;, React.JS & Framer Motion.
-              </small>
+              <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+                <h1 className="lead-xlg">
+                  I am Chinmay Joshi.
+                </h1>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+                <p className="lead pt-4 pr-2">
+                  Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.levelops.io" className="text-capitalize" target="_blank" rel="noopener noreferrer">LevelOps</a>.
+                  <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize" target="_blank" rel="noopener noreferrer">AmuraTech</a>.
+                </p>
+
+                <small className="text-monospace">
+                  This website is made with &#9829;, React.JS & Framer Motion.
+                </small>
+              </motion.div>
 
               <div className="mt-5">
                 <SocialMediaIcons />

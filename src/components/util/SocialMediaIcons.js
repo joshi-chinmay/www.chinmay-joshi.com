@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export default class SocialMediaIcons extends Component {
   render() {
     const container = {
-      hidden: { opacity: 1, scale: 0 },
+      hidden: { opacity: 0, scale: 0 },
       visible: {
         opacity: 1,
         scale: 1,
         transition: {
-          delay: 0.2,
+          delay: 0.6,
           when: "beforeChildren",
-          staggerChildren: 0.1
+          staggerChildren: 0.3
         }
       }
     };
