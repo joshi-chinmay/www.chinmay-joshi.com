@@ -72,19 +72,19 @@ export default class Home extends Component {
         <section className="home-page-welcome-note-container">
           <div className="row">
             <div className="col-sm-12">
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
                 <h1 className="lead-xlg text-default-gradient">
                   Hello!
                 </h1>
               </motion.div>
 
-              <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+              <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
                 <h1 className="lead-xlg">
                   I am Chinmay Joshi.
                 </h1>
               </motion.div>
 
-              <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
                 <p className="lead pt-4 pr-2">
                   Software Engineer turned <b className="font-weight-bold">Product Designer</b>, currently designing human-experiences <a href="https://www.levelops.io" className="text-capitalize" target="_blank" rel="noopener noreferrer">LevelOps</a>.
                   <br />Prev. Software Engineer at <a href="https://www.linkedin.com/company/supahands/" className="text-capitalize" target="_blank" rel="noopener noreferrer">Supahands</a> & <a href="https://www.linkedin.com/company/amura-marketing-technologies-pvt-ltd/" className="text-capitalize" target="_blank" rel="noopener noreferrer">AmuraTech</a>.

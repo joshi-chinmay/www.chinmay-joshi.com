@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
 import { motion } from 'framer-motion';
 
-export default class SlideIn extends Component {
+export default class SlideInFromRight extends Component {
   render() {
     const pageVariants = {
       in: {
         opacity: 1,
-        x: 0,
+        x: '-1vw',
       },
       out: {
         opacity: 0,
-        x: '-2vw',
+        x: 0,
       }
     }
 
     const pageTransition = {
       type: "tween",
-      transition: "ease",
-      duration: 1
+      transition: "easeIn",
+      duration: 1.2
     }
 
     return(

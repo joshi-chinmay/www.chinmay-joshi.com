@@ -12,13 +12,13 @@ export default class SocialMediaIcons extends Component {
         transition: {
           delay: 0.6,
           when: "beforeChildren",
-          staggerChildren: 0.3
+          staggerChildren: 0.1
         }
       }
     };
 
     const item = {
-      hidden: { y: 20, opacity: 0 },
+      hidden: { y: 10, opacity: 0 },
       visible: {
         y: 0,
         opacity: 1
