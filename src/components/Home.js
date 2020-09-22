@@ -91,7 +91,7 @@ export default class Home extends Component {
                 </p>
 
                 <small className="text-monospace">
-                  This website is made with &#9829;, React.JS & Framer Motion.
+                  This website is made with &#9829;, <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.JS</a> & <a href="https://www.framer.com/api/motion/" target="_blank" rel="noopener noreferrer">Framer Motion</a>.
                 </small>
               </motion.div>
 

@@ -6,7 +6,7 @@ export default class SlideInFromRight extends Component {
     const pageVariants = {
       in: {
         opacity: 1,
-        x: '-1vw',
+        x: '-10px',
       },
       out: {
         opacity: 0,

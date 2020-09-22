@@ -10,7 +10,7 @@ export default class SlideIn extends Component {
       },
       out: {
         opacity: 0,
-        x: '-2vw',
+        x: '-20px',
       }
     }
 
