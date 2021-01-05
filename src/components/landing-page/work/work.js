@@ -4,7 +4,6 @@ import WorkCard from './work-card';
 
 import StepUpImg from '../../../images/work/StepUp/Artboard.png';
 import AccessibleSodaMachineImg from '../../../images/work/soda-machine/Final-Proto.png';
-import HabitImg from '../../../images/work/habit/Artboard.png';
 import TransitSafetyImg from '../../../images/work/transit-safety/transit-safety.svg';
 import PathwaysToHousingImg from '../../../images/work/pathways-to-housing/pathways-to-housing.svg';
 
@@ -21,9 +20,6 @@ function Work() {
       },
       {
         projectName: "Accessible Soda Machine", slug: "/accessible-soda-machine", tags: ["Accessible Design", "User Research", "UX Design", "Product Design"], imgSource: AccessibleSodaMachineImg, description: "Accessible soda machine helps a blind person to vend soda without hesitation and anyone's help."
-      },
-      {
-        projectName: "Habit - A Habit forming app", slug: "/habit", tags: ["User Research", "Product Design", "Visual Design", "Rapid Prototyping"], imgSource: HabitImg, description: "Habit app helps anyone in forming long-lasting habits. App's AI follows routine of the person and recommends times to form habits."
       },
       {
         projectName: "Pathways To Housing - A website Redesign", slug: "/pathways-to-housing", tags: ["Website Redesign", "Information Architecture", "UX Design"], imgSource: PathwaysToHousingImg, description: "This project is part of academic group study. This case study is done to improve information architecture of the existing website."

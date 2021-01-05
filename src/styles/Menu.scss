@@ -12,13 +12,15 @@
     color: #1f2c5f;
   }
   .nav-link {
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
     letter-spacing: 0.02rem;
     color: #1f2c5f;
+    transition: 0.2s;
   }
 
   .nav-link:hover {
+    transition: 0.2s;
     opacity: 0.76;
   }
   .navbar-toggler {

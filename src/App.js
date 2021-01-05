@@ -15,14 +15,12 @@ import PageNotFound from './components/PageNotFound';
 import "./styles/Styles.scss";
 
 const LoadableHome = lazy(() => import('./components/Home'));
-const LoadableHome1 = lazy(() => import('./components/Home1'));
 const LoadableAbout = lazy(() => import('./components/About'));
 const LoadableBlog = lazy(() => import('./components/Blog'));
 const LoadableStepUp = lazy(() => import('./components/work/StepUp'));
 
 const LoadablePathwaysToHousing = lazy(() => import('./components/work/PathwaysToHousing'));
 const LoadableSodaMachine = lazy(() => import('./components/work/SodaMachine'));
-const LoadableHabit = lazy(() => import('./components/work/Habit'));
 const LoadablePublicTransitSafety = lazy(() => import('./components/work/PublicTransitSafety'));
 
 library.add(fab, fas, far);
@@ -55,9 +53,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Route render={({ location }) => (
-          <main id="main">
+      <Route render={({ location }) => (
+        <div>
+          <main>
             <span id="cursor-follower"></span>
 
             <Suspense fallback={<div></div>}>
@@ -66,12 +64,11 @@ class App extends Component {
                 <Switch location={location} key={location.pathname}>
                   <Route exact path={'/'} component={LoadableHome} />
                   <Route exact path={'/home'} component={LoadableHome} />
-                  <Route exact path={'/home1'} component={LoadableHome1} />
                   <Route exact path={'/about'} component={LoadableAbout} />
                   <Route exact path={'/blogs'} component={LoadableBlog} />
+
                   <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
                   <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
-                  <Route exact path={"/work/habit"} component={LoadableHabit} />
                   <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
                   <Route exact path={"/work/step-up"} component={LoadableStepUp} />
 
@@ -81,8 +78,10 @@ class App extends Component {
 
             </Suspense>
           </main>
-        )}/>
-      </div>
+
+          <Footer />
+        </div>
+      )}/>
     );
   }
 }
