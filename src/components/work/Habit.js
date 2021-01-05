@@ -33,7 +33,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Vision
                 </h5>
               </div>
@@ -46,7 +46,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Problem Space
                 </h5>
               </div>
@@ -66,7 +66,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Competitor Analysis
                 </h5>
               </div>
@@ -120,7 +120,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Customer Segment
                 </h5>
               </div>
@@ -139,7 +139,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Feature List
                 </h5>
               </div>
@@ -183,7 +183,7 @@ export default class Habit extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Design link to Figma
                 </h5>
               </div>

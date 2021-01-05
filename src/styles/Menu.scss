@@ -1,27 +1,29 @@
 .navbar {
-  padding: 1.2rem 0px;
-  padding-left: 126px;
-  background: #ffffff;
-  width: 100%;
+  font-family: 'Poiret One', cursive;
+  margin: 2% 0;
+
+  .navbar-brand {
+    font-size: 24px;
+    color: #000;
+  }
 
   .nav-item {
     margin-right: 32px;
+    color: #1f2c5f;
   }
   .nav-link {
+    font-size: 24px;
     text-decoration: none;
-    font-weight: 900;
-    font-size: 0.92rem;
     letter-spacing: 0.02rem;
-    padding: 0.4rem 1.2rem !important;
+    color: #1f2c5f;
   }
 
   .nav-link:hover {
     opacity: 0.76;
-    transform: translateY(-3px);
   }
   .navbar-toggler {
     background-color: #c20a75;
-    color: #ffffff;
+    color: #1f2c5f;
     margin-left: 15px;
   }
 }

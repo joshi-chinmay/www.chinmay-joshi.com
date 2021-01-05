@@ -39,7 +39,7 @@ export default class StepUp extends Component {
           <div className="container work-page-presnetation">
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Approach
                 </h5>
               </div>
@@ -59,7 +59,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Contextual Enquiry
                 </h5>
               </div>
@@ -82,7 +82,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Storyboard
                 </h5>
               </div>
@@ -105,7 +105,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   MoSCoW Analysis
                 </h5>
               </div>
@@ -122,7 +122,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Siteflow
                 </h5>
               </div>
@@ -138,7 +138,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Riskiest Assumptions Metrics
                 </h5>
               </div>
@@ -155,7 +155,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Pretotyping
                 </h5>
               </div>
@@ -186,7 +186,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Wireframes
                 </h5>
               </div>
@@ -198,7 +198,7 @@ export default class StepUp extends Component {
 
             <div className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Introducing - Prototype on Sketch
                 </h5>
               </div>

@@ -1,0 +1,52 @@
+$card-default-height: 380px;
+$card-default-border-radius: 2px;
+
+.landing-work-container {
+  margin: 18% 0;
+
+  .landing-work-card {
+    height: $card-default-height;
+    margin-bottom: 10%;
+    border-radius: $card-default-border-radius;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+    transition: box-shadow 0.4s;
+    transition: all 2s linear;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+      transition: box-shadow 0.4s;
+      transition: all 2s linear;
+    }
+
+    .image-source {
+      border-radius: $card-default-border-radius;
+      height: $card-default-height;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .project-source {
+      position: absolute;
+      top: 0;
+      left: 15px;
+      right: 15px;
+      height: $card-default-height;
+      overflow: hidden;
+      background-color: #ffffff;
+      border-radius: $card-default-border-radius;
+      text-align: center;
+      padding-top: 12px;
+    }
+    .project-source.d-none {
+      visibility: hidden;
+      display: block !important;
+      opacity: 0;
+      transition: all 360ms ease-out;
+    }
+    .project-source.d-block {
+      opacity: 1;
+      transition: all 360ms ease-in;
+    }
+  }
+}

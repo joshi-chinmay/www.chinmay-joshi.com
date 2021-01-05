@@ -15,6 +15,7 @@ import PageNotFound from './components/PageNotFound';
 import "./styles/Styles.scss";
 
 const LoadableHome = lazy(() => import('./components/Home'));
+const LoadableHome1 = lazy(() => import('./components/Home1'));
 const LoadableAbout = lazy(() => import('./components/About'));
 const LoadableBlog = lazy(() => import('./components/Blog'));
 const LoadableStepUp = lazy(() => import('./components/work/StepUp'));
@@ -29,21 +30,43 @@ library.add(fab, fas, far);
 class App extends Component {
   componentDidMount() {
     document.title = "Chinmay Joshi | Website";
+    this.initiateMouseMove();
+  }
+
+  initiateMouseMove() {
+    let mouseX = 0, mouseY = 0;
+    let xp = 0, yp = 0;
+
+    document.getElementsByTagName("body")[0].onmousemove = function (e) {
+      mouseX = e.pageX - 30;
+      mouseY = e.pageY - 30;
+    };
+
+    setInterval(function () {
+      const elem = document.getElementById("cursor-follower");
+
+      xp += ((mouseX - xp) / 6);
+      yp += ((mouseY - yp) / 6);
+
+      elem.style.left = xp + "px";
+      elem.style.top = yp + "px";
+    }, 18);
   }
 
   render() {
     return (
-      <div className="grand-parent-container">
-        <Menu />
-
+      <div>
         <Route render={({ location }) => (
-          <main id="main" className="container-fluid">
-            <Suspense fallback={<div></div>}>
+          <main id="main">
+            <span id="cursor-follower"></span>
 
+            <Suspense fallback={<div></div>}>
+              <Menu />
               <AnimatePresence key={Math.random()}>
                 <Switch location={location} key={location.pathname}>
                   <Route exact path={'/'} component={LoadableHome} />
                   <Route exact path={'/home'} component={LoadableHome} />
+                  <Route exact path={'/home1'} component={LoadableHome1} />
                   <Route exact path={'/about'} component={LoadableAbout} />
                   <Route exact path={'/blogs'} component={LoadableBlog} />
                   <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
@@ -59,8 +82,6 @@ class App extends Component {
             </Suspense>
           </main>
         )}/>
-
-        <Footer />
       </div>
     );
   }

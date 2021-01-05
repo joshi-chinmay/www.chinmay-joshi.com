@@ -27,7 +27,6 @@ export default class PublicTransitSafety extends Component {
           pageHeading="Thesis - Public Transit Safety"
           pageDescription="UX research directed toward a optimum solution to create a safe transit experience for everyday commuters."
           landingPageImage={TransitSafety}
-          landingPageImageWidth="w-85"
           tags={["UX Research", "Quantitative Research", "User Interviews"]}
         />
 
@@ -35,7 +34,7 @@ export default class PublicTransitSafety extends Component {
           <div className="container work-page-presnetation">
             <div id="initial" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Initials
                 </h5>
               </div>
@@ -53,7 +52,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="targetAudience" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Target Audience
                 </h5>
               </div>
@@ -81,7 +80,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="problemStatement" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Problem Statement
                 </h5>
               </div>
@@ -99,7 +98,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="howMightWe" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   How Might We?
                 </h5>
               </div>
@@ -112,7 +111,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="userInterviews" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   User Interviews
                 </h5>
               </div>
@@ -134,7 +133,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="brainmap" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Brainmap
                 </h5>
               </div>
@@ -145,7 +144,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="userPersona" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   User Persona
                 </h5>
               </div>
@@ -221,7 +220,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="secondaryResearch" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Secondary Research
                 </h5>
               </div>
@@ -272,7 +271,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="storyboard" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Storyboard
                 </h5>
               </div>
@@ -283,7 +282,7 @@ export default class PublicTransitSafety extends Component {
 
             <div id="competitorAnalysis" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Competitor Analysis
                 </h5>
               </div>
