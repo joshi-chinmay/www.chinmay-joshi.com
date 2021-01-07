@@ -24,10 +24,10 @@ export default class PublicTransitSafety extends Component {
     return(
       <div className="work-page-container">
         <WorkTabLandingInfo
-          pageHeading="Thesis - Public Transit Safety"
-          pageDescription="UX research directed toward a optimum solution to create a safe transit experience for everyday commuters."
+          pageHeading="Transity"
+          pageDescription="This thesis case study will focus on creating awareness & providing critical and analytical insights on how people can make individual decisions while using public transportation."
           landingPageImage={TransitSafety}
-          tags={["UX Research", "Quantitative Research", "User Interviews"]}
+          tags={["Research", "Product Design", "Visual Design"]}
         />
 
         <SlideIn>

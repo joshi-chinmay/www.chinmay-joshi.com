@@ -13,7 +13,7 @@ function Work() {
   const workPageMetaData = () => {
     const cardData = [
       {
-        projectName: "Transity", slug: "/public-transit-safety", tags: ["UX Research", "Quantitative Research", "User Interviews"], imgSource: TransitSafetyImg, description: "This thesis case study will focus on creating awareness & providing critical and analytical insights on how people can make individual decisions while using public transportation."
+        projectName: "Transity", slug: "/public-transit-safety", tags: ["Research", "Product Design", "Visual Design"], imgSource: TransitSafetyImg, description: "This thesis case study will focus on creating awareness & providing critical and analytical insights on how people can make individual decisions while using public transportation."
       },
       {
         projectName: "Step Up - A Fitness App", slug: "/step-up", tags: ["Research", "UX Design", "Visual Design", "Prototyping"], imgSource: StepUpImg, description: "Step up is a reward-based app that helps you take extra steps per day. Solution is tailored for Jefferson University's students."
