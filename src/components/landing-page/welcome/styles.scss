@@ -1,0 +1,20 @@
+.landing-page {
+  .landing-text {
+    font-family: 'Poiret One', cursive;
+    font-size: 41px;
+    margin-top: 14%;  
+  }
+  a.landing-link {
+    background: linear-gradient(to bottom, #a7c5eb 0%, #a7c5eb 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    text-decoration: none;
+    transition: background-size .2s;
+    color: #1f2c5f;
+  }
+  a.landing-link:hover {
+    background-size: 4px 16px;
+  }
+
+}

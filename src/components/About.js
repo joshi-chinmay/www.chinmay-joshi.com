@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import { motion } from 'framer-motion';
 
-import SocialMediaIcons from './util/SocialMediaIcons';
-
 import helloCJ from '../images/hello.jpeg';
 
 export default class About extends Component {
@@ -12,47 +10,30 @@ export default class About extends Component {
 
   render() {
     return(
-      <div className="row mt-5">
-        <div className="col-xs-12 col-md-4 text-center text-center mt-5">
-          <motion.div initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-            <img src={helloCJ} className="mt-5 w-50" alt="I look great. just sayin." />
-          </motion.div>
-        </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12 col-md-4 text-center mt-5">
+            <motion.div initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+              <img src={helloCJ} className="mt-5 w-50" alt="I look great. just sayin." />
+            </motion.div>
+          </div>
 
-        <div className="col-xs-12 col-md-6 mt-5 mb-5">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
-            <h1 className="mt-1">
-              Hi, I am Chinmay!
-            </h1>
+          <div className="col-xs-12 col-md-8 mt-5 mb-5">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+              <h1 className="mt-1">
+                Hi, I am Chinmay!
+              </h1>
+            </motion.div>
 
-            <h3 className="font-weight-normal mt-3">
-              Software Engineer turned Product Designer.
-            </h3>
-          </motion.div>
-
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2 }}>
-            <div className="row mt-4">
-              <div className="col-xs-12 col-md-12 mt-3 font-weight-bolder">
-                <p>
-                  I love caffeine in general, and my creative solutions are mostly an outcome of a desk full of sticky notes, pens, markers, sketches, and a cup of coffee or tea. I believe learning is about traveling and observing. Hence, in my free time, you would mostly find me traveling and exploring different cultures.
-                </p>
-                <p>
-                  <b>Creative Stack</b> - Figma, Sketch, Adobe Photoshop, Adobe XD.
-                </p>
-                <p>
-                  <b>Technology Stack</b> - HTML, CSS, JavaScript, React.JS, Backbone.JS, Ember.JS, Ruby on Rails, AWS Cloud, Serverless, SQL, MongoDB, Git, Jira, Trello.
-                </p>
-                <p>
-                  I am here to design, build, create and learn consistently. Please feel free to connect or <a href="https://calendly.com/meet-with-chinmay" target="_blank" rel="noopener noreferrer">Schedule a time to talk</a>.
-                </p>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.2 }}>
+              <div className="row mt-4">
+                <div className="col-xs-12 col-md-12 mt-3">
+                  <p>
+                    I am a Software Engineer turned Product Designer having more than five years. In 2015, after completing my masters, I started working at Amura Marketing Technologies, Pune, as a Full Stack Software Engineer. Amura has engineered marketing solutions to support their business needs. It helped me widen my perspectives and gain full-stack engineering experience in the vast technology stack. I was part of three different product teams for three years. The product development processes helped me realize my passion for front-end development and UI engineering. In May 2018, I moved to Malaysia to work for Supahands, a `Software Engineer - II.` My everyday job was to work along with the Engineering & Design team to understand user needs and create intuitive user interfaces, with the business development team to understand business needs and the target audience, with Software engineers to develop the product architecture and APIs, and with front-end engineers to design client-side applications. Every team plays a vital role in delivering a user experience near perfection. Today, I have become a full-time Product Designer with a better understanding of visual design, user experience design, interaction design, research methodologies.
+                  </p>
+                </div>
               </div>
-            </div>
-          </motion.div>
-
-          <div className="row mt-5">
-            <div className="social-media-icons-container about-page col-xs-12 col-md-12">
-              <SocialMediaIcons />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

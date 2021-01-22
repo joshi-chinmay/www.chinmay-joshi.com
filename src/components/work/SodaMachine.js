@@ -31,7 +31,7 @@ export default class SodaMachine extends Component {
           <div className="container work-page-presnetation">
             <div id="background" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Background
                 </h5>
               </div>
@@ -46,7 +46,7 @@ export default class SodaMachine extends Component {
 
             <div id="problemStatement" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Problem Statement
                 </h5>
               </div>
@@ -62,7 +62,7 @@ export default class SodaMachine extends Component {
 
             <div id="storyboard" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Storyboard
                 </h5>
               </div>
@@ -73,7 +73,7 @@ export default class SodaMachine extends Component {
 
             <div id="competitorAnalysis" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Competitor Analysis
                 </h5>
               </div>
@@ -94,7 +94,7 @@ export default class SodaMachine extends Component {
 
             <div id="userInterviews" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   User Interviews
                 </h5>
               </div>
@@ -112,7 +112,7 @@ export default class SodaMachine extends Component {
 
             <div id="accessibilityStrategies" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Accessible Product Strategies
                 </h5>
               </div>
@@ -135,7 +135,7 @@ export default class SodaMachine extends Component {
 
             <div id="earlyPrototypes" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Early Stage Prototpyes
                 </h5>
               </div>
@@ -159,7 +159,7 @@ export default class SodaMachine extends Component {
 
             <div id="interactivePrototype" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   Interactive Prototype
                 </h5>
               </div>
@@ -174,7 +174,7 @@ export default class SodaMachine extends Component {
 
             <div id="userTesting" className="row work-tab">
               <div className="col-sm-12 col-md-3 col-lg-2">
-                <h5 className="font-family-merri">
+                <h5>
                   User Testing
                 </h5>
               </div>
