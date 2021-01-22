@@ -4,7 +4,7 @@ import WorkCard from './work-card';
 
 import StepUpImg from '../../../images/work/StepUp/Artboard.png';
 import AccessibleSodaMachineImg from '../../../images/work/soda-machine/Final-Proto.png';
-import TransitSafetyImg from '../../../images/work/transit-safety/transit-safety.svg';
+import TransitSafetyImg from '../../../images/work/transit-safety/Artboard.png';
 import PathwaysToHousingImg from '../../../images/work/pathways-to-housing/pathways-to-housing.svg';
 
 import "./styles.scss"

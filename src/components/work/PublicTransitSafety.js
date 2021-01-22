@@ -4,7 +4,7 @@ import SlideIn from '../../layouts/slide-in';
 import WorkTabLandingInfo from '../util/WorkTabLandingInfo';
 import NextLink from '../util/NextLink';
 
-import TransitSafety from '../../images/work/transit-safety/transit-safety.svg';
+import TransitSafety from '../../images/work/transit-safety/Artboard.png';
 import Storyboard from '../../images/work/transit-safety/Storyboard.png';
 import Persona1 from '../../images/work/transit-safety/user-persona/persona-1.jpg';
 import Persona2 from '../../images/work/transit-safety/user-persona/persona-2.jpg';
