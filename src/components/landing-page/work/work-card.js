@@ -11,9 +11,9 @@ function WorkCard(props) {
       <img src={cardData.imgSource} className="image-source" alt="work page showcase" />
 
       <div className={"project-source " + (workCardHovered ? "d-block" : "d-none")}>
-        <h4 className="pt-5">
+        <h5 className="pt-5">
           {cardData.projectName}
-        </h4>
+        </h5>
 
         <p className="pt-2 px-5">
           {cardData.description}

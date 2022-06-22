@@ -1,58 +1,67 @@
+$brand-default-color: #8c52ff;
+$brand-dark-color: #050505;
+$brand-white: #ffffff;
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 html {
-  scroll-behavior: smooth;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 14px;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.92rem;
-  font-weight: 400;
-  line-height: 1.76;
-  color: #1f2c5f;
-  background: #ffffff;
-  background-color: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+  background-color: $brand-white;
+  color: $brand-dark-color;
 }
 main {
   margin-bottom: 80px;
 }
-.font-poiret {
-  font-family: 'Poiret One', cursive;
+h1 {
+  font-size: calc((3.2 - 1) * 1vw + 1rem);
+}
+h5 {
+  font-size: calc((3.2 - 1) * 0.2vw + 1rem);
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .036em;
+  line-height: 1.46;
+  text-transform: none;
+  white-space: pre-wrap;
 }
-h1, h2, h3 {
-  letter-spacing: 0.034rem;
-  line-height: 1.4;
+table, p, ul, ol, span {
+  font-size: calc((3.2 - 1) * 0.16vw + 1rem);
+  font-weight: 400;
 }
-footer.footer-attribution-container {
-  background-color: #eff8ff;
+b, .bold {
+  font-weight: 700;
+}
+a {
+  text-decoration: none !important;
+  color: $brand-default-color;
+  transition: 0.2s;
+}
+a:hover {
+  color: $brand-default-color;
+  opacity: 0.76;
+  transition: 0.2s;
+}
+.next-link {
+  margin-top: 96px;
+}
+footer {
   width: 100%;
   bottom: 0;
   padding: 80px 0px;
-}
-.lead-sm {
-  font-size: 0.76rem;
-}
-.bg-pastel-off-white {
-  background-color: #f6f4e6 !important;
-}
-.bg-pastel-green {
-  background-color: #b4ecb4 !important;
-}
-.bg-pastel-baby-pink {
-  background-color: #f5f1fb !important;
-}
-.bg-pastel-yellow {
-  background-color: #ffc160 !important;
-}
-.bg-pastel-sky-blue {
-  background-color: #b9cced !important;
-}
-.bg-pastel-cream {
-  background-color: #f3e6e3 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -99,8 +108,8 @@ a.skip-main:focus, a.skip-main:active {
 .img-circular {
   border-radius: 50%;
 }
-.clip-image-to-text{
-  font-size: 240px;
+.clip-image-to-text {
+  font-size: 140px;
   line-height: 1;
   color: white;
   background: url("https://images.unsplash.com/photo-1563089145-599997674d42") no-repeat;
@@ -136,15 +145,4 @@ a.skip-main:focus, a.skip-main:active {
   body {
     text-align: left !important;
   }
-}
-
-#cursor-follower {
-  position: absolute;
-  z-index: 100000;
-  pointer-events: none;
-  background-color: transparent;
-  box-shadow: 0px 0px 1px 0.06px #010100;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
 }

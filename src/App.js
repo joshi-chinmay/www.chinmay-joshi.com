@@ -15,9 +15,9 @@ import PageNotFound from './components/PageNotFound';
 import "./styles/Styles.scss";
 
 const LoadableHome = lazy(() => import('./components/Home'));
-const LoadableAbout = lazy(() => import('./components/About'));
 const LoadableBlog = lazy(() => import('./components/Blog'));
 const LoadableStepUp = lazy(() => import('./components/work/StepUp'));
+const LoadableNextiva = lazy(() => import('./components/work/Nextiva'));
 
 const LoadablePathwaysToHousing = lazy(() => import('./components/work/PathwaysToHousing'));
 const LoadableSodaMachine = lazy(() => import('./components/work/SodaMachine'));
@@ -28,45 +28,23 @@ library.add(fab, fas, far);
 class App extends Component {
   componentDidMount() {
     document.title = "Chinmay Joshi | Website";
-    this.initiateMouseMove();
-  }
-
-  initiateMouseMove() {
-    let mouseX = 0, mouseY = 0;
-    let xp = 0, yp = 0;
-
-    document.getElementsByTagName("body")[0].onmousemove = function (e) {
-      mouseX = e.pageX - 30;
-      mouseY = e.pageY - 30;
-    };
-
-    setInterval(function () {
-      const elem = document.getElementById("cursor-follower");
-
-      xp += ((mouseX - xp) / 6);
-      yp += ((mouseY - yp) / 6);
-
-      elem.style.left = xp + "px";
-      elem.style.top = yp + "px";
-    }, 18);
   }
 
   render() {
     return (
       <Route render={({ location }) => (
-        <div>
+        <div class="container">
           <main>
-            <span id="cursor-follower"></span>
-
             <Suspense fallback={<div></div>}>
               <Menu />
+
               <AnimatePresence key={Math.random()}>
                 <Switch location={location} key={location.pathname}>
                   <Route exact path={'/'} component={LoadableHome} />
                   <Route exact path={'/home'} component={LoadableHome} />
-                  <Route exact path={'/about'} component={LoadableAbout} />
                   <Route exact path={'/blogs'} component={LoadableBlog} />
 
+                  <Route exact path={"/work/nextiva"} component={LoadableNextiva} />
                   <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
                   <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
                   <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />
@@ -76,10 +54,9 @@ class App extends Component {
                 </Switch>
               </AnimatePresence>
 
+              <Footer />
             </Suspense>
           </main>
-
-          <Footer />
         </div>
       )}/>
     );

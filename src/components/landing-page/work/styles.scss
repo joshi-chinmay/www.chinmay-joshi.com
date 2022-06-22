@@ -1,22 +1,23 @@
 $card-default-height: 380px;
 $card-default-border-radius: 2px;
+$transition-time: 0.2s;
 
 .landing-work-container {
   margin: 18% 0;
 
   .landing-work-card {
     height: $card-default-height;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     border-radius: $card-default-border-radius;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.16);
     transition: box-shadow 0.4s;
-    transition: all 2s linear;
+    transition: all $transition-time linear;
 
     &:hover {
       cursor: pointer;
-      box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+      box-shadow: 0 16px 24px rgba(0, 0, 0, 0.14);
       transition: box-shadow 0.4s;
-      transition: all 2s linear;
+      transition: all $transition-time linear;
     }
 
     .image-source {

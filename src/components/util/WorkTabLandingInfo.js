@@ -1,35 +1,51 @@
 import React, {Component} from 'react';
 
-import SlideIn from '../../layouts/slide-in';
-import SlideInFromRight from '../../layouts/slide-in-from-right';
 import Tags from './Tags';
 
 export default class WorkTabLandingInfo extends Component {
   render() {
     return(
-      <div className={"row work-landing-page " + (this.props.classList || "bg-pastel-off-white" ) }>
-        <div className="col-xs-12 col-sm-12 col-md-5">
-          <div className="work-tab-landing-page-title">
-            <SlideIn>
-              <h1 className="mb-2">
-                {this.props.pageHeading}
-              </h1>
-              <p className="mt-5 w-75">
-                {this.props.pageDescription}
-              </p>
+      <div className="mb-5">
+        <div className="row">
+          <div className="col-md-6 offset-md-3 text-center mb-5">
+            <h1 className="mb-2">
+              {this.props.pageHeading}
+            </h1>
 
-              <div className="mt-5">
-                <Tags tags={this.props.tags} />
-              </div>
-            </SlideIn>
+            <p className="mt-5">
+              {this.props.pageDescription}
+            </p>
+
+            <div className="mt-5">
+              <Tags tags={this.props.tags} />
+            </div>
+
+            <div className="mt-5">
+              <img src={this.props.landingPageImage} className={"img-fluid " + this.props.landingPageImageWidth} alt="Landing Page Mock Up" />
+            </div>
+          </div>
+        </div>        
+        
+        <div className="row">
+          <div className="col-md-6 offset-md-3 text-center mb-5">
+            <a className="btn text-center" href={this.props.jumpToProto}>Jump to prototype</a>
           </div>
         </div>
 
-        <div className="col-xs-12 col-sm-12 col-md-7 text-center">
-          <SlideInFromRight>
-            <img src={this.props.landingPageImage} className={"img-fluid " + this.props.landingPageImageWidth } alt="Landing Page Mock Up" />
-          </SlideInFromRight>
+        <hr />
+
+        {/* <div className="row mt-5 mb-5">
+          <div className="col-md-6">
+            <h4 className="px-5">Overview</h4>
+            <p className="px-5">{this.props.overview}</p>
+          </div>
+          <div className="col-md-6">
+            <h4 className="px-5">Role</h4>
+            <p className="px-5">{this.props.role}</p>
+          </div>
         </div>
+        <hr /> */}
+        
       </div>
     )
   }
