@@ -1,31 +1,28 @@
 .navbar {
-  font-family: 'Poiret One', cursive;
-  margin: 2% 0;
+  padding: 2% 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   .navbar-brand {
     font-size: 24px;
-    color: #000;
-  }
-
-  .nav-item {
-    margin-right: 32px;
-    color: #1f2c5f;
+    color: #8c52ff;
   }
   .nav-link {
     font-size: 18px;
-    text-decoration: none;
+    line-height: 1.6em;
     letter-spacing: 0.02rem;
-    color: #1f2c5f;
+    color: #8c52ff;
     transition: 0.2s;
   }
 
-  .nav-link:hover {
+  .nav-link:hover, .navbar-brand:hover {
     transition: 0.2s;
     opacity: 0.76;
   }
   .navbar-toggler {
     background-color: #c20a75;
-    color: #1f2c5f;
+    color: #8c52ff;
     margin-left: 15px;
   }
 }

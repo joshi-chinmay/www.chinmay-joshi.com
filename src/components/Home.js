@@ -5,7 +5,7 @@ import Work from './landing-page/work/work'
 
 function Home() {
   return (
-    <div className="container">
+    <div>
       <Welcome />
       <Work />
     </div>

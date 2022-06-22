@@ -1,20 +1,12 @@
 .work-page-container {
-  .work-landing-page {
-    background-color: #f5f1fb;
+  margin-top: 12%;
 
+  .work-landing-page {
     img {
       padding: 56px;
     }
     &.full-bleed img {
       padding: 0px;
-    }
-
-    .work-tab-landing-page-title {
-      position: absolute;
-      left: 16%;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
     }
   }
   .work-page-presnetation {
@@ -48,11 +40,6 @@
         }
       }
     }
-  }
-
-  .work-tab {
-    content-visibility: auto;
-    contain-intrinsic-size: 1000px;
   }
 
   @media (max-width: 991.98px) {

@@ -6,7 +6,7 @@ export default class Tags extends Component {
 
     for (let i = 0; i < tags.length; i++) {
       allTags.push(
-        <span key={i} className="badge badge-pill badge-primary mr-2">
+        <span key={i} className="badge badge-pill badge-primary mx-1 font-weight-bold mb-2">
           {tags[i]}
         </span>
       )

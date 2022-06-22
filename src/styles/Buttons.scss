@@ -1,21 +1,20 @@
 .btn, .btn-group {
   border: none;
-  border-radius: 14px;
-  padding: 12px;
-  color: #010101;
-  background: linear-gradient(12deg, #dfdfdf -67%, #ffffff 76%);
+  border-radius: 2px;
+  padding: 12px 24px;
+  color: #ffffff;
+  background-color: #8c52ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
   transition: all .2s linear;
-  font-weight: 600;
+  font-weight: 700;
 }
 .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus,
 .btn:hover {
-  outline: #5e16b6;
-  opacity: 0.6;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  color: #fefefe;
-  background: linear-gradient(78deg, #5e16b6 -90%, #8636e8 94%);
+  outline: #8c52ff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+  color: #8c52ff;
+  background-color: #ffffff;
   transition: all .2s linear;
   transform: translateY(-2px);
 }

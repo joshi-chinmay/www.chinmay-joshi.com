@@ -7,9 +7,12 @@ export default class NextLink extends Component {
     return(
       <div className="row">
         <div className="col-sm-12 col-md-12 text-right">
-          <a href={"/work" + nextLink.slug } className="text-capitalize d-inline font-weight-bolder lead">
-            Next: {nextLink.name} →
-          </a>
+          <hr />
+          <div className="next-link">
+            <a href={"/work" + nextLink.slug} className="text-capitalize d-inline font-weight-bold h5">
+              Next: {nextLink.name} →
+            </a>
+          </div>
         </div>
       </div>
     );

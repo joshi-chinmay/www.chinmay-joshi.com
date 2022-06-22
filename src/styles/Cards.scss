@@ -1,17 +1,18 @@
 $card-bg-color: #ffffff;
 $transition-time: 0.2s;
+$card-default-border-radius: 2px;
 
 .card {
   background-color: $card-bg-color;
-  border-radius: 14px;
+  border-radius: $card-default-border-radius;
   border: none;
   cursor: pointer;
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.14);
-  transition: all .2s ease-in-out;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.16);
+  transition: all $transition-time linear;
 
   .card-header, .card-footer {
     background-color: transparent;
-    border-radius: 0px;
+    border-radius: $card-default-border-radius;
   }
   .card-header {
     border-bottom: none;
@@ -34,27 +35,23 @@ $transition-time: 0.2s;
     a {
       display: inline-block;
       width: 50%;
-      background-color: rgba(240, 240, 240, 1);
+      border-top: 1px solid rgba(0, 0, 0, .08);;
       padding: 12px 0px;
       text-align: center;
-      font-size: 0.88rem;
-    }
-    a:hover {
-      background-color: rgba(240, 240, 240, 0.5);
     }
     a:first-child {
-      border-bottom-left-radius: 14px;
+      border-bottom-left-radius: $card-default-border-radius;
     }
     a:last-child {
-      border-bottom-right-radius: 14px;
+      border-bottom-right-radius: $card-default-border-radius;
     }
   }
   .card-footer.single-link {
     a {
       display: inline-block;
       width: 100%;
-      border-bottom-left-radius: 14px;
-      border-bottom-right-radius: 14px;
+      border-bottom-left-radius: $card-default-border-radius;
+      border-bottom-right-radius: $card-default-border-radius;
     }
   }
 }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
-import SlideIn from '../layouts/slide-in';
+import Tags from './util/Tags';
+import JavaScriptImg from '../images/javascript.jpeg';
 
 export default class Blog extends Component {
 
@@ -29,28 +30,28 @@ export default class Blog extends Component {
 
   getArticleBody(article) {
     return(
-      <div className="offset-md-3 col-sm-12 col-md-6 p-4" key={Math.random()}>
+      <div className="col-sm-12 col-md-6 p-4" key={Math.random()}>
         <div className="article-container">
           <div className="card h-100">
-            {article.cover_image &&
-              <img src={article.cover_image} className="card-img-top" alt="article cover" />
-            }
+            <img src={article.cover_image || JavaScriptImg} className="card-img-top" alt="article cover" />
 
-            <div className="card-header font-weight-bold">
-              <a href={article.url}>
-                {article.title}
+            <div className="card-header">
+              <a href={article.url} className="h2 font-weight-bold">
+                {article.title.replace(/(.{60})..+/, "$1...")}
               </a>
             </div>
 
             <div className="card-body">
-              <p>
-                {article.description}
-              </p>
+              <span>
+                {article.description.replace(/(.{98})..+/, "$1...")}
+              </span>
+
+              <br />
+              <br />
 
               <div className="w-100">
-                <span className="font-weight-bold">
-                  { article.tag_list.map(function(x) { return("#" + x) }).join(", ") }
-                </span>
+                <Tags tags={article.tag_list} />
+
                 <span className="d-inline float-right">
                   {article.readable_publish_date}
                 </span>
@@ -58,7 +59,7 @@ export default class Blog extends Component {
             </div>
 
             <div className="card-footer single-link">
-              <a className="small float-right" href={article.url}>Read more</a>
+              <a href={article.url}>Read more</a>
             </div>
           </div>
         </div>
@@ -81,13 +82,11 @@ export default class Blog extends Component {
 
   render() {
     return(
-      <SlideIn>
-        <div className="blogs-container">
-          <div className="row">
-            {this.getArticles()}
-          </div>
+      <div className="blogs-container">
+        <div className="row">
+          {this.getArticles()}
         </div>
-      </SlideIn>
+      </div>
     );
   }
 }

@@ -1,11 +1,13 @@
+$card-default-border-radius: 2px;
+
 .article-container {
   margin-top: 30px;
 
   .card-img-top {
-    height: 100%;
+    height: 280px;
+    object-fit: cover;
     padding: 0;
-    filter: grayscale(70%);
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
+    border-top-right-radius: $card-default-border-radius;
+    border-top-left-radius: $card-default-border-radius;
   }
 }

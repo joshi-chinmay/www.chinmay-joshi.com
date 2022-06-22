@@ -6,7 +6,7 @@ export default class PageNotFound extends Component {
       <div className="row mt-5">
         <div className="col-md-12 text-center">
           <p className="clip-image-to-text font-weight-bold text-uppercase">Page not found</p>
-          <a href="/" className="font-weight-bold text-dark">Go back to home page.</a>
+          <a href="/">Go back to home page.</a>
         </div>
       </div>
     );
