@@ -15,6 +15,7 @@ html {
   font-weight: 400;
   font-stretch: normal;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Work Sans', sans-serif;
@@ -52,7 +53,7 @@ a {
 }
 a:hover {
   color: $brand-default-color;
-  opacity: 0.76;
+  opacity: 0.86;
   transition: 0.2s;
 }
 .next-link {

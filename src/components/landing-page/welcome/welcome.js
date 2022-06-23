@@ -5,7 +5,7 @@ function Welcome() {
   return (
     <div className="landing-page">
       <h1 class="landing-text">
-        Hi there. <br />
+        Hi there!<br />
         I am Chinmay Joshi.<br />
         A Product Designer at <a href="https://nextiva.com/" target="_blank" rel="noopener noreferrer">Nextiva.</a>
       </h1>

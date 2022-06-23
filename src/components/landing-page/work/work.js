@@ -1,5 +1,4 @@
 import React from 'react';
-
 import WorkCard from './work-card';
 
 import Nextiva from '../../../images/work/nextiva/nextiva.png';

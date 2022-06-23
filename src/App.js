@@ -1,7 +1,7 @@
 import React, { Component, Suspense, lazy } from 'react';
 import { Switch, Route } from "react-router-dom";
 
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from "framer-motion";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -32,13 +32,13 @@ class App extends Component {
 
   render() {
     return (
-      <Route render={({ location }) => (
-        <div class="container">
-          <main>
+      <div class="container">
+        <main>
+          <Route render={({ location }) => (
             <Suspense fallback={<div></div>}>
-              <Menu />
+              <AnimatePresence exitBeforeEnter initial={false} key={Math.random()}>
+                <Menu />
 
-              <AnimatePresence key={Math.random()}>
                 <Switch location={location} key={location.pathname}>
                   <Route exact path={'/'} component={LoadableHome} />
                   <Route exact path={'/home'} component={LoadableHome} />
@@ -56,9 +56,9 @@ class App extends Component {
 
               <Footer />
             </Suspense>
-          </main>
-        </div>
-      )}/>
+          )} />
+        </main>
+      </div>
     );
   }
 }
