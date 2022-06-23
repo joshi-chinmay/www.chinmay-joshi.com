@@ -24,6 +24,11 @@ export default class Menu extends Component {
                 <Link className="nav-link font-weight-bold mr-2" to="/blogs">Blog</Link>
               </li>
               <li className="nav-item">
+                <a href="https://www.canva.com/design/DAEEytxUPoo/Zc_pNxqZkJgWyzsar26m9Q/view" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
+                  Resume
+                </a>
+              </li>
+              <li className="nav-item">
                 <a href="mailto:chinmayj93@gmail.com" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={["fas", "envelope"]} size="1x" />
                 </a>
