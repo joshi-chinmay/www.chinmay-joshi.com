@@ -66,12 +66,12 @@ export default class StepUp extends Component {
               <span>
                 To start the process of designing a product, <b>I interviewed 15 people - including college students and faculty.</b> And, interview findings were intriguing.
               </span>
-              <ul className="mt-4">
+              <ol className="mt-4">
                 <li>70% of the audience preferred walking over running.</li>
                 <li>Students & Staff often use health apps to track their steps, being the most relevant factor.</li>
                 <li>Average step count is - 6750, which is way below desired (12,000) step count.</li>
                 <li>Very few people track their calorie intake.</li>
-              </ul>
+              </ol>
 
               <p className="mt-5">
                 <b>Through the primary research I came to a conclusion that students and faculty is not aware of healthy habits.</b> According to American Standards, a common man is supposed to take 12,000 steps per day to maintain healthy lifestyle.

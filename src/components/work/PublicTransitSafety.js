@@ -83,16 +83,22 @@ export default class PublicTransitSafety extends Component {
                 <table className="table table-borderless">
                   <thead>
                     <tr className="font-weight-bold">
-                      <td>Who is the User?</td>
-                      <td>... their needs?</td>
-                      <td>what challenges they face?</td>
+                      <td><p>Who is the User?</p></td>
+                      <td><p>... their needs?</p></td>
+                      <td><p>what challenges they face?</p></td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Every person who commutes on public transit system.</td>
-                      <td>To commute hassle free and securely to the destination.</td>
-                      <td>They become the victims of bad situations such as theft, physical and verbal abuse.</td>
+                      <td>
+                        <p>Every person who commutes on public transit system.</p>
+                      </td>
+                      <td>
+                        <p>To commute hassle free and securely to the destination.</p>
+                      </td>
+                      <td>
+                        <p>They become the victims of bad situations such as theft, physical and verbal abuse.</p>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -191,31 +197,19 @@ export default class PublicTransitSafety extends Component {
                     </tr>
                     <tr>
                       <td>
-                        <ul>
-                          <li>I don’t have accessible public transit near my office. Hence, I take my car with me every day.</li>
-                          <li>Uber is pretty expensive.</li>
-                          <li>When I was in the university, I had to switch 2 trains every day.</li>
-                          <li>At times due to transit delays I have attended my lectures while I was on the public transit.</li>
-                          <li>My safety measures were violated by a homeless/drunk man who was on the same train as me. Since then I decided not to rely much on public transport.</li>
-                          <li>Family constantly worries about my safety as we live miles apart.</li>
-                        </ul>
+                        <p>
+                          I don’t have accessible public transit near my office. Hence, I take my car with me every day. Uber is pretty expensive. At the university, I had to switch two trains every day. Due to transit delays, I have attended my lectures while on public transit. My safety measures were violated by a homeless/drunk man on the same train as me. Since then, I have decided not to rely much on public transport. My family constantly worries about my safety as we live miles apart.
+                        </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>I take the train every day. My office is in the heart of San Francisco. In the morning a lot of office workers board the train. But in the evening you may never know who’d be there.</li>
-                          <li>I have been physically and verbally abused by a drunk man. He pissed all over himself and it was a chaos in the train.</li>
-                          <li>I have seen many homeless people on the train station, they follow and bug people for money and food. They don’t usually harm you but sometimes there’s use of abusive language.</li>
-                          <li>In the evening I have to keep an eye on my belongings because I don’t know if pickpocketer would snatch something from me.</li>
-                        </ul>
+                        <p>
+                        I take the train every day. My office is in the heart of San Francisco. In the morning, a lot of office workers board the train. But in the evening, you may never know who’d be there. A drunk man has physically and verbally abused me. He pissed all over himself, and it was chaos on the train. I have seen many homeless people at the train station; they follow and bug people for money and food. They don’t usually harm you, but sometimes abusive language is used. In the evening, I have to keep an eye on my belongings because I don’t know if a pickpocketer would snatch something from me.
+                        </p>
                       </td>
                       <td>
-                        <ul>
-                          <li>To me public transport has always been a scary experience. I am afraid of people who board the train and bus.</li>
-                          <li>At times, transit facilities are smelly and it feels unhygienic.</li>
-                          <li>I take public transit if and only if I have company.</li>
-                          <li>My friends have shared many bad stories of public transit which includes verbal abuse and public drunkenness.</li>
-                          <li>I used to visit nearest Starbucks and wait for my train to arrive. Once I see the train I used to leave the premise to board the train.</li>
-                        </ul>
+                        <p>
+                          To me, public transport has always been a scary experience. I am afraid of people who board the train and bus. At times, transit facilities are smelly, and it feels unhygienic. I take public transit if and only if I have company. My friends have shared many bad stories of public transit, including verbal abuse and public drunkenness. I used to visit the nearest Starbucks and wait for my train to arrive. Once I saw the train, I used to leave the premise to board the train.
+                        </p>
                       </td>
                     </tr>
                   </tbody>
@@ -329,26 +323,26 @@ export default class PublicTransitSafety extends Component {
                     </tr>
                     <tr>
                       <td>
-                        <ul>
+                        <ol>
                           <li>Real-time updates of your ride.</li>
                           <li>Plans future trips using AI.</li>
                           <li>Real time stats - time to leave, fastest route.</li>
                           <li>Integration with Uber, Bikeshare, Carshare.</li>
-                        </ul>
+                        </ol>
                       </td>
                       <td>
-                        <ul>
+                        <ol>
                           <li>Real-time, lifesaving alerts.</li>
                           <li>Alerts go out within 90 seconds of a 911 or user report and are verified by trained Citizen agents.</li>
                           <li>Live videos and streams.</li>
-                        </ul>
+                        </ol>
                       </td>
                       <td>
-                        <ul>
+                        <ol>
                           <li>Journey planner includes travel plans and daily routes.</li>
                           <li>Real-time updates of your ride.</li>
                           <li>A friend can follow your trip and will know your ETA.</li>
-                        </ul>
+                        </ol>
                       </td>
                     </tr>
                   </tbody>

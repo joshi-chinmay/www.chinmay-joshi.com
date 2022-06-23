@@ -32,7 +32,7 @@ function Work() {
     let workCards = [];
     for (let i = 0; i < cardData.length; i++) {
       workCards.push(
-        <div key={i} className="col-xs-12 col-6">
+        <div key={i} className="col-md-12 col-lg-6">
           <WorkCard cardData={cardData[i]} />
         </div>
       );

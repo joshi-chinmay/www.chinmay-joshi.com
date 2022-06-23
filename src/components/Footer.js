@@ -25,7 +25,10 @@ function Footer() {
         
         <div className="mt-5">
           <p>
-            This website is made with &#9829;, <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.JS</a>.
+            This website is made with &nbsp; 
+            <span role="img" aria-label="heart emoji">❤️</span> + &nbsp; 
+            <span role="img" aria-label="coffee emoji">☕</span> + &nbsp;
+            <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.JS</a>.
           </p>
         </div>
       </footer>

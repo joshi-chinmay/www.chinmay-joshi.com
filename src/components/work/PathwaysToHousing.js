@@ -117,28 +117,28 @@ export default class PathwaysToHousing extends Component {
             <div className="col-sm-12 col-md-10">
               <ol>
                 <li>Searching -</li>
-                <ul>
+                <ol>
                   <li>Untidy search results.</li>
                   <li>Irrelevant text & monotonous text.</li>
-                </ul>
+                </ol>
 
                 <li>Bad navigation -</li>
-                <ul>
+                <ol>
                   <li>Need to click many links to reach the final page.</li>
                   <li>Person gets lost while navigating between different websites.</li>
-                </ul>
+                </ol>
 
                 <li>Cluttered & monotonous text -</li>
-                <ul>
+                <ol>
                   <li>Monotonous text with large fonts makes the relevant information lose.</li>
                   <li>Lack of self-explanatory images and readable text.</li>
                   <li>Every page of the website looks dull and same.</li>
-                </ul>
+                </ol>
 
                 <li>Accessibility -</li>
-                <ul>
+                <ol>
                   <li>Inaccessible website would affect the visually impaired person’s experience.</li>
-                </ul>
+                </ol>
               </ol>
             </div>
           </div>

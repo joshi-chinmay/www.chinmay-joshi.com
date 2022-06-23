@@ -80,13 +80,13 @@ export default class SodaMachine extends Component {
             </div>
             <div className="col-sm-12 col-md-4 pt-2 pl-5">
               <p className="font-weight-bold">Problems -</p>
-              <ul>
+              <ol>
                 <li>No distinct cues between screen and surface.</li>
                 <li>Navigating through a flat screen without audio or haptic feedback.</li>
                 <li>No option to enable accessibility.</li>
                 <li>Height issues for people with mobility impairments</li>
                 <li>No accessible AUX input.</li>
-              </ul>
+              </ol>
             </div>
           </div>
 
@@ -98,13 +98,13 @@ export default class SodaMachine extends Component {
             </div>
             <div className="col-sm-12 col-md-10">
               <p>We interviewed many people with blindness who have faced issues while vending or making a drink while visiting fast-food chains, cafeteria, etc. These are commonly seen problems in restaurants and cafes -</p>
-              <ul>
+              <ol>
                 <li><b>Findability</b> - A blind person does not know where the machine is situated in the store or restaurant.</li>
                 <li><b>Reachability</b> - Once the machine is discovered, the next task is to understand buttons, navigational cues, and enabling accessibility, which is a tremendous task for almost every legally blind person.</li>
                 <li><b>Making a drink choice</b> - there are so many options that are hard to select on inaccessible machines.</li>
                 <li>Every machine has different dimensions, which makes it even harder to remember past choices.</li>
                 <li>A blind person ends up relying on their friends and family to get themselves a drink.</li>
-              </ul>
+              </ol>
             </div>
           </div>
 
@@ -119,12 +119,12 @@ export default class SodaMachine extends Component {
             </div>
             <div className="col-sm-12 col-md-4">
               <p className="font-weight-bold">Physical Cues for legally blind person -</p>
-              <ul>
+              <ol>
                 <li>Haptic Feedback for performed actions</li>
                 <li>Joystick for navigation</li>
                 <li>Remote control for selections</li>
                 <li>Musical cues and feedbacks</li>
-              </ul>
+              </ol>
               <span>
                 The design rationale behind this is to make the physical characteristics of the freestyle soda machine more defined.
               </span>
@@ -142,7 +142,7 @@ export default class SodaMachine extends Component {
             </div>
             <div className="col-sm-12 col-md-4">
               <p className="font-weight-bold">Feature list -</p>
-              <ul>
+              <ol>
                 <li>Audio Feedback</li>
                 <li>D-Pad for control</li>
                 <li>Volume and Accessibility Button</li>
@@ -151,7 +151,7 @@ export default class SodaMachine extends Component {
                 <li>Circular slanted dispenser to fit the cup perfectly</li>
                 <li>Touch Screen with border frame</li>
                 <li>Scanner to identify cup size at the button of the dispenser. </li>
-              </ul>
+              </ol>
             </div>
           </div>
 

@@ -51,3 +51,9 @@ $transition-time: 0.2s;
     }
   }
 }
+
+@media (min-width: 576px) {
+  .landing-work-card {
+    height: $card-default-height;
+  } 
+}

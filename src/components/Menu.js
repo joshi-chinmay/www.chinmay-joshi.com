@@ -11,7 +11,7 @@ export default class Menu extends Component {
           Skip to main content
         </a>
 
-        <nav className="navbar sticky-top navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#websitePrimaryNavigation" aria-controls="websitePrimaryNavigation" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
