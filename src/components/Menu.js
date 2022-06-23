@@ -28,29 +28,25 @@ export default class Menu extends Component {
                   Resume
                 </a>
               </li>
+
               <li className="nav-item">
                 <a href="mailto:chinmayj93@gmail.com" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={["fas", "envelope"]} size="1x" />
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="tel:+14156761018" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={["fas", "phone"]} size="1x" />
-                </a>
-              </li>
-              
+
               <li className="nav-item">
                 <a href="https://www.linkedin.com/in/joshichinmayajit/" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x" />
                 </a>
               </li>
-              
+
               <li className="nav-item">
                 <a href="https://github.com/joshi-chinmay/" className="nav-link" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={["fab", "github"]} size="1x" />
                 </a>
               </li>
-              
+
             </ul>
           </div>
         </nav>

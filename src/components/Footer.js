@@ -12,9 +12,6 @@ function Footer() {
           <a href="mailto:chinmayj93@gmail.com" className="mx-4" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={["fas", "envelope"]} size="2x" />
           </a>
-          <a href="tel:+14156761018" className="mx-4" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={["fas", "phone"]} size="2x" />
-          </a>
           <a href="https://www.linkedin.com/in/joshichinmayajit/" className="mx-4" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
           </a>
