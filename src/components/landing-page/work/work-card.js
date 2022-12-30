@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Tags from '../../util/Tags';
 
 function WorkCard(props) {
-  const [workCardHovered, setWorkCardHovered] = useState(false);
   const cardData = props.cardData;
 
   return(
-    <div className="landing-work-card" onMouseEnter={() => setWorkCardHovered(true)} onMouseLeave={() => setWorkCardHovered(false)}>
-      <img src={cardData.imgSource} className="image-source" alt="work page showcase" />
-
-      <div className={"project-source " + (workCardHovered ? "d-block" : "d-none")}>
+    <div className="row landing-work-card">
+      <div className="work-image col-md-5 pl-0">
+        <img src={cardData.imgSource} className="image-source" alt="work art" />
+      </div>
+      <div className="col-md-7 pl-5 pr-5">
         <h5 className="pt-5">
           {cardData.projectName}
         </h5>
 
-        <p className="pt-2 px-5">
+        <p className="pt-2">
           {cardData.description}
         </p>
 
@@ -24,7 +24,7 @@ function WorkCard(props) {
         </div>
 
         <div className="pt-5">
-          <a href={"/work" + cardData.slug}>
+          <a href={"/work" + cardData.slug} className="lead">
             Read Case Study ⟶
           </a>
         </div>
