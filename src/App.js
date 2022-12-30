@@ -1,4 +1,5 @@
 import React, { Component, Suspense, lazy } from 'react';
+// import PrivateRoute from './utils/PrivateRoute';
 import { Switch, Route } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
@@ -43,7 +44,8 @@ class App extends Component {
                   <Route exact path={'/'} component={LoadableHome} />
                   <Route exact path={'/home'} component={LoadableHome} />
                   <Route exact path={'/blogs'} component={LoadableBlog} />
-
+                  
+                  {/* <PrivateRoute exact path={"/work/nextiva"} component={LoadableNextiva} /> */}
                   <Route exact path={"/work/nextiva"} component={LoadableNextiva} />
                   <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
                   <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
