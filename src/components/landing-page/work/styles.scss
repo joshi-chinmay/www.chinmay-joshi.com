@@ -32,8 +32,14 @@ $transition-time: 0.2s;
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 991.98px) {
   .landing-work-card {
-    height: $card-default-height;
+    height: auto !important;
+    padding-bottom: 24px;
+
+    .image-source {
+      height: 240px !important;
+      border-right: none !important;
+    }
   } 
 }

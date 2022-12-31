@@ -107,16 +107,6 @@ a.skip-main:focus, a.skip-main:active {
 .img-circular {
   border-radius: 50%;
 }
-.clip-image-to-text {
-  font-size: 140px;
-  line-height: 1;
-  color: white;
-  background: url("https://images.unsplash.com/photo-1563089145-599997674d42") no-repeat;
-  background-size: 120% 120%;
-  -webkit-text-fill-color: transparent;
-  animation: bg-img-animate 56s infinite;
-  background-position: top right;
-}
 @keyframes bg-img-animate {
   20% {
     background-position: top left;
@@ -138,9 +128,26 @@ a.skip-main:focus, a.skip-main:active {
   }
 }
 
+.not-found {
+  padding: 120px 0px;
+  h1 {
+    font-size: 64px;
+    padding-bottom: 16px;
+  }
+  a {
+    font-size: 18px;
+  }
+}
+
 // check Bootstrap reset file
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1600px) and (min-device-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1600px) and (min-device-width: 1200px) and (min-resolution: 192dpi) {
   body {
     text-align: left !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body, p, a, ul, ol, table {
+    font-size: 16px !important;
   }
 }

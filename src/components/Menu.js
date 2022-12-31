@@ -12,11 +12,11 @@ export default class Menu extends Component {
         </a>
 
         <nav className="navbar navbar-expand-lg">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#websitePrimaryNavigation" aria-controls="websitePrimaryNavigation" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
           <Link to="/" className="navbar-brand font-weight-bold">Chinmay Joshi</Link>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
           <div className="collapse navbar-collapse justify-content-end" id="websitePrimaryNavigation">
             <ul className="navbar-nav">
