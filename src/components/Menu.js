@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import CJLogoSVG from '../images/Vector.svg';
 
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,9 @@ export default class Menu extends Component {
         </a>
 
         <nav className="navbar navbar-expand-lg">
-          <Link to="/" className="navbar-brand font-weight-bold">Chinmay Joshi</Link>
+          <Link to="/" className="navbar-brand">
+            <img src={CJLogoSVG} width="30" alt="website home logo"></img>
+          </Link>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,29 +23,14 @@ export default class Menu extends Component {
           <div className="collapse navbar-collapse justify-content-end" id="websitePrimaryNavigation">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link font-weight-bold mr-2" to="/blogs">Blog</Link>
+                <a href="/about" className="nav-link ml-2">
+                  About
+                </a>
               </li>
+
               <li className="nav-item">
-                <a href="https://www.canva.com/design/DAEEytxUPoo/Zc_pNxqZkJgWyzsar26m9Q/view" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/126ONcBVh7sUJmA2Nm0vDf12YFn4usOm2/view" className="nav-link ml-2" target="_blank" rel="noopener noreferrer">
                   Resume
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a href="mailto:chinmayj93@gmail.com" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={["fas", "envelope"]} size="1x" />
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a href="https://www.linkedin.com/in/joshichinmayajit/" className="nav-link mr-2" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={["fab", "linkedin"]} size="1x" />
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a href="https://github.com/joshi-chinmay/" className="nav-link" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={["fab", "github"]} size="1x" />
                 </a>
               </li>
 

@@ -8,7 +8,7 @@ function WorkCard(props) {
   return(
     <div className="row landing-work-card">
       <div className="work-image col-sm-12 col-md-5 pl-0">
-        <img src={cardData.imgSource} className="image-source" alt="work art" />
+        <img src={cardData.imgSource} className="image-source" alt="landing page work art" />
       </div>
       <div className="col-sm-12 col-md-7 pl-5 pr-5">
         <h5 className="pt-5">
@@ -24,7 +24,7 @@ function WorkCard(props) {
         </div>
 
         <div className="pt-5">
-          <a href={"/work" + cardData.slug} className="lead">
+          <a href={"/work" + cardData.slug}>
             Read Case Study ⟶
           </a>
         </div>
