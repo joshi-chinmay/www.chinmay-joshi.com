@@ -3,6 +3,7 @@ import WorkCard from './work-card';
 
 import NextivaAutomation from '../../../images/work/nextiva-automation/automation.png';
 import NextivaSmartTopics from '../../../images/work/nextiva-smart-topics/topics.png';
+import NextivaDesignSystem from '../../../images/work/nextiva-design-system/design-system.jpg';
 import StepUpImg from '../../../images/work/StepUp/Artboard.png';
 import TransitSafetyImg from '../../../images/work/transit-safety/transity.png';
 
@@ -20,7 +21,10 @@ function Work() {
         projectName: "Nextiva - Automations UI", slug: "/nextiva", tags: ["Product Design", "Usability Study", "Visual Design", "Design Systems"], imgSource: NextivaAutomation, description: "Send automated welcome emails, messages, surveys, campaigns, and more to delight customers. Exclusive Quick Automation as a part of CX-Plugin.",
       },
       {
-        projectName: "SmartTopics Experience Redesign", slug: "/nextiva", tags: ["Product Design", "Usability Study", "Heuristic Evaluation"], imgSource: NextivaSmartTopics, description: "Better understand customers by assigning topics on conversations. Sentiment analysis is combined with topic-level experience rating to predict next actions to ensure customer satisfaction.",
+        projectName: "Nextiva - SmartTopics Redesign", slug: "/nextiva", tags: ["Product Design", "Usability Study", "Heuristic Evaluation"], imgSource: NextivaSmartTopics, description: "Better understand customers by assigning topics on conversations. Sentiment analysis is combined with topic-level experience rating to predict next actions to ensure customer satisfaction.",
+      },
+      {
+        projectName: "Nextiva - Sedona Design Systems", slug: "/nextiva", tags: ["Design system", "Accessibility", "Communication"], imgSource: NextivaDesignSystem, description: "Design vision for the unified-communication inbox. Design systems lead, owning end-to-end design processes, component development, WCAG 2.2 guidelines, retrospective activities, and cross-functional team collaborations.",
       },
       {
         projectName: "Transity", slug: "/public-transit-safety", tags: ["Research", "Product Design", "Visual Design"], imgSource: TransitSafetyImg, description: "This thesis case study will focus on creating awareness & providing critical and analytical insights on how people can make individual decisions while using public transportation."
@@ -49,9 +53,9 @@ function Work() {
   };
 
   return (
-    <div className="landing-work-container row">
+    <div id="work" className="landing-work-container row">
       <div className="col-md-12 text-center">
-        <h1>Explore work</h1>
+        <h2>Explore work</h2>
         {/* <p>
           Professional case studies are available to view&nbsp;
           <a href="mailto:chinmayj93@gmail.com" target="_blank" rel="noopener noreferrer">upon request.</a>

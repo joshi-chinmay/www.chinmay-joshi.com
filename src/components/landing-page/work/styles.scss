@@ -3,12 +3,13 @@ $card-default-border-radius: 2px;
 $transition-time: 0.2s;
 
 .landing-work-container {
-  margin: 18% 0 8% 0;
+  margin: 22% 0 8% 0;
 
   .landing-work-card {
     height: $card-default-height;
     margin-bottom: 8%;
     box-shadow: 0 16px 24px rgba(0, 0, 0, 0.16);
+    border: 1px solid rgba(0, 0, 0, 0.02);
     transition: box-shadow 0.4s;
     transition: all $transition-time linear;
 
@@ -27,7 +28,6 @@ $transition-time: 0.2s;
       width: 100%;
       height: $card-default-height;
       object-fit: cover;
-      border-right: 1px solid #f1f1f1;
     }
   }
 }
@@ -39,7 +39,6 @@ $transition-time: 0.2s;
 
     .image-source {
       height: 240px !important;
-      border-right: none !important;
     }
   } 
 }

@@ -1,5 +1,5 @@
 $brand-default-color: #8c52ff;
-$brand-dark-color: #050505;
+$brand-dark-color: #010101;
 $brand-white: #fefefe;
 
 * {
@@ -12,7 +12,6 @@ html {
   font-variant-caps: normal;
   font-variant-numeric: normal;
   font-variant-east-asian: normal;
-  font-weight: 400;
   font-stretch: normal;
   font-size: 14px;
   scroll-behavior: smooth;
@@ -22,11 +21,16 @@ body {
   background-color: $brand-white;
   color: $brand-dark-color;
 }
+
+.font-style-merriweather {
+  font-family: 'Merriweather', serif;
+}
 main {
   margin-bottom: 80px;
 }
 h1 {
-  font-size: calc((3.2 - 1) * 1vw + 1rem);
+  font-size: calc((3.2 - 1) * 1.2vw + 1rem);
+  font-family: 'Merriweather', serif;
 }
 h5 {
   font-size: calc((3.2 - 1) * 0.2vw + 1rem);
@@ -41,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 table tr, table td, p, ul, ol li, span {
   font-size: calc((3.2 - 1) * 0.16vw + 1rem);
-  font-weight: 400;
+  font-weight: 300;
 }
 b, .bold {
   font-weight: 700;
@@ -49,6 +53,7 @@ b, .bold {
 a {
   color: $brand-default-color;
   transition: 0.6s;
+  font-weight: 400;
 }
 a:hover {
   color: #6511ff;
@@ -137,6 +142,10 @@ a.skip-main:focus, a.skip-main:active {
   a {
     font-size: 18px;
   }
+}
+
+.about-section {
+  padding-top: 120px;
 }
 
 // check Bootstrap reset file

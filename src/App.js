@@ -16,7 +16,7 @@ import PageNotFound from './components/PageNotFound';
 import "./styles/Styles.scss";
 
 const LoadableHome = lazy(() => import('./components/Home'));
-const LoadableBlog = lazy(() => import('./components/Blog'));
+const LoadableAbout = lazy(() => import('./components/About'));
 const LoadableStepUp = lazy(() => import('./components/work/StepUp'));
 const LoadableNextiva = lazy(() => import('./components/work/Nextiva'));
 
@@ -43,7 +43,7 @@ class App extends Component {
                 <Switch location={location} key={location.pathname}>
                   <Route exact path={'/'} component={LoadableHome} />
                   <Route exact path={'/home'} component={LoadableHome} />
-                  <Route exact path={'/blogs'} component={LoadableBlog} />
+                  <Route exact path={'/about'} component={LoadableAbout} />
                   
                   {/* <PrivateRoute exact path={"/work/nextiva"} component={LoadableNextiva} /> */}
                   <Route exact path={"/work/nextiva"} component={LoadableNextiva} />
