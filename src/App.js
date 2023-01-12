@@ -18,7 +18,9 @@ import "./styles/Styles.scss";
 const LoadableHome = lazy(() => import('./components/Home'));
 const LoadableAbout = lazy(() => import('./components/About'));
 const LoadableStepUp = lazy(() => import('./components/work/StepUp'));
-const LoadableNextiva = lazy(() => import('./components/work/Nextiva'));
+const LoadableNextivaAutomation = lazy(() => import('./components/work/NextivaAutomation'));
+const LoadableNextivaTopics = lazy(() => import('./components/work/NextivaTopics'));
+const LoadableNextivaDesignSystem = lazy(() => import('./components/work/NextivaDesignSystem'));
 
 const LoadablePathwaysToHousing = lazy(() => import('./components/work/PathwaysToHousing'));
 const LoadableSodaMachine = lazy(() => import('./components/work/SodaMachine'));
@@ -45,8 +47,9 @@ class App extends Component {
                   <Route exact path={'/home'} component={LoadableHome} />
                   <Route exact path={'/about'} component={LoadableAbout} />
                   
-                  {/* <PrivateRoute exact path={"/work/nextiva"} component={LoadableNextiva} /> */}
-                  <Route exact path={"/work/nextiva"} component={LoadableNextiva} />
+                  <Route exact path={"/work/nextiva-automation"} component={LoadableNextivaAutomation} />
+                  <Route exact path={"/work/nextiva-topics"} component={LoadableNextivaTopics} />
+                  <Route exact path={"/work/nextiva-design-system"} component={LoadableNextivaDesignSystem} />
                   <Route exact path={"/work/pathways-to-housing"} component={LoadablePathwaysToHousing} />
                   <Route exact path={"/work/accessible-soda-machine"} component={LoadableSodaMachine} />
                   <Route exact path={"/work/public-transit-safety"} component={LoadablePublicTransitSafety} />

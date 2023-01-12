@@ -31,6 +31,7 @@ export default class Password extends Component {
         <div className="col-md-12">
           <form onSubmit={this.handleSubmit}>
             <div className="form-group text-center">
+              <h4>Guest area</h4>
               <label className="lead" htmlFor="route-password">Enter password to get through</label>
               <input
                 type="password"
@@ -46,8 +47,9 @@ export default class Password extends Component {
               <div className={"invalid-feedback " + (this.state.isValid ? "d-none" : "d-block") }>
                 Please enter a valid password
               </div>
-              <button type="submit" className="mt-4 w-100 btn btn-primary">Unlock</button>
-              <a className="d-block lead text-underline mt-3" href="/">Looking to go back home? Click here.</a>
+
+              <button type="submit" className="mt-5 w-100 btn btn-primary">Unlock</button>
+              <a className="d-block lead text-underline mt-3" href="/">Got here by mistake? Click here to go back.</a>
             </div>
           </form>
         </div>
