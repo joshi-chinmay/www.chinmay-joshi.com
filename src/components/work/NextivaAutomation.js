@@ -224,7 +224,7 @@ export default class NextivaTopics extends Component {
 
           </div>
 
-          <NextLink nextLink={{ name: "Nextiva: SmartTopics Redesign", slug: "/nextiva-topics" }} />
+          <NextLink nextLink={{ name: "Nextiva - SmartTopics Redesign", slug: "/nextiva-topics" }} />
 
         </div>
       );
